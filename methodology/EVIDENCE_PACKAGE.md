@@ -26,13 +26,13 @@ Did the 2012 inclusion of aviation in the EU ETS reduce aviation CO2 in covered 
 | TOST equivalence (±3%) | not conclusive (p≈0.98) | — | models/n2_tost.csv |
 | COVID-adjusted variant | −0.215 | 0.068 | simulation/s3_did_variants.csv |
 | **Pass-through (fares)**: treated × lnETS on HICP air fares | **−0.016** | <0.001 | mechanisms/m1_fare_pass_through.csv |
-| **Dose-response**: net-short share × post | **−0.019** | 0.520 | models/dose_response.csv |
+| **Dose-response**: net-short share × post | +0.014 | 0.548 | models/dose_response.csv |
 | **Fuel cross-check** (Eurostat INTAVI): DiD ln fuel | −0.236 | 0.482 | mechanisms/m2_fuel_did.csv |
 | Cross-source corr (ln CO2, ln fuel) | **0.966** | — | mechanisms/m2_fuel_did.csv |
 | Segments (lowcost/mainline/cargo/business) treated×post | all null (p ≥ 0.35) | — | mechanisms/m3_segments.csv |
 | Price response (treated × ln ETS) | −0.0675 | in models | models/main_models.csv |
 
-**EUTL free-allocation facts (the mechanism):** In 2012, free allocation exceeded verified emissions by ~34% on average (mean net share −0.34); by 2015–19 the mean net-short share was only ~45–51%, and several states remained net long as late as 2019. Operators faced a real marginal price on only a fraction of their emissions — the institutional reason the price response is near zero.
+**EUTL free-allocation facts (the mechanism):** In 2012, free allocation covered the large majority of verified emissions (mean net-short share +0.25, with several states net long); from 2015–19 the mean net-short share stabilized at only ~48–53%, and some states remained net long as late as 2019. Operators faced a real marginal price on only a fraction of their emissions — the institutional reason the price response is near zero.
 
 ## Honest limitations
 1. **Controls are few (11) and economically different** (non-EU, lower traffic). RI p=0.003 partly reflects large treated-vs-control contrast. Leave-one-out shows robustness (range −0.174..−0.243).
