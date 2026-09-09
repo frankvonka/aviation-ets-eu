@@ -1,0 +1,59 @@
+# EU ETS aviation: emissions vs free allocation, 2012–2021
+
+**Data**: EEA extract of the Union Registry (EUTL), activity 10 (aviation), one row per
+administering member state per year. `verified_tco2` = verified emissions of aircraft
+operators; `free_allocation_tco2` = freely issued entitlements (total allocation minus
+auctioned allowances). Rows are per *administering* country — operator nationality does not
+determine which country's aviation total an operator's emissions appear under, and the EEA
+does not publish an operator-level attribution to member states. Full provenance:
+`data/EUTL_PROVENANCE.md`.
+
+```{python}
+#| echo: false
+import pandas as pd
+
+df = pd.read_csv("data/eutl_aviation.csv")
+# UK left the EU ETS after 2020 (2021 rows would be empty anyway); show it 2012-2020
+df = df[df["member_state"] != "GB"]
+
+yearly = df.groupby("year")[["verified_tco2", "free_allocation_tco2"]].sum() / 1e6
+
+yearly.round(1)
+```
+
+Two regimes are visible. In 2012 aircraft operators could comply using entitlements
+calculated on the **full scope** (all flights to/from EEA airports), and free allocation
+(~67 Mt) exceeded what the reduced 2013–2020 scope would later recognise. From 2013
+onwards the benchmark was fixed at 82 % of historical (2004–06) emissions, with 15 %
+auctioned — free allocation sits at ~31 Mt against verified emissions that recovered from
+~53 Mt (2013, reduced scope) to ~68 Mt (2019).
+
+```{python}
+#| echo: false
+#| fig-cap: "EU ETS aviation: verified emissions vs free allocation to aircraft operators (EU-27 + EEA, excl. UK after 2020). 2021 under the new scope (50 % of 2019 benchmark, EEA-only flights)."
+import matplotlib.pyplot as plt
+
+fig, ax = plt.subplots(figsize=(8, 4.2))
+ax.plot(yearly.index, yearly["verified_tco2"], marker="o", label="Verified emissions")
+ax.plot(yearly.index, yearly["free_allocation_tco2"], marker="s", label="Free allocation")
+ax.set_ylabel("MtCO$_2$")
+ax.set_xticks(yearly.index)
+ax.legend()
+ax.set_title("EU ETS aviation: emissions vs free allocation, 2012–2021")
+fig.tight_layout()
+plt.show()
+```
+
+The 2020 collapse (−63 % vs 2019) reflects COVID-19; operators nonetheless received their
+full free allocation for 2020, widening the surplus. In 2021 the scheme entered its third
+trading period rules for aviation: free allocation cut to 50 % of 2019 benchmark emissions
+and non-EEA flights excluded (UK carriers report under the UK ETS from 2021), bringing free
+allocation down to ~24 Mt — below 2019 verified emissions for the first time outside 2012.
+
+```{python}
+#| echo: false
+# Per-country table, latest year
+last = df[df["year"] == 2021].set_index("member_state")[["verified_tco2", "free_allocation_tco2"]]
+last.columns = ["Verified emissions (tCO2)", "Free allocation (tCO2)"]
+last.sort_values("Verified emissions (tCO2)", ascending=False).head(10).astype(int)
+```
