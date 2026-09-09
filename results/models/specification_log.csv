@@ -1,0 +1,20 @@
+Specification,Outcome,Variable,Result_coef,Result_p,Reason,Final status
+D1_did_naive_10_19,ln_co2,did,-0.20745655501455768,0.01197224910881167,naive GB treated thru 2019 (harmless pre-2021),MAIN
+D2_did_adj_10_19,ln_co2,did_adj,-0.20745655501455768,0.01197224910881167,"main: GB cutoff irrelevant pre-2021, same as D1 check",MAIN
+D1_did_naive_10_19,ln_flights,did,-0.10884303861904165,0.10825055119387349,naive GB treated thru 2019 (harmless pre-2021),MAIN
+D2_did_adj_10_19,ln_flights,did_adj,-0.10884303861904165,0.10825055119387349,"main: GB cutoff irrelevant pre-2021, same as D1 check",MAIN
+D1_did_naive_10_19,ln_intensity,did,-0.09861351639551491,0.15208977464597573,naive GB treated thru 2019 (harmless pre-2021),MAIN
+D2_did_adj_10_19,ln_intensity,did_adj,-0.09861351639551491,0.15208977464597573,"main: GB cutoff irrelevant pre-2021, same as D1 check",MAIN
+D3_did_adj_full,ln_co2,did_adj,-0.22842720031536023,0.08342059550514684,"includes COVID — reported for completeness, not identified",descriptive only
+D3_did_adj_full,ln_flights,did_adj,-0.14049891190592145,0.16048845649483223,"includes COVID — reported for completeness, not identified",descriptive only
+D3_did_adj_full,ln_intensity,did_adj,-0.08792828840943777,0.159619803559367,"includes COVID — reported for completeness, not identified",descriptive only
+D4_did_adj_gdp,ln_co2,did_adj,0.08371430310053107,1.4118784900743094e-06,add ln gdp pc; sample = WB-covered states,robustness/heterogeneity
+D4_did_adj_gdp,ln_co2,ln_gdp_pc,0.7272092914047241,3.557852648817921e-10,add ln gdp pc; sample = WB-covered states,robustness/heterogeneity
+D4_did_adj_gdp,ln_flights,did_adj,0.016840419888915936,0.5081474337637258,add ln gdp pc; sample = WB-covered states,robustness/heterogeneity
+D4_did_adj_gdp,ln_flights,ln_gdp_pc,0.6315712670329846,0.0006313824291025176,add ln gdp pc; sample = WB-covered states,robustness/heterogeneity
+D4_did_adj_gdp,ln_intensity,did_adj,0.06687388321161535,0.00014587363277853612,add ln gdp pc; sample = WB-covered states,robustness/heterogeneity
+D4_did_adj_gdp,ln_intensity,ln_gdp_pc,0.09563802437173394,0.5472203250963471,add ln gdp pc; sample = WB-covered states,robustness/heterogeneity
+D5_noGB,ln_co2,did_adj,-0.2058928168232806,0.013147746101070047,drop GB entirely,robustness/heterogeneity
+D5_noGB,ln_flights,did_adj,-0.10930097988193702,0.10984760630810321,drop GB entirely,robustness/heterogeneity
+D5_noGB,ln_intensity,did_adj,-0.09659183694134352,0.1620741400934771,drop GB entirely,robustness/heterogeneity
+D6_noTiny,ln_co2,did_adj,-0.1807751508759184,0.04026595760494787,drop states <50k flights/yr,robustness/heterogeneity

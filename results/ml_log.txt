@@ -1,0 +1,11 @@
+A HistGB ln_co2: CV R2=0.658±0.122
+A RF ln_co2: CV R2=0.695±0.112
+A HistGB ln_flights: CV R2=0.688±0.131
+A RF ln_flights: CV R2=0.718±0.123
+A HistGB ln_intensity: CV R2=0.094±0.063
+A RF ln_intensity: CV R2=0.134±0.070
+B AIPW sample: treated=31, control=10
+B naive diff-in-means: -0.2176
+B AIPW DR-ATT: -0.0075 (SE 0.0396, z=-0.19)
+C econml unavailable (No module named 'econml') -> X-learner
+C CATE (X-learner): mean=-0.2600, sd=0.1035, min=-0.7474 (LI), max=-0.0821 (IS)

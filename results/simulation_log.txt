@@ -1,0 +1,22 @@
+── S1 wild cluster bootstrap ──
+main DiD: -0.2075 (analytic se 0.0826)
+S1 wild bootstrap p=0.0392, 95% CI [-0.4048, -0.0115]
+── S2 randomization inference ──
+S2 RI p=0.0034 over 5000 permutations
+── S3 COVID-free counterfactual ──
+S3 DiD variants (ln_co2):
+  drop_covid     : -0.2075 (p=0.0120, N=415)
+  raw_covid      : -0.2284 (p=0.0834, N=672)
+  adjusted_covid : -0.2151 (p=0.0677, N=672)
+── S4 policy scenario Monte Carlo ──
+S4 params: did=-0.2423, tr x lnETS=-0.06752
+       scenario  year   ets  mc_mean  mc_p05  mc_p95
+Aggressive_8pct  2022  57.9   119.35   74.46  178.65
+Aggressive_8pct  2026  78.8   117.18   68.95  181.17
+Aggressive_8pct  2030 107.1   114.67   65.12  180.41
+ Moderate_plus3  2022  56.6   119.91   73.02  179.28
+ Moderate_plus3  2026  68.6   118.57   71.00  182.59
+ Moderate_plus3  2030  80.6   117.25   71.71  180.97
+      Flat_2021  2022  53.6   119.93   73.36  181.38
+      Flat_2021  2026  53.6   120.21   73.21  180.36
+      Flat_2021  2030  53.6   120.57   72.23  181.86

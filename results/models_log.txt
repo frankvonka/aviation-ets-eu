@@ -1,0 +1,27 @@
+panel (672, 19); did=1 rows: 440, did_adj=1 rows: 435
+D1_did_naive_10_19 | ln_co2: did=-0.2075(p=0.012)
+D2_did_adj_10_19 | ln_co2: did_adj=-0.2075(p=0.012)
+D1_did_naive_10_19 | ln_flights: did=-0.1088(p=0.108)
+D2_did_adj_10_19 | ln_flights: did_adj=-0.1088(p=0.108)
+D1_did_naive_10_19 | ln_intensity: did=-0.0986(p=0.152)
+D2_did_adj_10_19 | ln_intensity: did_adj=-0.0986(p=0.152)
+D3_did_adj_full | ln_co2: did_adj=-0.2284(p=0.083)
+D3_did_adj_full | ln_flights: did_adj=-0.1405(p=0.160)
+D3_did_adj_full | ln_intensity: did_adj=-0.0879(p=0.160)
+D4_did_adj_gdp | ln_co2: did_adj=+0.0837(p=0.000); ln_gdp_pc=+0.7272(p=0.000)
+D4_did_adj_gdp | ln_flights: did_adj=+0.0168(p=0.508); ln_gdp_pc=+0.6316(p=0.001)
+D4_did_adj_gdp | ln_intensity: did_adj=+0.0669(p=0.000); ln_gdp_pc=+0.0956(p=0.547)
+D5_noGB | ln_co2: did_adj=-0.2059(p=0.013)
+D5_noGB | ln_flights: did_adj=-0.1093(p=0.110)
+D5_noGB | ln_intensity: did_adj=-0.0966(p=0.162)
+D6_noTiny | ln_co2: did_adj=-0.1808(p=0.040)
+pre-trend joint test (ln_co2): stat=0.070, p=0.7919
+pre-trend joint test (ln_flights): stat=1.030, p=0.3101
+pre-trend joint test (ln_intensity): stat=0.993, p=0.3189
+event study saved (27 rows)
+H_lowcost share 2019 | ln_co2: did_adj=-0.0258(p=0.859); x_lowcost=-0.7481(p=0.090)
+H_lowcost share 2019 | ln_flights: did_adj=+0.0175(p=0.860); x_lowcost=-0.5204(p=0.055)
+H_cargo share 2019 | ln_co2: did_adj=-0.1782(p=0.086); x_cargo=-0.4071(p=0.567)
+H_cargo share 2019 | ln_flights: did_adj=-0.1278(p=0.104); x_cargo=+0.2646(p=0.562)
+H_tourism arrivals (norm) | ln_co2: did_adj=-0.1966(p=0.020); x_tourism=-0.0104(p=0.456)
+H_tourism arrivals (norm) | ln_flights: did_adj=-0.0918(p=0.188); x_tourism=-0.0164(p=0.242)

@@ -1,0 +1,33 @@
+O params: did=-0.2423, tr x lnETS=-0.06752
+O1 EU-aviation abatement (Mt CO2) at each ETS price:
+ ets  total_abate_mt
+  10      -12.202543
+  20       -2.862902
+  30        2.401208
+  50        8.831312
+  75       13.779621
+ 100       17.209248
+ 150       21.931311
+O2 target -10%: required uniform ETS price = €118.6/t
+O2 target -20%: no price in [5,150] achieves it (f(a) and f(b) must have different signs)
+O2 target -29% (EU 2030 transport) : no price in [5,150] achieves it (f(a) and f(b) must have different signs)
+── O3 optimal price path ──
+O3 optimal path (start EUR50): [50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0]
+O3 remaining 2030: 125.7 Mt (65.5% of 2019), cumulative abatement cost = 2,874.9 (Mt*EUR units)
+── O4 minimax LP (Chebyshev) revenue allocation ──
+O4 allocation top5:
+iso  alloc_eur_bn  co2_2019_mt  eff_per_bn  eff_per_mt  pred_residual_mt
+ GB          10.0        37.30      0.2422      0.0065            34.877
+ AT           0.0         3.11      0.2423      0.0778             3.115
+ BG           0.0         0.80      0.2309      0.2887             0.800
+ BE           0.0         4.88      0.2621      0.0537             4.880
+ CY           0.0         1.05      0.2685      0.2554             1.051
+O4 minimized max residual CO2: 34.88 Mt
+O4 sanity: max predicted residual = 34.877 Mt vs T = 34.877
+O4b fairness (Nash log) allocation top5:
+iso  alloc_eur_bn  co2_2019_mt  eff_per_bn  pred_abate_mt
+ GB         1.939        37.30      0.2422          0.470
+ DE         1.622        31.09      0.2581          0.419
+ FR         1.166        22.40      0.2511          0.293
+ ES         1.147        22.04      0.2483          0.285
+ IT         0.785        15.11      0.2532          0.199

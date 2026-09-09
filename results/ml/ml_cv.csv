@@ -1,0 +1,7 @@
+outcome,model,cv_r2,cv_r2_sd,n,top
+ln_co2,HistGB,0.658,0.122,397,n/a
+ln_co2,RF,0.695,0.112,397,trend
+ln_flights,HistGB,0.688,0.131,397,n/a
+ln_flights,RF,0.718,0.123,397,trend
+ln_intensity,HistGB,0.094,0.063,397,n/a
+ln_intensity,RF,0.134,0.07,397,trend

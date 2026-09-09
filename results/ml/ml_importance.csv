@@ -1,0 +1,13 @@
+outcome,model,feature,importance
+ln_co2,RF,trend,0.6693
+ln_co2,RF,tr_x_lnets,0.2015
+ln_co2,RF,ln_gdp_pc,0.1288
+ln_co2,RF,did_adj,0.0005
+ln_flights,RF,trend,0.5902
+ln_flights,RF,tr_x_lnets,0.3009
+ln_flights,RF,ln_gdp_pc,0.1078
+ln_flights,RF,did_adj,0.0011
+ln_intensity,RF,trend,0.5474
+ln_intensity,RF,ln_gdp_pc,0.3294
+ln_intensity,RF,tr_x_lnets,0.1065
+ln_intensity,RF,did_adj,0.0167

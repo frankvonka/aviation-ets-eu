@@ -1,0 +1,23 @@
+raw: (8440, 6)
+unmapped states: <StringArray>
+[]
+Length: 0, dtype: str
+after folding name variants + Canary->ES: 8440 -> 8241 rows, 43 iso units
+rows that were folded (n_source_states>1): 199
+treated units: 32, control units: 11
+control states: ['AL', 'AM', 'BA', 'GE', 'MC', 'MD', 'ME', 'MK', 'RS', 'TR', 'XK']
+annual panel: (672, 7), years 2010-2025
+units with missing years in span:
+      min   max  count  expected
+iso                             
+LI   2010  2025     12        16
+after WB+ETS merge: (672, 19); missing gdp_pc=275, air_psgr=325, ets=0
+WB countries matched: 27 of 43 (controls exist only for EU28 list — non-ECAC control states have no WB row is FALSE: WB covers all)
+G2G exact duplicate rows: 228003 — inspecting cause
+example duplicate block:
+        LEVEL AREA  FOCUS_TYPE  YEAR  MONTH MARKET_SEGMENT FLIGHT_TYPE FLIGHT_PHASE  NB_FLIGHTS  CO2_TONS  NOX_KG  SOX_KG
+55623   STATE   AL  AREA FOCUS  2019      1       business           A       cruise           9       2.2    2.36    0.51
+283626  STATE   AL  AREA FOCUS  2019      1       business           A       cruise           9       2.2    2.36    0.51
+55624   STATE   AL  AREA FOCUS  2019      1       business           A      descent           9       2.0    3.09    0.50
+283627  STATE   AL  AREA FOCUS  2019      1       business           A      descent           9       2.0    3.09    0.50
+G2G state-month-segment panel: (19382, 7), states=45

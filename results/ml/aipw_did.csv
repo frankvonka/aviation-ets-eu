@@ -1,0 +1,6 @@
+metric,value
+naive_diff,-0.2175763708504061
+aipw_att,-0.007495263824432273
+aipw_se,0.03955408744262109
+n_treated,31.0
+n_control,10.0

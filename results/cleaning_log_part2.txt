@@ -1,0 +1,17 @@
+gdp_pc: ERROR The read operation timed out
+air_psgr: ERROR The read operation timed out
+air_freight: fetched 96 non-null obs
+tourism: ERROR The read operation timed out
+wb_controls_all: (516, 6), countries: 37
+G2G dedup on all 12 cols: 511627 -> 283624 (removed 228003)
+remaining key duplicates after dedup: 0
+G2G dedup state totals by year (Mt CO2):
+YEAR
+2019    176.8
+2020     75.0
+2021     98.8
+2022    162.4
+2023    185.1
+2024    201.5
+segment shares 2019: (45, 6)
+panel_a rebuilt: (672, 18); gdp_pc missing=275 (41%)
