@@ -1,0 +1,2 @@
+EUTL: (310, 5), states=31, years 2012-2021
+dose-response: dose coef=-0.0185 (se=0.0288, p=0.5200, N=415)

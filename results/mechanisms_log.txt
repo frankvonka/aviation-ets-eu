@@ -1,0 +1,10 @@
+fares: (5531, 5), countries=31, 2010-2024
+M1 fare regression sample: (3720, 9), countries=31
+M1a fares ~ treated x lnETS: -0.010709 (p=0.0202, N=3720)
+M1b + country trends:        -0.016105 (p=0.0000, N=3720)
+M3 business : treated x post-COVID = -0.0602 (p=0.835, N=3240)
+M3 cargo    : treated x post-COVID = +0.1186 (p=0.671, N=3240)
+M3 lowcost  : treated x post-COVID = -0.0784 (p=0.818, N=3223)
+M3 mainline : treated x post-COVID = -0.1646 (p=0.563, N=3240)
+M3 other    : treated x post-COVID = +0.0231 (p=0.929, N=3240)
+M3 regional : treated x post-COVID = -0.3308 (p=0.351, N=3194)

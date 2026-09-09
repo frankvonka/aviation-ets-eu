@@ -16,20 +16,23 @@ Did the 2012 inclusion of aviation in the EU ETS reduce aviation CO2 in covered 
 
 | Result | Estimate | p | Source file |
 |---|---|---|---|
-| DiD ln CO2 (2010-19) | **−0.208** (≈ −19%*) | 0.012 | models/main_models.csv |
+| DiD ln CO2 (2010-19) | **−0.208** (≈ −19%) | 0.012 | models/main_models.csv |
+| — pre-determined controls (scale+trend) | −0.195 | 0.018 | models/n1_respecified.csv |
+| — leave-one-out (43 drops) | [−0.243, −0.174], all p<0.05 | — | models/n4_looo.csv |
 | — wild cluster bootstrap (B=4999) | p = 0.039, CI [−0.405, −0.012] | 0.039 | simulation/s1_wild_bootstrap.csv |
 | — randomization inference (5000 perms) | **p = 0.0034** | 0.003 | simulation/s2_ri_summary.csv |
-| Pre-trend joint test | χ² p = 0.79 (passes) | 0.792 | models_log.txt |
-| DiD ln flights | −0.109 | 0.108 | models/main_models.csv |
-| DiD ln intensity | −0.099 | 0.152 | models/main_models.csv |
-| With ln GDP control | −0.031 (attenuates; WB sample) | 0.326 | models/main_models.csv |
-| Raw COVID sample (2010-25) | −0.228 | 0.083 | simulation/s3_did_variants.csv |
-| **COVID-adjusted (novelty)** | **−0.215** | 0.068 | simulation/s3_did_variants.csv |
+| Pre-trend joint test | p = 0.79 (passes) | 0.792 | models_log.txt |
+| **MDE (80% power)** | **23.1%** — design cannot power a precise null at 3% margin | — | models/n3_mde.csv |
+| TOST equivalence (±3%) | not conclusive (p≈0.98) | — | models/n2_tost.csv |
+| COVID-adjusted variant | −0.215 | 0.068 | simulation/s3_did_variants.csv |
+| **Pass-through (fares)**: treated × lnETS on HICP air fares | **−0.016** | <0.001 | mechanisms/m1_fare_pass_through.csv |
+| **Dose-response**: net-short share × post | **−0.019** | 0.520 | models/dose_response.csv |
+| **Fuel cross-check** (Eurostat INTAVI): DiD ln fuel | −0.236 | 0.482 | mechanisms/m2_fuel_did.csv |
+| Cross-source corr (ln CO2, ln fuel) | **0.966** | — | mechanisms/m2_fuel_did.csv |
+| Segments (lowcost/mainline/cargo/business) treated×post | all null (p ≥ 0.35) | — | mechanisms/m3_segments.csv |
 | Price response (treated × ln ETS) | −0.0675 | in models | models/main_models.csv |
-| SCM classic ATT (mean, 29 states) | −0.21 (range −0.46..+0.26) | — | scm/scm_state_effects.csv |
-| SCM placebo-in-space | treated median RMSPE ratio 1.95 vs controls up to 7.8; perm p = 0.64 (weak) | — | scm/scm_placebo.csv |
 
-*exp(−0.208)−1 = −18.8%.
+**EUTL free-allocation facts (the mechanism):** In 2012, free allocation exceeded verified emissions by ~34% on average (mean net share −0.34); by 2015–19 the mean net-short share was only ~45–51%, and several states remained net long as late as 2019. Operators faced a real marginal price on only a fraction of their emissions — the institutional reason the price response is near zero.
 
 ## Honest limitations
 1. **Controls are few (11) and economically different** (non-EU, lower traffic). RI p=0.003 partly reflects large treated-vs-control contrast. Leave-one-out shows robustness (range −0.174..−0.243).
