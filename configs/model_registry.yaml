@@ -1,0 +1,55 @@
+# Model registry — aviation ETS evidence package (regression on ln_co2)
+selection_mode: constrained_seeded_draw
+selection_count: 4
+selection_seed: 2026
+family_diversity:
+  max_per_family: 2
+  min_distinct_families: 3
+
+pool:
+  - name: HistGradientBoosting
+    family: gradient_boosting
+    module: sklearn.ensemble
+    estimator: HistGradientBoostingRegressor
+    params: {max_iter: 300, learning_rate: 0.06, max_depth: 3, random_state: 42}
+    eligible: true
+    reason: small panel, tabular, fast; CV R2 ~0.70
+
+  - name: RandomForest
+    family: bagging
+    module: sklearn.ensemble
+    estimator: RandomForestRegressor
+    params: {n_estimators: 500, max_depth: 6, min_samples_leaf: 8, random_state: 42, n_jobs: 1}
+    eligible: true
+    reason: robust, feature importance; CV R2 ~0.68
+
+  - name: Ridge
+    family: linear
+    module: sklearn.linear_model
+    estimator: Ridge
+    params: {alpha: 1.0}
+    eligible: true
+    reason: pooled linear comparator on same target
+
+  - name: Lasso
+    family: linear
+    module: sklearn.linear_model
+    estimator: Lasso
+    params: {alpha: 0.01}
+    eligible: false
+    reason: redundant with Ridge; same family cap (2/2 reached)
+
+  - name: DummyRegressor
+    family: baseline
+    module: sklearn.dummy
+    estimator: DummyRegressor
+    params: {strategy: "mean"}
+    eligible: true
+    reason: counts toward ZERO (baseline)
+
+selected:
+  seed: 2026
+  draw: [RandomForest, DummyRegressor, Ridge, HistGradientBoosting]
+  families: {gradient_boosting: 1, bagging: 1, linear: 1, baseline: 1}
+  distinct_families: 4
+  note: draw reproducible via scripts/seeded_selection.py

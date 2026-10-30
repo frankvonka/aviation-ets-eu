@@ -1,0 +1,44 @@
+# Research protocol — versioned experimental design (DoAll §1.9, §17.271)
+protocol_version: "1.0"
+registered_before: "2026-10-26"
+freeze_hash: "see artifacts/freeze/freeze_manifest.json"
+
+data:
+  path: "data/panel_state_year.csv"
+  target: "ln_co2"
+  task: "regression"
+  dataset_version: "ETS_Database_July_2026"
+
+evaluation:
+  protocol: "pre_covid_holdout_with_cv"
+  test_size: 0.20
+  cv_folds: 5
+  split_seed: 42
+  final_test_policy: "evaluate_after_selection"
+  protocols:
+    A: "in-distribution CV (StratifiedKFold)"
+    B: "Leave-one-entity-out"
+    C: "GroupKFold by entity"
+    D: "per-entity models"
+    E: "held-out test on rare entity"
+
+reproducibility:
+  master_seed: 42
+  model_seeds: [42]
+  deterministic_algorithms: true
+  n_jobs: 1
+
+saving:
+  save_predictions: true
+  save_fold_metrics: true
+  save_model: true
+  save_preprocessor: true
+  save_config_snapshot: true
+  save_environment: true
+  display_decimal_places: 4
+
+logging:
+  log_level: "INFO"
+  record_failed_runs: true
+  record_runtime: true
+  record_git_commit: true

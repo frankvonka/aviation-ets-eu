@@ -1,0 +1,60 @@
+# Simulation registry — aviation ETS
+selection_mode: documented_suitability_screen
+selected_method: wild_cluster_bootstrap_and_ri
+replications: 5000
+seed: 42
+
+candidates:
+  - name: wild_cluster_bootstrap
+    type: monte_carlo
+    eligible: true
+    screen:
+      question_alignment: 9
+      input_availability: 9
+      assumption_validity: 8
+      interpretability: 9
+      novelty_relevance: 7
+      computational_feasibility: 8
+      validatability: 9
+      reproducibility: 9
+      total: 68
+    reason: cluster-robust inference; exact for design; used for main result
+
+  - name: randomization_inference
+    type: monte_carlo
+    eligible: true
+    screen:
+      question_alignment: 8
+      input_availability: 8
+      assumption_validity: 9
+      interpretability: 8
+      novelty_relevance: 7
+      computational_feasibility: 6
+      validatability: 9
+      reproducibility: 9
+      total: 64
+    reason: permutation distribution under sharp null; conservative
+
+  - name: monte_carlo_covid_counterfactual
+    type: monte_carlo
+    eligible: true
+    screen:
+      question_alignment: 7
+      input_availability: 7
+      assumption_validity: 6
+      interpretability: 6
+      novelty_relevance: 5
+      computational_feasibility: 8
+      validatability: 5
+      reproducibility: 8
+      total: 52
+    reason: stress-test; hypothetical 2020 shock
+
+  - name: sumo
+    type: agent_based
+    eligible: false
+    reason: rejected — no aviation demand model; outside scope
+
+selected:
+  primary: wild_cluster_bootstrap_and_ri
+  supplemental: [monte_carlo_covid_counterfactual]

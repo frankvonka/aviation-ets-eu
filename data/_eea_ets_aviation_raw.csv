@@ -1,0 +1,2617 @@
+year,country_code,citl_information,value,unit,version
+2012,AT,1. Total allocated allowances (EUA or EUAA),682958.3091077826,units,81
+2013,AT,1. Total allocated allowances (EUA or EUAA),565298,units,81
+2014,AT,1. Total allocated allowances (EUA or EUAA),761298,units,81
+2015,AT,1. Total allocated allowances (EUA or EUAA),900777,units,81
+2016,AT,1. Total allocated allowances (EUA or EUAA),679625,units,81
+2017,AT,1. Total allocated allowances (EUA or EUAA),653991,units,81
+2018,AT,1. Total allocated allowances (EUA or EUAA),671991,units,81
+2019,AT,1. Total allocated allowances (EUA or EUAA),2492937,units,81
+2020,AT,1. Total allocated allowances (EUA or EUAA),2587224,units,81
+2021,AT,1. Total allocated allowances (EUA or EUAA),2360260,units,81
+2012,AT,1.1 Freely allocated allowances,1932411,units,81
+2013,AT,1.1 Freely allocated allowances,565298,units,81
+2014,AT,1.1 Freely allocated allowances,565298,units,81
+2015,AT,1.1 Freely allocated allowances,565277,units,81
+2016,AT,1.1 Freely allocated allowances,557125,units,81
+2017,AT,1.1 Freely allocated allowances,557491,units,81
+2018,AT,1.1 Freely allocated allowances,557491,units,81
+2019,AT,1.1 Freely allocated allowances,2378437,units,81
+2020,AT,1.1 Freely allocated allowances,2477724,units,81
+2021,AT,1.1 Freely allocated allowances,2279760,units,81
+2012,AT,1.1.1 Free allocation to existing entities (Art. 10a(1)),1932411,units,81
+2013,AT,1.1.1 Free allocation to existing entities (Art. 10a(1)),565298,units,81
+2014,AT,1.1.1 Free allocation to existing entities (Art. 10a(1)),565298,units,81
+2015,AT,1.1.1 Free allocation to existing entities (Art. 10a(1)),565277,units,81
+2016,AT,1.1.1 Free allocation to existing entities (Art. 10a(1)),557125,units,81
+2017,AT,1.1.1 Free allocation to existing entities (Art. 10a(1)),557491,units,81
+2018,AT,1.1.1 Free allocation to existing entities (Art. 10a(1)),557491,units,81
+2019,AT,1.1.1 Free allocation to existing entities (Art. 10a(1)),2378437,units,81
+2020,AT,1.1.1 Free allocation to existing entities (Art. 10a(1)),2392877,units,81
+2021,AT,1.1.1 Free allocation to existing entities (Art. 10a(1)),2196773,units,81
+2020,AT,1.1.4 Swiss Free Allocated allowances for aircraft operators,84847,units,81
+2021,AT,1.1.4 Swiss Free Allocated allowances for aircraft operators,82987,units,81
+2012,AT,1.2 Correction to freely allocated allowances (not reflected in EUTL),-1249452.690892217,units,81
+2012,AT,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2013,AT,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2014,AT,1.3 Allowances auctioned or sold (EUAs and EUAAs),196000,units,81
+2015,AT,1.3 Allowances auctioned or sold (EUAs and EUAAs),335500,units,81
+2016,AT,1.3 Allowances auctioned or sold (EUAs and EUAAs),122500,units,81
+2017,AT,1.3 Allowances auctioned or sold (EUAs and EUAAs),96500,units,81
+2018,AT,1.3 Allowances auctioned or sold (EUAs and EUAAs),114500,units,81
+2019,AT,1.3 Allowances auctioned or sold (EUAs and EUAAs),114500,units,81
+2020,AT,1.3 Allowances auctioned or sold (EUAs and EUAAs),109500,units,81
+2021,AT,1.3 Allowances auctioned or sold (EUAs and EUAAs),80500,units,81
+2012,AT,2. Verified emissions,1227373,tonne of CO2 equ.,81
+2013,AT,2. Verified emissions,1017409,tonne of CO2 equ.,81
+2014,AT,2. Verified emissions,1028211,tonne of CO2 equ.,81
+2015,AT,2. Verified emissions,1022489,tonne of CO2 equ.,81
+2016,AT,2. Verified emissions,1045372,tonne of CO2 equ.,81
+2017,AT,2. Verified emissions,849011,tonne of CO2 equ.,81
+2018,AT,2. Verified emissions,1246921,tonne of CO2 equ.,81
+2019,AT,2. Verified emissions,3808809,tonne of CO2 equ.,81
+2020,AT,2. Verified emissions,1232596,tonne of CO2 equ.,81
+2021,AT,2. Verified emissions,1615585,tonne of CO2 equ.,81
+2012,AT,2.1 EU-ETS Verified Emission,1227373,tonne of CO2 equ.,81
+2013,AT,2.1 EU-ETS Verified Emission,1017409,tonne of CO2 equ.,81
+2014,AT,2.1 EU-ETS Verified Emission,1028211,tonne of CO2 equ.,81
+2015,AT,2.1 EU-ETS Verified Emission,1022489,tonne of CO2 equ.,81
+2016,AT,2.1 EU-ETS Verified Emission,1045372,tonne of CO2 equ.,81
+2017,AT,2.1 EU-ETS Verified Emission,849011,tonne of CO2 equ.,81
+2018,AT,2.1 EU-ETS Verified Emission,1246921,tonne of CO2 equ.,81
+2019,AT,2.1 EU-ETS Verified Emission,3808809,tonne of CO2 equ.,81
+2020,AT,2.1 EU-ETS Verified Emission,1197863,tonne of CO2 equ.,81
+2021,AT,2.1 EU-ETS Verified Emission,1566370,tonne of CO2 equ.,81
+2020,AT,2.2 Swiss Verified Emissions for aircraft operators,34733,tonne of CO2 equ.,81
+2021,AT,2.2 Swiss Verified Emissions for aircraft operators,49215,tonne of CO2 equ.,81
+2012,AT,4. Total surrendered units,1226144,units,81
+2013,AT,4. Total surrendered units,1286,units,81
+2014,AT,4. Total surrendered units,2042692,units,81
+2015,AT,4. Total surrendered units,1004530,units,81
+2016,AT,4. Total surrendered units,1064301,units,81
+2017,AT,4. Total surrendered units,848953,units,81
+2018,AT,4. Total surrendered units,1198466,units,81
+2019,AT,4. Total surrendered units,3857439,units,81
+2020,AT,4. Total surrendered units,1232596,units,81
+2021,AT,4. Total surrendered units,1614744,units,81
+2012,AT,4.1 Surrendered EU allowances (EUAs and EUAAs),1045590,units,81
+2013,AT,4.1 Surrendered EU allowances (EUAs and EUAAs),1286,units,81
+2014,AT,4.1 Surrendered EU allowances (EUAs and EUAAs),2042692,units,81
+2015,AT,4.1 Surrendered EU allowances (EUAs and EUAAs),1004530,units,81
+2016,AT,4.1 Surrendered EU allowances (EUAs and EUAAs),1064301,units,81
+2017,AT,4.1 Surrendered EU allowances (EUAs and EUAAs),848953,units,81
+2018,AT,4.1 Surrendered EU allowances (EUAs and EUAAs),1198466,units,81
+2019,AT,4.1 Surrendered EU allowances (EUAs and EUAAs),3857439,units,81
+2020,AT,4.1 Surrendered EU allowances (EUAs and EUAAs),1147749,units,81
+2021,AT,4.1 Surrendered EU allowances (EUAs and EUAAs),1467761,units,81
+2012,AT,4.2 Surrendered certified emission reductions (CERs),57942,units,81
+2012,AT,4.3 Surrendered emission reduction units (ERUs),122612,units,81
+2020,AT,4.4 Surrendered Units CHU/CHUAA,84847,units,81
+2021,AT,4.4 Surrendered Units CHU/CHUAA,146983,units,81
+2012,BE,1. Total allocated allowances (EUA or EUAA),1774950.369147055,units,81
+2013,BE,1. Total allocated allowances (EUA or EUAA),588185,units,81
+2014,BE,1. Total allocated allowances (EUA or EUAA),925799,units,81
+2015,BE,1. Total allocated allowances (EUA or EUAA),967644,units,81
+2016,BE,1. Total allocated allowances (EUA or EUAA),713382,units,81
+2017,BE,1. Total allocated allowances (EUA or EUAA),685067,units,81
+2018,BE,1. Total allocated allowances (EUA or EUAA),652320,units,81
+2019,BE,1. Total allocated allowances (EUA or EUAA),645176,units,81
+2020,BE,1. Total allocated allowances (EUA or EUAA),644891,units,81
+2021,BE,1. Total allocated allowances (EUA or EUAA),601640,units,81
+2012,BE,1.1 Freely allocated allowances,3078258,units,81
+2013,BE,1.1 Freely allocated allowances,588185,units,81
+2014,BE,1.1 Freely allocated allowances,584799,units,81
+2015,BE,1.1 Freely allocated allowances,584644,units,81
+2016,BE,1.1 Freely allocated allowances,573882,units,81
+2017,BE,1.1 Freely allocated allowances,574567,units,81
+2018,BE,1.1 Freely allocated allowances,521820,units,81
+2019,BE,1.1 Freely allocated allowances,514176,units,81
+2020,BE,1.1 Freely allocated allowances,519391,units,81
+2021,BE,1.1 Freely allocated allowances,492640,units,81
+2012,BE,1.1.1 Free allocation to existing entities (Art. 10a(1)),3078258,units,81
+2013,BE,1.1.1 Free allocation to existing entities (Art. 10a(1)),588185,units,81
+2014,BE,1.1.1 Free allocation to existing entities (Art. 10a(1)),584799,units,81
+2015,BE,1.1.1 Free allocation to existing entities (Art. 10a(1)),584644,units,81
+2016,BE,1.1.1 Free allocation to existing entities (Art. 10a(1)),573882,units,81
+2017,BE,1.1.1 Free allocation to existing entities (Art. 10a(1)),573973,units,81
+2018,BE,1.1.1 Free allocation to existing entities (Art. 10a(1)),521226,units,81
+2019,BE,1.1.1 Free allocation to existing entities (Art. 10a(1)),513582,units,81
+2020,BE,1.1.1 Free allocation to existing entities (Art. 10a(1)),511290,units,81
+2021,BE,1.1.1 Free allocation to existing entities (Art. 10a(1)),484713,units,81
+2017,BE,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),594,units,81
+2018,BE,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),594,units,81
+2019,BE,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),594,units,81
+2020,BE,1.1.4 Swiss Free Allocated allowances for aircraft operators,8101,units,81
+2021,BE,1.1.4 Swiss Free Allocated allowances for aircraft operators,7927,units,81
+2012,BE,1.2 Correction to freely allocated allowances (not reflected in EUTL),-1303307.630852945,units,81
+2012,BE,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2013,BE,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2014,BE,1.3 Allowances auctioned or sold (EUAs and EUAAs),341000,units,81
+2015,BE,1.3 Allowances auctioned or sold (EUAs and EUAAs),383000,units,81
+2016,BE,1.3 Allowances auctioned or sold (EUAs and EUAAs),139500,units,81
+2017,BE,1.3 Allowances auctioned or sold (EUAs and EUAAs),110500,units,81
+2018,BE,1.3 Allowances auctioned or sold (EUAs and EUAAs),130500,units,81
+2019,BE,1.3 Allowances auctioned or sold (EUAs and EUAAs),131000,units,81
+2020,BE,1.3 Allowances auctioned or sold (EUAs and EUAAs),125500,units,81
+2021,BE,1.3 Allowances auctioned or sold (EUAs and EUAAs),109000,units,81
+2012,BE,2. Verified emissions,2204739,tonne of CO2 equ.,81
+2013,BE,2. Verified emissions,1237104,tonne of CO2 equ.,81
+2014,BE,2. Verified emissions,1287024,tonne of CO2 equ.,81
+2015,BE,2. Verified emissions,1356658,tonne of CO2 equ.,81
+2016,BE,2. Verified emissions,1463135,tonne of CO2 equ.,81
+2017,BE,2. Verified emissions,1538462,tonne of CO2 equ.,81
+2018,BE,2. Verified emissions,1528280,tonne of CO2 equ.,81
+2019,BE,2. Verified emissions,1383003,tonne of CO2 equ.,81
+2020,BE,2. Verified emissions,565483,tonne of CO2 equ.,81
+2021,BE,2. Verified emissions,745064,tonne of CO2 equ.,81
+2012,BE,2.1 EU-ETS Verified Emission,2204739,tonne of CO2 equ.,81
+2013,BE,2.1 EU-ETS Verified Emission,1237104,tonne of CO2 equ.,81
+2014,BE,2.1 EU-ETS Verified Emission,1287024,tonne of CO2 equ.,81
+2015,BE,2.1 EU-ETS Verified Emission,1356658,tonne of CO2 equ.,81
+2016,BE,2.1 EU-ETS Verified Emission,1463135,tonne of CO2 equ.,81
+2017,BE,2.1 EU-ETS Verified Emission,1538462,tonne of CO2 equ.,81
+2018,BE,2.1 EU-ETS Verified Emission,1528280,tonne of CO2 equ.,81
+2019,BE,2.1 EU-ETS Verified Emission,1383003,tonne of CO2 equ.,81
+2020,BE,2.1 EU-ETS Verified Emission,559013,tonne of CO2 equ.,81
+2021,BE,2.1 EU-ETS Verified Emission,735840,tonne of CO2 equ.,81
+2020,BE,2.2 Swiss Verified Emissions for aircraft operators,6470,tonne of CO2 equ.,81
+2021,BE,2.2 Swiss Verified Emissions for aircraft operators,9224,tonne of CO2 equ.,81
+2012,BE,4. Total surrendered units,2182160,units,81
+2013,BE,4. Total surrendered units,16,units,81
+2014,BE,4. Total surrendered units,2511005,units,81
+2015,BE,4. Total surrendered units,1389028,units,81
+2016,BE,4. Total surrendered units,1457011,units,81
+2017,BE,4. Total surrendered units,1538462,units,81
+2018,BE,4. Total surrendered units,1424024,units,81
+2019,BE,4. Total surrendered units,1370245,units,81
+2020,BE,4. Total surrendered units,565483,units,81
+2021,BE,4. Total surrendered units,742983,units,81
+2012,BE,4.1 Surrendered EU allowances (EUAs and EUAAs),1880726,units,81
+2013,BE,4.1 Surrendered EU allowances (EUAs and EUAAs),16,units,81
+2014,BE,4.1 Surrendered EU allowances (EUAs and EUAAs),2511005,units,81
+2015,BE,4.1 Surrendered EU allowances (EUAs and EUAAs),1389028,units,81
+2016,BE,4.1 Surrendered EU allowances (EUAs and EUAAs),1457011,units,81
+2017,BE,4.1 Surrendered EU allowances (EUAs and EUAAs),1538462,units,81
+2018,BE,4.1 Surrendered EU allowances (EUAs and EUAAs),1424024,units,81
+2019,BE,4.1 Surrendered EU allowances (EUAs and EUAAs),1370245,units,81
+2020,BE,4.1 Surrendered EU allowances (EUAs and EUAAs),557382,units,81
+2021,BE,4.1 Surrendered EU allowances (EUAs and EUAAs),737215,units,81
+2012,BE,4.2 Surrendered certified emission reductions (CERs),44492,units,81
+2012,BE,4.3 Surrendered emission reduction units (ERUs),256942,units,81
+2020,BE,4.4 Surrendered Units CHU/CHUAA,8101,units,81
+2021,BE,4.4 Surrendered Units CHU/CHUAA,5768,units,81
+2012,BG,1. Total allocated allowances (EUA or EUAA),261881.1569054611,units,81
+2013,BG,1. Total allocated allowances (EUA or EUAA),198516,units,81
+2014,BG,1. Total allocated allowances (EUA or EUAA),235516,units,81
+2015,BG,1. Total allocated allowances (EUA or EUAA),328016,units,81
+2016,BG,1. Total allocated allowances (EUA or EUAA),245516,units,81
+2017,BG,1. Total allocated allowances (EUA or EUAA),236016,units,81
+2018,BG,1. Total allocated allowances (EUA or EUAA),242516,units,81
+2019,BG,1. Total allocated allowances (EUA or EUAA),242516,units,81
+2020,BG,1. Total allocated allowances (EUA or EUAA),243080,units,81
+2021,BG,1. Total allocated allowances (EUA or EUAA),138554,units,81
+2012,BG,1.1 Freely allocated allowances,269245,units,81
+2013,BG,1.1 Freely allocated allowances,198516,units,81
+2014,BG,1.1 Freely allocated allowances,198516,units,81
+2015,BG,1.1 Freely allocated allowances,198516,units,81
+2016,BG,1.1 Freely allocated allowances,198516,units,81
+2017,BG,1.1 Freely allocated allowances,198516,units,81
+2018,BG,1.1 Freely allocated allowances,198516,units,81
+2019,BG,1.1 Freely allocated allowances,198516,units,81
+2020,BG,1.1 Freely allocated allowances,200580,units,81
+2021,BG,1.1 Freely allocated allowances,102054,units,81
+2012,BG,1.1.1 Free allocation to existing entities (Art. 10a(1)),269245,units,81
+2013,BG,1.1.1 Free allocation to existing entities (Art. 10a(1)),198516,units,81
+2014,BG,1.1.1 Free allocation to existing entities (Art. 10a(1)),198516,units,81
+2015,BG,1.1.1 Free allocation to existing entities (Art. 10a(1)),198516,units,81
+2016,BG,1.1.1 Free allocation to existing entities (Art. 10a(1)),198516,units,81
+2017,BG,1.1.1 Free allocation to existing entities (Art. 10a(1)),198516,units,81
+2018,BG,1.1.1 Free allocation to existing entities (Art. 10a(1)),198516,units,81
+2019,BG,1.1.1 Free allocation to existing entities (Art. 10a(1)),198516,units,81
+2020,BG,1.1.1 Free allocation to existing entities (Art. 10a(1)),199381,units,81
+2021,BG,1.1.1 Free allocation to existing entities (Art. 10a(1)),100893,units,81
+2020,BG,1.1.4 Swiss Free Allocated allowances for aircraft operators,1199,units,81
+2021,BG,1.1.4 Swiss Free Allocated allowances for aircraft operators,1161,units,81
+2012,BG,1.2 Correction to freely allocated allowances (not reflected in EUTL),-7363.843094538868,units,81
+2012,BG,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2013,BG,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2014,BG,1.3 Allowances auctioned or sold (EUAs and EUAAs),37000,units,81
+2015,BG,1.3 Allowances auctioned or sold (EUAs and EUAAs),129500,units,81
+2016,BG,1.3 Allowances auctioned or sold (EUAs and EUAAs),47000,units,81
+2017,BG,1.3 Allowances auctioned or sold (EUAs and EUAAs),37500,units,81
+2018,BG,1.3 Allowances auctioned or sold (EUAs and EUAAs),44000,units,81
+2019,BG,1.3 Allowances auctioned or sold (EUAs and EUAAs),44000,units,81
+2020,BG,1.3 Allowances auctioned or sold (EUAs and EUAAs),42500,units,81
+2021,BG,1.3 Allowances auctioned or sold (EUAs and EUAAs),36500,units,81
+2012,BG,2. Verified emissions,317913,tonne of CO2 equ.,81
+2013,BG,2. Verified emissions,252485,tonne of CO2 equ.,81
+2014,BG,2. Verified emissions,266926,tonne of CO2 equ.,81
+2015,BG,2. Verified emissions,261531,tonne of CO2 equ.,81
+2016,BG,2. Verified emissions,288886,tonne of CO2 equ.,81
+2017,BG,2. Verified emissions,251290,tonne of CO2 equ.,81
+2018,BG,2. Verified emissions,257183,tonne of CO2 equ.,81
+2019,BG,2. Verified emissions,277839,tonne of CO2 equ.,81
+2020,BG,2. Verified emissions,117444,tonne of CO2 equ.,81
+2021,BG,2. Verified emissions,122332,tonne of CO2 equ.,81
+2012,BG,2.1 EU-ETS Verified Emission,317913,tonne of CO2 equ.,81
+2013,BG,2.1 EU-ETS Verified Emission,252485,tonne of CO2 equ.,81
+2014,BG,2.1 EU-ETS Verified Emission,266926,tonne of CO2 equ.,81
+2015,BG,2.1 EU-ETS Verified Emission,261531,tonne of CO2 equ.,81
+2016,BG,2.1 EU-ETS Verified Emission,288886,tonne of CO2 equ.,81
+2017,BG,2.1 EU-ETS Verified Emission,251290,tonne of CO2 equ.,81
+2018,BG,2.1 EU-ETS Verified Emission,257183,tonne of CO2 equ.,81
+2019,BG,2.1 EU-ETS Verified Emission,277839,tonne of CO2 equ.,81
+2020,BG,2.1 EU-ETS Verified Emission,115778,tonne of CO2 equ.,81
+2021,BG,2.1 EU-ETS Verified Emission,120858,tonne of CO2 equ.,81
+2020,BG,2.2 Swiss Verified Emissions for aircraft operators,1666,tonne of CO2 equ.,81
+2021,BG,2.2 Swiss Verified Emissions for aircraft operators,1474,tonne of CO2 equ.,81
+2012,BG,4. Total surrendered units,317913,units,81
+2014,BG,4. Total surrendered units,515376,units,81
+2015,BG,4. Total surrendered units,265566,units,81
+2016,BG,4. Total surrendered units,288886,units,81
+2017,BG,4. Total surrendered units,251290,units,81
+2018,BG,4. Total surrendered units,257183,units,81
+2019,BG,4. Total surrendered units,137887,units,81
+2020,BG,4. Total surrendered units,230581,units,81
+2021,BG,4. Total surrendered units,149147,units,81
+2012,BG,4.1 Surrendered EU allowances (EUAs and EUAAs),282809,units,81
+2014,BG,4.1 Surrendered EU allowances (EUAs and EUAAs),515376,units,81
+2015,BG,4.1 Surrendered EU allowances (EUAs and EUAAs),265566,units,81
+2016,BG,4.1 Surrendered EU allowances (EUAs and EUAAs),288886,units,81
+2017,BG,4.1 Surrendered EU allowances (EUAs and EUAAs),251290,units,81
+2018,BG,4.1 Surrendered EU allowances (EUAs and EUAAs),257183,units,81
+2019,BG,4.1 Surrendered EU allowances (EUAs and EUAAs),137887,units,81
+2020,BG,4.1 Surrendered EU allowances (EUAs and EUAAs),229394,units,81
+2021,BG,4.1 Surrendered EU allowances (EUAs and EUAAs),147684,units,81
+2012,BG,4.3 Surrendered emission reduction units (ERUs),35104,units,81
+2020,BG,4.4 Surrendered Units CHU/CHUAA,1187,units,81
+2021,BG,4.4 Surrendered Units CHU/CHUAA,1463,units,81
+2012,CY,1. Total allocated allowances (EUA or EUAA),275834.1826619457,units,81
+2013,CY,1. Total allocated allowances (EUA or EUAA),250551,units,81
+2014,CY,1. Total allocated allowances (EUA or EUAA),300519,units,81
+2015,CY,1. Total allocated allowances (EUA or EUAA),202028,units,81
+2016,CY,1. Total allocated allowances (EUA or EUAA),74028,units,81
+2017,CY,1. Total allocated allowances (EUA or EUAA),58000,units,81
+2018,CY,1. Total allocated allowances (EUA or EUAA),69000,units,81
+2019,CY,1. Total allocated allowances (EUA or EUAA),69000,units,81
+2020,CY,1. Total allocated allowances (EUA or EUAA),66000,units,81
+2021,CY,1. Total allocated allowances (EUA or EUAA),26500,units,81
+2012,CY,1.1 Freely allocated allowances,461758,units,81
+2013,CY,1.1 Freely allocated allowances,250551,units,81
+2014,CY,1.1 Freely allocated allowances,250519,units,81
+2015,CY,1.1 Freely allocated allowances,28,units,81
+2016,CY,1.1 Freely allocated allowances,28,units,81
+2012,CY,1.1.1 Free allocation to existing entities (Art. 10a(1)),461758,units,81
+2013,CY,1.1.1 Free allocation to existing entities (Art. 10a(1)),250551,units,81
+2014,CY,1.1.1 Free allocation to existing entities (Art. 10a(1)),250519,units,81
+2015,CY,1.1.1 Free allocation to existing entities (Art. 10a(1)),28,units,81
+2016,CY,1.1.1 Free allocation to existing entities (Art. 10a(1)),28,units,81
+2012,CY,1.2 Correction to freely allocated allowances (not reflected in EUTL),-185923.8173380543,units,81
+2012,CY,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2013,CY,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2014,CY,1.3 Allowances auctioned or sold (EUAs and EUAAs),50000,units,81
+2015,CY,1.3 Allowances auctioned or sold (EUAs and EUAAs),202000,units,81
+2016,CY,1.3 Allowances auctioned or sold (EUAs and EUAAs),74000,units,81
+2017,CY,1.3 Allowances auctioned or sold (EUAs and EUAAs),58000,units,81
+2018,CY,1.3 Allowances auctioned or sold (EUAs and EUAAs),69000,units,81
+2019,CY,1.3 Allowances auctioned or sold (EUAs and EUAAs),69000,units,81
+2020,CY,1.3 Allowances auctioned or sold (EUAs and EUAAs),66000,units,81
+2021,CY,1.3 Allowances auctioned or sold (EUAs and EUAAs),26500,units,81
+2012,CY,2. Verified emissions,263367,tonne of CO2 equ.,81
+2013,CY,2. Verified emissions,164361,tonne of CO2 equ.,81
+2014,CY,2. Verified emissions,107288,tonne of CO2 equ.,81
+2015,CY,2. Verified emissions,2761,tonne of CO2 equ.,81
+2016,CY,2. Verified emissions,36633,tonne of CO2 equ.,81
+2017,CY,2. Verified emissions,102553,tonne of CO2 equ.,81
+2018,CY,2. Verified emissions,24490,tonne of CO2 equ.,81
+2019,CY,2. Verified emissions,28831,tonne of CO2 equ.,81
+2020,CY,2. Verified emissions,12274,tonne of CO2 equ.,81
+2021,CY,2. Verified emissions,7463,tonne of CO2 equ.,81
+2012,CY,2.1 EU-ETS Verified Emission,263367,tonne of CO2 equ.,81
+2013,CY,2.1 EU-ETS Verified Emission,164361,tonne of CO2 equ.,81
+2014,CY,2.1 EU-ETS Verified Emission,107288,tonne of CO2 equ.,81
+2015,CY,2.1 EU-ETS Verified Emission,2761,tonne of CO2 equ.,81
+2016,CY,2.1 EU-ETS Verified Emission,36633,tonne of CO2 equ.,81
+2017,CY,2.1 EU-ETS Verified Emission,102553,tonne of CO2 equ.,81
+2018,CY,2.1 EU-ETS Verified Emission,24490,tonne of CO2 equ.,81
+2019,CY,2.1 EU-ETS Verified Emission,28831,tonne of CO2 equ.,81
+2020,CY,2.1 EU-ETS Verified Emission,11578,tonne of CO2 equ.,81
+2021,CY,2.1 EU-ETS Verified Emission,7426,tonne of CO2 equ.,81
+2020,CY,2.2 Swiss Verified Emissions for aircraft operators,696,tonne of CO2 equ.,81
+2021,CY,2.2 Swiss Verified Emissions for aircraft operators,37,tonne of CO2 equ.,81
+2012,CY,4. Total surrendered units,205943,units,81
+2013,CY,4. Total surrendered units,3219,units,81
+2014,CY,4. Total surrendered units,270647,units,81
+2015,CY,4. Total surrendered units,3908,units,81
+2016,CY,4. Total surrendered units,34703,units,81
+2017,CY,4. Total surrendered units,103922,units,81
+2018,CY,4. Total surrendered units,25051,units,81
+2019,CY,4. Total surrendered units,28831,units,81
+2020,CY,4. Total surrendered units,12274,units,81
+2021,CY,4. Total surrendered units,7450,units,81
+2012,CY,4.1 Surrendered EU allowances (EUAs and EUAAs),175169,units,81
+2013,CY,4.1 Surrendered EU allowances (EUAs and EUAAs),3219,units,81
+2014,CY,4.1 Surrendered EU allowances (EUAs and EUAAs),270647,units,81
+2015,CY,4.1 Surrendered EU allowances (EUAs and EUAAs),3908,units,81
+2016,CY,4.1 Surrendered EU allowances (EUAs and EUAAs),34703,units,81
+2017,CY,4.1 Surrendered EU allowances (EUAs and EUAAs),103922,units,81
+2018,CY,4.1 Surrendered EU allowances (EUAs and EUAAs),25051,units,81
+2019,CY,4.1 Surrendered EU allowances (EUAs and EUAAs),28831,units,81
+2020,CY,4.1 Surrendered EU allowances (EUAs and EUAAs),12274,units,81
+2021,CY,4.1 Surrendered EU allowances (EUAs and EUAAs),7450,units,81
+2012,CY,4.3 Surrendered emission reduction units (ERUs),30774,units,81
+2012,CZ,1. Total allocated allowances (EUA or EUAA),798821,units,81
+2013,CZ,1. Total allocated allowances (EUA or EUAA),374780,units,81
+2014,CZ,1. Total allocated allowances (EUA or EUAA),452280,units,81
+2015,CZ,1. Total allocated allowances (EUA or EUAA),544780,units,81
+2016,CZ,1. Total allocated allowances (EUA or EUAA),436780,units,81
+2017,CZ,1. Total allocated allowances (EUA or EUAA),423779,units,81
+2018,CZ,1. Total allocated allowances (EUA or EUAA),432779,units,81
+2019,CZ,1. Total allocated allowances (EUA or EUAA),432779,units,81
+2020,CZ,1. Total allocated allowances (EUA or EUAA),432091,units,81
+2021,CZ,1. Total allocated allowances (EUA or EUAA),399889,units,81
+2012,CZ,1.1 Freely allocated allowances,798821,units,81
+2013,CZ,1.1 Freely allocated allowances,374780,units,81
+2014,CZ,1.1 Freely allocated allowances,374780,units,81
+2015,CZ,1.1 Freely allocated allowances,374780,units,81
+2016,CZ,1.1 Freely allocated allowances,374780,units,81
+2017,CZ,1.1 Freely allocated allowances,374779,units,81
+2018,CZ,1.1 Freely allocated allowances,374779,units,81
+2019,CZ,1.1 Freely allocated allowances,374779,units,81
+2020,CZ,1.1 Freely allocated allowances,376591,units,81
+2021,CZ,1.1 Freely allocated allowances,360889,units,81
+2012,CZ,1.1.1 Free allocation to existing entities (Art. 10a(1)),798821,units,81
+2013,CZ,1.1.1 Free allocation to existing entities (Art. 10a(1)),374780,units,81
+2014,CZ,1.1.1 Free allocation to existing entities (Art. 10a(1)),374780,units,81
+2015,CZ,1.1.1 Free allocation to existing entities (Art. 10a(1)),374780,units,81
+2016,CZ,1.1.1 Free allocation to existing entities (Art. 10a(1)),374780,units,81
+2017,CZ,1.1.1 Free allocation to existing entities (Art. 10a(1)),374779,units,81
+2018,CZ,1.1.1 Free allocation to existing entities (Art. 10a(1)),374779,units,81
+2019,CZ,1.1.1 Free allocation to existing entities (Art. 10a(1)),374779,units,81
+2020,CZ,1.1.1 Free allocation to existing entities (Art. 10a(1)),376443,units,81
+2021,CZ,1.1.1 Free allocation to existing entities (Art. 10a(1)),360744,units,81
+2020,CZ,1.1.4 Swiss Free Allocated allowances for aircraft operators,148,units,81
+2021,CZ,1.1.4 Swiss Free Allocated allowances for aircraft operators,145,units,81
+2012,CZ,1.2 Correction to freely allocated allowances (not reflected in EUTL),0,units,81
+2012,CZ,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2013,CZ,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2014,CZ,1.3 Allowances auctioned or sold (EUAs and EUAAs),77500,units,81
+2015,CZ,1.3 Allowances auctioned or sold (EUAs and EUAAs),170000,units,81
+2016,CZ,1.3 Allowances auctioned or sold (EUAs and EUAAs),62000,units,81
+2017,CZ,1.3 Allowances auctioned or sold (EUAs and EUAAs),49000,units,81
+2018,CZ,1.3 Allowances auctioned or sold (EUAs and EUAAs),58000,units,81
+2019,CZ,1.3 Allowances auctioned or sold (EUAs and EUAAs),58000,units,81
+2020,CZ,1.3 Allowances auctioned or sold (EUAs and EUAAs),55500,units,81
+2021,CZ,1.3 Allowances auctioned or sold (EUAs and EUAAs),39000,units,81
+2012,CZ,2. Verified emissions,907820,tonne of CO2 equ.,81
+2013,CZ,2. Verified emissions,416240,tonne of CO2 equ.,81
+2014,CZ,2. Verified emissions,393318,tonne of CO2 equ.,81
+2015,CZ,2. Verified emissions,430429,tonne of CO2 equ.,81
+2016,CZ,2. Verified emissions,478557,tonne of CO2 equ.,81
+2017,CZ,2. Verified emissions,495045,tonne of CO2 equ.,81
+2018,CZ,2. Verified emissions,512962,tonne of CO2 equ.,81
+2019,CZ,2. Verified emissions,484353,tonne of CO2 equ.,81
+2020,CZ,2. Verified emissions,99344,tonne of CO2 equ.,81
+2021,CZ,2. Verified emissions,164326,tonne of CO2 equ.,81
+2012,CZ,2.1 EU-ETS Verified Emission,907820,tonne of CO2 equ.,81
+2013,CZ,2.1 EU-ETS Verified Emission,416240,tonne of CO2 equ.,81
+2014,CZ,2.1 EU-ETS Verified Emission,393318,tonne of CO2 equ.,81
+2015,CZ,2.1 EU-ETS Verified Emission,430429,tonne of CO2 equ.,81
+2016,CZ,2.1 EU-ETS Verified Emission,478557,tonne of CO2 equ.,81
+2017,CZ,2.1 EU-ETS Verified Emission,495045,tonne of CO2 equ.,81
+2018,CZ,2.1 EU-ETS Verified Emission,512962,tonne of CO2 equ.,81
+2019,CZ,2.1 EU-ETS Verified Emission,484353,tonne of CO2 equ.,81
+2020,CZ,2.1 EU-ETS Verified Emission,99138,tonne of CO2 equ.,81
+2021,CZ,2.1 EU-ETS Verified Emission,163514,tonne of CO2 equ.,81
+2020,CZ,2.2 Swiss Verified Emissions for aircraft operators,206,tonne of CO2 equ.,81
+2021,CZ,2.2 Swiss Verified Emissions for aircraft operators,812,tonne of CO2 equ.,81
+2012,CZ,4. Total surrendered units,907630,units,81
+2013,CZ,4. Total surrendered units,190,units,81
+2014,CZ,4. Total surrendered units,809562,units,81
+2015,CZ,4. Total surrendered units,430429,units,81
+2016,CZ,4. Total surrendered units,478564,units,81
+2017,CZ,4. Total surrendered units,495038,units,81
+2018,CZ,4. Total surrendered units,512962,units,81
+2019,CZ,4. Total surrendered units,484353,units,81
+2020,CZ,4. Total surrendered units,99344,units,81
+2021,CZ,4. Total surrendered units,164326,units,81
+2012,CZ,4.1 Surrendered EU allowances (EUAs and EUAAs),771934,units,81
+2013,CZ,4.1 Surrendered EU allowances (EUAs and EUAAs),190,units,81
+2014,CZ,4.1 Surrendered EU allowances (EUAs and EUAAs),809562,units,81
+2015,CZ,4.1 Surrendered EU allowances (EUAs and EUAAs),430429,units,81
+2016,CZ,4.1 Surrendered EU allowances (EUAs and EUAAs),478564,units,81
+2017,CZ,4.1 Surrendered EU allowances (EUAs and EUAAs),495038,units,81
+2018,CZ,4.1 Surrendered EU allowances (EUAs and EUAAs),512962,units,81
+2019,CZ,4.1 Surrendered EU allowances (EUAs and EUAAs),484353,units,81
+2020,CZ,4.1 Surrendered EU allowances (EUAs and EUAAs),99196,units,81
+2021,CZ,4.1 Surrendered EU allowances (EUAs and EUAAs),164046,units,81
+2012,CZ,4.2 Surrendered certified emission reductions (CERs),79350,units,81
+2012,CZ,4.3 Surrendered emission reduction units (ERUs),56346,units,81
+2020,CZ,4.4 Surrendered Units CHU/CHUAA,148,units,81
+2021,CZ,4.4 Surrendered Units CHU/CHUAA,280,units,81
+2012,DE,1. Total allocated allowances (EUA or EUAA),35765369.75697315,units,81
+2013,DE,1. Total allocated allowances (EUA or EUAA),5201208,units,81
+2014,DE,1. Total allocated allowances (EUA or EUAA),5190453,units,81
+2015,DE,1. Total allocated allowances (EUA or EUAA),7370883,units,81
+2016,DE,1. Total allocated allowances (EUA or EUAA),6003645,units,81
+2017,DE,1. Total allocated allowances (EUA or EUAA),5853306,units,81
+2018,DE,1. Total allocated allowances (EUA or EUAA),4458206,units,81
+2019,DE,1. Total allocated allowances (EUA or EUAA),4448272,units,81
+2020,DE,1. Total allocated allowances (EUA or EUAA),4460756,units,81
+2021,DE,1. Total allocated allowances (EUA or EUAA),3969767,units,81
+2012,DE,1.1 Freely allocated allowances,62513967,units,81
+2013,DE,1.1 Freely allocated allowances,5201208,units,81
+2014,DE,1.1 Freely allocated allowances,5190453,units,81
+2015,DE,1.1 Freely allocated allowances,5141883,units,81
+2016,DE,1.1 Freely allocated allowances,5146145,units,81
+2017,DE,1.1 Freely allocated allowances,5177806,units,81
+2018,DE,1.1 Freely allocated allowances,3657706,units,81
+2019,DE,1.1 Freely allocated allowances,3646772,units,81
+2020,DE,1.1 Freely allocated allowances,3691756,units,81
+2021,DE,1.1 Freely allocated allowances,3369767,units,81
+2012,DE,1.1.1 Free allocation to existing entities (Art. 10a(1)),62513967,units,81
+2013,DE,1.1.1 Free allocation to existing entities (Art. 10a(1)),5201208,units,81
+2014,DE,1.1.1 Free allocation to existing entities (Art. 10a(1)),5190453,units,81
+2015,DE,1.1.1 Free allocation to existing entities (Art. 10a(1)),5141883,units,81
+2016,DE,1.1.1 Free allocation to existing entities (Art. 10a(1)),5146145,units,81
+2017,DE,1.1.1 Free allocation to existing entities (Art. 10a(1)),5139018,units,81
+2018,DE,1.1.1 Free allocation to existing entities (Art. 10a(1)),3618918,units,81
+2019,DE,1.1.1 Free allocation to existing entities (Art. 10a(1)),3608060,units,81
+2020,DE,1.1.1 Free allocation to existing entities (Art. 10a(1)),3612985,units,81
+2021,DE,1.1.1 Free allocation to existing entities (Art. 10a(1)),3330607,units,81
+2017,DE,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),38788,units,81
+2018,DE,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),38788,units,81
+2019,DE,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),38712,units,81
+2020,DE,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),38712,units,81
+2020,DE,1.1.4 Swiss Free Allocated allowances for aircraft operators,40059,units,81
+2021,DE,1.1.4 Swiss Free Allocated allowances for aircraft operators,39160,units,81
+2012,DE,1.2 Correction to freely allocated allowances (not reflected in EUTL),-29248597.24302685,units,81
+2012,DE,1.3 Allowances auctioned or sold (EUAs and EUAAs),2500000,units,81
+2013,DE,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2014,DE,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2015,DE,1.3 Allowances auctioned or sold (EUAs and EUAAs),2229000,units,81
+2016,DE,1.3 Allowances auctioned or sold (EUAs and EUAAs),857500,units,81
+2017,DE,1.3 Allowances auctioned or sold (EUAs and EUAAs),675500,units,81
+2018,DE,1.3 Allowances auctioned or sold (EUAs and EUAAs),800500,units,81
+2019,DE,1.3 Allowances auctioned or sold (EUAs and EUAAs),801500,units,81
+2020,DE,1.3 Allowances auctioned or sold (EUAs and EUAAs),769000,units,81
+2021,DE,1.3 Allowances auctioned or sold (EUAs and EUAAs),600000,units,81
+2012,DE,2. Verified emissions,15930455,tonne of CO2 equ.,81
+2013,DE,2. Verified emissions,8828355,tonne of CO2 equ.,81
+2014,DE,2. Verified emissions,9010317,tonne of CO2 equ.,81
+2015,DE,2. Verified emissions,9084128,tonne of CO2 equ.,81
+2016,DE,2. Verified emissions,9437775,tonne of CO2 equ.,81
+2017,DE,2. Verified emissions,9260447,tonne of CO2 equ.,81
+2018,DE,2. Verified emissions,9531112,tonne of CO2 equ.,81
+2019,DE,2. Verified emissions,9141580,tonne of CO2 equ.,81
+2020,DE,2. Verified emissions,3960110,tonne of CO2 equ.,81
+2021,DE,2. Verified emissions,4690705,tonne of CO2 equ.,81
+2012,DE,2.1 EU-ETS Verified Emission,15930455,tonne of CO2 equ.,81
+2013,DE,2.1 EU-ETS Verified Emission,8828355,tonne of CO2 equ.,81
+2014,DE,2.1 EU-ETS Verified Emission,9010317,tonne of CO2 equ.,81
+2015,DE,2.1 EU-ETS Verified Emission,9084128,tonne of CO2 equ.,81
+2016,DE,2.1 EU-ETS Verified Emission,9437775,tonne of CO2 equ.,81
+2017,DE,2.1 EU-ETS Verified Emission,9260447,tonne of CO2 equ.,81
+2018,DE,2.1 EU-ETS Verified Emission,9531112,tonne of CO2 equ.,81
+2019,DE,2.1 EU-ETS Verified Emission,9141580,tonne of CO2 equ.,81
+2020,DE,2.1 EU-ETS Verified Emission,3928269,tonne of CO2 equ.,81
+2021,DE,2.1 EU-ETS Verified Emission,4654643,tonne of CO2 equ.,81
+2020,DE,2.2 Swiss Verified Emissions for aircraft operators,31841,tonne of CO2 equ.,81
+2021,DE,2.2 Swiss Verified Emissions for aircraft operators,36062,tonne of CO2 equ.,81
+2012,DE,4. Total surrendered units,15812442,units,81
+2013,DE,4. Total surrendered units,44646,units,81
+2014,DE,4. Total surrendered units,17859178,units,81
+2015,DE,4. Total surrendered units,9085458,units,81
+2016,DE,4. Total surrendered units,9463535,units,81
+2017,DE,4. Total surrendered units,8450361,units,81
+2018,DE,4. Total surrendered units,9174011,units,81
+2019,DE,4. Total surrendered units,9144858,units,81
+2020,DE,4. Total surrendered units,3958481,units,81
+2021,DE,4. Total surrendered units,4697153,units,81
+2012,DE,4.1 Surrendered EU allowances (EUAs and EUAAs),14050343,units,81
+2013,DE,4.1 Surrendered EU allowances (EUAs and EUAAs),44646,units,81
+2014,DE,4.1 Surrendered EU allowances (EUAs and EUAAs),17859178,units,81
+2015,DE,4.1 Surrendered EU allowances (EUAs and EUAAs),9085458,units,81
+2016,DE,4.1 Surrendered EU allowances (EUAs and EUAAs),9463535,units,81
+2017,DE,4.1 Surrendered EU allowances (EUAs and EUAAs),8450361,units,81
+2018,DE,4.1 Surrendered EU allowances (EUAs and EUAAs),9174011,units,81
+2019,DE,4.1 Surrendered EU allowances (EUAs and EUAAs),9144858,units,81
+2020,DE,4.1 Surrendered EU allowances (EUAs and EUAAs),3918452,units,81
+2021,DE,4.1 Surrendered EU allowances (EUAs and EUAAs),4656051,units,81
+2012,DE,4.2 Surrendered certified emission reductions (CERs),504562,units,81
+2012,DE,4.3 Surrendered emission reduction units (ERUs),1257537,units,81
+2020,DE,4.4 Surrendered Units CHU/CHUAA,40029,units,81
+2021,DE,4.4 Surrendered Units CHU/CHUAA,41102,units,81
+2012,DK,1. Total allocated allowances (EUA or EUAA),1045920.279378825,units,81
+2013,DK,1. Total allocated allowances (EUA or EUAA),369187,units,81
+2014,DK,1. Total allocated allowances (EUA or EUAA),562677,units,81
+2015,DK,1. Total allocated allowances (EUA or EUAA),754686,units,81
+2016,DK,1. Total allocated allowances (EUA or EUAA),509686,units,81
+2017,DK,1. Total allocated allowances (EUA or EUAA),488946,units,81
+2018,DK,1. Total allocated allowances (EUA or EUAA),465297,units,81
+2019,DK,1. Total allocated allowances (EUA or EUAA),465297,units,81
+2020,DK,1. Total allocated allowances (EUA or EUAA),453927,units,81
+2021,DK,1. Total allocated allowances (EUA or EUAA),404754,units,81
+2012,DK,1.1 Freely allocated allowances,1074189,units,81
+2013,DK,1.1 Freely allocated allowances,369187,units,81
+2014,DK,1.1 Freely allocated allowances,369177,units,81
+2015,DK,1.1 Freely allocated allowances,369186,units,81
+2016,DK,1.1 Freely allocated allowances,369186,units,81
+2017,DK,1.1 Freely allocated allowances,377946,units,81
+2018,DK,1.1 Freely allocated allowances,333797,units,81
+2019,DK,1.1 Freely allocated allowances,333797,units,81
+2020,DK,1.1 Freely allocated allowances,327927,units,81
+2021,DK,1.1 Freely allocated allowances,306754,units,81
+2012,DK,1.1.1 Free allocation to existing entities (Art. 10a(1)),1074189,units,81
+2013,DK,1.1.1 Free allocation to existing entities (Art. 10a(1)),369187,units,81
+2014,DK,1.1.1 Free allocation to existing entities (Art. 10a(1)),369177,units,81
+2015,DK,1.1.1 Free allocation to existing entities (Art. 10a(1)),369186,units,81
+2016,DK,1.1.1 Free allocation to existing entities (Art. 10a(1)),369186,units,81
+2017,DK,1.1.1 Free allocation to existing entities (Art. 10a(1)),369186,units,81
+2018,DK,1.1.1 Free allocation to existing entities (Art. 10a(1)),325137,units,81
+2019,DK,1.1.1 Free allocation to existing entities (Art. 10a(1)),325137,units,81
+2020,DK,1.1.1 Free allocation to existing entities (Art. 10a(1)),319243,units,81
+2021,DK,1.1.1 Free allocation to existing entities (Art. 10a(1)),306733,units,81
+2017,DK,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),8760,units,81
+2018,DK,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),8660,units,81
+2019,DK,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),8660,units,81
+2020,DK,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),8660,units,81
+2020,DK,1.1.4 Swiss Free Allocated allowances for aircraft operators,24,units,81
+2021,DK,1.1.4 Swiss Free Allocated allowances for aircraft operators,21,units,81
+2012,DK,1.2 Correction to freely allocated allowances (not reflected in EUTL),-28268.72062117467,units,81
+2012,DK,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2013,DK,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2014,DK,1.3 Allowances auctioned or sold (EUAs and EUAAs),193500,units,81
+2015,DK,1.3 Allowances auctioned or sold (EUAs and EUAAs),385500,units,81
+2016,DK,1.3 Allowances auctioned or sold (EUAs and EUAAs),140500,units,81
+2017,DK,1.3 Allowances auctioned or sold (EUAs and EUAAs),111000,units,81
+2018,DK,1.3 Allowances auctioned or sold (EUAs and EUAAs),131500,units,81
+2019,DK,1.3 Allowances auctioned or sold (EUAs and EUAAs),131500,units,81
+2020,DK,1.3 Allowances auctioned or sold (EUAs and EUAAs),126000,units,81
+2021,DK,1.3 Allowances auctioned or sold (EUAs and EUAAs),98000,units,81
+2012,DK,2. Verified emissions,1277015,tonne of CO2 equ.,81
+2013,DK,2. Verified emissions,560393,tonne of CO2 equ.,81
+2014,DK,2. Verified emissions,572174,tonne of CO2 equ.,81
+2015,DK,2. Verified emissions,532135,tonne of CO2 equ.,81
+2016,DK,2. Verified emissions,558122,tonne of CO2 equ.,81
+2017,DK,2. Verified emissions,604757,tonne of CO2 equ.,81
+2018,DK,2. Verified emissions,547262,tonne of CO2 equ.,81
+2019,DK,2. Verified emissions,560180,tonne of CO2 equ.,81
+2020,DK,2. Verified emissions,207465,tonne of CO2 equ.,81
+2021,DK,2. Verified emissions,261064,tonne of CO2 equ.,81
+2012,DK,2.1 EU-ETS Verified Emission,1277015,tonne of CO2 equ.,81
+2013,DK,2.1 EU-ETS Verified Emission,560393,tonne of CO2 equ.,81
+2014,DK,2.1 EU-ETS Verified Emission,572174,tonne of CO2 equ.,81
+2015,DK,2.1 EU-ETS Verified Emission,532135,tonne of CO2 equ.,81
+2016,DK,2.1 EU-ETS Verified Emission,558122,tonne of CO2 equ.,81
+2017,DK,2.1 EU-ETS Verified Emission,604757,tonne of CO2 equ.,81
+2018,DK,2.1 EU-ETS Verified Emission,547262,tonne of CO2 equ.,81
+2019,DK,2.1 EU-ETS Verified Emission,560180,tonne of CO2 equ.,81
+2020,DK,2.1 EU-ETS Verified Emission,206961,tonne of CO2 equ.,81
+2021,DK,2.1 EU-ETS Verified Emission,260291,tonne of CO2 equ.,81
+2020,DK,2.2 Swiss Verified Emissions for aircraft operators,504,tonne of CO2 equ.,81
+2021,DK,2.2 Swiss Verified Emissions for aircraft operators,773,tonne of CO2 equ.,81
+2012,DK,4. Total surrendered units,1276792,units,81
+2013,DK,4. Total surrendered units,32,units,81
+2014,DK,4. Total surrendered units,1134634,units,81
+2015,DK,4. Total surrendered units,535066,units,81
+2016,DK,4. Total surrendered units,557047,units,81
+2017,DK,4. Total surrendered units,603360,units,81
+2018,DK,4. Total surrendered units,548641,units,81
+2019,DK,4. Total surrendered units,561587,units,81
+2020,DK,4. Total surrendered units,202872,units,81
+2021,DK,4. Total surrendered units,262014,units,81
+2012,DK,4.1 Surrendered EU allowances (EUAs and EUAAs),1098821,units,81
+2013,DK,4.1 Surrendered EU allowances (EUAs and EUAAs),32,units,81
+2014,DK,4.1 Surrendered EU allowances (EUAs and EUAAs),1134634,units,81
+2015,DK,4.1 Surrendered EU allowances (EUAs and EUAAs),535066,units,81
+2016,DK,4.1 Surrendered EU allowances (EUAs and EUAAs),557047,units,81
+2017,DK,4.1 Surrendered EU allowances (EUAs and EUAAs),603360,units,81
+2018,DK,4.1 Surrendered EU allowances (EUAs and EUAAs),548641,units,81
+2019,DK,4.1 Surrendered EU allowances (EUAs and EUAAs),561587,units,81
+2020,DK,4.1 Surrendered EU allowances (EUAs and EUAAs),202848,units,81
+2021,DK,4.1 Surrendered EU allowances (EUAs and EUAAs),261973,units,81
+2012,DK,4.2 Surrendered certified emission reductions (CERs),55545,units,81
+2012,DK,4.3 Surrendered emission reduction units (ERUs),122426,units,81
+2020,DK,4.4 Surrendered Units CHU/CHUAA,24,units,81
+2021,DK,4.4 Surrendered Units CHU/CHUAA,41,units,81
+2012,EE,1. Total allocated allowances (EUA or EUAA),35249.30626355165,units,81
+2013,EE,1. Total allocated allowances (EUA or EUAA),33304,units,81
+2014,EE,1. Total allocated allowances (EUA or EUAA),39804,units,81
+2015,EE,1. Total allocated allowances (EUA or EUAA),54448,units,81
+2016,EE,1. Total allocated allowances (EUA or EUAA),8000,units,81
+2017,EE,1. Total allocated allowances (EUA or EUAA),26278,units,81
+2018,EE,1. Total allocated allowances (EUA or EUAA),27278,units,81
+2019,EE,1. Total allocated allowances (EUA or EUAA),27778,units,81
+2020,EE,1. Total allocated allowances (EUA or EUAA),7000,units,81
+2021,EE,1. Total allocated allowances (EUA or EUAA),20216,units,81
+2012,EE,1.1 Freely allocated allowances,58429,units,81
+2013,EE,1.1 Freely allocated allowances,33304,units,81
+2014,EE,1.1 Freely allocated allowances,33304,units,81
+2015,EE,1.1 Freely allocated allowances,32448,units,81
+2017,EE,1.1 Freely allocated allowances,19778,units,81
+2018,EE,1.1 Freely allocated allowances,19778,units,81
+2019,EE,1.1 Freely allocated allowances,19778,units,81
+2021,EE,1.1 Freely allocated allowances,9716,units,81
+2012,EE,1.1.1 Free allocation to existing entities (Art. 10a(1)),58429,units,81
+2013,EE,1.1.1 Free allocation to existing entities (Art. 10a(1)),33304,units,81
+2014,EE,1.1.1 Free allocation to existing entities (Art. 10a(1)),33304,units,81
+2015,EE,1.1.1 Free allocation to existing entities (Art. 10a(1)),32448,units,81
+2021,EE,1.1.1 Free allocation to existing entities (Art. 10a(1)),9716,units,81
+2017,EE,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),19778,units,81
+2018,EE,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),19778,units,81
+2019,EE,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),19778,units,81
+2012,EE,1.2 Correction to freely allocated allowances (not reflected in EUTL),-23179.69373644835,units,81
+2012,EE,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2013,EE,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2014,EE,1.3 Allowances auctioned or sold (EUAs and EUAAs),6500,units,81
+2015,EE,1.3 Allowances auctioned or sold (EUAs and EUAAs),22000,units,81
+2016,EE,1.3 Allowances auctioned or sold (EUAs and EUAAs),8000,units,81
+2017,EE,1.3 Allowances auctioned or sold (EUAs and EUAAs),6500,units,81
+2018,EE,1.3 Allowances auctioned or sold (EUAs and EUAAs),7500,units,81
+2019,EE,1.3 Allowances auctioned or sold (EUAs and EUAAs),8000,units,81
+2020,EE,1.3 Allowances auctioned or sold (EUAs and EUAAs),7000,units,81
+2021,EE,1.3 Allowances auctioned or sold (EUAs and EUAAs),10500,units,81
+2012,EE,2. Verified emissions,92713,tonne of CO2 equ.,81
+2013,EE,2. Verified emissions,74763,tonne of CO2 equ.,81
+2014,EE,2. Verified emissions,76098,tonne of CO2 equ.,81
+2015,EE,2. Verified emissions,72986,tonne of CO2 equ.,81
+2016,EE,2. Verified emissions,15149,tonne of CO2 equ.,81
+2017,EE,2. Verified emissions,32360,tonne of CO2 equ.,81
+2018,EE,2. Verified emissions,36181,tonne of CO2 equ.,81
+2019,EE,2. Verified emissions,28397,tonne of CO2 equ.,81
+2021,EE,2. Verified emissions,9525,tonne of CO2 equ.,81
+2012,EE,2.1 EU-ETS Verified Emission,92713,tonne of CO2 equ.,81
+2013,EE,2.1 EU-ETS Verified Emission,74763,tonne of CO2 equ.,81
+2014,EE,2.1 EU-ETS Verified Emission,76098,tonne of CO2 equ.,81
+2015,EE,2.1 EU-ETS Verified Emission,72986,tonne of CO2 equ.,81
+2016,EE,2.1 EU-ETS Verified Emission,15149,tonne of CO2 equ.,81
+2017,EE,2.1 EU-ETS Verified Emission,32360,tonne of CO2 equ.,81
+2018,EE,2.1 EU-ETS Verified Emission,36181,tonne of CO2 equ.,81
+2019,EE,2.1 EU-ETS Verified Emission,28397,tonne of CO2 equ.,81
+2021,EE,2.1 EU-ETS Verified Emission,9525,tonne of CO2 equ.,81
+2012,EE,4. Total surrendered units,86394,units,81
+2013,EE,4. Total surrendered units,6319,units,81
+2014,EE,4. Total surrendered units,150861,units,81
+2015,EE,4. Total surrendered units,72986,units,81
+2016,EE,4. Total surrendered units,15149,units,81
+2017,EE,4. Total surrendered units,32360,units,81
+2018,EE,4. Total surrendered units,36181,units,81
+2019,EE,4. Total surrendered units,28397,units,81
+2021,EE,4. Total surrendered units,9525,units,81
+2012,EE,4.1 Surrendered EU allowances (EUAs and EUAAs),78587,units,81
+2013,EE,4.1 Surrendered EU allowances (EUAs and EUAAs),6319,units,81
+2014,EE,4.1 Surrendered EU allowances (EUAs and EUAAs),150861,units,81
+2015,EE,4.1 Surrendered EU allowances (EUAs and EUAAs),72986,units,81
+2016,EE,4.1 Surrendered EU allowances (EUAs and EUAAs),15149,units,81
+2017,EE,4.1 Surrendered EU allowances (EUAs and EUAAs),32360,units,81
+2018,EE,4.1 Surrendered EU allowances (EUAs and EUAAs),36181,units,81
+2019,EE,4.1 Surrendered EU allowances (EUAs and EUAAs),28397,units,81
+2021,EE,4.1 Surrendered EU allowances (EUAs and EUAAs),9525,units,81
+2012,EE,4.2 Surrendered certified emission reductions (CERs),7187,units,81
+2012,EE,4.3 Surrendered emission reduction units (ERUs),620,units,81
+2012,ES,1. Total allocated allowances (EUA or EUAA),6663551.334596867,units,81
+2013,ES,1. Total allocated allowances (EUA or EUAA),2981138,units,81
+2014,ES,1. Total allocated allowances (EUA or EUAA),4021705,units,81
+2015,ES,1. Total allocated allowances (EUA or EUAA),5244195,units,81
+2016,ES,1. Total allocated allowances (EUA or EUAA),3772417,units,81
+2017,ES,1. Total allocated allowances (EUA or EUAA),4138400,units,81
+2018,ES,1. Total allocated allowances (EUA or EUAA),4245247,units,81
+2019,ES,1. Total allocated allowances (EUA or EUAA),5367410,units,81
+2020,ES,1. Total allocated allowances (EUA or EUAA),5543399,units,81
+2021,ES,1. Total allocated allowances (EUA or EUAA),3187584,units,81
+2012,ES,1.1 Freely allocated allowances,12349608,units,81
+2013,ES,1.1 Freely allocated allowances,2981138,units,81
+2014,ES,1.1 Freely allocated allowances,2928705,units,81
+2015,ES,1.1 Freely allocated allowances,2924695,units,81
+2016,ES,1.1 Freely allocated allowances,2924917,units,81
+2017,ES,1.1 Freely allocated allowances,3469900,units,81
+2018,ES,1.1 Freely allocated allowances,3453247,units,81
+2019,ES,1.1 Freely allocated allowances,4574910,units,81
+2020,ES,1.1 Freely allocated allowances,4782899,units,81
+2021,ES,1.1 Freely allocated allowances,2624084,units,81
+2012,ES,1.1.1 Free allocation to existing entities (Art. 10a(1)),12349608,units,81
+2013,ES,1.1.1 Free allocation to existing entities (Art. 10a(1)),2981138,units,81
+2014,ES,1.1.1 Free allocation to existing entities (Art. 10a(1)),2928705,units,81
+2015,ES,1.1.1 Free allocation to existing entities (Art. 10a(1)),2924695,units,81
+2016,ES,1.1.1 Free allocation to existing entities (Art. 10a(1)),2924917,units,81
+2017,ES,1.1.1 Free allocation to existing entities (Art. 10a(1)),2941292,units,81
+2018,ES,1.1.1 Free allocation to existing entities (Art. 10a(1)),2924639,units,81
+2019,ES,1.1.1 Free allocation to existing entities (Art. 10a(1)),4046302,units,81
+2020,ES,1.1.1 Free allocation to existing entities (Art. 10a(1)),4123076,units,81
+2021,ES,1.1.1 Free allocation to existing entities (Art. 10a(1)),2313972,units,81
+2017,ES,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),528608,units,81
+2018,ES,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),528608,units,81
+2019,ES,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),528608,units,81
+2020,ES,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),529435,units,81
+2021,ES,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),255690,units,81
+2020,ES,1.1.4 Swiss Free Allocated allowances for aircraft operators,130388,units,81
+2021,ES,1.1.4 Swiss Free Allocated allowances for aircraft operators,54422,units,81
+2012,ES,1.2 Correction to freely allocated allowances (not reflected in EUTL),-5686056.665403133,units,81
+2012,ES,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2013,ES,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2014,ES,1.3 Allowances auctioned or sold (EUAs and EUAAs),1093000,units,81
+2015,ES,1.3 Allowances auctioned or sold (EUAs and EUAAs),2319500,units,81
+2016,ES,1.3 Allowances auctioned or sold (EUAs and EUAAs),847500,units,81
+2017,ES,1.3 Allowances auctioned or sold (EUAs and EUAAs),668500,units,81
+2018,ES,1.3 Allowances auctioned or sold (EUAs and EUAAs),792000,units,81
+2019,ES,1.3 Allowances auctioned or sold (EUAs and EUAAs),792500,units,81
+2020,ES,1.3 Allowances auctioned or sold (EUAs and EUAAs),760500,units,81
+2021,ES,1.3 Allowances auctioned or sold (EUAs and EUAAs),563500,units,81
+2012,ES,2. Verified emissions,7727464,tonne of CO2 equ.,81
+2013,ES,2. Verified emissions,4737554,tonne of CO2 equ.,81
+2014,ES,2. Verified emissions,5229792,tonne of CO2 equ.,81
+2015,ES,2. Verified emissions,5766364,tonne of CO2 equ.,81
+2016,ES,2. Verified emissions,6397562,tonne of CO2 equ.,81
+2017,ES,2. Verified emissions,6783431,tonne of CO2 equ.,81
+2018,ES,2. Verified emissions,10755645,tonne of CO2 equ.,81
+2019,ES,2. Verified emissions,11959842,tonne of CO2 equ.,81
+2020,ES,2. Verified emissions,3420378,tonne of CO2 equ.,81
+2021,ES,2. Verified emissions,3354009,tonne of CO2 equ.,81
+2012,ES,2.1 EU-ETS Verified Emission,7727464,tonne of CO2 equ.,81
+2013,ES,2.1 EU-ETS Verified Emission,4737554,tonne of CO2 equ.,81
+2014,ES,2.1 EU-ETS Verified Emission,5229792,tonne of CO2 equ.,81
+2015,ES,2.1 EU-ETS Verified Emission,5766364,tonne of CO2 equ.,81
+2016,ES,2.1 EU-ETS Verified Emission,6397562,tonne of CO2 equ.,81
+2017,ES,2.1 EU-ETS Verified Emission,6783431,tonne of CO2 equ.,81
+2018,ES,2.1 EU-ETS Verified Emission,10755645,tonne of CO2 equ.,81
+2019,ES,2.1 EU-ETS Verified Emission,11959842,tonne of CO2 equ.,81
+2020,ES,2.1 EU-ETS Verified Emission,3359257,tonne of CO2 equ.,81
+2021,ES,2.1 EU-ETS Verified Emission,3315608,tonne of CO2 equ.,81
+2020,ES,2.2 Swiss Verified Emissions for aircraft operators,61121,tonne of CO2 equ.,81
+2021,ES,2.2 Swiss Verified Emissions for aircraft operators,38401,tonne of CO2 equ.,81
+2012,ES,4. Total surrendered units,7723643,units,81
+2013,ES,4. Total surrendered units,3126,units,81
+2014,ES,4. Total surrendered units,9966829,units,81
+2015,ES,4. Total surrendered units,5767789,units,81
+2016,ES,4. Total surrendered units,6397344,units,81
+2017,ES,4. Total surrendered units,6782639,units,81
+2018,ES,4. Total surrendered units,10755189,units,81
+2019,ES,4. Total surrendered units,11573655,units,81
+2020,ES,4. Total surrendered units,3526599,units,81
+2021,ES,4. Total surrendered units,3633173,units,81
+2012,ES,4.1 Surrendered EU allowances (EUAs and EUAAs),6811227,units,81
+2013,ES,4.1 Surrendered EU allowances (EUAs and EUAAs),3126,units,81
+2014,ES,4.1 Surrendered EU allowances (EUAs and EUAAs),9966829,units,81
+2015,ES,4.1 Surrendered EU allowances (EUAs and EUAAs),5767789,units,81
+2016,ES,4.1 Surrendered EU allowances (EUAs and EUAAs),6397344,units,81
+2017,ES,4.1 Surrendered EU allowances (EUAs and EUAAs),6782639,units,81
+2018,ES,4.1 Surrendered EU allowances (EUAs and EUAAs),10755189,units,81
+2019,ES,4.1 Surrendered EU allowances (EUAs and EUAAs),11573655,units,81
+2020,ES,4.1 Surrendered EU allowances (EUAs and EUAAs),3419628,units,81
+2021,ES,4.1 Surrendered EU allowances (EUAs and EUAAs),3560231,units,81
+2012,ES,4.2 Surrendered certified emission reductions (CERs),586082,units,81
+2012,ES,4.3 Surrendered emission reduction units (ERUs),326334,units,81
+2020,ES,4.4 Surrendered Units CHU/CHUAA,106971,units,81
+2021,ES,4.4 Surrendered Units CHU/CHUAA,72942,units,81
+2012,FI,1. Total allocated allowances (EUA or EUAA),782944.8088470884,units,81
+2013,FI,1. Total allocated allowances (EUA or EUAA),493048,units,81
+2014,FI,1. Total allocated allowances (EUA or EUAA),628548,units,81
+2015,FI,1. Total allocated allowances (EUA or EUAA),795548,units,81
+2016,FI,1. Total allocated allowances (EUA or EUAA),576079,units,81
+2017,FI,1. Total allocated allowances (EUA or EUAA),580048,units,81
+2018,FI,1. Total allocated allowances (EUA or EUAA),596548,units,81
+2019,FI,1. Total allocated allowances (EUA or EUAA),596048,units,81
+2020,FI,1. Total allocated allowances (EUA or EUAA),623022,units,81
+2021,FI,1. Total allocated allowances (EUA or EUAA),566809,units,81
+2012,FI,1.1 Freely allocated allowances,2109689,units,81
+2013,FI,1.1 Freely allocated allowances,493048,units,81
+2014,FI,1.1 Freely allocated allowances,493048,units,81
+2015,FI,1.1 Freely allocated allowances,493048,units,81
+2016,FI,1.1 Freely allocated allowances,465579,units,81
+2017,FI,1.1 Freely allocated allowances,493048,units,81
+2018,FI,1.1 Freely allocated allowances,493048,units,81
+2019,FI,1.1 Freely allocated allowances,493048,units,81
+2020,FI,1.1 Freely allocated allowances,523522,units,81
+2021,FI,1.1 Freely allocated allowances,485809,units,81
+2012,FI,1.1.1 Free allocation to existing entities (Art. 10a(1)),2109689,units,81
+2013,FI,1.1.1 Free allocation to existing entities (Art. 10a(1)),493048,units,81
+2014,FI,1.1.1 Free allocation to existing entities (Art. 10a(1)),493048,units,81
+2015,FI,1.1.1 Free allocation to existing entities (Art. 10a(1)),493048,units,81
+2016,FI,1.1.1 Free allocation to existing entities (Art. 10a(1)),465579,units,81
+2017,FI,1.1.1 Free allocation to existing entities (Art. 10a(1)),493048,units,81
+2018,FI,1.1.1 Free allocation to existing entities (Art. 10a(1)),493048,units,81
+2019,FI,1.1.1 Free allocation to existing entities (Art. 10a(1)),493048,units,81
+2020,FI,1.1.1 Free allocation to existing entities (Art. 10a(1)),504434,units,81
+2021,FI,1.1.1 Free allocation to existing entities (Art. 10a(1)),467141,units,81
+2020,FI,1.1.4 Swiss Free Allocated allowances for aircraft operators,19088,units,81
+2021,FI,1.1.4 Swiss Free Allocated allowances for aircraft operators,18668,units,81
+2012,FI,1.2 Correction to freely allocated allowances (not reflected in EUTL),-1326744.191152912,units,81
+2012,FI,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2013,FI,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2014,FI,1.3 Allowances auctioned or sold (EUAs and EUAAs),135500,units,81
+2015,FI,1.3 Allowances auctioned or sold (EUAs and EUAAs),302500,units,81
+2016,FI,1.3 Allowances auctioned or sold (EUAs and EUAAs),110500,units,81
+2017,FI,1.3 Allowances auctioned or sold (EUAs and EUAAs),87000,units,81
+2018,FI,1.3 Allowances auctioned or sold (EUAs and EUAAs),103500,units,81
+2019,FI,1.3 Allowances auctioned or sold (EUAs and EUAAs),103000,units,81
+2020,FI,1.3 Allowances auctioned or sold (EUAs and EUAAs),99500,units,81
+2021,FI,1.3 Allowances auctioned or sold (EUAs and EUAAs),81000,units,81
+2012,FI,2. Verified emissions,1186065,tonne of CO2 equ.,81
+2013,FI,2. Verified emissions,893377,tonne of CO2 equ.,81
+2014,FI,2. Verified emissions,914529,tonne of CO2 equ.,81
+2015,FI,2. Verified emissions,952946,tonne of CO2 equ.,81
+2016,FI,2. Verified emissions,988867,tonne of CO2 equ.,81
+2017,FI,2. Verified emissions,1051966,tonne of CO2 equ.,81
+2018,FI,2. Verified emissions,1170188,tonne of CO2 equ.,81
+2019,FI,2. Verified emissions,1252207,tonne of CO2 equ.,81
+2020,FI,2. Verified emissions,400826,tonne of CO2 equ.,81
+2021,FI,2. Verified emissions,340437,tonne of CO2 equ.,81
+2012,FI,2.1 EU-ETS Verified Emission,1186065,tonne of CO2 equ.,81
+2013,FI,2.1 EU-ETS Verified Emission,893377,tonne of CO2 equ.,81
+2014,FI,2.1 EU-ETS Verified Emission,914529,tonne of CO2 equ.,81
+2015,FI,2.1 EU-ETS Verified Emission,952946,tonne of CO2 equ.,81
+2016,FI,2.1 EU-ETS Verified Emission,988867,tonne of CO2 equ.,81
+2017,FI,2.1 EU-ETS Verified Emission,1051966,tonne of CO2 equ.,81
+2018,FI,2.1 EU-ETS Verified Emission,1170188,tonne of CO2 equ.,81
+2019,FI,2.1 EU-ETS Verified Emission,1252207,tonne of CO2 equ.,81
+2020,FI,2.1 EU-ETS Verified Emission,390484,tonne of CO2 equ.,81
+2021,FI,2.1 EU-ETS Verified Emission,330540,tonne of CO2 equ.,81
+2020,FI,2.2 Swiss Verified Emissions for aircraft operators,10342,tonne of CO2 equ.,81
+2021,FI,2.2 Swiss Verified Emissions for aircraft operators,9897,tonne of CO2 equ.,81
+2012,FI,4. Total surrendered units,1186013,units,81
+2014,FI,4. Total surrendered units,1807894,units,81
+2015,FI,4. Total surrendered units,952958,units,81
+2016,FI,4. Total surrendered units,988868,units,81
+2017,FI,4. Total surrendered units,1051965,units,81
+2018,FI,4. Total surrendered units,1170188,units,81
+2019,FI,4. Total surrendered units,1252207,units,81
+2020,FI,4. Total surrendered units,400826,units,81
+2021,FI,4. Total surrendered units,340489,units,81
+2012,FI,4.1 Surrendered EU allowances (EUAs and EUAAs),1047479,units,81
+2014,FI,4.1 Surrendered EU allowances (EUAs and EUAAs),1807894,units,81
+2015,FI,4.1 Surrendered EU allowances (EUAs and EUAAs),952958,units,81
+2016,FI,4.1 Surrendered EU allowances (EUAs and EUAAs),988868,units,81
+2017,FI,4.1 Surrendered EU allowances (EUAs and EUAAs),1051965,units,81
+2018,FI,4.1 Surrendered EU allowances (EUAs and EUAAs),1170188,units,81
+2019,FI,4.1 Surrendered EU allowances (EUAs and EUAAs),1252207,units,81
+2020,FI,4.1 Surrendered EU allowances (EUAs and EUAAs),390484,units,81
+2021,FI,4.1 Surrendered EU allowances (EUAs and EUAAs),330592,units,81
+2012,FI,4.2 Surrendered certified emission reductions (CERs),138534,units,81
+2020,FI,4.4 Surrendered Units CHU/CHUAA,10342,units,81
+2021,FI,4.4 Surrendered Units CHU/CHUAA,9897,units,81
+2012,FR,1. Total allocated allowances (EUA or EUAA),12986777.08816785,units,81
+2013,FR,1. Total allocated allowances (EUA or EUAA),2103332,units,81
+2014,FR,1. Total allocated allowances (EUA or EUAA),3768006,units,81
+2015,FR,1. Total allocated allowances (EUA or EUAA),3824822,units,81
+2016,FR,1. Total allocated allowances (EUA or EUAA),2679282,units,81
+2017,FR,1. Total allocated allowances (EUA or EUAA),2545215,units,81
+2018,FR,1. Total allocated allowances (EUA or EUAA),2637731,units,81
+2019,FR,1. Total allocated allowances (EUA or EUAA),2588387,units,81
+2020,FR,1. Total allocated allowances (EUA or EUAA),2554481,units,81
+2021,FR,1. Total allocated allowances (EUA or EUAA),2239202,units,81
+2012,FR,1.1 Freely allocated allowances,25284355,units,81
+2013,FR,1.1 Freely allocated allowances,2103332,units,81
+2014,FR,1.1 Freely allocated allowances,2094006,units,81
+2015,FR,1.1 Freely allocated allowances,2093822,units,81
+2016,FR,1.1 Freely allocated allowances,2046782,units,81
+2017,FR,1.1 Freely allocated allowances,2047215,units,81
+2018,FR,1.1 Freely allocated allowances,2047231,units,81
+2019,FR,1.1 Freely allocated allowances,1997387,units,81
+2020,FR,1.1 Freely allocated allowances,1986981,units,81
+2021,FR,1.1 Freely allocated allowances,1812702,units,81
+2012,FR,1.1.1 Free allocation to existing entities (Art. 10a(1)),25284355,units,81
+2013,FR,1.1.1 Free allocation to existing entities (Art. 10a(1)),2103332,units,81
+2014,FR,1.1.1 Free allocation to existing entities (Art. 10a(1)),2094006,units,81
+2015,FR,1.1.1 Free allocation to existing entities (Art. 10a(1)),2093822,units,81
+2016,FR,1.1.1 Free allocation to existing entities (Art. 10a(1)),2046782,units,81
+2017,FR,1.1.1 Free allocation to existing entities (Art. 10a(1)),2047215,units,81
+2018,FR,1.1.1 Free allocation to existing entities (Art. 10a(1)),2047231,units,81
+2019,FR,1.1.1 Free allocation to existing entities (Art. 10a(1)),1997387,units,81
+2020,FR,1.1.1 Free allocation to existing entities (Art. 10a(1)),1968315,units,81
+2021,FR,1.1.1 Free allocation to existing entities (Art. 10a(1)),1794752,units,81
+2020,FR,1.1.4 Swiss Free Allocated allowances for aircraft operators,18666,units,81
+2021,FR,1.1.4 Swiss Free Allocated allowances for aircraft operators,17950,units,81
+2012,FR,1.2 Correction to freely allocated allowances (not reflected in EUTL),-12297577.91183215,units,81
+2012,FR,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2013,FR,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2014,FR,1.3 Allowances auctioned or sold (EUAs and EUAAs),1674000,units,81
+2015,FR,1.3 Allowances auctioned or sold (EUAs and EUAAs),1731000,units,81
+2016,FR,1.3 Allowances auctioned or sold (EUAs and EUAAs),632500,units,81
+2017,FR,1.3 Allowances auctioned or sold (EUAs and EUAAs),498000,units,81
+2018,FR,1.3 Allowances auctioned or sold (EUAs and EUAAs),590500,units,81
+2019,FR,1.3 Allowances auctioned or sold (EUAs and EUAAs),591000,units,81
+2020,FR,1.3 Allowances auctioned or sold (EUAs and EUAAs),567500,units,81
+2021,FR,1.3 Allowances auctioned or sold (EUAs and EUAAs),426500,units,81
+2012,FR,2. Verified emissions,9832156,tonne of CO2 equ.,81
+2013,FR,2. Verified emissions,4153800,tonne of CO2 equ.,81
+2014,FR,2. Verified emissions,3956155,tonne of CO2 equ.,81
+2015,FR,2. Verified emissions,4055404,tonne of CO2 equ.,81
+2016,FR,2. Verified emissions,4067686,tonne of CO2 equ.,81
+2017,FR,2. Verified emissions,4178059,tonne of CO2 equ.,81
+2018,FR,2. Verified emissions,4237451,tonne of CO2 equ.,81
+2019,FR,2. Verified emissions,4221394,tonne of CO2 equ.,81
+2020,FR,2. Verified emissions,1859301,tonne of CO2 equ.,81
+2021,FR,2. Verified emissions,2262074,tonne of CO2 equ.,81
+2012,FR,2.1 EU-ETS Verified Emission,9832156,tonne of CO2 equ.,81
+2013,FR,2.1 EU-ETS Verified Emission,4153800,tonne of CO2 equ.,81
+2014,FR,2.1 EU-ETS Verified Emission,3956155,tonne of CO2 equ.,81
+2015,FR,2.1 EU-ETS Verified Emission,4055404,tonne of CO2 equ.,81
+2016,FR,2.1 EU-ETS Verified Emission,4067686,tonne of CO2 equ.,81
+2017,FR,2.1 EU-ETS Verified Emission,4178059,tonne of CO2 equ.,81
+2018,FR,2.1 EU-ETS Verified Emission,4237451,tonne of CO2 equ.,81
+2019,FR,2.1 EU-ETS Verified Emission,4221394,tonne of CO2 equ.,81
+2020,FR,2.1 EU-ETS Verified Emission,1843380,tonne of CO2 equ.,81
+2021,FR,2.1 EU-ETS Verified Emission,2246318,tonne of CO2 equ.,81
+2020,FR,2.2 Swiss Verified Emissions for aircraft operators,15921,tonne of CO2 equ.,81
+2021,FR,2.2 Swiss Verified Emissions for aircraft operators,15756,tonne of CO2 equ.,81
+2012,FR,4. Total surrendered units,9793335,units,81
+2013,FR,4. Total surrendered units,25673,units,81
+2014,FR,4. Total surrendered units,7985750,units,81
+2015,FR,4. Total surrendered units,4006060,units,81
+2016,FR,4. Total surrendered units,4210032,units,81
+2017,FR,4. Total surrendered units,4205734,units,81
+2018,FR,4. Total surrendered units,4223976,units,81
+2019,FR,4. Total surrendered units,4203587,units,81
+2020,FR,4. Total surrendered units,1864134,units,81
+2021,FR,4. Total surrendered units,2235118,units,81
+2012,FR,4.1 Surrendered EU allowances (EUAs and EUAAs),8628743,units,81
+2013,FR,4.1 Surrendered EU allowances (EUAs and EUAAs),25673,units,81
+2014,FR,4.1 Surrendered EU allowances (EUAs and EUAAs),7985750,units,81
+2015,FR,4.1 Surrendered EU allowances (EUAs and EUAAs),4006060,units,81
+2016,FR,4.1 Surrendered EU allowances (EUAs and EUAAs),4210032,units,81
+2017,FR,4.1 Surrendered EU allowances (EUAs and EUAAs),4205734,units,81
+2018,FR,4.1 Surrendered EU allowances (EUAs and EUAAs),4223976,units,81
+2019,FR,4.1 Surrendered EU allowances (EUAs and EUAAs),4203587,units,81
+2020,FR,4.1 Surrendered EU allowances (EUAs and EUAAs),1845865,units,81
+2021,FR,4.1 Surrendered EU allowances (EUAs and EUAAs),2221997,units,81
+2012,FR,4.2 Surrendered certified emission reductions (CERs),553099,units,81
+2012,FR,4.3 Surrendered emission reduction units (ERUs),611493,units,81
+2020,FR,4.4 Surrendered Units CHU/CHUAA,18269,units,81
+2021,FR,4.4 Surrendered Units CHU/CHUAA,13121,units,81
+2012,GB,1. Total allocated allowances (EUA or EUAA),-31268110.54465247,units,81
+2013,GB,1. Total allocated allowances (EUA or EUAA),4103267,units,81
+2014,GB,1. Total allocated allowances (EUA or EUAA),4102623,units,81
+2015,GB,1. Total allocated allowances (EUA or EUAA),4102328,units,81
+2016,GB,1. Total allocated allowances (EUA or EUAA),4097526,units,81
+2017,GB,1. Total allocated allowances (EUA or EUAA),4097487,units,81
+2018,GB,1. Total allocated allowances (EUA or EUAA),3614580,units,81
+2019,GB,1. Total allocated allowances (EUA or EUAA),671962,units,81
+2020,GB,1. Total allocated allowances (EUA or EUAA),565286,units,81
+2021,GB,1. Total allocated allowances (EUA or EUAA),0,units,81
+2012,GB,1.1 Freely allocated allowances,10656298,units,81
+2013,GB,1.1 Freely allocated allowances,4103267,units,81
+2014,GB,1.1 Freely allocated allowances,4102623,units,81
+2015,GB,1.1 Freely allocated allowances,4102328,units,81
+2016,GB,1.1 Freely allocated allowances,4097526,units,81
+2017,GB,1.1 Freely allocated allowances,4097487,units,81
+2018,GB,1.1 Freely allocated allowances,3614580,units,81
+2019,GB,1.1 Freely allocated allowances,671962,units,81
+2020,GB,1.1 Freely allocated allowances,565286,units,81
+2012,GB,1.1.1 Free allocation to existing entities (Art. 10a(1)),10656298,units,81
+2013,GB,1.1.1 Free allocation to existing entities (Art. 10a(1)),4103267,units,81
+2014,GB,1.1.1 Free allocation to existing entities (Art. 10a(1)),4102623,units,81
+2015,GB,1.1.1 Free allocation to existing entities (Art. 10a(1)),4102328,units,81
+2016,GB,1.1.1 Free allocation to existing entities (Art. 10a(1)),4097526,units,81
+2017,GB,1.1.1 Free allocation to existing entities (Art. 10a(1)),4097487,units,81
+2018,GB,1.1.1 Free allocation to existing entities (Art. 10a(1)),3614580,units,81
+2019,GB,1.1.1 Free allocation to existing entities (Art. 10a(1)),671962,units,81
+2020,GB,1.1.1 Free allocation to existing entities (Art. 10a(1)),564805,units,81
+2020,GB,1.1.4 Swiss Free Allocated allowances for aircraft operators,481,units,81
+2012,GB,1.2 Correction to freely allocated allowances (not reflected in EUTL),-41924408.54465247,units,81
+2012,GB,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2013,GB,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2014,GB,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2015,GB,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2016,GB,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2017,GB,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2018,GB,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2019,GB,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2020,GB,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2021,GB,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2012,GB,2. Verified emissions,9645333,tonne of CO2 equ.,81
+2013,GB,2. Verified emissions,6064173,tonne of CO2 equ.,81
+2014,GB,2. Verified emissions,6183188,tonne of CO2 equ.,81
+2015,GB,2. Verified emissions,6353083,tonne of CO2 equ.,81
+2016,GB,2. Verified emissions,6912136,tonne of CO2 equ.,81
+2017,GB,2. Verified emissions,7324178,tonne of CO2 equ.,81
+2018,GB,2. Verified emissions,4148125,tonne of CO2 equ.,81
+2019,GB,2. Verified emissions,1114199,tonne of CO2 equ.,81
+2020,GB,2. Verified emissions,219580,tonne of CO2 equ.,81
+2012,GB,2.1 EU-ETS Verified Emission,9645333,tonne of CO2 equ.,81
+2013,GB,2.1 EU-ETS Verified Emission,6064173,tonne of CO2 equ.,81
+2014,GB,2.1 EU-ETS Verified Emission,6183188,tonne of CO2 equ.,81
+2015,GB,2.1 EU-ETS Verified Emission,6353083,tonne of CO2 equ.,81
+2016,GB,2.1 EU-ETS Verified Emission,6912136,tonne of CO2 equ.,81
+2017,GB,2.1 EU-ETS Verified Emission,7324178,tonne of CO2 equ.,81
+2018,GB,2.1 EU-ETS Verified Emission,4148125,tonne of CO2 equ.,81
+2019,GB,2.1 EU-ETS Verified Emission,1114199,tonne of CO2 equ.,81
+2020,GB,2.1 EU-ETS Verified Emission,218689,tonne of CO2 equ.,81
+2020,GB,2.2 Swiss Verified Emissions for aircraft operators,891,tonne of CO2 equ.,81
+2012,GB,4. Total surrendered units,9625563,units,81
+2013,GB,4. Total surrendered units,8129,units,81
+2014,GB,4. Total surrendered units,12353800,units,81
+2015,GB,4. Total surrendered units,6350479,units,81
+2016,GB,4. Total surrendered units,6818118,units,81
+2017,GB,4. Total surrendered units,6734733,units,81
+2018,GB,4. Total surrendered units,4252506,units,81
+2019,GB,4. Total surrendered units,277238,units,81
+2020,GB,4. Total surrendered units,146455,units,81
+2012,GB,4.1 Surrendered EU allowances (EUAs and EUAAs),8383595,units,81
+2013,GB,4.1 Surrendered EU allowances (EUAs and EUAAs),8129,units,81
+2014,GB,4.1 Surrendered EU allowances (EUAs and EUAAs),12353800,units,81
+2015,GB,4.1 Surrendered EU allowances (EUAs and EUAAs),6350479,units,81
+2016,GB,4.1 Surrendered EU allowances (EUAs and EUAAs),6818118,units,81
+2017,GB,4.1 Surrendered EU allowances (EUAs and EUAAs),6734733,units,81
+2018,GB,4.1 Surrendered EU allowances (EUAs and EUAAs),4252506,units,81
+2019,GB,4.1 Surrendered EU allowances (EUAs and EUAAs),277238,units,81
+2020,GB,4.1 Surrendered EU allowances (EUAs and EUAAs),146452,units,81
+2012,GB,4.2 Surrendered certified emission reductions (CERs),821324,units,81
+2012,GB,4.3 Surrendered emission reduction units (ERUs),420644,units,81
+2020,GB,4.4 Surrendered Units CHU/CHUAA,3,units,81
+2012,GR,1. Total allocated allowances (EUA or EUAA),691074.6307744503,units,81
+2013,GR,1. Total allocated allowances (EUA or EUAA),607343,units,81
+2014,GR,1. Total allocated allowances (EUA or EUAA),790342,units,81
+2015,GR,1. Total allocated allowances (EUA or EUAA),1316842,units,81
+2016,GR,1. Total allocated allowances (EUA or EUAA),866842,units,81
+2017,GR,1. Total allocated allowances (EUA or EUAA),815186,units,81
+2018,GR,1. Total allocated allowances (EUA or EUAA),856280,units,81
+2019,GR,1. Total allocated allowances (EUA or EUAA),856142,units,81
+2020,GR,1. Total allocated allowances (EUA or EUAA),862859,units,81
+2021,GR,1. Total allocated allowances (EUA or EUAA),770175,units,81
+2012,GR,1.1 Freely allocated allowances,717685,units,81
+2013,GR,1.1 Freely allocated allowances,607343,units,81
+2014,GR,1.1 Freely allocated allowances,607342,units,81
+2015,GR,1.1 Freely allocated allowances,607342,units,81
+2016,GR,1.1 Freely allocated allowances,607342,units,81
+2017,GR,1.1 Freely allocated allowances,610686,units,81
+2018,GR,1.1 Freely allocated allowances,614280,units,81
+2019,GR,1.1 Freely allocated allowances,613642,units,81
+2020,GR,1.1 Freely allocated allowances,629859,units,81
+2021,GR,1.1 Freely allocated allowances,572675,units,81
+2012,GR,1.1.1 Free allocation to existing entities (Art. 10a(1)),717685,units,81
+2013,GR,1.1.1 Free allocation to existing entities (Art. 10a(1)),607343,units,81
+2014,GR,1.1.1 Free allocation to existing entities (Art. 10a(1)),607342,units,81
+2015,GR,1.1.1 Free allocation to existing entities (Art. 10a(1)),607342,units,81
+2016,GR,1.1.1 Free allocation to existing entities (Art. 10a(1)),607342,units,81
+2017,GR,1.1.1 Free allocation to existing entities (Art. 10a(1)),607342,units,81
+2018,GR,1.1.1 Free allocation to existing entities (Art. 10a(1)),610298,units,81
+2019,GR,1.1.1 Free allocation to existing entities (Art. 10a(1)),610298,units,81
+2020,GR,1.1.1 Free allocation to existing entities (Art. 10a(1)),610377,units,81
+2021,GR,1.1.1 Free allocation to existing entities (Art. 10a(1)),556892,units,81
+2017,GR,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),3344,units,81
+2018,GR,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),3982,units,81
+2019,GR,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),3344,units,81
+2020,GR,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),3344,units,81
+2020,GR,1.1.4 Swiss Free Allocated allowances for aircraft operators,16138,units,81
+2021,GR,1.1.4 Swiss Free Allocated allowances for aircraft operators,15783,units,81
+2012,GR,1.2 Correction to freely allocated allowances (not reflected in EUTL),-26610.36922554974,units,81
+2012,GR,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2013,GR,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2014,GR,1.3 Allowances auctioned or sold (EUAs and EUAAs),183000,units,81
+2015,GR,1.3 Allowances auctioned or sold (EUAs and EUAAs),709500,units,81
+2016,GR,1.3 Allowances auctioned or sold (EUAs and EUAAs),259500,units,81
+2017,GR,1.3 Allowances auctioned or sold (EUAs and EUAAs),204500,units,81
+2018,GR,1.3 Allowances auctioned or sold (EUAs and EUAAs),242000,units,81
+2019,GR,1.3 Allowances auctioned or sold (EUAs and EUAAs),242500,units,81
+2020,GR,1.3 Allowances auctioned or sold (EUAs and EUAAs),233000,units,81
+2021,GR,1.3 Allowances auctioned or sold (EUAs and EUAAs),197500,units,81
+2012,GR,2. Verified emissions,792521,tonne of CO2 equ.,81
+2013,GR,2. Verified emissions,735486,tonne of CO2 equ.,81
+2014,GR,2. Verified emissions,824112,tonne of CO2 equ.,81
+2015,GR,2. Verified emissions,952885,tonne of CO2 equ.,81
+2016,GR,2. Verified emissions,1035881,tonne of CO2 equ.,81
+2017,GR,2. Verified emissions,1083288,tonne of CO2 equ.,81
+2018,GR,2. Verified emissions,1156450,tonne of CO2 equ.,81
+2019,GR,2. Verified emissions,1220992,tonne of CO2 equ.,81
+2020,GR,2. Verified emissions,496260,tonne of CO2 equ.,81
+2021,GR,2. Verified emissions,737790,tonne of CO2 equ.,81
+2012,GR,2.1 EU-ETS Verified Emission,792521,tonne of CO2 equ.,81
+2013,GR,2.1 EU-ETS Verified Emission,735486,tonne of CO2 equ.,81
+2014,GR,2.1 EU-ETS Verified Emission,824112,tonne of CO2 equ.,81
+2015,GR,2.1 EU-ETS Verified Emission,952885,tonne of CO2 equ.,81
+2016,GR,2.1 EU-ETS Verified Emission,1035881,tonne of CO2 equ.,81
+2017,GR,2.1 EU-ETS Verified Emission,1083288,tonne of CO2 equ.,81
+2018,GR,2.1 EU-ETS Verified Emission,1156450,tonne of CO2 equ.,81
+2019,GR,2.1 EU-ETS Verified Emission,1220992,tonne of CO2 equ.,81
+2020,GR,2.1 EU-ETS Verified Emission,487017,tonne of CO2 equ.,81
+2021,GR,2.1 EU-ETS Verified Emission,722906,tonne of CO2 equ.,81
+2020,GR,2.2 Swiss Verified Emissions for aircraft operators,9243,tonne of CO2 equ.,81
+2021,GR,2.2 Swiss Verified Emissions for aircraft operators,14884,tonne of CO2 equ.,81
+2012,GR,4. Total surrendered units,791080,units,81
+2013,GR,4. Total surrendered units,172,units,81
+2014,GR,4. Total surrendered units,1500402,units,81
+2015,GR,4. Total surrendered units,934768,units,81
+2016,GR,4. Total surrendered units,1011070,units,81
+2017,GR,4. Total surrendered units,1041081,units,81
+2018,GR,4. Total surrendered units,1156222,units,81
+2019,GR,4. Total surrendered units,1220488,units,81
+2020,GR,4. Total surrendered units,529217,units,81
+2021,GR,4. Total surrendered units,737337,units,81
+2012,GR,4.1 Surrendered EU allowances (EUAs and EUAAs),674349,units,81
+2013,GR,4.1 Surrendered EU allowances (EUAs and EUAAs),172,units,81
+2014,GR,4.1 Surrendered EU allowances (EUAs and EUAAs),1500402,units,81
+2015,GR,4.1 Surrendered EU allowances (EUAs and EUAAs),934768,units,81
+2016,GR,4.1 Surrendered EU allowances (EUAs and EUAAs),1011070,units,81
+2017,GR,4.1 Surrendered EU allowances (EUAs and EUAAs),1041081,units,81
+2018,GR,4.1 Surrendered EU allowances (EUAs and EUAAs),1156222,units,81
+2019,GR,4.1 Surrendered EU allowances (EUAs and EUAAs),1220488,units,81
+2020,GR,4.1 Surrendered EU allowances (EUAs and EUAAs),520016,units,81
+2021,GR,4.1 Surrendered EU allowances (EUAs and EUAAs),722515,units,81
+2012,GR,4.2 Surrendered certified emission reductions (CERs),26232,units,81
+2012,GR,4.3 Surrendered emission reduction units (ERUs),90499,units,81
+2020,GR,4.4 Surrendered Units CHU/CHUAA,9201,units,81
+2021,GR,4.4 Surrendered Units CHU/CHUAA,14822,units,81
+2012,HR,1. Total allocated allowances (EUA or EUAA),66442,units,81
+2013,HR,1. Total allocated allowances (EUA or EUAA),62717,units,81
+2014,HR,1. Total allocated allowances (EUA or EUAA),85828,units,81
+2015,HR,1. Total allocated allowances (EUA or EUAA),154828,units,81
+2016,HR,1. Total allocated allowances (EUA or EUAA),116828,units,81
+2017,HR,1. Total allocated allowances (EUA or EUAA),110828,units,81
+2018,HR,1. Total allocated allowances (EUA or EUAA),114828,units,81
+2019,HR,1. Total allocated allowances (EUA or EUAA),115328,units,81
+2020,HR,1. Total allocated allowances (EUA or EUAA),119506,units,81
+2021,HR,1. Total allocated allowances (EUA or EUAA),103645,units,81
+2012,HR,1.1 Freely allocated allowances,66442,units,81
+2013,HR,1.1 Freely allocated allowances,62717,units,81
+2014,HR,1.1 Freely allocated allowances,85828,units,81
+2015,HR,1.1 Freely allocated allowances,85828,units,81
+2016,HR,1.1 Freely allocated allowances,85828,units,81
+2017,HR,1.1 Freely allocated allowances,85828,units,81
+2018,HR,1.1 Freely allocated allowances,85828,units,81
+2019,HR,1.1 Freely allocated allowances,85828,units,81
+2020,HR,1.1 Freely allocated allowances,91506,units,81
+2021,HR,1.1 Freely allocated allowances,74645,units,81
+2012,HR,1.1.1 Free allocation to existing entities (Art. 10a(1)),66442,units,81
+2013,HR,1.1.1 Free allocation to existing entities (Art. 10a(1)),62717,units,81
+2014,HR,1.1.1 Free allocation to existing entities (Art. 10a(1)),85828,units,81
+2015,HR,1.1.1 Free allocation to existing entities (Art. 10a(1)),85828,units,81
+2016,HR,1.1.1 Free allocation to existing entities (Art. 10a(1)),85828,units,81
+2017,HR,1.1.1 Free allocation to existing entities (Art. 10a(1)),85828,units,81
+2018,HR,1.1.1 Free allocation to existing entities (Art. 10a(1)),85828,units,81
+2019,HR,1.1.1 Free allocation to existing entities (Art. 10a(1)),85828,units,81
+2020,HR,1.1.1 Free allocation to existing entities (Art. 10a(1)),88551,units,81
+2021,HR,1.1.1 Free allocation to existing entities (Art. 10a(1)),71755,units,81
+2020,HR,1.1.4 Swiss Free Allocated allowances for aircraft operators,2955,units,81
+2021,HR,1.1.4 Swiss Free Allocated allowances for aircraft operators,2890,units,81
+2012,HR,1.2 Correction to freely allocated allowances (not reflected in EUTL),0,units,81
+2012,HR,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2013,HR,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2014,HR,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2015,HR,1.3 Allowances auctioned or sold (EUAs and EUAAs),69000,units,81
+2016,HR,1.3 Allowances auctioned or sold (EUAs and EUAAs),31000,units,81
+2017,HR,1.3 Allowances auctioned or sold (EUAs and EUAAs),25000,units,81
+2018,HR,1.3 Allowances auctioned or sold (EUAs and EUAAs),29000,units,81
+2019,HR,1.3 Allowances auctioned or sold (EUAs and EUAAs),29500,units,81
+2020,HR,1.3 Allowances auctioned or sold (EUAs and EUAAs),28000,units,81
+2021,HR,1.3 Allowances auctioned or sold (EUAs and EUAAs),29000,units,81
+2012,HR,2. Verified emissions,130931,tonne of CO2 equ.,81
+2013,HR,2. Verified emissions,124782,tonne of CO2 equ.,81
+2014,HR,2. Verified emissions,150608,tonne of CO2 equ.,81
+2015,HR,2. Verified emissions,154276,tonne of CO2 equ.,81
+2016,HR,2. Verified emissions,162454,tonne of CO2 equ.,81
+2017,HR,2. Verified emissions,171297,tonne of CO2 equ.,81
+2018,HR,2. Verified emissions,174695,tonne of CO2 equ.,81
+2019,HR,2. Verified emissions,178606,tonne of CO2 equ.,81
+2020,HR,2. Verified emissions,74828,tonne of CO2 equ.,81
+2021,HR,2. Verified emissions,108788,tonne of CO2 equ.,81
+2012,HR,2.1 EU-ETS Verified Emission,130931,tonne of CO2 equ.,81
+2013,HR,2.1 EU-ETS Verified Emission,124782,tonne of CO2 equ.,81
+2014,HR,2.1 EU-ETS Verified Emission,150608,tonne of CO2 equ.,81
+2015,HR,2.1 EU-ETS Verified Emission,154276,tonne of CO2 equ.,81
+2016,HR,2.1 EU-ETS Verified Emission,162454,tonne of CO2 equ.,81
+2017,HR,2.1 EU-ETS Verified Emission,171297,tonne of CO2 equ.,81
+2018,HR,2.1 EU-ETS Verified Emission,174695,tonne of CO2 equ.,81
+2019,HR,2.1 EU-ETS Verified Emission,178606,tonne of CO2 equ.,81
+2020,HR,2.1 EU-ETS Verified Emission,72905,tonne of CO2 equ.,81
+2021,HR,2.1 EU-ETS Verified Emission,106437,tonne of CO2 equ.,81
+2020,HR,2.2 Swiss Verified Emissions for aircraft operators,1923,tonne of CO2 equ.,81
+2021,HR,2.2 Swiss Verified Emissions for aircraft operators,2351,tonne of CO2 equ.,81
+2012,HR,4. Total surrendered units,130931,units,81
+2014,HR,4. Total surrendered units,275390,units,81
+2015,HR,4. Total surrendered units,154276,units,81
+2016,HR,4. Total surrendered units,162454,units,81
+2017,HR,4. Total surrendered units,171297,units,81
+2018,HR,4. Total surrendered units,174695,units,81
+2019,HR,4. Total surrendered units,178606,units,81
+2020,HR,4. Total surrendered units,74828,units,81
+2021,HR,4. Total surrendered units,108788,units,81
+2012,HR,4.1 Surrendered EU allowances (EUAs and EUAAs),111292,units,81
+2014,HR,4.1 Surrendered EU allowances (EUAs and EUAAs),275390,units,81
+2015,HR,4.1 Surrendered EU allowances (EUAs and EUAAs),154276,units,81
+2016,HR,4.1 Surrendered EU allowances (EUAs and EUAAs),162454,units,81
+2017,HR,4.1 Surrendered EU allowances (EUAs and EUAAs),171297,units,81
+2018,HR,4.1 Surrendered EU allowances (EUAs and EUAAs),174695,units,81
+2019,HR,4.1 Surrendered EU allowances (EUAs and EUAAs),178606,units,81
+2020,HR,4.1 Surrendered EU allowances (EUAs and EUAAs),72905,units,81
+2021,HR,4.1 Surrendered EU allowances (EUAs and EUAAs),106545,units,81
+2012,HR,4.3 Surrendered emission reduction units (ERUs),19639,units,81
+2020,HR,4.4 Surrendered Units CHU/CHUAA,1923,units,81
+2021,HR,4.4 Surrendered Units CHU/CHUAA,2243,units,81
+2012,HU,1. Total allocated allowances (EUA or EUAA),1085442.437443991,units,81
+2013,HU,1. Total allocated allowances (EUA or EUAA),740143,units,81
+2014,HU,1. Total allocated allowances (EUA or EUAA),788143,units,81
+2015,HU,1. Total allocated allowances (EUA or EUAA),881143,units,81
+2016,HU,1. Total allocated allowances (EUA or EUAA),791643,units,81
+2017,HU,1. Total allocated allowances (EUA or EUAA),780643,units,81
+2018,HU,1. Total allocated allowances (EUA or EUAA),788143,units,81
+2019,HU,1. Total allocated allowances (EUA or EUAA),788143,units,81
+2020,HU,1. Total allocated allowances (EUA or EUAA),784973,units,81
+2021,HU,1. Total allocated allowances (EUA or EUAA),645284,units,81
+2012,HU,1.1 Freely allocated allowances,1097418,units,81
+2013,HU,1.1 Freely allocated allowances,740143,units,81
+2014,HU,1.1 Freely allocated allowances,740143,units,81
+2015,HU,1.1 Freely allocated allowances,740143,units,81
+2016,HU,1.1 Freely allocated allowances,740143,units,81
+2017,HU,1.1 Freely allocated allowances,740143,units,81
+2018,HU,1.1 Freely allocated allowances,740143,units,81
+2019,HU,1.1 Freely allocated allowances,740143,units,81
+2020,HU,1.1 Freely allocated allowances,738473,units,81
+2021,HU,1.1 Freely allocated allowances,608784,units,81
+2012,HU,1.1.1 Free allocation to existing entities (Art. 10a(1)),1097418,units,81
+2013,HU,1.1.1 Free allocation to existing entities (Art. 10a(1)),740143,units,81
+2014,HU,1.1.1 Free allocation to existing entities (Art. 10a(1)),740143,units,81
+2015,HU,1.1.1 Free allocation to existing entities (Art. 10a(1)),740143,units,81
+2016,HU,1.1.1 Free allocation to existing entities (Art. 10a(1)),740143,units,81
+2017,HU,1.1.1 Free allocation to existing entities (Art. 10a(1)),740143,units,81
+2018,HU,1.1.1 Free allocation to existing entities (Art. 10a(1)),740143,units,81
+2019,HU,1.1.1 Free allocation to existing entities (Art. 10a(1)),740143,units,81
+2020,HU,1.1.1 Free allocation to existing entities (Art. 10a(1)),734441,units,81
+2021,HU,1.1.1 Free allocation to existing entities (Art. 10a(1)),604841,units,81
+2020,HU,1.1.4 Swiss Free Allocated allowances for aircraft operators,4032,units,81
+2021,HU,1.1.4 Swiss Free Allocated allowances for aircraft operators,3943,units,81
+2012,HU,1.2 Correction to freely allocated allowances (not reflected in EUTL),-11975.56255600881,units,81
+2012,HU,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2013,HU,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2014,HU,1.3 Allowances auctioned or sold (EUAs and EUAAs),48000,units,81
+2015,HU,1.3 Allowances auctioned or sold (EUAs and EUAAs),141000,units,81
+2016,HU,1.3 Allowances auctioned or sold (EUAs and EUAAs),51500,units,81
+2017,HU,1.3 Allowances auctioned or sold (EUAs and EUAAs),40500,units,81
+2018,HU,1.3 Allowances auctioned or sold (EUAs and EUAAs),48000,units,81
+2019,HU,1.3 Allowances auctioned or sold (EUAs and EUAAs),48000,units,81
+2020,HU,1.3 Allowances auctioned or sold (EUAs and EUAAs),46500,units,81
+2021,HU,1.3 Allowances auctioned or sold (EUAs and EUAAs),36500,units,81
+2012,HU,2. Verified emissions,1158490,tonne of CO2 equ.,81
+2013,HU,2. Verified emissions,1097638,tonne of CO2 equ.,81
+2014,HU,2. Verified emissions,1264980,tonne of CO2 equ.,81
+2015,HU,2. Verified emissions,1558359,tonne of CO2 equ.,81
+2016,HU,2. Verified emissions,1855247,tonne of CO2 equ.,81
+2017,HU,2. Verified emissions,2110107,tonne of CO2 equ.,81
+2018,HU,2. Verified emissions,2329329,tonne of CO2 equ.,81
+2019,HU,2. Verified emissions,2384088,tonne of CO2 equ.,81
+2020,HU,2. Verified emissions,1236739,tonne of CO2 equ.,81
+2021,HU,2. Verified emissions,1228309,tonne of CO2 equ.,81
+2012,HU,2.1 EU-ETS Verified Emission,1158490,tonne of CO2 equ.,81
+2013,HU,2.1 EU-ETS Verified Emission,1097638,tonne of CO2 equ.,81
+2014,HU,2.1 EU-ETS Verified Emission,1264980,tonne of CO2 equ.,81
+2015,HU,2.1 EU-ETS Verified Emission,1558359,tonne of CO2 equ.,81
+2016,HU,2.1 EU-ETS Verified Emission,1855247,tonne of CO2 equ.,81
+2017,HU,2.1 EU-ETS Verified Emission,2110107,tonne of CO2 equ.,81
+2018,HU,2.1 EU-ETS Verified Emission,2329329,tonne of CO2 equ.,81
+2019,HU,2.1 EU-ETS Verified Emission,2384088,tonne of CO2 equ.,81
+2020,HU,2.1 EU-ETS Verified Emission,1234292,tonne of CO2 equ.,81
+2021,HU,2.1 EU-ETS Verified Emission,1226117,tonne of CO2 equ.,81
+2020,HU,2.2 Swiss Verified Emissions for aircraft operators,2447,tonne of CO2 equ.,81
+2021,HU,2.2 Swiss Verified Emissions for aircraft operators,2192,tonne of CO2 equ.,81
+2012,HU,4. Total surrendered units,1158490,units,81
+2014,HU,4. Total surrendered units,2362618,units,81
+2015,HU,4. Total surrendered units,1558359,units,81
+2016,HU,4. Total surrendered units,1843262,units,81
+2017,HU,4. Total surrendered units,2106931,units,81
+2018,HU,4. Total surrendered units,2344490,units,81
+2019,HU,4. Total surrendered units,2384088,units,81
+2020,HU,4. Total surrendered units,1236739,units,81
+2021,HU,4. Total surrendered units,1228309,units,81
+2012,HU,4.1 Surrendered EU allowances (EUAs and EUAAs),993861,units,81
+2014,HU,4.1 Surrendered EU allowances (EUAs and EUAAs),2362618,units,81
+2015,HU,4.1 Surrendered EU allowances (EUAs and EUAAs),1558359,units,81
+2016,HU,4.1 Surrendered EU allowances (EUAs and EUAAs),1843262,units,81
+2017,HU,4.1 Surrendered EU allowances (EUAs and EUAAs),2106931,units,81
+2018,HU,4.1 Surrendered EU allowances (EUAs and EUAAs),2344490,units,81
+2019,HU,4.1 Surrendered EU allowances (EUAs and EUAAs),2384088,units,81
+2020,HU,4.1 Surrendered EU allowances (EUAs and EUAAs),1232707,units,81
+2021,HU,4.1 Surrendered EU allowances (EUAs and EUAAs),1226117,units,81
+2012,HU,4.3 Surrendered emission reduction units (ERUs),164629,units,81
+2020,HU,4.4 Surrendered Units CHU/CHUAA,4032,units,81
+2021,HU,4.4 Surrendered Units CHU/CHUAA,2192,units,81
+2012,IE,1. Total allocated allowances (EUA or EUAA),10606107.78715971,units,81
+2013,IE,1. Total allocated allowances (EUA or EUAA),5317831,units,81
+2014,IE,1. Total allocated allowances (EUA or EUAA),5462800,units,81
+2015,IE,1. Total allocated allowances (EUA or EUAA),5621988,units,81
+2016,IE,1. Total allocated allowances (EUA or EUAA),5428394,units,81
+2017,IE,1. Total allocated allowances (EUA or EUAA),5404894,units,81
+2018,IE,1. Total allocated allowances (EUA or EUAA),5420892,units,81
+2019,IE,1. Total allocated allowances (EUA or EUAA),5329618,units,81
+2020,IE,1. Total allocated allowances (EUA or EUAA),5342941,units,81
+2021,IE,1. Total allocated allowances (EUA or EUAA),4130799,units,81
+2012,IE,1.1 Freely allocated allowances,10606704,units,81
+2013,IE,1.1 Freely allocated allowances,5317831,units,81
+2014,IE,1.1 Freely allocated allowances,5317800,units,81
+2015,IE,1.1 Freely allocated allowances,5316988,units,81
+2016,IE,1.1 Freely allocated allowances,5316894,units,81
+2017,IE,1.1 Freely allocated allowances,5316894,units,81
+2018,IE,1.1 Freely allocated allowances,5316892,units,81
+2019,IE,1.1 Freely allocated allowances,5225618,units,81
+2020,IE,1.1 Freely allocated allowances,5242941,units,81
+2021,IE,1.1 Freely allocated allowances,4057799,units,81
+2012,IE,1.1.1 Free allocation to existing entities (Art. 10a(1)),10606704,units,81
+2013,IE,1.1.1 Free allocation to existing entities (Art. 10a(1)),5317831,units,81
+2014,IE,1.1.1 Free allocation to existing entities (Art. 10a(1)),5317800,units,81
+2015,IE,1.1.1 Free allocation to existing entities (Art. 10a(1)),5316988,units,81
+2016,IE,1.1.1 Free allocation to existing entities (Art. 10a(1)),5316894,units,81
+2017,IE,1.1.1 Free allocation to existing entities (Art. 10a(1)),5316894,units,81
+2018,IE,1.1.1 Free allocation to existing entities (Art. 10a(1)),5316892,units,81
+2019,IE,1.1.1 Free allocation to existing entities (Art. 10a(1)),5225618,units,81
+2020,IE,1.1.1 Free allocation to existing entities (Art. 10a(1)),5232727,units,81
+2021,IE,1.1.1 Free allocation to existing entities (Art. 10a(1)),4048244,units,81
+2020,IE,1.1.4 Swiss Free Allocated allowances for aircraft operators,10214,units,81
+2021,IE,1.1.4 Swiss Free Allocated allowances for aircraft operators,9555,units,81
+2012,IE,1.2 Correction to freely allocated allowances (not reflected in EUTL),-596.2128402944654,units,81
+2012,IE,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2013,IE,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2014,IE,1.3 Allowances auctioned or sold (EUAs and EUAAs),145000,units,81
+2015,IE,1.3 Allowances auctioned or sold (EUAs and EUAAs),305000,units,81
+2016,IE,1.3 Allowances auctioned or sold (EUAs and EUAAs),111500,units,81
+2017,IE,1.3 Allowances auctioned or sold (EUAs and EUAAs),88000,units,81
+2018,IE,1.3 Allowances auctioned or sold (EUAs and EUAAs),104000,units,81
+2019,IE,1.3 Allowances auctioned or sold (EUAs and EUAAs),104000,units,81
+2020,IE,1.3 Allowances auctioned or sold (EUAs and EUAAs),100000,units,81
+2021,IE,1.3 Allowances auctioned or sold (EUAs and EUAAs),73000,units,81
+2012,IE,2. Verified emissions,9333946,tonne of CO2 equ.,81
+2013,IE,2. Verified emissions,7729631,tonne of CO2 equ.,81
+2014,IE,2. Verified emissions,7754256,tonne of CO2 equ.,81
+2015,IE,2. Verified emissions,8581599,tonne of CO2 equ.,81
+2016,IE,2. Verified emissions,10467469,tonne of CO2 equ.,81
+2017,IE,2. Verified emissions,11641461,tonne of CO2 equ.,81
+2018,IE,2. Verified emissions,12432199,tonne of CO2 equ.,81
+2019,IE,2. Verified emissions,12780254,tonne of CO2 equ.,81
+2020,IE,2. Verified emissions,4751885,tonne of CO2 equ.,81
+2021,IE,2. Verified emissions,5293047,tonne of CO2 equ.,81
+2012,IE,2.1 EU-ETS Verified Emission,9333946,tonne of CO2 equ.,81
+2013,IE,2.1 EU-ETS Verified Emission,7729631,tonne of CO2 equ.,81
+2014,IE,2.1 EU-ETS Verified Emission,7754256,tonne of CO2 equ.,81
+2015,IE,2.1 EU-ETS Verified Emission,8581599,tonne of CO2 equ.,81
+2016,IE,2.1 EU-ETS Verified Emission,10467469,tonne of CO2 equ.,81
+2017,IE,2.1 EU-ETS Verified Emission,11641461,tonne of CO2 equ.,81
+2018,IE,2.1 EU-ETS Verified Emission,12432199,tonne of CO2 equ.,81
+2019,IE,2.1 EU-ETS Verified Emission,12780254,tonne of CO2 equ.,81
+2020,IE,2.1 EU-ETS Verified Emission,4747301,tonne of CO2 equ.,81
+2021,IE,2.1 EU-ETS Verified Emission,5291333,tonne of CO2 equ.,81
+2020,IE,2.2 Swiss Verified Emissions for aircraft operators,4584,tonne of CO2 equ.,81
+2021,IE,2.2 Swiss Verified Emissions for aircraft operators,1714,tonne of CO2 equ.,81
+2012,IE,4. Total surrendered units,9327957,units,81
+2013,IE,4. Total surrendered units,6351,units,81
+2014,IE,4. Total surrendered units,15479125,units,81
+2015,IE,4. Total surrendered units,8583189,units,81
+2016,IE,4. Total surrendered units,10466772,units,81
+2017,IE,4. Total surrendered units,11642508,units,81
+2018,IE,4. Total surrendered units,12432318,units,81
+2019,IE,4. Total surrendered units,12780254,units,81
+2020,IE,4. Total surrendered units,4583070,units,81
+2021,IE,4. Total surrendered units,5290539,units,81
+2012,IE,4.1 Surrendered EU allowances (EUAs and EUAAs),7957195,units,81
+2013,IE,4.1 Surrendered EU allowances (EUAs and EUAAs),6351,units,81
+2014,IE,4.1 Surrendered EU allowances (EUAs and EUAAs),15479125,units,81
+2015,IE,4.1 Surrendered EU allowances (EUAs and EUAAs),8583189,units,81
+2016,IE,4.1 Surrendered EU allowances (EUAs and EUAAs),10466772,units,81
+2017,IE,4.1 Surrendered EU allowances (EUAs and EUAAs),11642508,units,81
+2018,IE,4.1 Surrendered EU allowances (EUAs and EUAAs),12432318,units,81
+2019,IE,4.1 Surrendered EU allowances (EUAs and EUAAs),12780254,units,81
+2020,IE,4.1 Surrendered EU allowances (EUAs and EUAAs),4579085,units,81
+2021,IE,4.1 Surrendered EU allowances (EUAs and EUAAs),5282896,units,81
+2012,IE,4.2 Surrendered certified emission reductions (CERs),1335869,units,81
+2012,IE,4.3 Surrendered emission reduction units (ERUs),34893,units,81
+2020,IE,4.4 Surrendered Units CHU/CHUAA,3985,units,81
+2021,IE,4.4 Surrendered Units CHU/CHUAA,7643,units,81
+2012,IS,1. Total allocated allowances (EUA or EUAA),209720.4174542589,units,81
+2013,IS,1. Total allocated allowances (EUA or EUAA),194379,units,81
+2014,IS,1. Total allocated allowances (EUA or EUAA),194379,units,81
+2015,IS,1. Total allocated allowances (EUA or EUAA),194379,units,81
+2016,IS,1. Total allocated allowances (EUA or EUAA),194379,units,81
+2017,IS,1. Total allocated allowances (EUA or EUAA),360819,units,81
+2018,IS,1. Total allocated allowances (EUA or EUAA),360819,units,81
+2019,IS,1. Total allocated allowances (EUA or EUAA),278437,units,81
+2020,IS,1. Total allocated allowances (EUA or EUAA),330090,units,81
+2021,IS,1. Total allocated allowances (EUA or EUAA),220191,units,81
+2012,IS,1.1 Freely allocated allowances,434617,units,81
+2013,IS,1.1 Freely allocated allowances,194379,units,81
+2014,IS,1.1 Freely allocated allowances,194379,units,81
+2015,IS,1.1 Freely allocated allowances,194379,units,81
+2016,IS,1.1 Freely allocated allowances,194379,units,81
+2017,IS,1.1 Freely allocated allowances,360819,units,81
+2018,IS,1.1 Freely allocated allowances,360819,units,81
+2019,IS,1.1 Freely allocated allowances,208437,units,81
+2020,IS,1.1 Freely allocated allowances,211090,units,81
+2021,IS,1.1 Freely allocated allowances,185691,units,81
+2012,IS,1.1.1 Free allocation to existing entities (Art. 10a(1)),434617,units,81
+2013,IS,1.1.1 Free allocation to existing entities (Art. 10a(1)),194379,units,81
+2014,IS,1.1.1 Free allocation to existing entities (Art. 10a(1)),194379,units,81
+2015,IS,1.1.1 Free allocation to existing entities (Art. 10a(1)),194379,units,81
+2016,IS,1.1.1 Free allocation to existing entities (Art. 10a(1)),194379,units,81
+2017,IS,1.1.1 Free allocation to existing entities (Art. 10a(1)),194379,units,81
+2018,IS,1.1.1 Free allocation to existing entities (Art. 10a(1)),194379,units,81
+2019,IS,1.1.1 Free allocation to existing entities (Art. 10a(1)),194379,units,81
+2020,IS,1.1.1 Free allocation to existing entities (Art. 10a(1)),186368,units,81
+2021,IS,1.1.1 Free allocation to existing entities (Art. 10a(1)),175262,units,81
+2017,IS,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),166440,units,81
+2018,IS,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),166440,units,81
+2019,IS,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),14058,units,81
+2020,IS,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),14058,units,81
+2020,IS,1.1.4 Swiss Free Allocated allowances for aircraft operators,10664,units,81
+2021,IS,1.1.4 Swiss Free Allocated allowances for aircraft operators,10429,units,81
+2012,IS,1.2 Correction to freely allocated allowances (not reflected in EUTL),-224896.5825457411,units,81
+2012,IS,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2013,IS,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2014,IS,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2015,IS,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2016,IS,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2017,IS,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2018,IS,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2019,IS,1.3 Allowances auctioned or sold (EUAs and EUAAs),70000,units,81
+2020,IS,1.3 Allowances auctioned or sold (EUAs and EUAAs),119000,units,81
+2021,IS,1.3 Allowances auctioned or sold (EUAs and EUAAs),34500,units,81
+2012,IS,2. Verified emissions,372642,tonne of CO2 equ.,81
+2013,IS,2. Verified emissions,364662,tonne of CO2 equ.,81
+2014,IS,2. Verified emissions,492560,tonne of CO2 equ.,81
+2015,IS,2. Verified emissions,548420,tonne of CO2 equ.,81
+2016,IS,2. Verified emissions,721558,tonne of CO2 equ.,81
+2017,IS,2. Verified emissions,816258,tonne of CO2 equ.,81
+2018,IS,2. Verified emissions,823044,tonne of CO2 equ.,81
+2019,IS,2. Verified emissions,598093,tonne of CO2 equ.,81
+2020,IS,2. Verified emissions,190744,tonne of CO2 equ.,81
+2021,IS,2. Verified emissions,267515,tonne of CO2 equ.,81
+2012,IS,2.1 EU-ETS Verified Emission,372642,tonne of CO2 equ.,81
+2013,IS,2.1 EU-ETS Verified Emission,364662,tonne of CO2 equ.,81
+2014,IS,2.1 EU-ETS Verified Emission,492560,tonne of CO2 equ.,81
+2015,IS,2.1 EU-ETS Verified Emission,548420,tonne of CO2 equ.,81
+2016,IS,2.1 EU-ETS Verified Emission,721558,tonne of CO2 equ.,81
+2017,IS,2.1 EU-ETS Verified Emission,816258,tonne of CO2 equ.,81
+2018,IS,2.1 EU-ETS Verified Emission,823044,tonne of CO2 equ.,81
+2019,IS,2.1 EU-ETS Verified Emission,598093,tonne of CO2 equ.,81
+2020,IS,2.1 EU-ETS Verified Emission,188420,tonne of CO2 equ.,81
+2021,IS,2.1 EU-ETS Verified Emission,262735,tonne of CO2 equ.,81
+2020,IS,2.2 Swiss Verified Emissions for aircraft operators,2324,tonne of CO2 equ.,81
+2021,IS,2.2 Swiss Verified Emissions for aircraft operators,4780,tonne of CO2 equ.,81
+2012,IS,4. Total surrendered units,372190,units,81
+2013,IS,4. Total surrendered units,181,units,81
+2014,IS,4. Total surrendered units,856734,units,81
+2015,IS,4. Total surrendered units,548420,units,81
+2016,IS,4. Total surrendered units,721558,units,81
+2017,IS,4. Total surrendered units,816258,units,81
+2018,IS,4. Total surrendered units,550301,units,81
+2019,IS,4. Total surrendered units,596124,units,81
+2020,IS,4. Total surrendered units,190000,units,81
+2021,IS,4. Total surrendered units,267043,units,81
+2012,IS,4.1 Surrendered EU allowances (EUAs and EUAAs),316845,units,81
+2013,IS,4.1 Surrendered EU allowances (EUAs and EUAAs),181,units,81
+2014,IS,4.1 Surrendered EU allowances (EUAs and EUAAs),856734,units,81
+2015,IS,4.1 Surrendered EU allowances (EUAs and EUAAs),548420,units,81
+2016,IS,4.1 Surrendered EU allowances (EUAs and EUAAs),721558,units,81
+2017,IS,4.1 Surrendered EU allowances (EUAs and EUAAs),816258,units,81
+2018,IS,4.1 Surrendered EU allowances (EUAs and EUAAs),550301,units,81
+2019,IS,4.1 Surrendered EU allowances (EUAs and EUAAs),596124,units,81
+2020,IS,4.1 Surrendered EU allowances (EUAs and EUAAs),187749,units,81
+2021,IS,4.1 Surrendered EU allowances (EUAs and EUAAs),258630,units,81
+2012,IS,4.2 Surrendered certified emission reductions (CERs),33014,units,81
+2012,IS,4.3 Surrendered emission reduction units (ERUs),22331,units,81
+2020,IS,4.4 Surrendered Units CHU/CHUAA,2251,units,81
+2021,IS,4.4 Surrendered Units CHU/CHUAA,8413,units,81
+2012,IT,1. Total allocated allowances (EUA or EUAA),12825297.33549335,units,81
+2013,IT,1. Total allocated allowances (EUA or EUAA),2686323,units,81
+2014,IT,1. Total allocated allowances (EUA or EUAA),3559316,units,81
+2015,IT,1. Total allocated allowances (EUA or EUAA),4686371,units,81
+2016,IT,1. Total allocated allowances (EUA or EUAA),3386860,units,81
+2017,IT,1. Total allocated allowances (EUA or EUAA),3181236,units,81
+2018,IT,1. Total allocated allowances (EUA or EUAA),3339177,units,81
+2019,IT,1. Total allocated allowances (EUA or EUAA),3339678,units,81
+2020,IT,1. Total allocated allowances (EUA or EUAA),3383905,units,81
+2021,IT,1. Total allocated allowances (EUA or EUAA),2034582,units,81
+2012,IT,1.1 Freely allocated allowances,15253437,units,81
+2013,IT,1.1 Freely allocated allowances,2686323,units,81
+2014,IT,1.1 Freely allocated allowances,2686316,units,81
+2015,IT,1.1 Freely allocated allowances,2637871,units,81
+2016,IT,1.1 Freely allocated allowances,2637860,units,81
+2017,IT,1.1 Freely allocated allowances,2591236,units,81
+2018,IT,1.1 Freely allocated allowances,2639677,units,81
+2019,IT,1.1 Freely allocated allowances,2639678,units,81
+2020,IT,1.1 Freely allocated allowances,2711905,units,81
+2021,IT,1.1 Freely allocated allowances,1569582,units,81
+2012,IT,1.1.1 Free allocation to existing entities (Art. 10a(1)),15253437,units,81
+2013,IT,1.1.1 Free allocation to existing entities (Art. 10a(1)),2686323,units,81
+2014,IT,1.1.1 Free allocation to existing entities (Art. 10a(1)),2686316,units,81
+2015,IT,1.1.1 Free allocation to existing entities (Art. 10a(1)),2637871,units,81
+2016,IT,1.1.1 Free allocation to existing entities (Art. 10a(1)),2637860,units,81
+2017,IT,1.1.1 Free allocation to existing entities (Art. 10a(1)),2591236,units,81
+2018,IT,1.1.1 Free allocation to existing entities (Art. 10a(1)),2639677,units,81
+2019,IT,1.1.1 Free allocation to existing entities (Art. 10a(1)),2639678,units,81
+2020,IT,1.1.1 Free allocation to existing entities (Art. 10a(1)),2668589,units,81
+2021,IT,1.1.1 Free allocation to existing entities (Art. 10a(1)),1562486,units,81
+2020,IT,1.1.4 Swiss Free Allocated allowances for aircraft operators,43316,units,81
+2021,IT,1.1.4 Swiss Free Allocated allowances for aircraft operators,7096,units,81
+2012,IT,1.2 Correction to freely allocated allowances (not reflected in EUTL),-2428139.664506646,units,81
+2012,IT,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2013,IT,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2014,IT,1.3 Allowances auctioned or sold (EUAs and EUAAs),873000,units,81
+2015,IT,1.3 Allowances auctioned or sold (EUAs and EUAAs),2048500,units,81
+2016,IT,1.3 Allowances auctioned or sold (EUAs and EUAAs),749000,units,81
+2017,IT,1.3 Allowances auctioned or sold (EUAs and EUAAs),590000,units,81
+2018,IT,1.3 Allowances auctioned or sold (EUAs and EUAAs),699500,units,81
+2019,IT,1.3 Allowances auctioned or sold (EUAs and EUAAs),700000,units,81
+2020,IT,1.3 Allowances auctioned or sold (EUAs and EUAAs),672000,units,81
+2021,IT,1.3 Allowances auctioned or sold (EUAs and EUAAs),465000,units,81
+2012,IT,2. Verified emissions,6058222,tonne of CO2 equ.,81
+2013,IT,2. Verified emissions,4809210,tonne of CO2 equ.,81
+2014,IT,2. Verified emissions,4656028,tonne of CO2 equ.,81
+2015,IT,2. Verified emissions,4553201,tonne of CO2 equ.,81
+2016,IT,2. Verified emissions,4637190,tonne of CO2 equ.,81
+2017,IT,2. Verified emissions,4586597,tonne of CO2 equ.,81
+2018,IT,2. Verified emissions,4592206,tonne of CO2 equ.,81
+2019,IT,2. Verified emissions,4618109,tonne of CO2 equ.,81
+2020,IT,2. Verified emissions,1688131,tonne of CO2 equ.,81
+2021,IT,2. Verified emissions,1080710,tonne of CO2 equ.,81
+2012,IT,2.1 EU-ETS Verified Emission,6058222,tonne of CO2 equ.,81
+2013,IT,2.1 EU-ETS Verified Emission,4809210,tonne of CO2 equ.,81
+2014,IT,2.1 EU-ETS Verified Emission,4656028,tonne of CO2 equ.,81
+2015,IT,2.1 EU-ETS Verified Emission,4553201,tonne of CO2 equ.,81
+2016,IT,2.1 EU-ETS Verified Emission,4637190,tonne of CO2 equ.,81
+2017,IT,2.1 EU-ETS Verified Emission,4586597,tonne of CO2 equ.,81
+2018,IT,2.1 EU-ETS Verified Emission,4592206,tonne of CO2 equ.,81
+2019,IT,2.1 EU-ETS Verified Emission,4618109,tonne of CO2 equ.,81
+2020,IT,2.1 EU-ETS Verified Emission,1655603,tonne of CO2 equ.,81
+2021,IT,2.1 EU-ETS Verified Emission,1073609,tonne of CO2 equ.,81
+2020,IT,2.2 Swiss Verified Emissions for aircraft operators,32528,tonne of CO2 equ.,81
+2021,IT,2.2 Swiss Verified Emissions for aircraft operators,7101,tonne of CO2 equ.,81
+2012,IT,4. Total surrendered units,5739040,units,81
+2013,IT,4. Total surrendered units,277,units,81
+2014,IT,4. Total surrendered units,9392007,units,81
+2015,IT,4. Total surrendered units,4555164,units,81
+2016,IT,4. Total surrendered units,4625047,units,81
+2017,IT,4. Total surrendered units,4596720,units,81
+2018,IT,4. Total surrendered units,4592607,units,81
+2019,IT,4. Total surrendered units,4616514,units,81
+2020,IT,4. Total surrendered units,1688176,units,81
+2021,IT,4. Total surrendered units,941282,units,81
+2012,IT,4.1 Surrendered EU allowances (EUAs and EUAAs),4861371,units,81
+2013,IT,4.1 Surrendered EU allowances (EUAs and EUAAs),277,units,81
+2014,IT,4.1 Surrendered EU allowances (EUAs and EUAAs),9392007,units,81
+2015,IT,4.1 Surrendered EU allowances (EUAs and EUAAs),4555164,units,81
+2016,IT,4.1 Surrendered EU allowances (EUAs and EUAAs),4625047,units,81
+2017,IT,4.1 Surrendered EU allowances (EUAs and EUAAs),4596720,units,81
+2018,IT,4.1 Surrendered EU allowances (EUAs and EUAAs),4592607,units,81
+2019,IT,4.1 Surrendered EU allowances (EUAs and EUAAs),4616514,units,81
+2020,IT,4.1 Surrendered EU allowances (EUAs and EUAAs),1645883,units,81
+2021,IT,4.1 Surrendered EU allowances (EUAs and EUAAs),937340,units,81
+2012,IT,4.2 Surrendered certified emission reductions (CERs),687461,units,81
+2012,IT,4.3 Surrendered emission reduction units (ERUs),190208,units,81
+2020,IT,4.4 Surrendered Units CHU/CHUAA,42293,units,81
+2021,IT,4.4 Surrendered Units CHU/CHUAA,3942,units,81
+2012,LI,1. Total allocated allowances (EUA or EUAA),0,units,81
+2013,LI,1. Total allocated allowances (EUA or EUAA),0,units,81
+2014,LI,1. Total allocated allowances (EUA or EUAA),0,units,81
+2015,LI,1. Total allocated allowances (EUA or EUAA),0,units,81
+2016,LI,1. Total allocated allowances (EUA or EUAA),0,units,81
+2017,LI,1. Total allocated allowances (EUA or EUAA),0,units,81
+2018,LI,1. Total allocated allowances (EUA or EUAA),0,units,81
+2019,LI,1. Total allocated allowances (EUA or EUAA),0,units,81
+2020,LI,1. Total allocated allowances (EUA or EUAA),0,units,81
+2021,LI,1. Total allocated allowances (EUA or EUAA),0,units,81
+2012,LI,1.2 Correction to freely allocated allowances (not reflected in EUTL),0,units,81
+2012,LI,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2013,LI,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2014,LI,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2015,LI,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2016,LI,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2017,LI,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2018,LI,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2019,LI,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2020,LI,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2021,LI,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2012,LT,1. Total allocated allowances (EUA or EUAA),55953,units,81
+2013,LT,1. Total allocated allowances (EUA or EUAA),12753,units,81
+2014,LT,1. Total allocated allowances (EUA or EUAA),22253,units,81
+2015,LT,1. Total allocated allowances (EUA or EUAA),53253,units,81
+2016,LT,1. Total allocated allowances (EUA or EUAA),27253,units,81
+2017,LT,1. Total allocated allowances (EUA or EUAA),24753,units,81
+2018,LT,1. Total allocated allowances (EUA or EUAA),26253,units,81
+2019,LT,1. Total allocated allowances (EUA or EUAA),14000,units,81
+2020,LT,1. Total allocated allowances (EUA or EUAA),13000,units,81
+2021,LT,1. Total allocated allowances (EUA or EUAA),17000,units,81
+2012,LT,1.1 Freely allocated allowances,55953,units,81
+2013,LT,1.1 Freely allocated allowances,12753,units,81
+2014,LT,1.1 Freely allocated allowances,12753,units,81
+2015,LT,1.1 Freely allocated allowances,12753,units,81
+2016,LT,1.1 Freely allocated allowances,12753,units,81
+2017,LT,1.1 Freely allocated allowances,12753,units,81
+2018,LT,1.1 Freely allocated allowances,12753,units,81
+2012,LT,1.1.1 Free allocation to existing entities (Art. 10a(1)),55953,units,81
+2013,LT,1.1.1 Free allocation to existing entities (Art. 10a(1)),12753,units,81
+2014,LT,1.1.1 Free allocation to existing entities (Art. 10a(1)),12753,units,81
+2015,LT,1.1.1 Free allocation to existing entities (Art. 10a(1)),12753,units,81
+2016,LT,1.1.1 Free allocation to existing entities (Art. 10a(1)),12753,units,81
+2017,LT,1.1.1 Free allocation to existing entities (Art. 10a(1)),12753,units,81
+2018,LT,1.1.1 Free allocation to existing entities (Art. 10a(1)),12753,units,81
+2012,LT,1.2 Correction to freely allocated allowances (not reflected in EUTL),0,units,81
+2012,LT,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2013,LT,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2014,LT,1.3 Allowances auctioned or sold (EUAs and EUAAs),9500,units,81
+2015,LT,1.3 Allowances auctioned or sold (EUAs and EUAAs),40500,units,81
+2016,LT,1.3 Allowances auctioned or sold (EUAs and EUAAs),14500,units,81
+2017,LT,1.3 Allowances auctioned or sold (EUAs and EUAAs),12000,units,81
+2018,LT,1.3 Allowances auctioned or sold (EUAs and EUAAs),13500,units,81
+2019,LT,1.3 Allowances auctioned or sold (EUAs and EUAAs),14000,units,81
+2020,LT,1.3 Allowances auctioned or sold (EUAs and EUAAs),13000,units,81
+2021,LT,1.3 Allowances auctioned or sold (EUAs and EUAAs),17000,units,81
+2012,LT,2. Verified emissions,100298,tonne of CO2 equ.,81
+2013,LT,2. Verified emissions,100603,tonne of CO2 equ.,81
+2014,LT,2. Verified emissions,50404,tonne of CO2 equ.,81
+2015,LT,2. Verified emissions,68290,tonne of CO2 equ.,81
+2016,LT,2. Verified emissions,72695,tonne of CO2 equ.,81
+2017,LT,2. Verified emissions,68441,tonne of CO2 equ.,81
+2018,LT,2. Verified emissions,62452,tonne of CO2 equ.,81
+2019,LT,2. Verified emissions,20205,tonne of CO2 equ.,81
+2020,LT,2. Verified emissions,8002,tonne of CO2 equ.,81
+2021,LT,2. Verified emissions,16576,tonne of CO2 equ.,81
+2012,LT,2.1 EU-ETS Verified Emission,100298,tonne of CO2 equ.,81
+2013,LT,2.1 EU-ETS Verified Emission,100603,tonne of CO2 equ.,81
+2014,LT,2.1 EU-ETS Verified Emission,50404,tonne of CO2 equ.,81
+2015,LT,2.1 EU-ETS Verified Emission,68290,tonne of CO2 equ.,81
+2016,LT,2.1 EU-ETS Verified Emission,72695,tonne of CO2 equ.,81
+2017,LT,2.1 EU-ETS Verified Emission,68441,tonne of CO2 equ.,81
+2018,LT,2.1 EU-ETS Verified Emission,62452,tonne of CO2 equ.,81
+2019,LT,2.1 EU-ETS Verified Emission,20205,tonne of CO2 equ.,81
+2020,LT,2.1 EU-ETS Verified Emission,8002,tonne of CO2 equ.,81
+2021,LT,2.1 EU-ETS Verified Emission,16561,tonne of CO2 equ.,81
+2021,LT,2.2 Swiss Verified Emissions for aircraft operators,15,tonne of CO2 equ.,81
+2012,LT,4. Total surrendered units,100298,units,81
+2014,LT,4. Total surrendered units,151007,units,81
+2015,LT,4. Total surrendered units,55493,units,81
+2016,LT,4. Total surrendered units,72695,units,81
+2017,LT,4. Total surrendered units,68441,units,81
+2019,LT,4. Total surrendered units,36168,units,81
+2020,LT,4. Total surrendered units,8002,units,81
+2021,LT,4. Total surrendered units,16576,units,81
+2012,LT,4.1 Surrendered EU allowances (EUAs and EUAAs),85849,units,81
+2014,LT,4.1 Surrendered EU allowances (EUAs and EUAAs),151007,units,81
+2015,LT,4.1 Surrendered EU allowances (EUAs and EUAAs),55493,units,81
+2016,LT,4.1 Surrendered EU allowances (EUAs and EUAAs),72695,units,81
+2017,LT,4.1 Surrendered EU allowances (EUAs and EUAAs),68441,units,81
+2019,LT,4.1 Surrendered EU allowances (EUAs and EUAAs),36168,units,81
+2020,LT,4.1 Surrendered EU allowances (EUAs and EUAAs),8002,units,81
+2021,LT,4.1 Surrendered EU allowances (EUAs and EUAAs),16576,units,81
+2012,LT,4.3 Surrendered emission reduction units (ERUs),14449,units,81
+2012,LU,1. Total allocated allowances (EUA or EUAA),2311181,units,81
+2013,LU,1. Total allocated allowances (EUA or EUAA),96746,units,81
+2014,LU,1. Total allocated allowances (EUA or EUAA),192650,units,81
+2015,LU,1. Total allocated allowances (EUA or EUAA),119650,units,81
+2016,LU,1. Total allocated allowances (EUA or EUAA),99150,units,81
+2017,LU,1. Total allocated allowances (EUA or EUAA),93752,units,81
+2018,LU,1. Total allocated allowances (EUA or EUAA),94752,units,81
+2019,LU,1. Total allocated allowances (EUA or EUAA),95252,units,81
+2020,LU,1. Total allocated allowances (EUA or EUAA),96102,units,81
+2021,LU,1. Total allocated allowances (EUA or EUAA),86767,units,81
+2012,LU,1.1 Freely allocated allowances,2311181,units,81
+2013,LU,1.1 Freely allocated allowances,96746,units,81
+2014,LU,1.1 Freely allocated allowances,87650,units,81
+2015,LU,1.1 Freely allocated allowances,87650,units,81
+2016,LU,1.1 Freely allocated allowances,87650,units,81
+2017,LU,1.1 Freely allocated allowances,84252,units,81
+2018,LU,1.1 Freely allocated allowances,84252,units,81
+2019,LU,1.1 Freely allocated allowances,84252,units,81
+2020,LU,1.1 Freely allocated allowances,85602,units,81
+2021,LU,1.1 Freely allocated allowances,73267,units,81
+2012,LU,1.1.1 Free allocation to existing entities (Art. 10a(1)),2311181,units,81
+2013,LU,1.1.1 Free allocation to existing entities (Art. 10a(1)),96746,units,81
+2014,LU,1.1.1 Free allocation to existing entities (Art. 10a(1)),87650,units,81
+2015,LU,1.1.1 Free allocation to existing entities (Art. 10a(1)),87650,units,81
+2016,LU,1.1.1 Free allocation to existing entities (Art. 10a(1)),87650,units,81
+2017,LU,1.1.1 Free allocation to existing entities (Art. 10a(1)),84252,units,81
+2018,LU,1.1.1 Free allocation to existing entities (Art. 10a(1)),84252,units,81
+2019,LU,1.1.1 Free allocation to existing entities (Art. 10a(1)),84252,units,81
+2020,LU,1.1.1 Free allocation to existing entities (Art. 10a(1)),84734,units,81
+2021,LU,1.1.1 Free allocation to existing entities (Art. 10a(1)),72428,units,81
+2020,LU,1.1.4 Swiss Free Allocated allowances for aircraft operators,868,units,81
+2021,LU,1.1.4 Swiss Free Allocated allowances for aircraft operators,839,units,81
+2012,LU,1.2 Correction to freely allocated allowances (not reflected in EUTL),0,units,81
+2012,LU,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2013,LU,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2014,LU,1.3 Allowances auctioned or sold (EUAs and EUAAs),105000,units,81
+2015,LU,1.3 Allowances auctioned or sold (EUAs and EUAAs),32000,units,81
+2016,LU,1.3 Allowances auctioned or sold (EUAs and EUAAs),11500,units,81
+2017,LU,1.3 Allowances auctioned or sold (EUAs and EUAAs),9500,units,81
+2018,LU,1.3 Allowances auctioned or sold (EUAs and EUAAs),10500,units,81
+2019,LU,1.3 Allowances auctioned or sold (EUAs and EUAAs),11000,units,81
+2020,LU,1.3 Allowances auctioned or sold (EUAs and EUAAs),10500,units,81
+2021,LU,1.3 Allowances auctioned or sold (EUAs and EUAAs),13500,units,81
+2012,LU,2. Verified emissions,1631568,tonne of CO2 equ.,81
+2013,LU,2. Verified emissions,215715,tonne of CO2 equ.,81
+2014,LU,2. Verified emissions,222370,tonne of CO2 equ.,81
+2015,LU,2. Verified emissions,246598,tonne of CO2 equ.,81
+2016,LU,2. Verified emissions,249179,tonne of CO2 equ.,81
+2017,LU,2. Verified emissions,251781,tonne of CO2 equ.,81
+2018,LU,2. Verified emissions,263621,tonne of CO2 equ.,81
+2019,LU,2. Verified emissions,265155,tonne of CO2 equ.,81
+2020,LU,2. Verified emissions,128313,tonne of CO2 equ.,81
+2021,LU,2. Verified emissions,154663,tonne of CO2 equ.,81
+2012,LU,2.1 EU-ETS Verified Emission,1631568,tonne of CO2 equ.,81
+2013,LU,2.1 EU-ETS Verified Emission,215715,tonne of CO2 equ.,81
+2014,LU,2.1 EU-ETS Verified Emission,222370,tonne of CO2 equ.,81
+2015,LU,2.1 EU-ETS Verified Emission,246598,tonne of CO2 equ.,81
+2016,LU,2.1 EU-ETS Verified Emission,249179,tonne of CO2 equ.,81
+2017,LU,2.1 EU-ETS Verified Emission,251781,tonne of CO2 equ.,81
+2018,LU,2.1 EU-ETS Verified Emission,263621,tonne of CO2 equ.,81
+2019,LU,2.1 EU-ETS Verified Emission,265155,tonne of CO2 equ.,81
+2020,LU,2.1 EU-ETS Verified Emission,126222,tonne of CO2 equ.,81
+2021,LU,2.1 EU-ETS Verified Emission,152167,tonne of CO2 equ.,81
+2020,LU,2.2 Swiss Verified Emissions for aircraft operators,2091,tonne of CO2 equ.,81
+2021,LU,2.2 Swiss Verified Emissions for aircraft operators,2496,tonne of CO2 equ.,81
+2012,LU,4. Total surrendered units,1622351,units,81
+2014,LU,4. Total surrendered units,430322,units,81
+2015,LU,4. Total surrendered units,252734,units,81
+2016,LU,4. Total surrendered units,260024,units,81
+2017,LU,4. Total surrendered units,251781,units,81
+2018,LU,4. Total surrendered units,263621,units,81
+2019,LU,4. Total surrendered units,265155,units,81
+2020,LU,4. Total surrendered units,128313,units,81
+2021,LU,4. Total surrendered units,154663,units,81
+2012,LU,4.1 Surrendered EU allowances (EUAs and EUAAs),1379010,units,81
+2014,LU,4.1 Surrendered EU allowances (EUAs and EUAAs),430322,units,81
+2015,LU,4.1 Surrendered EU allowances (EUAs and EUAAs),252734,units,81
+2016,LU,4.1 Surrendered EU allowances (EUAs and EUAAs),260024,units,81
+2017,LU,4.1 Surrendered EU allowances (EUAs and EUAAs),251781,units,81
+2018,LU,4.1 Surrendered EU allowances (EUAs and EUAAs),263621,units,81
+2019,LU,4.1 Surrendered EU allowances (EUAs and EUAAs),265155,units,81
+2020,LU,4.1 Surrendered EU allowances (EUAs and EUAAs),127622,units,81
+2021,LU,4.1 Surrendered EU allowances (EUAs and EUAAs),153956,units,81
+2012,LU,4.2 Surrendered certified emission reductions (CERs),212430,units,81
+2012,LU,4.3 Surrendered emission reduction units (ERUs),30911,units,81
+2020,LU,4.4 Surrendered Units CHU/CHUAA,691,units,81
+2021,LU,4.4 Surrendered Units CHU/CHUAA,707,units,81
+2012,LV,1. Total allocated allowances (EUA or EUAA),221198.0422221783,units,81
+2013,LV,1. Total allocated allowances (EUA or EUAA),198868,units,81
+2014,LV,1. Total allocated allowances (EUA or EUAA),222368,units,81
+2015,LV,1. Total allocated allowances (EUA or EUAA),274368,units,81
+2016,LV,1. Total allocated allowances (EUA or EUAA),226368,units,81
+2017,LV,1. Total allocated allowances (EUA or EUAA),220368,units,81
+2018,LV,1. Total allocated allowances (EUA or EUAA),224868,units,81
+2019,LV,1. Total allocated allowances (EUA or EUAA),224868,units,81
+2020,LV,1. Total allocated allowances (EUA or EUAA),223405,units,81
+2021,LV,1. Total allocated allowances (EUA or EUAA),216828,units,81
+2012,LV,1.1 Freely allocated allowances,311520,units,81
+2013,LV,1.1 Freely allocated allowances,198868,units,81
+2014,LV,1.1 Freely allocated allowances,198868,units,81
+2015,LV,1.1 Freely allocated allowances,198868,units,81
+2016,LV,1.1 Freely allocated allowances,198868,units,81
+2017,LV,1.1 Freely allocated allowances,198868,units,81
+2018,LV,1.1 Freely allocated allowances,198868,units,81
+2019,LV,1.1 Freely allocated allowances,198868,units,81
+2020,LV,1.1 Freely allocated allowances,198905,units,81
+2021,LV,1.1 Freely allocated allowances,196328,units,81
+2012,LV,1.1.1 Free allocation to existing entities (Art. 10a(1)),311520,units,81
+2013,LV,1.1.1 Free allocation to existing entities (Art. 10a(1)),198868,units,81
+2014,LV,1.1.1 Free allocation to existing entities (Art. 10a(1)),198868,units,81
+2015,LV,1.1.1 Free allocation to existing entities (Art. 10a(1)),198868,units,81
+2016,LV,1.1.1 Free allocation to existing entities (Art. 10a(1)),198868,units,81
+2017,LV,1.1.1 Free allocation to existing entities (Art. 10a(1)),198868,units,81
+2018,LV,1.1.1 Free allocation to existing entities (Art. 10a(1)),198868,units,81
+2019,LV,1.1.1 Free allocation to existing entities (Art. 10a(1)),198868,units,81
+2020,LV,1.1.1 Free allocation to existing entities (Art. 10a(1)),192796,units,81
+2021,LV,1.1.1 Free allocation to existing entities (Art. 10a(1)),190354,units,81
+2020,LV,1.1.4 Swiss Free Allocated allowances for aircraft operators,6109,units,81
+2021,LV,1.1.4 Swiss Free Allocated allowances for aircraft operators,5974,units,81
+2012,LV,1.2 Correction to freely allocated allowances (not reflected in EUTL),-90321.95777782175,units,81
+2012,LV,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2013,LV,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2014,LV,1.3 Allowances auctioned or sold (EUAs and EUAAs),23500,units,81
+2015,LV,1.3 Allowances auctioned or sold (EUAs and EUAAs),75500,units,81
+2016,LV,1.3 Allowances auctioned or sold (EUAs and EUAAs),27500,units,81
+2017,LV,1.3 Allowances auctioned or sold (EUAs and EUAAs),21500,units,81
+2018,LV,1.3 Allowances auctioned or sold (EUAs and EUAAs),26000,units,81
+2019,LV,1.3 Allowances auctioned or sold (EUAs and EUAAs),26000,units,81
+2020,LV,1.3 Allowances auctioned or sold (EUAs and EUAAs),24500,units,81
+2021,LV,1.3 Allowances auctioned or sold (EUAs and EUAAs),20500,units,81
+2012,LV,2. Verified emissions,306499,tonne of CO2 equ.,81
+2013,LV,2. Verified emissions,283909,tonne of CO2 equ.,81
+2014,LV,2. Verified emissions,276379,tonne of CO2 equ.,81
+2015,LV,2. Verified emissions,345271,tonne of CO2 equ.,81
+2016,LV,2. Verified emissions,348737,tonne of CO2 equ.,81
+2017,LV,2. Verified emissions,378590,tonne of CO2 equ.,81
+2018,LV,2. Verified emissions,399578,tonne of CO2 equ.,81
+2019,LV,2. Verified emissions,416357,tonne of CO2 equ.,81
+2020,LV,2. Verified emissions,167073,tonne of CO2 equ.,81
+2021,LV,2. Verified emissions,232821,tonne of CO2 equ.,81
+2012,LV,2.1 EU-ETS Verified Emission,306499,tonne of CO2 equ.,81
+2013,LV,2.1 EU-ETS Verified Emission,283909,tonne of CO2 equ.,81
+2014,LV,2.1 EU-ETS Verified Emission,276379,tonne of CO2 equ.,81
+2015,LV,2.1 EU-ETS Verified Emission,345271,tonne of CO2 equ.,81
+2016,LV,2.1 EU-ETS Verified Emission,348737,tonne of CO2 equ.,81
+2017,LV,2.1 EU-ETS Verified Emission,378590,tonne of CO2 equ.,81
+2018,LV,2.1 EU-ETS Verified Emission,399578,tonne of CO2 equ.,81
+2019,LV,2.1 EU-ETS Verified Emission,416357,tonne of CO2 equ.,81
+2020,LV,2.1 EU-ETS Verified Emission,164815,tonne of CO2 equ.,81
+2021,LV,2.1 EU-ETS Verified Emission,230635,tonne of CO2 equ.,81
+2020,LV,2.2 Swiss Verified Emissions for aircraft operators,2258,tonne of CO2 equ.,81
+2021,LV,2.2 Swiss Verified Emissions for aircraft operators,2186,tonne of CO2 equ.,81
+2012,LV,4. Total surrendered units,306499,units,81
+2014,LV,4. Total surrendered units,560288,units,81
+2015,LV,4. Total surrendered units,296752,units,81
+2016,LV,4. Total surrendered units,397256,units,81
+2017,LV,4. Total surrendered units,378590,units,81
+2018,LV,4. Total surrendered units,366684,units,81
+2019,LV,4. Total surrendered units,416357,units,81
+2020,LV,4. Total surrendered units,167073,units,81
+2021,LV,4. Total surrendered units,203575,units,81
+2012,LV,4.1 Surrendered EU allowances (EUAs and EUAAs),260524,units,81
+2014,LV,4.1 Surrendered EU allowances (EUAs and EUAAs),560288,units,81
+2015,LV,4.1 Surrendered EU allowances (EUAs and EUAAs),296752,units,81
+2016,LV,4.1 Surrendered EU allowances (EUAs and EUAAs),397256,units,81
+2017,LV,4.1 Surrendered EU allowances (EUAs and EUAAs),378590,units,81
+2018,LV,4.1 Surrendered EU allowances (EUAs and EUAAs),366684,units,81
+2019,LV,4.1 Surrendered EU allowances (EUAs and EUAAs),416357,units,81
+2020,LV,4.1 Surrendered EU allowances (EUAs and EUAAs),160964,units,81
+2021,LV,4.1 Surrendered EU allowances (EUAs and EUAAs),201389,units,81
+2012,LV,4.3 Surrendered emission reduction units (ERUs),45975,units,81
+2020,LV,4.4 Surrendered Units CHU/CHUAA,6109,units,81
+2021,LV,4.4 Surrendered Units CHU/CHUAA,2186,units,81
+2012,MT,1. Total allocated allowances (EUA or EUAA),197164.2102454565,units,81
+2013,MT,1. Total allocated allowances (EUA or EUAA),177402,units,81
+2014,MT,1. Total allocated allowances (EUA or EUAA),193902,units,81
+2015,MT,1. Total allocated allowances (EUA or EUAA),258402,units,81
+2016,MT,1. Total allocated allowances (EUA or EUAA),206902,units,81
+2017,MT,1. Total allocated allowances (EUA or EUAA),201124,units,81
+2018,MT,1. Total allocated allowances (EUA or EUAA),205124,units,81
+2019,MT,1. Total allocated allowances (EUA or EUAA),205624,units,81
+2020,MT,1. Total allocated allowances (EUA or EUAA),213329,units,81
+2021,MT,1. Total allocated allowances (EUA or EUAA),168920,units,81
+2012,MT,1.1 Freely allocated allowances,212330,units,81
+2013,MT,1.1 Freely allocated allowances,177402,units,81
+2014,MT,1.1 Freely allocated allowances,177402,units,81
+2015,MT,1.1 Freely allocated allowances,177402,units,81
+2016,MT,1.1 Freely allocated allowances,177402,units,81
+2017,MT,1.1 Freely allocated allowances,177624,units,81
+2018,MT,1.1 Freely allocated allowances,177624,units,81
+2019,MT,1.1 Freely allocated allowances,177624,units,81
+2020,MT,1.1 Freely allocated allowances,186829,units,81
+2021,MT,1.1 Freely allocated allowances,146420,units,81
+2012,MT,1.1.1 Free allocation to existing entities (Art. 10a(1)),212330,units,81
+2013,MT,1.1.1 Free allocation to existing entities (Art. 10a(1)),177402,units,81
+2014,MT,1.1.1 Free allocation to existing entities (Art. 10a(1)),177402,units,81
+2015,MT,1.1.1 Free allocation to existing entities (Art. 10a(1)),177402,units,81
+2016,MT,1.1.1 Free allocation to existing entities (Art. 10a(1)),177402,units,81
+2017,MT,1.1.1 Free allocation to existing entities (Art. 10a(1)),177402,units,81
+2018,MT,1.1.1 Free allocation to existing entities (Art. 10a(1)),177402,units,81
+2019,MT,1.1.1 Free allocation to existing entities (Art. 10a(1)),177402,units,81
+2020,MT,1.1.1 Free allocation to existing entities (Art. 10a(1)),181862,units,81
+2021,MT,1.1.1 Free allocation to existing entities (Art. 10a(1)),141821,units,81
+2017,MT,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),222,units,81
+2018,MT,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),222,units,81
+2019,MT,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),222,units,81
+2020,MT,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),222,units,81
+2020,MT,1.1.4 Swiss Free Allocated allowances for aircraft operators,4745,units,81
+2021,MT,1.1.4 Swiss Free Allocated allowances for aircraft operators,4599,units,81
+2012,MT,1.2 Correction to freely allocated allowances (not reflected in EUTL),-15165.78975454345,units,81
+2012,MT,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2013,MT,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2014,MT,1.3 Allowances auctioned or sold (EUAs and EUAAs),16500,units,81
+2015,MT,1.3 Allowances auctioned or sold (EUAs and EUAAs),81000,units,81
+2016,MT,1.3 Allowances auctioned or sold (EUAs and EUAAs),29500,units,81
+2017,MT,1.3 Allowances auctioned or sold (EUAs and EUAAs),23500,units,81
+2018,MT,1.3 Allowances auctioned or sold (EUAs and EUAAs),27500,units,81
+2019,MT,1.3 Allowances auctioned or sold (EUAs and EUAAs),28000,units,81
+2020,MT,1.3 Allowances auctioned or sold (EUAs and EUAAs),26500,units,81
+2021,MT,1.3 Allowances auctioned or sold (EUAs and EUAAs),22500,units,81
+2012,MT,2. Verified emissions,227826,tonne of CO2 equ.,81
+2013,MT,2. Verified emissions,219796,tonne of CO2 equ.,81
+2014,MT,2. Verified emissions,226150,tonne of CO2 equ.,81
+2015,MT,2. Verified emissions,255616,tonne of CO2 equ.,81
+2016,MT,2. Verified emissions,261774,tonne of CO2 equ.,81
+2017,MT,2. Verified emissions,263220,tonne of CO2 equ.,81
+2018,MT,2. Verified emissions,340908,tonne of CO2 equ.,81
+2019,MT,2. Verified emissions,389164,tonne of CO2 equ.,81
+2020,MT,2. Verified emissions,194797,tonne of CO2 equ.,81
+2021,MT,2. Verified emissions,260375,tonne of CO2 equ.,81
+2012,MT,2.1 EU-ETS Verified Emission,227826,tonne of CO2 equ.,81
+2013,MT,2.1 EU-ETS Verified Emission,219796,tonne of CO2 equ.,81
+2014,MT,2.1 EU-ETS Verified Emission,226150,tonne of CO2 equ.,81
+2015,MT,2.1 EU-ETS Verified Emission,255616,tonne of CO2 equ.,81
+2016,MT,2.1 EU-ETS Verified Emission,261774,tonne of CO2 equ.,81
+2017,MT,2.1 EU-ETS Verified Emission,263220,tonne of CO2 equ.,81
+2018,MT,2.1 EU-ETS Verified Emission,340908,tonne of CO2 equ.,81
+2019,MT,2.1 EU-ETS Verified Emission,389164,tonne of CO2 equ.,81
+2020,MT,2.1 EU-ETS Verified Emission,188231,tonne of CO2 equ.,81
+2021,MT,2.1 EU-ETS Verified Emission,253120,tonne of CO2 equ.,81
+2020,MT,2.2 Swiss Verified Emissions for aircraft operators,6566,tonne of CO2 equ.,81
+2021,MT,2.2 Swiss Verified Emissions for aircraft operators,7255,tonne of CO2 equ.,81
+2012,MT,4. Total surrendered units,227819,units,81
+2013,MT,4. Total surrendered units,7,units,81
+2014,MT,4. Total surrendered units,441878,units,81
+2015,MT,4. Total surrendered units,245357,units,81
+2016,MT,4. Total surrendered units,235399,units,81
+2017,MT,4. Total surrendered units,240687,units,81
+2018,MT,4. Total surrendered units,317715,units,81
+2019,MT,4. Total surrendered units,385958,units,81
+2020,MT,4. Total surrendered units,184573,units,81
+2021,MT,4. Total surrendered units,255311,units,81
+2012,MT,4.1 Surrendered EU allowances (EUAs and EUAAs),199165,units,81
+2013,MT,4.1 Surrendered EU allowances (EUAs and EUAAs),7,units,81
+2014,MT,4.1 Surrendered EU allowances (EUAs and EUAAs),441878,units,81
+2015,MT,4.1 Surrendered EU allowances (EUAs and EUAAs),245357,units,81
+2016,MT,4.1 Surrendered EU allowances (EUAs and EUAAs),235399,units,81
+2017,MT,4.1 Surrendered EU allowances (EUAs and EUAAs),240687,units,81
+2018,MT,4.1 Surrendered EU allowances (EUAs and EUAAs),317715,units,81
+2019,MT,4.1 Surrendered EU allowances (EUAs and EUAAs),385958,units,81
+2020,MT,4.1 Surrendered EU allowances (EUAs and EUAAs),179828,units,81
+2021,MT,4.1 Surrendered EU allowances (EUAs and EUAAs),252633,units,81
+2012,MT,4.2 Surrendered certified emission reductions (CERs),28285,units,81
+2012,MT,4.3 Surrendered emission reduction units (ERUs),369,units,81
+2020,MT,4.4 Surrendered Units CHU/CHUAA,4745,units,81
+2021,MT,4.4 Surrendered Units CHU/CHUAA,2678,units,81
+2012,NL,1. Total allocated allowances (EUA or EUAA),6310639.934292408,units,81
+2013,NL,1. Total allocated allowances (EUA or EUAA),1246044,units,81
+2014,NL,1. Total allocated allowances (EUA or EUAA),2153605,units,81
+2015,NL,1. Total allocated allowances (EUA or EUAA),1766079,units,81
+2016,NL,1. Total allocated allowances (EUA or EUAA),1433579,units,81
+2017,NL,1. Total allocated allowances (EUA or EUAA),1467875,units,81
+2018,NL,1. Total allocated allowances (EUA or EUAA),1495875,units,81
+2019,NL,1. Total allocated allowances (EUA or EUAA),1495875,units,81
+2020,NL,1. Total allocated allowances (EUA or EUAA),1527868,units,81
+2021,NL,1. Total allocated allowances (EUA or EUAA),1381895,units,81
+2012,NL,1.1 Freely allocated allowances,14661426,units,81
+2013,NL,1.1 Freely allocated allowances,1246044,units,81
+2014,NL,1.1 Freely allocated allowances,1242605,units,81
+2015,NL,1.1 Freely allocated allowances,1242579,units,81
+2016,NL,1.1 Freely allocated allowances,1242579,units,81
+2017,NL,1.1 Freely allocated allowances,1317375,units,81
+2018,NL,1.1 Freely allocated allowances,1317375,units,81
+2019,NL,1.1 Freely allocated allowances,1317375,units,81
+2020,NL,1.1 Freely allocated allowances,1356368,units,81
+2021,NL,1.1 Freely allocated allowances,1219395,units,81
+2012,NL,1.1.1 Free allocation to existing entities (Art. 10a(1)),14661426,units,81
+2013,NL,1.1.1 Free allocation to existing entities (Art. 10a(1)),1246044,units,81
+2014,NL,1.1.1 Free allocation to existing entities (Art. 10a(1)),1242605,units,81
+2015,NL,1.1.1 Free allocation to existing entities (Art. 10a(1)),1242579,units,81
+2016,NL,1.1.1 Free allocation to existing entities (Art. 10a(1)),1242579,units,81
+2017,NL,1.1.1 Free allocation to existing entities (Art. 10a(1)),1242579,units,81
+2018,NL,1.1.1 Free allocation to existing entities (Art. 10a(1)),1242579,units,81
+2019,NL,1.1.1 Free allocation to existing entities (Art. 10a(1)),1242579,units,81
+2020,NL,1.1.1 Free allocation to existing entities (Art. 10a(1)),1258754,units,81
+2021,NL,1.1.1 Free allocation to existing entities (Art. 10a(1)),1197231,units,81
+2017,NL,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),74796,units,81
+2018,NL,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),74796,units,81
+2019,NL,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),74796,units,81
+2020,NL,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),74796,units,81
+2020,NL,1.1.4 Swiss Free Allocated allowances for aircraft operators,22818,units,81
+2021,NL,1.1.4 Swiss Free Allocated allowances for aircraft operators,22164,units,81
+2012,NL,1.2 Correction to freely allocated allowances (not reflected in EUTL),-8350786.065707592,units,81
+2012,NL,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2013,NL,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2014,NL,1.3 Allowances auctioned or sold (EUAs and EUAAs),911000,units,81
+2015,NL,1.3 Allowances auctioned or sold (EUAs and EUAAs),523499.9999999999,units,81
+2016,NL,1.3 Allowances auctioned or sold (EUAs and EUAAs),191000,units,81
+2017,NL,1.3 Allowances auctioned or sold (EUAs and EUAAs),150500,units,81
+2018,NL,1.3 Allowances auctioned or sold (EUAs and EUAAs),178500,units,81
+2019,NL,1.3 Allowances auctioned or sold (EUAs and EUAAs),178500,units,81
+2020,NL,1.3 Allowances auctioned or sold (EUAs and EUAAs),171500,units,81
+2021,NL,1.3 Allowances auctioned or sold (EUAs and EUAAs),162500,units,81
+2012,NL,2. Verified emissions,4175876,tonne of CO2 equ.,81
+2013,NL,2. Verified emissions,2204714,tonne of CO2 equ.,81
+2014,NL,2. Verified emissions,2303899,tonne of CO2 equ.,81
+2015,NL,2. Verified emissions,2344780,tonne of CO2 equ.,81
+2016,NL,2. Verified emissions,2598849,tonne of CO2 equ.,81
+2017,NL,2. Verified emissions,2826984,tonne of CO2 equ.,81
+2018,NL,2. Verified emissions,2841237,tonne of CO2 equ.,81
+2019,NL,2. Verified emissions,2938207,tonne of CO2 equ.,81
+2020,NL,2. Verified emissions,1263527,tonne of CO2 equ.,81
+2021,NL,2. Verified emissions,1651252,tonne of CO2 equ.,81
+2012,NL,2.1 EU-ETS Verified Emission,4175876,tonne of CO2 equ.,81
+2013,NL,2.1 EU-ETS Verified Emission,2204714,tonne of CO2 equ.,81
+2014,NL,2.1 EU-ETS Verified Emission,2303899,tonne of CO2 equ.,81
+2015,NL,2.1 EU-ETS Verified Emission,2344780,tonne of CO2 equ.,81
+2016,NL,2.1 EU-ETS Verified Emission,2598849,tonne of CO2 equ.,81
+2017,NL,2.1 EU-ETS Verified Emission,2826984,tonne of CO2 equ.,81
+2018,NL,2.1 EU-ETS Verified Emission,2841237,tonne of CO2 equ.,81
+2019,NL,2.1 EU-ETS Verified Emission,2938207,tonne of CO2 equ.,81
+2020,NL,2.1 EU-ETS Verified Emission,1245092,tonne of CO2 equ.,81
+2021,NL,2.1 EU-ETS Verified Emission,1632563,tonne of CO2 equ.,81
+2020,NL,2.2 Swiss Verified Emissions for aircraft operators,18435,tonne of CO2 equ.,81
+2021,NL,2.2 Swiss Verified Emissions for aircraft operators,18689,tonne of CO2 equ.,81
+2012,NL,4. Total surrendered units,4170172,units,81
+2013,NL,4. Total surrendered units,187,units,81
+2014,NL,4. Total surrendered units,4512105,units,81
+2015,NL,4. Total surrendered units,2344348,units,81
+2016,NL,4. Total surrendered units,2601307,units,81
+2017,NL,4. Total surrendered units,2826983,units,81
+2018,NL,4. Total surrendered units,2841237,units,81
+2019,NL,4. Total surrendered units,2938572,units,81
+2020,NL,4. Total surrendered units,1259863,units,81
+2021,NL,4. Total surrendered units,1651005,units,81
+2012,NL,4.1 Surrendered EU allowances (EUAs and EUAAs),3576751,units,81
+2013,NL,4.1 Surrendered EU allowances (EUAs and EUAAs),187,units,81
+2014,NL,4.1 Surrendered EU allowances (EUAs and EUAAs),4512105,units,81
+2015,NL,4.1 Surrendered EU allowances (EUAs and EUAAs),2344348,units,81
+2016,NL,4.1 Surrendered EU allowances (EUAs and EUAAs),2601307,units,81
+2017,NL,4.1 Surrendered EU allowances (EUAs and EUAAs),2826983,units,81
+2018,NL,4.1 Surrendered EU allowances (EUAs and EUAAs),2841237,units,81
+2019,NL,4.1 Surrendered EU allowances (EUAs and EUAAs),2938572,units,81
+2020,NL,4.1 Surrendered EU allowances (EUAs and EUAAs),1092545,units,81
+2021,NL,4.1 Surrendered EU allowances (EUAs and EUAAs),1632433,units,81
+2012,NL,4.2 Surrendered certified emission reductions (CERs),111056,units,81
+2012,NL,4.3 Surrendered emission reduction units (ERUs),482365,units,81
+2020,NL,4.4 Surrendered Units CHU/CHUAA,167318,units,81
+2021,NL,4.4 Surrendered Units CHU/CHUAA,18572,units,81
+2012,NO,1. Total allocated allowances (EUA or EUAA),1014342.00311238,units,81
+2013,NO,1. Total allocated allowances (EUA or EUAA),894012,units,81
+2014,NO,1. Total allocated allowances (EUA or EUAA),894035,units,81
+2015,NO,1. Total allocated allowances (EUA or EUAA),894012,units,81
+2016,NO,1. Total allocated allowances (EUA or EUAA),894035,units,81
+2017,NO,1. Total allocated allowances (EUA or EUAA),894035,units,81
+2018,NO,1. Total allocated allowances (EUA or EUAA),894037,units,81
+2019,NO,1. Total allocated allowances (EUA or EUAA),1579035,units,81
+2020,NO,1. Total allocated allowances (EUA or EUAA),2046010,units,81
+2021,NO,1. Total allocated allowances (EUA or EUAA),1001773,units,81
+2012,NO,1.1 Freely allocated allowances,1068546,units,81
+2013,NO,1.1 Freely allocated allowances,894012,units,81
+2014,NO,1.1 Freely allocated allowances,894035,units,81
+2015,NO,1.1 Freely allocated allowances,894012,units,81
+2016,NO,1.1 Freely allocated allowances,894035,units,81
+2017,NO,1.1 Freely allocated allowances,894035,units,81
+2018,NO,1.1 Freely allocated allowances,894037,units,81
+2019,NO,1.1 Freely allocated allowances,894035,units,81
+2020,NO,1.1 Freely allocated allowances,900010,units,81
+2021,NO,1.1 Freely allocated allowances,842273,units,81
+2012,NO,1.1.1 Free allocation to existing entities (Art. 10a(1)),1068546,units,81
+2013,NO,1.1.1 Free allocation to existing entities (Art. 10a(1)),894012,units,81
+2014,NO,1.1.1 Free allocation to existing entities (Art. 10a(1)),894035,units,81
+2015,NO,1.1.1 Free allocation to existing entities (Art. 10a(1)),894012,units,81
+2016,NO,1.1.1 Free allocation to existing entities (Art. 10a(1)),894035,units,81
+2017,NO,1.1.1 Free allocation to existing entities (Art. 10a(1)),894035,units,81
+2018,NO,1.1.1 Free allocation to existing entities (Art. 10a(1)),894037,units,81
+2019,NO,1.1.1 Free allocation to existing entities (Art. 10a(1)),894035,units,81
+2020,NO,1.1.1 Free allocation to existing entities (Art. 10a(1)),897372,units,81
+2021,NO,1.1.1 Free allocation to existing entities (Art. 10a(1)),839693,units,81
+2020,NO,1.1.4 Swiss Free Allocated allowances for aircraft operators,2638,units,81
+2021,NO,1.1.4 Swiss Free Allocated allowances for aircraft operators,2580,units,81
+2012,NO,1.2 Correction to freely allocated allowances (not reflected in EUTL),-54203.99688761996,units,81
+2012,NO,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2013,NO,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2014,NO,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2015,NO,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2016,NO,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2017,NO,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2018,NO,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2019,NO,1.3 Allowances auctioned or sold (EUAs and EUAAs),685000,units,81
+2020,NO,1.3 Allowances auctioned or sold (EUAs and EUAAs),1146000,units,81
+2021,NO,1.3 Allowances auctioned or sold (EUAs and EUAAs),159500,units,81
+2012,NO,2. Verified emissions,1963425,tonne of CO2 equ.,81
+2013,NO,2. Verified emissions,2103094,tonne of CO2 equ.,81
+2014,NO,2. Verified emissions,2319433,tonne of CO2 equ.,81
+2015,NO,2. Verified emissions,2246646,tonne of CO2 equ.,81
+2016,NO,2. Verified emissions,1592192,tonne of CO2 equ.,81
+2017,NO,2. Verified emissions,1457639,tonne of CO2 equ.,81
+2018,NO,2. Verified emissions,1518319,tonne of CO2 equ.,81
+2019,NO,2. Verified emissions,1572058,tonne of CO2 equ.,81
+2020,NO,2. Verified emissions,574770,tonne of CO2 equ.,81
+2021,NO,2. Verified emissions,742920,tonne of CO2 equ.,81
+2012,NO,2.1 EU-ETS Verified Emission,1963425,tonne of CO2 equ.,81
+2013,NO,2.1 EU-ETS Verified Emission,2103094,tonne of CO2 equ.,81
+2014,NO,2.1 EU-ETS Verified Emission,2319433,tonne of CO2 equ.,81
+2015,NO,2.1 EU-ETS Verified Emission,2246646,tonne of CO2 equ.,81
+2016,NO,2.1 EU-ETS Verified Emission,1592192,tonne of CO2 equ.,81
+2017,NO,2.1 EU-ETS Verified Emission,1457639,tonne of CO2 equ.,81
+2018,NO,2.1 EU-ETS Verified Emission,1518319,tonne of CO2 equ.,81
+2019,NO,2.1 EU-ETS Verified Emission,1572058,tonne of CO2 equ.,81
+2020,NO,2.1 EU-ETS Verified Emission,573956,tonne of CO2 equ.,81
+2021,NO,2.1 EU-ETS Verified Emission,742858,tonne of CO2 equ.,81
+2020,NO,2.2 Swiss Verified Emissions for aircraft operators,814,tonne of CO2 equ.,81
+2021,NO,2.2 Swiss Verified Emissions for aircraft operators,62,tonne of CO2 equ.,81
+2012,NO,4. Total surrendered units,1963426,units,81
+2014,NO,4. Total surrendered units,4422527,units,81
+2015,NO,4. Total surrendered units,2246646,units,81
+2016,NO,4. Total surrendered units,1592192,units,81
+2017,NO,4. Total surrendered units,1440349,units,81
+2018,NO,4. Total surrendered units,1541265,units,81
+2019,NO,4. Total surrendered units,1566402,units,81
+2020,NO,4. Total surrendered units,201952,units,81
+2021,NO,4. Total surrendered units,742685,units,81
+2012,NO,4.1 Surrendered EU allowances (EUAs and EUAAs),1671039,units,81
+2014,NO,4.1 Surrendered EU allowances (EUAs and EUAAs),4422527,units,81
+2015,NO,4.1 Surrendered EU allowances (EUAs and EUAAs),2246646,units,81
+2016,NO,4.1 Surrendered EU allowances (EUAs and EUAAs),1592192,units,81
+2017,NO,4.1 Surrendered EU allowances (EUAs and EUAAs),1440349,units,81
+2018,NO,4.1 Surrendered EU allowances (EUAs and EUAAs),1541265,units,81
+2019,NO,4.1 Surrendered EU allowances (EUAs and EUAAs),1566402,units,81
+2020,NO,4.1 Surrendered EU allowances (EUAs and EUAAs),201952,units,81
+2021,NO,4.1 Surrendered EU allowances (EUAs and EUAAs),742632,units,81
+2012,NO,4.2 Surrendered certified emission reductions (CERs),279369,units,81
+2012,NO,4.3 Surrendered emission reduction units (ERUs),13018,units,81
+2021,NO,4.4 Surrendered Units CHU/CHUAA,53,units,81
+2012,PL,1. Total allocated allowances (EUA or EUAA),254866.0019242345,units,81
+2013,PL,1. Total allocated allowances (EUA or EUAA),230749,units,81
+2014,PL,1. Total allocated allowances (EUA or EUAA),230749,units,81
+2015,PL,1. Total allocated allowances (EUA or EUAA),664249,units,81
+2016,PL,1. Total allocated allowances (EUA or EUAA),350749,units,81
+2017,PL,1. Total allocated allowances (EUA or EUAA),563493,units,81
+2018,PL,1. Total allocated allowances (EUA or EUAA),580493,units,81
+2019,PL,1. Total allocated allowances (EUA or EUAA),468769,units,81
+2020,PL,1. Total allocated allowances (EUA or EUAA),474027,units,81
+2021,PL,1. Total allocated allowances (EUA or EUAA),402022,units,81
+2012,PL,1.1 Freely allocated allowances,651131,units,81
+2013,PL,1.1 Freely allocated allowances,230749,units,81
+2014,PL,1.1 Freely allocated allowances,230749,units,81
+2015,PL,1.1 Freely allocated allowances,230749,units,81
+2016,PL,1.1 Freely allocated allowances,230749,units,81
+2017,PL,1.1 Freely allocated allowances,468493,units,81
+2018,PL,1.1 Freely allocated allowances,468493,units,81
+2019,PL,1.1 Freely allocated allowances,356269,units,81
+2020,PL,1.1 Freely allocated allowances,368527,units,81
+2021,PL,1.1 Freely allocated allowances,288022,units,81
+2012,PL,1.1.1 Free allocation to existing entities (Art. 10a(1)),651131,units,81
+2013,PL,1.1.1 Free allocation to existing entities (Art. 10a(1)),230749,units,81
+2014,PL,1.1.1 Free allocation to existing entities (Art. 10a(1)),230749,units,81
+2015,PL,1.1.1 Free allocation to existing entities (Art. 10a(1)),230749,units,81
+2016,PL,1.1.1 Free allocation to existing entities (Art. 10a(1)),230749,units,81
+2017,PL,1.1.1 Free allocation to existing entities (Art. 10a(1)),230749,units,81
+2018,PL,1.1.1 Free allocation to existing entities (Art. 10a(1)),230749,units,81
+2019,PL,1.1.1 Free allocation to existing entities (Art. 10a(1)),230749,units,81
+2020,PL,1.1.1 Free allocation to existing entities (Art. 10a(1)),234131,units,81
+2021,PL,1.1.1 Free allocation to existing entities (Art. 10a(1)),279341,units,81
+2017,PL,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),237744,units,81
+2018,PL,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),237744,units,81
+2019,PL,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),125520,units,81
+2020,PL,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),125520,units,81
+2020,PL,1.1.4 Swiss Free Allocated allowances for aircraft operators,8876,units,81
+2021,PL,1.1.4 Swiss Free Allocated allowances for aircraft operators,8681,units,81
+2012,PL,1.2 Correction to freely allocated allowances (not reflected in EUTL),-396264.9980757655,units,81
+2012,PL,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2013,PL,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2014,PL,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2015,PL,1.3 Allowances auctioned or sold (EUAs and EUAAs),433500,units,81
+2016,PL,1.3 Allowances auctioned or sold (EUAs and EUAAs),120000,units,81
+2017,PL,1.3 Allowances auctioned or sold (EUAs and EUAAs),95000,units,81
+2018,PL,1.3 Allowances auctioned or sold (EUAs and EUAAs),112000,units,81
+2019,PL,1.3 Allowances auctioned or sold (EUAs and EUAAs),112500,units,81
+2020,PL,1.3 Allowances auctioned or sold (EUAs and EUAAs),105500,units,81
+2021,PL,1.3 Allowances auctioned or sold (EUAs and EUAAs),114000,units,81
+2012,PL,2. Verified emissions,641424,tonne of CO2 equ.,81
+2013,PL,2. Verified emissions,616587,tonne of CO2 equ.,81
+2014,PL,2. Verified emissions,629899,tonne of CO2 equ.,81
+2015,PL,2. Verified emissions,591020,tonne of CO2 equ.,81
+2016,PL,2. Verified emissions,749946,tonne of CO2 equ.,81
+2017,PL,2. Verified emissions,943715,tonne of CO2 equ.,81
+2018,PL,2. Verified emissions,1142534,tonne of CO2 equ.,81
+2019,PL,2. Verified emissions,1097467,tonne of CO2 equ.,81
+2020,PL,2. Verified emissions,429191,tonne of CO2 equ.,81
+2021,PL,2. Verified emissions,497959,tonne of CO2 equ.,81
+2012,PL,2.1 EU-ETS Verified Emission,641424,tonne of CO2 equ.,81
+2013,PL,2.1 EU-ETS Verified Emission,616587,tonne of CO2 equ.,81
+2014,PL,2.1 EU-ETS Verified Emission,629899,tonne of CO2 equ.,81
+2015,PL,2.1 EU-ETS Verified Emission,591020,tonne of CO2 equ.,81
+2016,PL,2.1 EU-ETS Verified Emission,749946,tonne of CO2 equ.,81
+2017,PL,2.1 EU-ETS Verified Emission,943715,tonne of CO2 equ.,81
+2018,PL,2.1 EU-ETS Verified Emission,1142534,tonne of CO2 equ.,81
+2019,PL,2.1 EU-ETS Verified Emission,1097467,tonne of CO2 equ.,81
+2020,PL,2.1 EU-ETS Verified Emission,421061,tonne of CO2 equ.,81
+2021,PL,2.1 EU-ETS Verified Emission,487570,tonne of CO2 equ.,81
+2020,PL,2.2 Swiss Verified Emissions for aircraft operators,8130,tonne of CO2 equ.,81
+2021,PL,2.2 Swiss Verified Emissions for aircraft operators,10389,tonne of CO2 equ.,81
+2012,PL,4. Total surrendered units,641424,units,81
+2013,PL,4. Total surrendered units,329,units,81
+2014,PL,4. Total surrendered units,1234962,units,81
+2015,PL,4. Total surrendered units,591020,units,81
+2016,PL,4. Total surrendered units,749946,units,81
+2017,PL,4. Total surrendered units,943715,units,81
+2018,PL,4. Total surrendered units,1015266,units,81
+2019,PL,4. Total surrendered units,1097467,units,81
+2020,PL,4. Total surrendered units,429191,units,81
+2021,PL,4. Total surrendered units,498045,units,81
+2012,PL,4.1 Surrendered EU allowances (EUAs and EUAAs),545931,units,81
+2013,PL,4.1 Surrendered EU allowances (EUAs and EUAAs),329,units,81
+2014,PL,4.1 Surrendered EU allowances (EUAs and EUAAs),1234962,units,81
+2015,PL,4.1 Surrendered EU allowances (EUAs and EUAAs),591020,units,81
+2016,PL,4.1 Surrendered EU allowances (EUAs and EUAAs),749946,units,81
+2017,PL,4.1 Surrendered EU allowances (EUAs and EUAAs),943715,units,81
+2018,PL,4.1 Surrendered EU allowances (EUAs and EUAAs),1015266,units,81
+2019,PL,4.1 Surrendered EU allowances (EUAs and EUAAs),1097467,units,81
+2020,PL,4.1 Surrendered EU allowances (EUAs and EUAAs),420315,units,81
+2021,PL,4.1 Surrendered EU allowances (EUAs and EUAAs),488875,units,81
+2012,PL,4.3 Surrendered emission reduction units (ERUs),95493,units,81
+2020,PL,4.4 Surrendered Units CHU/CHUAA,8876,units,81
+2021,PL,4.4 Surrendered Units CHU/CHUAA,9170,units,81
+2012,PT,1. Total allocated allowances (EUA or EUAA),773001.4438967672,units,81
+2013,PT,1. Total allocated allowances (EUA or EUAA),503817,units,81
+2014,PT,1. Total allocated allowances (EUA or EUAA),717886,units,81
+2015,PT,1. Total allocated allowances (EUA or EUAA),914319,units,81
+2016,PT,1. Total allocated allowances (EUA or EUAA),653817,units,81
+2017,PT,1. Total allocated allowances (EUA or EUAA),622317,units,81
+2018,PT,1. Total allocated allowances (EUA or EUAA),643817,units,81
+2019,PT,1. Total allocated allowances (EUA or EUAA),643817,units,81
+2020,PT,1. Total allocated allowances (EUA or EUAA),701997,units,81
+2021,PT,1. Total allocated allowances (EUA or EUAA),670959,units,81
+2012,PT,1.1 Freely allocated allowances,2111265,units,81
+2013,PT,1.1 Freely allocated allowances,503817,units,81
+2014,PT,1.1 Freely allocated allowances,505886,units,81
+2015,PT,1.1 Freely allocated allowances,503819,units,81
+2016,PT,1.1 Freely allocated allowances,503817,units,81
+2017,PT,1.1 Freely allocated allowances,503817,units,81
+2018,PT,1.1 Freely allocated allowances,503817,units,81
+2019,PT,1.1 Freely allocated allowances,503817,units,81
+2020,PT,1.1 Freely allocated allowances,567497,units,81
+2021,PT,1.1 Freely allocated allowances,523959,units,81
+2012,PT,1.1.1 Free allocation to existing entities (Art. 10a(1)),2111265,units,81
+2013,PT,1.1.1 Free allocation to existing entities (Art. 10a(1)),503817,units,81
+2014,PT,1.1.1 Free allocation to existing entities (Art. 10a(1)),505886,units,81
+2015,PT,1.1.1 Free allocation to existing entities (Art. 10a(1)),503819,units,81
+2016,PT,1.1.1 Free allocation to existing entities (Art. 10a(1)),503817,units,81
+2017,PT,1.1.1 Free allocation to existing entities (Art. 10a(1)),503817,units,81
+2018,PT,1.1.1 Free allocation to existing entities (Art. 10a(1)),503817,units,81
+2019,PT,1.1.1 Free allocation to existing entities (Art. 10a(1)),503817,units,81
+2020,PT,1.1.1 Free allocation to existing entities (Art. 10a(1)),530297,units,81
+2021,PT,1.1.1 Free allocation to existing entities (Art. 10a(1)),487701,units,81
+2020,PT,1.1.4 Swiss Free Allocated allowances for aircraft operators,37200,units,81
+2021,PT,1.1.4 Swiss Free Allocated allowances for aircraft operators,36258,units,81
+2012,PT,1.2 Correction to freely allocated allowances (not reflected in EUTL),-1338263.556103233,units,81
+2012,PT,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2013,PT,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2014,PT,1.3 Allowances auctioned or sold (EUAs and EUAAs),212000,units,81
+2015,PT,1.3 Allowances auctioned or sold (EUAs and EUAAs),410500,units,81
+2016,PT,1.3 Allowances auctioned or sold (EUAs and EUAAs),150000,units,81
+2017,PT,1.3 Allowances auctioned or sold (EUAs and EUAAs),118500,units,81
+2018,PT,1.3 Allowances auctioned or sold (EUAs and EUAAs),140000,units,81
+2019,PT,1.3 Allowances auctioned or sold (EUAs and EUAAs),140000,units,81
+2020,PT,1.3 Allowances auctioned or sold (EUAs and EUAAs),134500,units,81
+2021,PT,1.3 Allowances auctioned or sold (EUAs and EUAAs),147000,units,81
+2012,PT,2. Verified emissions,1519494,tonne of CO2 equ.,81
+2013,PT,2. Verified emissions,1183922,tonne of CO2 equ.,81
+2014,PT,2. Verified emissions,1230446,tonne of CO2 equ.,81
+2015,PT,2. Verified emissions,1280858,tonne of CO2 equ.,81
+2016,PT,2. Verified emissions,1239074,tonne of CO2 equ.,81
+2017,PT,2. Verified emissions,1347447,tonne of CO2 equ.,81
+2018,PT,2. Verified emissions,1503870,tonne of CO2 equ.,81
+2019,PT,2. Verified emissions,1554584,tonne of CO2 equ.,81
+2020,PT,2. Verified emissions,567676,tonne of CO2 equ.,81
+2021,PT,2. Verified emissions,657347,tonne of CO2 equ.,81
+2012,PT,2.1 EU-ETS Verified Emission,1519494,tonne of CO2 equ.,81
+2013,PT,2.1 EU-ETS Verified Emission,1183922,tonne of CO2 equ.,81
+2014,PT,2.1 EU-ETS Verified Emission,1230446,tonne of CO2 equ.,81
+2015,PT,2.1 EU-ETS Verified Emission,1280858,tonne of CO2 equ.,81
+2016,PT,2.1 EU-ETS Verified Emission,1239074,tonne of CO2 equ.,81
+2017,PT,2.1 EU-ETS Verified Emission,1347447,tonne of CO2 equ.,81
+2018,PT,2.1 EU-ETS Verified Emission,1503870,tonne of CO2 equ.,81
+2019,PT,2.1 EU-ETS Verified Emission,1554584,tonne of CO2 equ.,81
+2020,PT,2.1 EU-ETS Verified Emission,535839,tonne of CO2 equ.,81
+2021,PT,2.1 EU-ETS Verified Emission,622977,tonne of CO2 equ.,81
+2020,PT,2.2 Swiss Verified Emissions for aircraft operators,31837,tonne of CO2 equ.,81
+2021,PT,2.2 Swiss Verified Emissions for aircraft operators,34370,tonne of CO2 equ.,81
+2012,PT,4. Total surrendered units,1516564,units,81
+2013,PT,4. Total surrendered units,231,units,81
+2014,PT,4. Total surrendered units,2411993,units,81
+2015,PT,4. Total surrendered units,1285026,units,81
+2016,PT,4. Total surrendered units,1239220,units,81
+2017,PT,4. Total surrendered units,1347195,units,81
+2018,PT,4. Total surrendered units,1504131,units,81
+2019,PT,4. Total surrendered units,1554623,units,81
+2020,PT,4. Total surrendered units,567620,units,81
+2021,PT,4. Total surrendered units,657053,units,81
+2012,PT,4.1 Surrendered EU allowances (EUAs and EUAAs),1289355,units,81
+2013,PT,4.1 Surrendered EU allowances (EUAs and EUAAs),231,units,81
+2014,PT,4.1 Surrendered EU allowances (EUAs and EUAAs),2411993,units,81
+2015,PT,4.1 Surrendered EU allowances (EUAs and EUAAs),1285026,units,81
+2016,PT,4.1 Surrendered EU allowances (EUAs and EUAAs),1239220,units,81
+2017,PT,4.1 Surrendered EU allowances (EUAs and EUAAs),1347195,units,81
+2018,PT,4.1 Surrendered EU allowances (EUAs and EUAAs),1504131,units,81
+2019,PT,4.1 Surrendered EU allowances (EUAs and EUAAs),1554623,units,81
+2020,PT,4.1 Surrendered EU allowances (EUAs and EUAAs),530420,units,81
+2021,PT,4.1 Surrendered EU allowances (EUAs and EUAAs),634020,units,81
+2012,PT,4.2 Surrendered certified emission reductions (CERs),20026,units,81
+2012,PT,4.3 Surrendered emission reduction units (ERUs),207183,units,81
+2020,PT,4.4 Surrendered Units CHU/CHUAA,37200,units,81
+2021,PT,4.4 Surrendered Units CHU/CHUAA,23033,units,81
+2012,RO,1. Total allocated allowances (EUA or EUAA),335568.3425529267,units,81
+2013,RO,1. Total allocated allowances (EUA or EUAA),314061,units,81
+2014,RO,1. Total allocated allowances (EUA or EUAA),368061,units,81
+2015,RO,1. Total allocated allowances (EUA or EUAA),541061,units,81
+2016,RO,1. Total allocated allowances (EUA or EUAA),396561,units,81
+2017,RO,1. Total allocated allowances (EUA or EUAA),379561,units,81
+2018,RO,1. Total allocated allowances (EUA or EUAA),391061,units,81
+2019,RO,1. Total allocated allowances (EUA or EUAA),391561,units,81
+2020,RO,1. Total allocated allowances (EUA or EUAA),389604,units,81
+2021,RO,1. Total allocated allowances (EUA or EUAA),342840,units,81
+2012,RO,1.1 Freely allocated allowances,380258,units,81
+2013,RO,1.1 Freely allocated allowances,314061,units,81
+2014,RO,1.1 Freely allocated allowances,314061,units,81
+2015,RO,1.1 Freely allocated allowances,314061,units,81
+2016,RO,1.1 Freely allocated allowances,314061,units,81
+2017,RO,1.1 Freely allocated allowances,314061,units,81
+2018,RO,1.1 Freely allocated allowances,314061,units,81
+2019,RO,1.1 Freely allocated allowances,314061,units,81
+2020,RO,1.1 Freely allocated allowances,315104,units,81
+2021,RO,1.1 Freely allocated allowances,272340,units,81
+2012,RO,1.1.1 Free allocation to existing entities (Art. 10a(1)),380258,units,81
+2013,RO,1.1.1 Free allocation to existing entities (Art. 10a(1)),314061,units,81
+2014,RO,1.1.1 Free allocation to existing entities (Art. 10a(1)),314061,units,81
+2015,RO,1.1.1 Free allocation to existing entities (Art. 10a(1)),314061,units,81
+2016,RO,1.1.1 Free allocation to existing entities (Art. 10a(1)),314061,units,81
+2017,RO,1.1.1 Free allocation to existing entities (Art. 10a(1)),314061,units,81
+2018,RO,1.1.1 Free allocation to existing entities (Art. 10a(1)),314061,units,81
+2019,RO,1.1.1 Free allocation to existing entities (Art. 10a(1)),314061,units,81
+2020,RO,1.1.1 Free allocation to existing entities (Art. 10a(1)),315092,units,81
+2021,RO,1.1.1 Free allocation to existing entities (Art. 10a(1)),272340,units,81
+2020,RO,1.1.4 Swiss Free Allocated allowances for aircraft operators,12,units,81
+2012,RO,1.2 Correction to freely allocated allowances (not reflected in EUTL),-44689.65744707326,units,81
+2012,RO,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2013,RO,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2014,RO,1.3 Allowances auctioned or sold (EUAs and EUAAs),54000,units,81
+2015,RO,1.3 Allowances auctioned or sold (EUAs and EUAAs),227000,units,81
+2016,RO,1.3 Allowances auctioned or sold (EUAs and EUAAs),82500,units,81
+2017,RO,1.3 Allowances auctioned or sold (EUAs and EUAAs),65500,units,81
+2018,RO,1.3 Allowances auctioned or sold (EUAs and EUAAs),77000,units,81
+2019,RO,1.3 Allowances auctioned or sold (EUAs and EUAAs),77500,units,81
+2020,RO,1.3 Allowances auctioned or sold (EUAs and EUAAs),74500,units,81
+2021,RO,1.3 Allowances auctioned or sold (EUAs and EUAAs),70500,units,81
+2012,RO,2. Verified emissions,511204,tonne of CO2 equ.,81
+2013,RO,2. Verified emissions,477818,tonne of CO2 equ.,81
+2014,RO,2. Verified emissions,491218,tonne of CO2 equ.,81
+2015,RO,2. Verified emissions,571364,tonne of CO2 equ.,81
+2016,RO,2. Verified emissions,751929,tonne of CO2 equ.,81
+2017,RO,2. Verified emissions,919126,tonne of CO2 equ.,81
+2018,RO,2. Verified emissions,952934,tonne of CO2 equ.,81
+2019,RO,2. Verified emissions,1068766,tonne of CO2 equ.,81
+2020,RO,2. Verified emissions,375041,tonne of CO2 equ.,81
+2021,RO,2. Verified emissions,392336,tonne of CO2 equ.,81
+2012,RO,2.1 EU-ETS Verified Emission,511204,tonne of CO2 equ.,81
+2013,RO,2.1 EU-ETS Verified Emission,477818,tonne of CO2 equ.,81
+2014,RO,2.1 EU-ETS Verified Emission,491218,tonne of CO2 equ.,81
+2015,RO,2.1 EU-ETS Verified Emission,571364,tonne of CO2 equ.,81
+2016,RO,2.1 EU-ETS Verified Emission,751929,tonne of CO2 equ.,81
+2017,RO,2.1 EU-ETS Verified Emission,919126,tonne of CO2 equ.,81
+2018,RO,2.1 EU-ETS Verified Emission,952934,tonne of CO2 equ.,81
+2019,RO,2.1 EU-ETS Verified Emission,1068766,tonne of CO2 equ.,81
+2020,RO,2.1 EU-ETS Verified Emission,375002,tonne of CO2 equ.,81
+2021,RO,2.1 EU-ETS Verified Emission,392286,tonne of CO2 equ.,81
+2020,RO,2.2 Swiss Verified Emissions for aircraft operators,39,tonne of CO2 equ.,81
+2021,RO,2.2 Swiss Verified Emissions for aircraft operators,50,tonne of CO2 equ.,81
+2012,RO,4. Total surrendered units,511204,units,81
+2014,RO,4. Total surrendered units,969036,units,81
+2015,RO,4. Total surrendered units,571364,units,81
+2016,RO,4. Total surrendered units,751929,units,81
+2017,RO,4. Total surrendered units,919894,units,81
+2018,RO,4. Total surrendered units,952166,units,81
+2019,RO,4. Total surrendered units,1068766,units,81
+2020,RO,4. Total surrendered units,375041,units,81
+2021,RO,4. Total surrendered units,339906,units,81
+2012,RO,4.1 Surrendered EU allowances (EUAs and EUAAs),434531,units,81
+2014,RO,4.1 Surrendered EU allowances (EUAs and EUAAs),969036,units,81
+2015,RO,4.1 Surrendered EU allowances (EUAs and EUAAs),571364,units,81
+2016,RO,4.1 Surrendered EU allowances (EUAs and EUAAs),751929,units,81
+2017,RO,4.1 Surrendered EU allowances (EUAs and EUAAs),919894,units,81
+2018,RO,4.1 Surrendered EU allowances (EUAs and EUAAs),952166,units,81
+2019,RO,4.1 Surrendered EU allowances (EUAs and EUAAs),1068766,units,81
+2020,RO,4.1 Surrendered EU allowances (EUAs and EUAAs),375029,units,81
+2021,RO,4.1 Surrendered EU allowances (EUAs and EUAAs),339906,units,81
+2012,RO,4.3 Surrendered emission reduction units (ERUs),76673,units,81
+2020,RO,4.4 Surrendered Units CHU/CHUAA,12,units,81
+2012,SE,1. Total allocated allowances (EUA or EUAA),3151747.869184981,units,81
+2013,SE,1. Total allocated allowances (EUA or EUAA),1537511,units,81
+2014,SE,1. Total allocated allowances (EUA or EUAA),1708003,units,81
+2015,SE,1. Total allocated allowances (EUA or EUAA),2054003,units,81
+2016,SE,1. Total allocated allowances (EUA or EUAA),1726003,units,81
+2017,SE,1. Total allocated allowances (EUA or EUAA),1691291,units,81
+2018,SE,1. Total allocated allowances (EUA or EUAA),1709507,units,81
+2019,SE,1. Total allocated allowances (EUA or EUAA),1703373,units,81
+2020,SE,1. Total allocated allowances (EUA or EUAA),1716766,units,81
+2021,SE,1. Total allocated allowances (EUA or EUAA),1603582,units,81
+2012,SE,1.1 Freely allocated allowances,3151814,units,81
+2013,SE,1.1 Freely allocated allowances,1537511,units,81
+2014,SE,1.1 Freely allocated allowances,1537503,units,81
+2015,SE,1.1 Freely allocated allowances,1537503,units,81
+2016,SE,1.1 Freely allocated allowances,1537503,units,81
+2017,SE,1.1 Freely allocated allowances,1542291,units,81
+2018,SE,1.1 Freely allocated allowances,1533007,units,81
+2019,SE,1.1 Freely allocated allowances,1527373,units,81
+2020,SE,1.1 Freely allocated allowances,1547266,units,81
+2021,SE,1.1 Freely allocated allowances,1462582,units,81
+2012,SE,1.1.1 Free allocation to existing entities (Art. 10a(1)),3151814,units,81
+2013,SE,1.1.1 Free allocation to existing entities (Art. 10a(1)),1537511,units,81
+2014,SE,1.1.1 Free allocation to existing entities (Art. 10a(1)),1537503,units,81
+2015,SE,1.1.1 Free allocation to existing entities (Art. 10a(1)),1537503,units,81
+2016,SE,1.1.1 Free allocation to existing entities (Art. 10a(1)),1537503,units,81
+2017,SE,1.1.1 Free allocation to existing entities (Art. 10a(1)),1537467,units,81
+2018,SE,1.1.1 Free allocation to existing entities (Art. 10a(1)),1528183,units,81
+2019,SE,1.1.1 Free allocation to existing entities (Art. 10a(1)),1522549,units,81
+2020,SE,1.1.1 Free allocation to existing entities (Art. 10a(1)),1518100,units,81
+2021,SE,1.1.1 Free allocation to existing entities (Art. 10a(1)),1438772,units,81
+2017,SE,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),4824,units,81
+2018,SE,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),4824,units,81
+2019,SE,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),4824,units,81
+2020,SE,1.1.2 Free allocation from the new entrants reserve (Art. 10a(7)),4824,units,81
+2020,SE,1.1.4 Swiss Free Allocated allowances for aircraft operators,24342,units,81
+2021,SE,1.1.4 Swiss Free Allocated allowances for aircraft operators,23810,units,81
+2012,SE,1.2 Correction to freely allocated allowances (not reflected in EUTL),-66.13081501889974,units,81
+2012,SE,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2013,SE,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2014,SE,1.3 Allowances auctioned or sold (EUAs and EUAAs),170500,units,81
+2015,SE,1.3 Allowances auctioned or sold (EUAs and EUAAs),516499.9999999999,units,81
+2016,SE,1.3 Allowances auctioned or sold (EUAs and EUAAs),188500,units,81
+2017,SE,1.3 Allowances auctioned or sold (EUAs and EUAAs),149000,units,81
+2018,SE,1.3 Allowances auctioned or sold (EUAs and EUAAs),176500,units,81
+2019,SE,1.3 Allowances auctioned or sold (EUAs and EUAAs),176000,units,81
+2020,SE,1.3 Allowances auctioned or sold (EUAs and EUAAs),169500,units,81
+2021,SE,1.3 Allowances auctioned or sold (EUAs and EUAAs),141000,units,81
+2012,SE,2. Verified emissions,4371631,tonne of CO2 equ.,81
+2013,SE,2. Verified emissions,2737347,tonne of CO2 equ.,81
+2014,SE,2. Verified emissions,2823996,tonne of CO2 equ.,81
+2015,SE,2. Verified emissions,2808525,tonne of CO2 equ.,81
+2016,SE,2. Verified emissions,2889899,tonne of CO2 equ.,81
+2017,SE,2. Verified emissions,2961636,tonne of CO2 equ.,81
+2018,SE,2. Verified emissions,2860973,tonne of CO2 equ.,81
+2019,SE,2. Verified emissions,2764968,tonne of CO2 equ.,81
+2020,SE,2. Verified emissions,1017394,tonne of CO2 equ.,81
+2021,SE,2. Verified emissions,1050735,tonne of CO2 equ.,81
+2012,SE,2.1 EU-ETS Verified Emission,4371631,tonne of CO2 equ.,81
+2013,SE,2.1 EU-ETS Verified Emission,2737347,tonne of CO2 equ.,81
+2014,SE,2.1 EU-ETS Verified Emission,2823996,tonne of CO2 equ.,81
+2015,SE,2.1 EU-ETS Verified Emission,2808525,tonne of CO2 equ.,81
+2016,SE,2.1 EU-ETS Verified Emission,2889899,tonne of CO2 equ.,81
+2017,SE,2.1 EU-ETS Verified Emission,2961636,tonne of CO2 equ.,81
+2018,SE,2.1 EU-ETS Verified Emission,2860973,tonne of CO2 equ.,81
+2019,SE,2.1 EU-ETS Verified Emission,2764968,tonne of CO2 equ.,81
+2020,SE,2.1 EU-ETS Verified Emission,1004997,tonne of CO2 equ.,81
+2021,SE,2.1 EU-ETS Verified Emission,1045882,tonne of CO2 equ.,81
+2020,SE,2.2 Swiss Verified Emissions for aircraft operators,12397,tonne of CO2 equ.,81
+2021,SE,2.2 Swiss Verified Emissions for aircraft operators,4853,tonne of CO2 equ.,81
+2012,SE,4. Total surrendered units,4372036,units,81
+2013,SE,4. Total surrendered units,1397,units,81
+2014,SE,4. Total surrendered units,5556091,units,81
+2015,SE,4. Total surrendered units,2813072,units,81
+2016,SE,4. Total surrendered units,2889900,units,81
+2017,SE,4. Total surrendered units,2961636,units,81
+2018,SE,4. Total surrendered units,2860973,units,81
+2019,SE,4. Total surrendered units,2764967,units,81
+2020,SE,4. Total surrendered units,1017412,units,81
+2021,SE,4. Total surrendered units,1051748,units,81
+2012,SE,4.1 Surrendered EU allowances (EUAs and EUAAs),3745559,units,81
+2013,SE,4.1 Surrendered EU allowances (EUAs and EUAAs),1397,units,81
+2014,SE,4.1 Surrendered EU allowances (EUAs and EUAAs),5556091,units,81
+2015,SE,4.1 Surrendered EU allowances (EUAs and EUAAs),2813072,units,81
+2016,SE,4.1 Surrendered EU allowances (EUAs and EUAAs),2889900,units,81
+2017,SE,4.1 Surrendered EU allowances (EUAs and EUAAs),2961636,units,81
+2018,SE,4.1 Surrendered EU allowances (EUAs and EUAAs),2860973,units,81
+2019,SE,4.1 Surrendered EU allowances (EUAs and EUAAs),2764967,units,81
+2020,SE,4.1 Surrendered EU allowances (EUAs and EUAAs),993080,units,81
+2021,SE,4.1 Surrendered EU allowances (EUAs and EUAAs),1010840,units,81
+2012,SE,4.2 Surrendered certified emission reductions (CERs),46002,units,81
+2012,SE,4.3 Surrendered emission reduction units (ERUs),580475,units,81
+2020,SE,4.4 Surrendered Units CHU/CHUAA,24332,units,81
+2021,SE,4.4 Surrendered Units CHU/CHUAA,40908,units,81
+2012,SI,1. Total allocated allowances (EUA or EUAA),44555.75933848943,units,81
+2013,SI,1. Total allocated allowances (EUA or EUAA),38891,units,81
+2014,SI,1. Total allocated allowances (EUA or EUAA),46891,units,81
+2015,SI,1. Total allocated allowances (EUA or EUAA),58391,units,81
+2016,SI,1. Total allocated allowances (EUA or EUAA),45891,units,81
+2017,SI,1. Total allocated allowances (EUA or EUAA),44891,units,81
+2018,SI,1. Total allocated allowances (EUA or EUAA),45391,units,81
+2019,SI,1. Total allocated allowances (EUA or EUAA),45391,units,81
+2020,SI,1. Total allocated allowances (EUA or EUAA),6500,units,81
+2021,SI,1. Total allocated allowances (EUA or EUAA),5000,units,81
+2012,SI,1.1 Freely allocated allowances,82534,units,81
+2013,SI,1.1 Freely allocated allowances,38891,units,81
+2014,SI,1.1 Freely allocated allowances,38891,units,81
+2015,SI,1.1 Freely allocated allowances,38891,units,81
+2016,SI,1.1 Freely allocated allowances,38891,units,81
+2017,SI,1.1 Freely allocated allowances,38891,units,81
+2018,SI,1.1 Freely allocated allowances,38891,units,81
+2019,SI,1.1 Freely allocated allowances,38891,units,81
+2012,SI,1.1.1 Free allocation to existing entities (Art. 10a(1)),82534,units,81
+2013,SI,1.1.1 Free allocation to existing entities (Art. 10a(1)),38891,units,81
+2014,SI,1.1.1 Free allocation to existing entities (Art. 10a(1)),38891,units,81
+2015,SI,1.1.1 Free allocation to existing entities (Art. 10a(1)),38891,units,81
+2016,SI,1.1.1 Free allocation to existing entities (Art. 10a(1)),38891,units,81
+2017,SI,1.1.1 Free allocation to existing entities (Art. 10a(1)),38891,units,81
+2018,SI,1.1.1 Free allocation to existing entities (Art. 10a(1)),38891,units,81
+2019,SI,1.1.1 Free allocation to existing entities (Art. 10a(1)),38891,units,81
+2012,SI,1.2 Correction to freely allocated allowances (not reflected in EUTL),-37978.24066151057,units,81
+2012,SI,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2013,SI,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2014,SI,1.3 Allowances auctioned or sold (EUAs and EUAAs),8000,units,81
+2015,SI,1.3 Allowances auctioned or sold (EUAs and EUAAs),19500,units,81
+2016,SI,1.3 Allowances auctioned or sold (EUAs and EUAAs),7000,units,81
+2017,SI,1.3 Allowances auctioned or sold (EUAs and EUAAs),6000,units,81
+2018,SI,1.3 Allowances auctioned or sold (EUAs and EUAAs),6500,units,81
+2019,SI,1.3 Allowances auctioned or sold (EUAs and EUAAs),6500,units,81
+2020,SI,1.3 Allowances auctioned or sold (EUAs and EUAAs),6500,units,81
+2021,SI,1.3 Allowances auctioned or sold (EUAs and EUAAs),5000,units,81
+2012,SI,2. Verified emissions,71482,tonne of CO2 equ.,81
+2013,SI,2. Verified emissions,59807,tonne of CO2 equ.,81
+2014,SI,2. Verified emissions,66206,tonne of CO2 equ.,81
+2015,SI,2. Verified emissions,88387,tonne of CO2 equ.,81
+2016,SI,2. Verified emissions,135814,tonne of CO2 equ.,81
+2017,SI,2. Verified emissions,103758,tonne of CO2 equ.,81
+2018,SI,2. Verified emissions,97383,tonne of CO2 equ.,81
+2019,SI,2. Verified emissions,48220,tonne of CO2 equ.,81
+2012,SI,2.1 EU-ETS Verified Emission,71482,tonne of CO2 equ.,81
+2013,SI,2.1 EU-ETS Verified Emission,59807,tonne of CO2 equ.,81
+2014,SI,2.1 EU-ETS Verified Emission,66206,tonne of CO2 equ.,81
+2015,SI,2.1 EU-ETS Verified Emission,88387,tonne of CO2 equ.,81
+2016,SI,2.1 EU-ETS Verified Emission,135814,tonne of CO2 equ.,81
+2017,SI,2.1 EU-ETS Verified Emission,103758,tonne of CO2 equ.,81
+2018,SI,2.1 EU-ETS Verified Emission,97383,tonne of CO2 equ.,81
+2019,SI,2.1 EU-ETS Verified Emission,48220,tonne of CO2 equ.,81
+2012,SI,4. Total surrendered units,71482,units,81
+2014,SI,4. Total surrendered units,126013,units,81
+2015,SI,4. Total surrendered units,88387,units,81
+2016,SI,4. Total surrendered units,135814,units,81
+2017,SI,4. Total surrendered units,92895,units,81
+2018,SI,4. Total surrendered units,97383,units,81
+2019,SI,4. Total surrendered units,723,units,81
+2012,SI,4.1 Surrendered EU allowances (EUAs and EUAAs),60760,units,81
+2014,SI,4.1 Surrendered EU allowances (EUAs and EUAAs),126013,units,81
+2015,SI,4.1 Surrendered EU allowances (EUAs and EUAAs),88387,units,81
+2016,SI,4.1 Surrendered EU allowances (EUAs and EUAAs),135814,units,81
+2017,SI,4.1 Surrendered EU allowances (EUAs and EUAAs),92895,units,81
+2018,SI,4.1 Surrendered EU allowances (EUAs and EUAAs),97383,units,81
+2019,SI,4.1 Surrendered EU allowances (EUAs and EUAAs),723,units,81
+2012,SI,4.3 Surrendered emission reduction units (ERUs),10722,units,81
+2012,SK,1. Total allocated allowances (EUA or EUAA),55051,units,81
+2013,SK,1. Total allocated allowances (EUA or EUAA),12065,units,81
+2014,SK,1. Total allocated allowances (EUA or EUAA),19565,units,81
+2015,SK,1. Total allocated allowances (EUA or EUAA),40065,units,81
+2016,SK,1. Total allocated allowances (EUA or EUAA),22565,units,81
+2017,SK,1. Total allocated allowances (EUA or EUAA),20065,units,81
+2018,SK,1. Total allocated allowances (EUA or EUAA),21565,units,81
+2019,SK,1. Total allocated allowances (EUA or EUAA),21565,units,81
+2020,SK,1. Total allocated allowances (EUA or EUAA),9000,units,81
+2021,SK,1. Total allocated allowances (EUA or EUAA),17786,units,81
+2012,SK,1.1 Freely allocated allowances,55051,units,81
+2013,SK,1.1 Freely allocated allowances,12065,units,81
+2014,SK,1.1 Freely allocated allowances,12065,units,81
+2015,SK,1.1 Freely allocated allowances,12065,units,81
+2016,SK,1.1 Freely allocated allowances,12065,units,81
+2017,SK,1.1 Freely allocated allowances,12065,units,81
+2018,SK,1.1 Freely allocated allowances,12065,units,81
+2019,SK,1.1 Freely allocated allowances,12065,units,81
+2021,SK,1.1 Freely allocated allowances,11786,units,81
+2012,SK,1.1.1 Free allocation to existing entities (Art. 10a(1)),55051,units,81
+2013,SK,1.1.1 Free allocation to existing entities (Art. 10a(1)),12065,units,81
+2014,SK,1.1.1 Free allocation to existing entities (Art. 10a(1)),12065,units,81
+2015,SK,1.1.1 Free allocation to existing entities (Art. 10a(1)),12065,units,81
+2016,SK,1.1.1 Free allocation to existing entities (Art. 10a(1)),12065,units,81
+2017,SK,1.1.1 Free allocation to existing entities (Art. 10a(1)),12065,units,81
+2018,SK,1.1.1 Free allocation to existing entities (Art. 10a(1)),12065,units,81
+2019,SK,1.1.1 Free allocation to existing entities (Art. 10a(1)),12065,units,81
+2021,SK,1.1.1 Free allocation to existing entities (Art. 10a(1)),11786,units,81
+2012,SK,1.2 Correction to freely allocated allowances (not reflected in EUTL),0,units,81
+2012,SK,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2013,SK,1.3 Allowances auctioned or sold (EUAs and EUAAs),0,units,81
+2014,SK,1.3 Allowances auctioned or sold (EUAs and EUAAs),7500,units,81
+2015,SK,1.3 Allowances auctioned or sold (EUAs and EUAAs),28000,units,81
+2016,SK,1.3 Allowances auctioned or sold (EUAs and EUAAs),10500,units,81
+2017,SK,1.3 Allowances auctioned or sold (EUAs and EUAAs),8000,units,81
+2018,SK,1.3 Allowances auctioned or sold (EUAs and EUAAs),9500,units,81
+2019,SK,1.3 Allowances auctioned or sold (EUAs and EUAAs),9500,units,81
+2020,SK,1.3 Allowances auctioned or sold (EUAs and EUAAs),9000,units,81
+2021,SK,1.3 Allowances auctioned or sold (EUAs and EUAAs),6000,units,81
+2012,SK,2. Verified emissions,54387,tonne of CO2 equ.,81
+2013,SK,2. Verified emissions,22162,tonne of CO2 equ.,81
+2014,SK,2. Verified emissions,24652,tonne of CO2 equ.,81
+2015,SK,2. Verified emissions,21425,tonne of CO2 equ.,81
+2016,SK,2. Verified emissions,14524,tonne of CO2 equ.,81
+2017,SK,2. Verified emissions,14225,tonne of CO2 equ.,81
+2018,SK,2. Verified emissions,12071,tonne of CO2 equ.,81
+2019,SK,2. Verified emissions,5357,tonne of CO2 equ.,81
+2021,SK,2. Verified emissions,8655,tonne of CO2 equ.,81
+2012,SK,2.1 EU-ETS Verified Emission,54387,tonne of CO2 equ.,81
+2013,SK,2.1 EU-ETS Verified Emission,22162,tonne of CO2 equ.,81
+2014,SK,2.1 EU-ETS Verified Emission,24652,tonne of CO2 equ.,81
+2015,SK,2.1 EU-ETS Verified Emission,21425,tonne of CO2 equ.,81
+2016,SK,2.1 EU-ETS Verified Emission,14524,tonne of CO2 equ.,81
+2017,SK,2.1 EU-ETS Verified Emission,14225,tonne of CO2 equ.,81
+2018,SK,2.1 EU-ETS Verified Emission,12071,tonne of CO2 equ.,81
+2019,SK,2.1 EU-ETS Verified Emission,5357,tonne of CO2 equ.,81
+2021,SK,2.1 EU-ETS Verified Emission,8645,tonne of CO2 equ.,81
+2021,SK,2.2 Swiss Verified Emissions for aircraft operators,10,tonne of CO2 equ.,81
+2012,SK,4. Total surrendered units,54387,units,81
+2014,SK,4. Total surrendered units,46814,units,81
+2015,SK,4. Total surrendered units,21425,units,81
+2016,SK,4. Total surrendered units,14524,units,81
+2017,SK,4. Total surrendered units,14225,units,81
+2018,SK,4. Total surrendered units,12071,units,81
+2019,SK,4. Total surrendered units,5357,units,81
+2021,SK,4. Total surrendered units,8655,units,81
+2012,SK,4.1 Surrendered EU allowances (EUAs and EUAAs),46230,units,81
+2014,SK,4.1 Surrendered EU allowances (EUAs and EUAAs),46814,units,81
+2015,SK,4.1 Surrendered EU allowances (EUAs and EUAAs),21425,units,81
+2016,SK,4.1 Surrendered EU allowances (EUAs and EUAAs),14524,units,81
+2017,SK,4.1 Surrendered EU allowances (EUAs and EUAAs),14225,units,81
+2018,SK,4.1 Surrendered EU allowances (EUAs and EUAAs),12071,units,81
+2019,SK,4.1 Surrendered EU allowances (EUAs and EUAAs),5357,units,81
+2021,SK,4.1 Surrendered EU allowances (EUAs and EUAAs),8655,units,81
+2012,SK,4.3 Surrendered emission reduction units (ERUs),8157,units,81

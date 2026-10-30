@@ -1,0 +1,27 @@
+# Ablation variants
+reference: full_model
+
+variants:
+  - id: dose_response
+    change: "add dose-response moderator (net-short x post)"
+    hypothesis: "ETS price response increases with net-short position"
+    tuning: fixed
+    output: "results/models/dose_response.csv"
+
+  - id: fare_pass_through
+    change: "add fare passthrough mechanism"
+    hypothesis: "ETS price passes through to fares"
+    tuning: fixed
+    output: "results/mechanisms/m1_fare_pass_through.csv"
+
+  - id: fuel_crosscheck
+    change: "cross-check with jet-fuel data"
+    hypothesis: "jet-fuel DiD confirms CO2 DiD"
+    tuning: fixed
+    output: "results/mechanisms/m2_fuel_did.csv"
+
+  - id: null_precision
+    change: "respecified controls (trend, scale)"
+    hypothesis: "DiD effect survives control respecification"
+    tuning: fixed
+    output: "results/models/n1_respecified.csv"

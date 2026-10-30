@@ -1,0 +1,47 @@
+# Optimizer registry — aviation ETS (analytical, single optimizer family)
+selection_mode: documented_suitability_screen
+optimizer_selection_seed: 2718
+
+candidates:
+  - name: scipy_minimize_SLSQP
+    family: gradient
+    type: analytical
+    module: scipy.optimize
+    function: minimize
+    params: {method: "SLSQP", options: {maxiter: 1000, ftol: 1.0e-9}}
+    eligible: true
+    reason: differentiable objective (MAC curve, abatement); constrained
+    screen:
+      question_alignment: 9
+      input_availability: 9
+      assumption_validity: 8
+      interpretability: 7
+      computational_feasibility: 8
+      reproducibility: 9
+      total: 42
+
+  - name: scipy_minimize_highs
+    family: linear
+    type: analytical
+    module: scipy.optimize
+    function: linprog
+    params: {method: "highs", options: {solver: "simplex" }}
+    eligible: n/a
+    reason: rejected — objective is nonlinear (abatement function)
+
+  - name: scipy_minimize_COBYLA
+    family: derivative_free
+    type: analytical
+    module: scipy.optimize
+    function: minimize
+    params: {method: "COBYLA", options: {maxiter: 1000}}
+    eligible: n/a
+    reason: rejected — SLSQP preferred for differentiable smooth objective
+
+selected:
+  method: scipy_minimize_SLSQP
+  objective: "max_abatement_for_budget"
+  evaluation_budget: 30
+  budget_unit: objective_evaluations
+  seed: 42
+  search_space: "constrained (allocations non-negative, sum bounded)"

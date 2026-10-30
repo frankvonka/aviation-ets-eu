@@ -1,0 +1,44 @@
+Country_name,ISO,iso_3166,pieces,CO2_growth,Year,Month
+Albania,AL,ALB,ALB,78.2,2023,3
+Armenia,AM,ARM,ARM,99.4,2023,3
+Austria,AT,AUT,AUT,-24.3,2023,3
+Belgium,BE,BEL,BEL,2.1,2023,3
+Bosnia and Herzegovina,BA,BIH,BIH,32.7,2023,3
+Bulgaria,BG,BGR,BGR,4.8,2023,3
+Canary Islands,ES,ESP,CANY,-4.2,2023,3
+Croatia,HR,HRV,HRV,-1.3,2023,3
+Cyprus,CY,CYP,CYP,-5,2023,3
+Czech Republic,CZ,CZE,CZE,-33.1,2023,3
+Denmark,DK,DNK,DNK,-27.2,2023,3
+Estonia,EE,EST,EST,-4.4,2023,3
+Finland,FI,FIN,FIN,-22.3,2023,3
+France,FR,FRA,FRA,-15.3,2023,3
+Georgia,GE,GEO,GEO,-3.8,2023,3
+Germany,DE,DEU,DEU,-20.9,2023,3
+Greece,GR,GRC,GRC,-4.6,2023,3
+Hungary,HU,HUN,HUN,-8.9,2023,3
+Iceland,IS,ISL,ISL,-31.8,2023,3
+Ireland,IE,IRL,IRL,-1.7,2023,3
+Italy,IT,ITA,ITA,-16.4,2023,3
+Kosovo,XK,XKS,XKS,28.6,2023,3
+Latvia,LV,LVA,LVA,-18,2023,3
+Lithuania,LT,LTU,LTU,-0.1,2023,3
+Luxembourg,LU,LUX,LUX,-0,2023,3
+Malta,MT,MLT,MLT,-7.1,2023,3
+Republic of Moldova,MD,MDA,MDA,-12.9,2023,3
+Monaco,MC,MCO,MCO,-37.6,2023,3
+Montenegro,ME,MNE,MNE,-14,2023,3
+The Netherlands,NL,NLD,NLD,-14.8,2023,3
+North Macedonia,MK,MKD,MKD,2.2,2023,3
+Norway,NO,NOR,NOR,-21.5,2023,3
+Poland,PL,POL,POL,11.5,2023,3
+Portugal,PT,PRT,PRT,6.9,2023,3
+Romania,RO,ROU,ROU,0.4,2023,3
+Serbia,RS,SRB,SRB,19.4,2023,3
+Slovakia,SK,SVK,SVK,-24.4,2023,3
+Slovenia,SI,SVN,SVN,-26,2023,3
+Spain,ES,ESP,ESP,-6.7,2023,3
+Sweden,SE,SWE,SWE,-35.4,2023,3
+Switzerland,CH,CHE,CHE,-16.3,2023,3
+Türkiye,TR,TUR,TUR,10.9,2023,3
+United Kingdom,GB,GBR,GBR,-15.2,2023,3
