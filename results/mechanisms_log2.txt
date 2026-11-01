@@ -1,0 +1,3 @@
+merged fuel+CO2: (554, 22), countries=38
+cross-source corr(ln CO2, ln fuel) = 0.966
+M2 fuel DiD (2010-19): -0.2356 (se=0.3351, p=0.4820, N=364)

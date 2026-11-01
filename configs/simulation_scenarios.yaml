@@ -1,0 +1,29 @@
+# Simulation scenarios (Monte Carlo)
+scenarios:
+  - id: S1_wild_bootstrap
+    type: bootstrap
+    replications: 4999
+    seed: 42
+    seed_policy: independent
+    output: "results/simulation/s1_wild_bootstrap.csv"
+
+  - id: S2_randomization_inference
+    type: permutation
+    replications: 5000
+    seed: 42
+    seed_policy: independent
+    output: "results/simulation/s2_ri_summary.csv"
+
+  - id: S3_covid_counterfactual
+    type: monte_carlo
+    replications: 1000
+    seed: 42
+    seed_policy: independent
+    output: "results/simulation/s3_did_variants.csv"
+
+  - id: S4_policy_montecarlo
+    type: monte_carlo
+    replications: 1000
+    seed: 42
+    seed_policy: independent
+    output: "results/simulation/s4_policy_montecarlo.csv"

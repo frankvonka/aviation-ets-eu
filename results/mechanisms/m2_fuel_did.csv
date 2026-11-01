@@ -1,0 +1,2 @@
+outcome,coef,se,p,N,cross_source_corr,run_id,protocol_version,git_commit
+ln_jetfuel_ktoe,-0.23557619004097796,0.3350945186888832,0.4820469279343743,364,0.966,a3237c1d4483,1.0,028ac33365c6

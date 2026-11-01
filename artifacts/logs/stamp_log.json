@@ -1,0 +1,32 @@
+{
+  "run_id": "a3237c1d4483",
+  "commit": "028ac33365c6",
+  "protocol_version": "1.0",
+  "stamped_at": "2026-10-30T12:06:35.844971",
+  "files": [
+    "/root/aviation-ets-eu/results/models/n2_tost.csv",
+    "/root/aviation-ets-eu/results/models/dose_response.csv",
+    "/root/aviation-ets-eu/results/models/specification_log.csv",
+    "/root/aviation-ets-eu/results/models/n4_looo.csv",
+    "/root/aviation-ets-eu/results/models/event_study_fixed.csv",
+    "/root/aviation-ets-eu/results/models/main_models.csv",
+    "/root/aviation-ets-eu/results/models/heterogeneity.csv",
+    "/root/aviation-ets-eu/results/models/n4_ri_per_drop.csv",
+    "/root/aviation-ets-eu/results/models/n1_respecified.csv",
+    "/root/aviation-ets-eu/results/models/n3_mde.csv",
+    "/root/aviation-ets-eu/results/mechanisms/m1_fare_pass_through.csv",
+    "/root/aviation-ets-eu/results/mechanisms/m3_segments.csv",
+    "/root/aviation-ets-eu/results/mechanisms/m2_fuel_did.csv",
+    "/root/aviation-ets-eu/results/optimization/o4b_allocation_fair.csv",
+    "/root/aviation-ets-eu/results/optimization/o2_price_targets.csv",
+    "/root/aviation-ets-eu/results/optimization/o4_allocation.csv",
+    "/root/aviation-ets-eu/results/optimization/o1_mac_curve.csv",
+    "/root/aviation-ets-eu/results/optimization/o3_optimal_price_path.csv",
+    "/root/aviation-ets-eu/results/simulation/s2_ri_betas.csv",
+    "/root/aviation-ets-eu/results/simulation/s4_policy_montecarlo.csv",
+    "/root/aviation-ets-eu/results/simulation/s3_covid_counterfactual_monthly.csv",
+    "/root/aviation-ets-eu/results/simulation/s3_did_variants.csv",
+    "/root/aviation-ets-eu/results/simulation/s2_ri_summary.csv",
+    "/root/aviation-ets-eu/results/simulation/s1_wild_bootstrap.csv"
+  ]
+}

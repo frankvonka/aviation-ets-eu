@@ -1,0 +1,19 @@
+{
+  "python": "3.14.7",
+  "implementation": "CPython",
+  "os": "Linux-7.0.0-28-generic-x86_64-with-glibc2.43",
+  "machine": "x86_64",
+  "commit": "028ac33365c6793ae6cd6cf8977d140ddfa60c0d",
+  "n_jobs": 1,
+  "deterministic": true,
+  "captured_by": "scripts/capture_environment.py",
+  "captured_at": "2026-10-30T12:06:23.995866",
+  "pinned_packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "statsmodels": "0.15.0",
+    "matplotlib": "3.11.2"
+  }
+}

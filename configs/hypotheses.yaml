@@ -1,0 +1,54 @@
+# Hypotheses pre-registration — aviation ETS study
+# Commit order is evidence of registration-before-code (DoAll §17.266).
+registered_before: "2026-10-26"
+commit_order_evidence: true
+
+hypotheses:
+  - id: H1_main
+    text: "EU ETS Directive 2008/101/EC (in force 2012) reduced aviation CO2 emissions."
+    test: "DiD on ln_CO2, 2010-2019, treated vs control states"
+    expected_sign: negative
+    alpha: 0.05
+    pre_registered: true
+
+  - id: H2_price
+    text: "ETS price had a marginal effect on emissions within the treated group."
+    test: "treated x ln(ETS price) interaction, 2010-2019"
+    expected_sign: negative
+    alpha: 0.05
+    pre_registered: true
+
+  - id: H3_dose
+    text: "Effect increases with net-short position (free-allocation dose-response)."
+    test: "dose-response on net-short share, 2010-2019"
+    expected_sign: positive
+    alpha: 0.05
+    pre_registered: true
+
+  - id: H4_fare
+    text: "ETS price passes through to airfares."
+    test: "fare passthrough DiD, 2010-2019"
+    expected_sign: positive
+    alpha: 0.05
+    pre_registered: true
+
+  - id: H5_fuel
+    text: "Jet-fuel DiD confirms CO2 DiD (cross-source check)."
+    test: "fuel DiD, 2010-2019"
+    expected_sign: negative
+    alpha: 0.05
+    pre_registered: true
+
+  - id: H6_null
+    text: "Effect is not statistically equivalent to zero within ±3% log-points."
+    test: "TOST equivalence at ±3%, 2010-2019"
+    expected_sign: n/a
+    alpha: 0.05
+    pre_registered: true
+
+  - id: H7_ri
+    text: "RI p-value under sharp null is below 0.05."
+    test: "randomization inference, 5000 permutations"
+    expected_sign: n/a
+    alpha: 0.05
+    pre_registered: true

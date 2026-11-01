@@ -1,0 +1,4 @@
+EUTL: (295, 5), states=30, years 2012-2021
+EUTL merge: 32 treated states, 30 EUTL states, missing treated states: ['CH', 'EL', 'LI']
+Missing dose values (EUTL gaps): 188 of 415 rows -> filled with 0 and flagged via eutl_missing (0=observed, 1=imputed). Imputed rows are excluded from dose inference via the eutl_missing indicator in the regression.
+dose-response: dose coef=+0.0142 (se=0.0236, p=0.5479, N=415)

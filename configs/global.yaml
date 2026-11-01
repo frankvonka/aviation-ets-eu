@@ -1,0 +1,98 @@
+project:
+  name: aviation_ets_eu
+  protocol_version: "1.0"
+  repo: https://github.com/frankvonka/aviation-ets-eu.git
+
+data:
+  path: "data/CO2_emissions_by_state.xlsx"
+  target: "ln_co2"
+  task: "regression"
+  dataset_version: "ETS_Database_July_2026"
+  dataset_hash_required: true
+  filed_n: 8440
+  usable_n: 672
+  unit_of_analysis: "state-year"
+  unit_of_replication: "state (clustered SE by iso)"
+
+evaluation:
+  protocol: "pre_covid_holdout_with_cv"
+  test_size: 0.20
+  cv_folds: 5
+  split_seed: 42
+  split_manifest: "artifacts/splits/split_manifest.json"
+  final_test_policy: "evaluate_after_selection"
+  protocols:
+    A: "in-distribution CV (StratifiedKFold)"
+    B: "Leave-one-entity-out"
+    C: "GroupKFold by entity"
+    D: "per-entity models"
+    E: "held-out test on rare entity"
+
+reproducibility:
+  master_seed: 42
+  model_seeds: [42]
+  deterministic_algorithms: true
+  n_jobs: 1  # n_jobs > 1 causes RF nondeterminism
+
+preprocessing:
+  imputation: "median"
+  scaling: "none (tree-based)"
+  categorical_encoding: "none (numeric only)"
+  fit_within_each_fold: true
+
+optimization:
+  enabled: true
+  primary_type: "analytical"
+  algorithms: ["scipy_minimize"]
+  objective: "max_abatement_for_budget"
+  max_trials: 30
+  seed: 42
+  save_history: true
+  save_best_solution: true
+  allow_test_data: false
+
+simulation:
+  enabled: true
+  type: "monte_carlo"
+  scenarios_file: "configs/simulation_scenarios.yaml"
+  replications: 5000
+  seed: 42
+  save_replication_outputs: true
+  save_summary_statistics: true
+
+ablation:
+  enabled: true
+  variants_file: "configs/ablation_variants.yaml"
+  reference_variant: "full_model"
+  same_splits: true
+  same_seed_policy: true
+  record_configuration_diff: true
+
+metrics:
+  primary: "mae"
+  secondary: ["r2", "rmse"]
+  raw_precision: "full"
+
+saving:
+  save_predictions: true
+  save_fold_metrics: true
+  save_model: true
+  save_preprocessor: true
+  save_config_snapshot: true
+  save_environment: true
+  display_decimal_places: 4
+
+logging:
+  log_level: "INFO"
+  record_failed_runs: true
+  record_runtime: true
+  record_git_commit: true
+
+paths:
+  results: "results"
+  models: "artifacts/models"
+  simulations: "results/simulation"
+  optimizations: "results/optimization"
+  ablations: "results/models"
+  logs: "artifacts/logs"
+  splits: "artifacts/splits"

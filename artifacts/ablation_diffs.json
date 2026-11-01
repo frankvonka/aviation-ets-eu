@@ -1,0 +1,10 @@
+{
+  "variants": [
+    "full_model",
+    "no_commit",
+    "no_event",
+    "commit_only",
+    "history_only",
+    "no_era"
+  ]
+}
