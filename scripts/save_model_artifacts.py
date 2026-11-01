@@ -11,13 +11,14 @@ OUT.mkdir(parents=True, exist_ok=True)
 
 def main():
     panel, feats, transforms = build_panel()
-    X = panel[feats].fillna(panel[feats].median())
-    y = panel["ln_co2"]
+    train = panel[panel.YEAR <= 2019].copy()
+    X = train[feats].fillna(train[feats].median())
+    y = train["ln_co2"]
     m = RandomForestRegressor(n_estimators=200, max_depth=6, min_samples_leaf=8,
                              random_state=42, n_jobs=1)
     m.fit(X, y)
     joblib.dump(m, OUT / "rf_ln_co2.joblib")
-    joblib.dump({"medians": panel[feats].median().to_dict(), "features": feats,
+    joblib.dump({"medians": train[feats].median().to_dict(), "features": feats,
                 "transforms": transforms}, OUT / "preprocess_ln_co2.joblib")
     print(f"saved {OUT/'rf_ln_co2.joblib'} and preprocess artifact")
     # manifest

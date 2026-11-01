@@ -12,7 +12,11 @@ import hashlib, json, pathlib, sys, datetime
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 FREEZE = ROOT / "artifacts/freeze/freeze_manifest.json"
-COMMIT = "65bb6e7"
+import subprocess
+try:
+    COMMIT = subprocess.check_output(["git","rev-parse","HEAD"], cwd=ROOT, text=True).strip()
+except Exception:
+    COMMIT = "unknown"
 
 # ponytail: expand as new artifacts are added; auto-discovers CSV/JSON/TXT/PARQUET
 # under results/, tables/, figures/ and artifacts/logs/

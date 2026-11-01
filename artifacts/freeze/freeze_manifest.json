@@ -9,7 +9,7 @@
     {
       "id": "freeze_002",
       "path": "artifacts/logs/stamp_log.json",
-      "sha256": "018f34c5abf2f57bf97841fb5d18c7a2f16fd99ea2f7a35d93940625752dcd36",
+      "sha256": "23f2c5e68f68b0ebc6bae05d27dee201a2e05042f2c6cc7446351ef412261655",
       "source": "auto-discovered"
     },
     {
@@ -81,19 +81,19 @@
     {
       "id": "freeze_013",
       "path": "results/dose_response_log.txt",
-      "sha256": "d89b8ad648c4412d455c10e81a0ef7a49fe6519f286a0d7efa5a4aa3bef7ceb6",
+      "sha256": "0095b7fe8aeb63837dc71ec0a96510ce2e856d4120581d01198bb395d76ccd8c",
       "source": "auto-discovered"
     },
     {
       "id": "freeze_014",
       "path": "results/mechanisms/m1_fare_pass_through.csv",
-      "sha256": "246fc55e020db02a8c354a1b2c22e159c2908b3919ccfb979909f4f74a7de376",
+      "sha256": "c025f7fa125da19231ec2576bc2235492c5d75ec258a7aed1ac79cc8d1cc1c02",
       "source": "auto-discovered"
     },
     {
       "id": "freeze_015",
       "path": "results/mechanisms/m2_fuel_did.csv",
-      "sha256": "2a35b452c108378cb6af71d071e8ef4ede9c55f0a8c29689552a6ba812ab3f96",
+      "sha256": "c923a37efb2b909934634f4e8460331b9713ab05436060dcbcd1e8bea7b30231",
       "source": "auto-discovered"
     },
     {
@@ -117,25 +117,25 @@
     {
       "id": "freeze_019",
       "path": "results/ml/aipw_did.csv",
-      "sha256": "ae0da50fe6dfc19c5f9286cdc59dfa0ce4f1a9127acbdda0a41c7fc6b42fd29a",
+      "sha256": "8bcd7e7665921ef4cb697f3904506c3547d5782f329cf7b16e59ffce06d9cc99",
       "source": "auto-discovered"
     },
     {
       "id": "freeze_020",
       "path": "results/ml/aipw_state_effects.csv",
-      "sha256": "c7da9b12a59ca55f801a30ddc83bbaedbb2f4296dbff456a47879c8e1a243cda",
+      "sha256": "f44c4bd62e058f440953c20256c34995c23516d2cab258282fbe51c6050ca0f1",
       "source": "auto-discovered"
     },
     {
       "id": "freeze_021",
       "path": "results/ml/cate_by_state.csv",
-      "sha256": "c3f80b0820bc00f2931ad63eb226200d4dbd1ed295465a68b82c0f7281241cc5",
+      "sha256": "7b448e21e36e08d5346429a30728bf8d06665dc7fd6057931db434441c317564",
       "source": "auto-discovered"
     },
     {
       "id": "freeze_022",
       "path": "results/ml/cate_summary.csv",
-      "sha256": "3c9df5d7630234c0de570d47b13df1b724a0b2f57de30baa0d2460a1ce371c82",
+      "sha256": "552684e77cc0382772c8cbfad3211e6f4cdbb67836f29e55290349fdf1d9c889",
       "source": "auto-discovered"
     },
     {
@@ -153,7 +153,7 @@
     {
       "id": "freeze_025",
       "path": "results/ml_log.txt",
-      "sha256": "2fd59c3dfd1aa9d1059665c932dba6b9372a74ecd4a3ac5f7bea6dbbcec36c7f",
+      "sha256": "cb1153f7fb9ffbc66122584f10c530bf8869c568804a3f014580d3359866dc78",
       "source": "auto-discovered"
     },
     {
@@ -211,9 +211,15 @@
       "source": "auto-discovered"
     },
     {
+      "id": "freeze_036",
+      "path": "results/models/pretrend_tests.csv",
+      "sha256": "6af71223ba92c6bdfebc7f5ac78defdbe8cb36f2eaea4e8e37380cb8b24436d5",
+      "source": "auto-discovered"
+    },
+    {
       "id": "freeze_035",
       "path": "results/models/specification_log.csv",
-      "sha256": "f8c099afe9ae047d8c409df8ddf37d27fb606e93e8d61116586de11e9be6c4b2",
+      "sha256": "157ed185f9d6eb2efec6b0b03560bd5f7a6722fc801d290b6ccb4a7757edfe07",
       "source": "auto-discovered"
     },
     {
@@ -249,19 +255,19 @@
     {
       "id": "freeze_041",
       "path": "results/optimization/o4_allocation.csv",
-      "sha256": "10e005a69ea710ac220fbe5178fc4ff2d36b88858b99f220e112fbc245010364",
+      "sha256": "a2d71dc9c2636e14950f8a06057fa28742c82731757a2928f495ae033e55fa92",
       "source": "auto-discovered"
     },
     {
       "id": "freeze_042",
       "path": "results/optimization/o4b_allocation_fair.csv",
-      "sha256": "df121b99569d01b42f7d4001fa69806c1ede0d1ba6459a0050cc3aaee9975b01",
+      "sha256": "a48e0f576fce1d6cebd7528fe68121ac757df8c3a21c3aa932cb3ac4edeadd8f",
       "source": "auto-discovered"
     },
     {
       "id": "freeze_043",
       "path": "results/scm/scm_aggregate_annual.csv",
-      "sha256": "afa52825d082285c848530808bf50365ae8d1ecade8db16efd834cca27f5afd1",
+      "sha256": "f456a008eaf81b43c90c6922d9eb6671f055fb00b8973e7e5cc6cb895a83f6a6",
       "source": "auto-discovered"
     },
     {
@@ -273,49 +279,49 @@
     {
       "id": "freeze_045",
       "path": "results/scm/scm_state_effects.csv",
-      "sha256": "49440f7bacf5aeeababa82cb4214cabec371e9da80266b9362e546d309c5900b",
+      "sha256": "8b5d8b35e1cbf6551823c02978f3456c39c4264cc59ecd18c7adee39353722cb",
       "source": "auto-discovered"
     },
     {
       "id": "freeze_046",
       "path": "results/scm_log.txt",
-      "sha256": "3bab403a7cc5538806b1fe4a59a3ec5f8f32e4de346830d66ab39380e7b092a4",
+      "sha256": "a4e72035daf7447a93f47ae6aa4d76eb548aa6f99f085c479c86966b9b2984e7",
       "source": "auto-discovered"
     },
     {
       "id": "freeze_047",
       "path": "results/simulation/s1_wild_bootstrap.csv",
-      "sha256": "f10a4a00068abdc1639f43082ac6accd02dcb313a581cd833aedd933cf2fb66d",
+      "sha256": "0a374a1fffb47f2945ec14a0ab28c2f47428a5226275bb45c1883fd1bc6c2ac3",
       "source": "auto-discovered"
     },
     {
       "id": "freeze_048",
       "path": "results/simulation/s2_ri_betas.csv",
-      "sha256": "49f29352ed36bbac3c4520c554b15e1156602685478ab4e0e474538908c06f1e",
+      "sha256": "d10cb5bc53c19057be43e521fc25c3cbfe52f837b1a830864e6768efc62c45be",
       "source": "auto-discovered"
     },
     {
       "id": "freeze_049",
       "path": "results/simulation/s2_ri_summary.csv",
-      "sha256": "b38b4dd5438966b05538bd29a00acfb6913b08e624460bef30bbe3df7882e8ea",
+      "sha256": "4fcf8e48946f371af4d51770de323563a449b7b523864d081c5f2f74d9682fce",
       "source": "auto-discovered"
     },
     {
       "id": "freeze_050",
       "path": "results/simulation/s3_covid_counterfactual_monthly.csv",
-      "sha256": "499c23a4ffadfa977ed2e92d34077550c3dbb6f75ed66cce1f68a8a9cb5e88b2",
+      "sha256": "b272561ef8415984e0c0a65ef05ac9d9a50527503bec3288dba682388c8c0a3d",
       "source": "auto-discovered"
     },
     {
       "id": "freeze_051",
       "path": "results/simulation/s3_did_variants.csv",
-      "sha256": "3e229786d88fec5621b329d11c138cb8ca1ba5f7b101f41972eaf7b6da5ae95a",
+      "sha256": "cbb708ec00ec36510ea8716d11177d4c3a12823659e4bf6c782d982513fedeb9",
       "source": "auto-discovered"
     },
     {
       "id": "freeze_052",
       "path": "results/simulation/s4_policy_montecarlo.csv",
-      "sha256": "72edf120478dd1518b8c7ab2bfad04e5b2207799a8d4c9e8653f7ed346e30330",
+      "sha256": "9ea77d3e1fe52b358adaf965b9f98aec285464d91d9638438c726f5ca8bf07aa",
       "source": "auto-discovered"
     },
     {
@@ -368,14 +374,14 @@
     }
   ],
   "generated_at": null,
-  "recomputed": "2026-11-01T09:02:49",
-  "git_commit": "65bb6e7",
-  "n_items": 61,
+  "recomputed": "2026-11-01T10:24:30",
+  "git_commit": "01a04d8e63130eebacb8cd934172f40cd63bfc55",
+  "n_items": 62,
   "discovery_dirs": [
     "results",
     "tables",
     "figures",
     "/root/aviation-fresh/artifacts/logs"
   ],
-  "changed_since_last": 25
+  "changed_since_last": 21
 }

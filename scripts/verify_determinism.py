@@ -7,7 +7,22 @@ Outputs determinism.json with status PASS/DIFF.
 """
 import sys, json, hashlib, pathlib
 
-def sha256(p):
+VOLATILE = {"run_id", "generated_at", "git_commit", "timestamp", "recomputed", "wall_clock_s"}
+
+def file_hash(p):
+    if p.suffix == ".json":
+        try:
+            data = json.loads(p.read_text())
+            def strip(o):
+                if isinstance(o, dict):
+                    return {k: strip(v) for k, v in o.items() if k not in VOLATILE}
+                if isinstance(o, list):
+                    return [strip(x) for x in o]
+                return o
+            data = strip(data)
+            return hashlib.sha256(json.dumps(data, sort_keys=True).encode()).hexdigest()
+        except Exception:
+            pass
     h = hashlib.sha256()
     with open(p, "rb") as f:
         for c in iter(lambda: f.read(65536), b""):
@@ -31,7 +46,7 @@ def main():
                 continue
             if f.suffix in (".csv", ".json", ".png"):
                 n += 1
-                if sha256(f) != sha256(other):
+                if file_hash(f) != file_hash(other):
                     changed.append((str(rel), "hash differs"))
     status = "PASS" if not changed else "DIFF"
     out = {"status": status, "files": n, "changed": len(changed), "mismatches": changed[:10]}

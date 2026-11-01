@@ -33,7 +33,7 @@ PROTECTED = {
 }
 
 
-def load(path="configs/global.yaml"):
+def load(path="configs/global.yaml", overrides=None):
     cfg = yaml.safe_load(Path(path).read_text())
     for section, keys in cfg.items():
         if section not in SCHEMA:
@@ -41,6 +41,19 @@ def load(path="configs/global.yaml"):
         unknown = set(keys) - SCHEMA[section]
         if unknown:
             raise KeyError(f"unknown keys in {section}: {unknown}")
+    # enforce protected fields are present
+    for p in PROTECTED:
+        section, key = p.split(".", 1)
+        if section not in cfg or key not in cfg[section]:
+            raise ValueError(f"protected field missing: {p}")
+    if overrides:
+        for dotted, val in overrides.items():
+            if dotted in PROTECTED:
+                raise ValueError(f"protected field cannot be overridden: {dotted}")
+            section, key = dotted.split(".", 1)
+            if section not in cfg or key not in SCHEMA.get(section, set()):
+                raise KeyError(f"unknown override key: {dotted}")
+            cfg[section][key] = val
     return cfg
 
 
