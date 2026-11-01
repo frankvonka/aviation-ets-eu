@@ -6,18 +6,18 @@
     "has_tests": true,
     "has_git": true,
     "n_code_files": 27,
-    "n_result_files": 53,
-    "n_data_files": 24
+    "n_result_files": 55,
+    "n_data_files": 27
   },
   "files": [
     {
       "path": "code/02_clean_build.py",
       "category": "code",
       "ext": ".py",
-      "size": 12145,
-      "mtime": 1793117970,
-      "loc": 138,
-      "lines": 185,
+      "size": 12738,
+      "mtime": 1793516162,
+      "loc": 149,
+      "lines": 196,
       "roles_guess": [
         "data",
         "ablation"
@@ -28,10 +28,10 @@
       "path": "code/05_models_fixed.py",
       "category": "code",
       "ext": ".py",
-      "size": 7848,
-      "mtime": 1793134987,
-      "loc": 119,
-      "lines": 141,
+      "size": 9157,
+      "mtime": 1793516642,
+      "loc": 135,
+      "lines": 160,
       "roles_guess": [
         "data",
         "ml",
@@ -59,10 +59,10 @@
       "path": "code/06_ml_suite.py",
       "category": "code",
       "ext": ".py",
-      "size": 9657,
-      "mtime": 1793136294,
-      "loc": 150,
-      "lines": 171,
+      "size": 9985,
+      "mtime": 1793516875,
+      "loc": 160,
+      "lines": 182,
       "roles_guess": [
         "data",
         "ml"
@@ -73,10 +73,10 @@
       "path": "code/07_scm_suite.py",
       "category": "code",
       "ext": ".py",
-      "size": 7272,
-      "mtime": 1793136288,
-      "loc": 136,
-      "lines": 154,
+      "size": 7900,
+      "mtime": 1793516728,
+      "loc": 158,
+      "lines": 172,
       "roles_guess": [
         "data",
         "optimization"
@@ -104,10 +104,10 @@
       "path": "code/09_optimization_suite.py",
       "category": "code",
       "ext": ".py",
-      "size": 15700,
-      "mtime": 1793136483,
+      "size": 15715,
+      "mtime": 1793519227,
       "loc": 257,
-      "lines": 312,
+      "lines": 311,
       "roles_guess": [
         "data",
         "optimization"
@@ -118,8 +118,8 @@
       "path": "code/10_tables_figures.py",
       "category": "code",
       "ext": ".py",
-      "size": 11127,
-      "mtime": 1793117970,
+      "size": 11128,
+      "mtime": 1793519288,
       "loc": 151,
       "lines": 184,
       "roles_guess": [
@@ -135,16 +135,17 @@
       "path": "code/11_null_precision.py",
       "category": "code",
       "ext": ".py",
-      "size": 9033,
-      "mtime": 1793134934,
-      "loc": 132,
-      "lines": 156,
+      "size": 9355,
+      "mtime": 1793519091,
+      "loc": 136,
+      "lines": 163,
       "roles_guess": [
         "data",
         "ml",
         "simulation",
         "ablation",
-        "stats"
+        "stats",
+        "timeseries_panel"
       ],
       "has_seed": true
     },
@@ -181,8 +182,8 @@
       "path": "code/15_dose_response.py",
       "category": "code",
       "ext": ".py",
-      "size": 3575,
-      "mtime": 1793134950,
+      "size": 3618,
+      "mtime": 1793519131,
       "loc": 53,
       "lines": 59,
       "roles_guess": [
@@ -195,10 +196,10 @@
       "path": "code/build_manuscript.py",
       "category": "code",
       "ext": ".py",
-      "size": 39502,
-      "mtime": 1793117970,
-      "loc": 523,
-      "lines": 569,
+      "size": 39701,
+      "mtime": 1793519347,
+      "loc": 522,
+      "lines": 568,
       "roles_guess": [
         "data",
         "simulation",
@@ -397,8 +398,8 @@
       "path": "configs/ablation_variants.yaml",
       "category": "config",
       "ext": ".yaml",
-      "size": 859,
-      "mtime": 1793117970
+      "size": 1086,
+      "mtime": 1793514760
     },
     {
       "path": "configs/global.yaml",
@@ -450,25 +451,46 @@
       "mtime": 1793117970
     },
     {
+      "path": "artifacts/ablation_diffs.json",
+      "category": "data",
+      "ext": ".json",
+      "size": 1285,
+      "mtime": 1793514760
+    },
+    {
       "path": "artifacts/freeze/freeze_manifest.json",
       "category": "data",
       "ext": ".json",
-      "size": 12605,
-      "mtime": 1793514322
+      "size": 12810,
+      "mtime": 1793520169
     },
     {
       "path": "artifacts/models/model_manifest.json",
       "category": "data",
       "ext": ".json",
       "size": 224,
-      "mtime": 1793514321
+      "mtime": 1793520168
     },
     {
       "path": "artifacts/run/optimization_history.json",
       "category": "data",
       "ext": ".json",
       "size": 835,
-      "mtime": 1793513855
+      "mtime": 1793519873
+    },
+    {
+      "path": "artifacts/run/seeds.json",
+      "category": "data",
+      "ext": ".json",
+      "size": 316,
+      "mtime": 1793514747
+    },
+    {
+      "path": "artifacts/splits/split_manifest.json",
+      "category": "data",
+      "ext": ".json",
+      "size": 420095,
+      "mtime": 1793520336
     },
     {
       "path": "data/CO2_emissions_by_state.xlsx",
@@ -531,7 +553,7 @@
       "category": "data",
       "ext": ".csv",
       "size": 1148722,
-      "mtime": 1793513736
+      "mtime": 1793519743
     },
     {
       "path": "data/hicp_airfares.csv",
@@ -573,7 +595,7 @@
       "category": "data",
       "ext": ".csv",
       "size": 889649,
-      "mtime": 1793513735
+      "mtime": 1793519743
     },
     {
       "path": "data/panel_state_year.csv",
@@ -594,7 +616,7 @@
       "category": "data",
       "ext": ".csv",
       "size": 5623,
-      "mtime": 1793513735
+      "mtime": 1793519742
     },
     {
       "path": "data/state_map.json",
@@ -614,8 +636,15 @@
       "path": "data/wb_controls_all.csv",
       "category": "data",
       "ext": ".csv",
-      "size": 29579,
-      "mtime": 1793118244
+      "size": 32918,
+      "mtime": 1793516587
+    },
+    {
+      "path": "FINAL_REPORT.md",
+      "category": "doc",
+      "ext": ".md",
+      "size": 110253,
+      "mtime": 1793520362
     },
     {
       "path": "README.md",
@@ -643,7 +672,7 @@
       "category": "doc",
       "ext": ".md",
       "size": 2090,
-      "mtime": 1793513526
+      "mtime": 1793519677
     },
     {
       "path": "eda_report/report.md",
@@ -656,64 +685,64 @@
       "path": "results/cleaning_log.txt",
       "category": "doc",
       "ext": ".txt",
-      "size": 2919,
-      "mtime": 1793513736
+      "size": 2852,
+      "mtime": 1793519743
     },
     {
       "path": "results/dose_response_log.txt",
       "category": "doc",
       "ext": ".txt",
       "size": 410,
-      "mtime": 1793514105
+      "mtime": 1793520164
     },
     {
       "path": "results/mechanisms_log.txt",
       "category": "doc",
       "ext": ".txt",
       "size": 586,
-      "mtime": 1793514099
+      "mtime": 1793520156
     },
     {
       "path": "results/mechanisms_log2.txt",
       "category": "doc",
       "ext": ".txt",
       "size": 143,
-      "mtime": 1793514102
+      "mtime": 1793520160
     },
     {
       "path": "results/ml_log.txt",
       "category": "doc",
       "ext": ".txt",
-      "size": 825,
-      "mtime": 1793513772
+      "size": 809,
+      "mtime": 1793519781
     },
     {
       "path": "results/models_log.txt",
       "category": "doc",
       "ext": ".txt",
-      "size": 1742,
-      "mtime": 1793513741
+      "size": 2672,
+      "mtime": 1793519748
     },
     {
       "path": "results/null_precision_log.txt",
       "category": "doc",
       "ext": ".txt",
-      "size": 1078,
-      "mtime": 1793514095
+      "size": 1104,
+      "mtime": 1793520153
     },
     {
       "path": "results/scm_log.txt",
       "category": "doc",
       "ext": ".txt",
-      "size": 2213,
-      "mtime": 1793513775
+      "size": 2190,
+      "mtime": 1793519784
     },
     {
       "path": "results/simulation_log.txt",
       "category": "doc",
       "ext": ".txt",
       "size": 1034,
-      "mtime": 1793513852
+      "mtime": 1793519869
     },
     {
       "path": "requirements.txt",
@@ -734,28 +763,49 @@
       "category": "other",
       "ext": ".joblib",
       "size": 243,
-      "mtime": 1793514321
+      "mtime": 1793520168
     },
     {
       "path": "artifacts/models/rf_ln_co2.joblib",
       "category": "other",
       "ext": ".joblib",
       "size": 827953,
-      "mtime": 1793514321
+      "mtime": 1793520168
+    },
+    {
+      "path": "run_all.log",
+      "category": "other",
+      "ext": ".log",
+      "size": 26092,
+      "mtime": 1793520169
+    },
+    {
+      "path": "FINAL_REPORT.html",
+      "category": "result",
+      "ext": ".html",
+      "size": 702797,
+      "mtime": 1793520362
+    },
+    {
+      "path": "MANUSCRIPT.html",
+      "category": "result",
+      "ext": ".html",
+      "size": 1654017,
+      "mtime": 1793520337
     },
     {
       "path": "artifacts/logs/environment.json",
       "category": "result",
       "ext": ".json",
       "size": 509,
-      "mtime": 1793514319
+      "mtime": 1793520165
     },
     {
       "path": "artifacts/logs/stamp_log.json",
       "category": "result",
       "ext": ".json",
       "size": 1717,
-      "mtime": 1793514322
+      "mtime": 1793520169
     },
     {
       "path": "eda_report/report.html",
@@ -768,351 +818,351 @@
       "path": "figures/F10_allocation.png",
       "category": "result",
       "ext": ".png",
-      "size": 72030,
-      "mtime": 1793513866
+      "size": 153146,
+      "mtime": 1793519886
     },
     {
       "path": "figures/F1_ets_vs_co2.png",
       "category": "result",
       "ext": ".png",
-      "size": 113425,
-      "mtime": 1793513861
+      "size": 252204,
+      "mtime": 1793519877
     },
     {
       "path": "figures/F2_heatmap.png",
       "category": "result",
       "ext": ".png",
-      "size": 125686,
-      "mtime": 1793513862
+      "size": 271366,
+      "mtime": 1793519879
     },
     {
       "path": "figures/F3_event_study.png",
       "category": "result",
       "ext": ".png",
-      "size": 48496,
-      "mtime": 1793513862
+      "size": 107002,
+      "mtime": 1793519881
     },
     {
       "path": "figures/F4_ml_importance.png",
       "category": "result",
       "ext": ".png",
-      "size": 65419,
-      "mtime": 1793513863
+      "size": 134868,
+      "mtime": 1793519882
     },
     {
       "path": "figures/F5_scm_path.png",
       "category": "result",
       "ext": ".png",
-      "size": 58660,
-      "mtime": 1793513863
+      "size": 149021,
+      "mtime": 1793519882
     },
     {
       "path": "figures/F6_placebo_rmspe.png",
       "category": "result",
       "ext": ".png",
-      "size": 75366,
-      "mtime": 1793513864
+      "size": 169552,
+      "mtime": 1793519883
     },
     {
       "path": "figures/F7_covid_counterfactual.png",
       "category": "result",
       "ext": ".png",
-      "size": 65777,
-      "mtime": 1793513865
+      "size": 142247,
+      "mtime": 1793519884
     },
     {
       "path": "figures/F8_policy_montecarlo.png",
       "category": "result",
       "ext": ".png",
-      "size": 92063,
-      "mtime": 1793513865
+      "size": 206210,
+      "mtime": 1793519885
     },
     {
       "path": "figures/F9_mac_curve.png",
       "category": "result",
       "ext": ".png",
-      "size": 61165,
-      "mtime": 1793513865
+      "size": 142377,
+      "mtime": 1793519885
     },
     {
       "path": "results/mechanisms/m1_fare_pass_through.csv",
       "category": "result",
       "ext": ".csv",
       "size": 320,
-      "mtime": 1793514322
+      "mtime": 1793520169
     },
     {
       "path": "results/mechanisms/m2_fuel_did.csv",
       "category": "result",
       "ext": ".csv",
       "size": 188,
-      "mtime": 1793514322
+      "mtime": 1793520169
     },
     {
       "path": "results/mechanisms/m3_segments.csv",
       "category": "result",
       "ext": ".csv",
       "size": 662,
-      "mtime": 1793514322
+      "mtime": 1793520169
     },
     {
       "path": "results/ml/aipw_did.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 131,
-      "mtime": 1793513769
+      "size": 132,
+      "mtime": 1793519778
     },
     {
       "path": "results/ml/aipw_state_effects.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 2607,
-      "mtime": 1793513769
+      "size": 2577,
+      "mtime": 1793519778
     },
     {
       "path": "results/ml/cate_by_state.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 893,
-      "mtime": 1793513772
+      "size": 894,
+      "mtime": 1793519781
     },
     {
       "path": "results/ml/cate_summary.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 185,
-      "mtime": 1793513772
+      "size": 187,
+      "mtime": 1793519781
     },
     {
       "path": "results/ml/ml_cv.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 568,
-      "mtime": 1793513765
+      "size": 556,
+      "mtime": 1793519774
     },
     {
       "path": "results/ml/ml_importance.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 382,
-      "mtime": 1793513765
+      "size": 501,
+      "mtime": 1793519774
     },
     {
       "path": "results/models/dose_response.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 168,
-      "mtime": 1793514322
+      "size": 170,
+      "mtime": 1793520169
     },
     {
       "path": "results/models/event_study_fixed.csv",
       "category": "result",
       "ext": ".csv",
       "size": 4484,
-      "mtime": 1793514322
+      "mtime": 1793520169
     },
     {
       "path": "results/models/heterogeneity.csv",
       "category": "result",
       "ext": ".csv",
       "size": 2859,
-      "mtime": 1793514322
+      "mtime": 1793520169
     },
     {
       "path": "results/models/main_models.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 5002,
-      "mtime": 1793514322
+      "size": 9650,
+      "mtime": 1793520169
     },
     {
       "path": "results/models/n1_respecified.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 560,
-      "mtime": 1793514322
+      "size": 556,
+      "mtime": 1793520169
     },
     {
       "path": "results/models/n2_tost.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 835,
-      "mtime": 1793514322
+      "size": 859,
+      "mtime": 1793520169
     },
     {
       "path": "results/models/n3_mde.csv",
       "category": "result",
       "ext": ".csv",
       "size": 176,
-      "mtime": 1793514322
+      "mtime": 1793520169
     },
     {
       "path": "results/models/n4_looo.csv",
       "category": "result",
       "ext": ".csv",
       "size": 4465,
-      "mtime": 1793514322
+      "mtime": 1793520169
     },
     {
       "path": "results/models/n4_ri_per_drop.csv",
       "category": "result",
       "ext": ".csv",
       "size": 641,
-      "mtime": 1793514322
+      "mtime": 1793520169
     },
     {
       "path": "results/models/specification_log.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 3928,
-      "mtime": 1793514322
+      "size": 7543,
+      "mtime": 1793520169
     },
     {
       "path": "results/optimization/o1_mac_curve.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 18181,
-      "mtime": 1793514322
+      "size": 17015,
+      "mtime": 1793520169
     },
     {
       "path": "results/optimization/o2_price_targets.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 362,
-      "mtime": 1793514322
+      "size": 366,
+      "mtime": 1793520169
     },
     {
       "path": "results/optimization/o3_optimal_price_path.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 486,
-      "mtime": 1793514322
+      "size": 487,
+      "mtime": 1793520169
     },
     {
       "path": "results/optimization/o4_allocation.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 2097,
-      "mtime": 1793514322
+      "size": 1960,
+      "mtime": 1793520169
     },
     {
       "path": "results/optimization/o4b_allocation_fair.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 1901,
-      "mtime": 1793514322
+      "size": 1792,
+      "mtime": 1793520169
     },
     {
       "path": "results/scm/scm_aggregate_annual.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 532,
-      "mtime": 1793513774
+      "size": 534,
+      "mtime": 1793519784
     },
     {
       "path": "results/scm/scm_placebo.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 5356,
-      "mtime": 1793513775
+      "size": 5343,
+      "mtime": 1793519784
     },
     {
       "path": "results/scm/scm_state_effects.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 5070,
-      "mtime": 1793513774
+      "size": 5641,
+      "mtime": 1793519783
     },
     {
       "path": "results/simulation/s1_wild_bootstrap.csv",
       "category": "result",
       "ext": ".csv",
       "size": 217,
-      "mtime": 1793514322
+      "mtime": 1793520169
     },
     {
       "path": "results/simulation/s2_ri_betas.csv",
       "category": "result",
       "ext": ".csv",
       "size": 277636,
-      "mtime": 1793514322
+      "mtime": 1793520169
     },
     {
       "path": "results/simulation/s2_ri_summary.csv",
       "category": "result",
       "ext": ".csv",
       "size": 153,
-      "mtime": 1793514322
+      "mtime": 1793520169
     },
     {
       "path": "results/simulation/s3_covid_counterfactual_monthly.csv",
       "category": "result",
       "ext": ".csv",
       "size": 58828,
-      "mtime": 1793514322
+      "mtime": 1793520169
     },
     {
       "path": "results/simulation/s3_did_variants.csv",
       "category": "result",
       "ext": ".csv",
       "size": 486,
-      "mtime": 1793514322
+      "mtime": 1793520169
     },
     {
       "path": "results/simulation/s4_policy_montecarlo.csv",
       "category": "result",
       "ext": ".csv",
       "size": 2060,
-      "mtime": 1793514322
+      "mtime": 1793520169
     },
     {
       "path": "tables/T1_descriptives.csv",
       "category": "result",
       "ext": ".csv",
       "size": 472,
-      "mtime": 1793513860
+      "mtime": 1793519876
     },
     {
       "path": "tables/T2_panel_structure.csv",
       "category": "result",
       "ext": ".csv",
       "size": 1229,
-      "mtime": 1793513860
+      "mtime": 1793519877
     },
     {
       "path": "tables/T3_main_did.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 4226,
-      "mtime": 1793513860
+      "size": 8069,
+      "mtime": 1793519877
     },
     {
       "path": "tables/T4_inference_simulation.csv",
       "category": "result",
       "ext": ".csv",
       "size": 767,
-      "mtime": 1793513860
+      "mtime": 1793519877
     },
     {
       "path": "tables/T5_scm_summary.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 216,
-      "mtime": 1793513860
+      "size": 217,
+      "mtime": 1793519877
     },
     {
       "path": "tables/T5b_optimal_path.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 181,
-      "mtime": 1793513860
+      "size": 182,
+      "mtime": 1793519877
     },
     {
       "path": "tables/T5c_price_targets.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 237,
-      "mtime": 1793513860
+      "size": 241,
+      "mtime": 1793519877
     }
   ]
 }

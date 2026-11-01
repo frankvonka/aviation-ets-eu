@@ -1,0 +1,986 @@
+{
+  "project": "aviation-ets-eu (aviation-fresh)",
+  "target": "Q1 energy/transport economics (Energy Economics, TR-D, Transport Policy, JEEM)",
+  "items": [
+    {
+      "id": "C01",
+      "kind": "code",
+      "path": "code/02_clean_build.py",
+      "pillar": "data",
+      "scores": {
+        "correctness": 7,
+        "rigor": 6,
+        "reproducibility": 7,
+        "quality": 7,
+        "validation": 6,
+        "documentation": 7
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 2,
+      "summary": "Solid state harmonization (43 ISO codes, asserts); WB merge full 43 states; ES-drop sensitivity uses mean-fill for GDP."
+    },
+    {
+      "id": "C02",
+      "kind": "code",
+      "path": "code/05_models_fixed.py",
+      "pillar": "stats",
+      "scores": {
+        "correctness": 6,
+        "rigor": 6,
+        "reproducibility": 6,
+        "quality": 7,
+        "validation": 5,
+        "documentation": 7
+      },
+      "blockers": 0,
+      "majors": 2,
+      "minors": 2,
+      "summary": "TWFE + event study with interactions; D4 GDP sign flip on smaller sample; no saved pre-trend p."
+    },
+    {
+      "id": "C03",
+      "kind": "code",
+      "path": "code/05_reconcile.py",
+      "pillar": "stats",
+      "scores": {
+        "correctness": 6,
+        "rigor": 5,
+        "reproducibility": 5,
+        "quality": 6,
+        "validation": 4,
+        "documentation": 5
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 1,
+      "summary": "Diagnostic script; prints only, no saved artifact; LOO run but output not persisted."
+    },
+    {
+      "id": "C04",
+      "kind": "code",
+      "path": "code/06_ml_suite.py",
+      "pillar": "ml",
+      "scores": {
+        "correctness": 6,
+        "rigor": 5,
+        "reproducibility": 6,
+        "quality": 7,
+        "validation": 5,
+        "documentation": 6
+      },
+      "blockers": 0,
+      "majors": 2,
+      "minors": 2,
+      "summary": "GroupKFold by iso in A; AIPW uses KFold(shuffle=True) on 32 treated states; X-learner not actually sample-split."
+    },
+    {
+      "id": "C05",
+      "kind": "code",
+      "path": "code/07_scm_suite.py",
+      "pillar": "optimization",
+      "scores": {
+        "correctness": 5,
+        "rigor": 5,
+        "reproducibility": 6,
+        "quality": 6,
+        "validation": 5,
+        "documentation": 6
+      },
+      "blockers": 0,
+      "majors": 2,
+      "minors": 2,
+      "summary": "Aggregate rebuilt via levels (bug fixed); weights rounded to 4dp then reconstructed; placebo p=0.455 weak."
+    },
+    {
+      "id": "C06",
+      "kind": "code",
+      "path": "code/08_simulation_suite.py",
+      "pillar": "simulation",
+      "scores": {
+        "correctness": 6,
+        "rigor": 6,
+        "reproducibility": 7,
+        "quality": 6,
+        "validation": 6,
+        "documentation": 7
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 2,
+      "summary": "Wild bootstrap null-imposed (B=4999); RI 5000; COVID counterfactual; S4 uses 2021 baseline not S3."
+    },
+    {
+      "id": "C07",
+      "kind": "code",
+      "path": "code/09_optimization_suite.py",
+      "pillar": "optimization",
+      "scores": {
+        "correctness": 5,
+        "rigor": 4,
+        "reproducibility": 6,
+        "quality": 6,
+        "validation": 5,
+        "documentation": 7
+      },
+      "blockers": 0,
+      "majors": 3,
+      "minors": 2,
+      "summary": "abate_share extrapolated 8-25 to 50-150 EUR; O3/O4 degenerate; _cate_to_eff arbitrary scale C0/10."
+    },
+    {
+      "id": "C08",
+      "kind": "code",
+      "path": "code/10_tables_figures.py",
+      "pillar": "viz",
+      "scores": {
+        "correctness": 7,
+        "rigor": 6,
+        "reproducibility": 6,
+        "quality": 7,
+        "validation": 5,
+        "documentation": 6
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 2,
+      "summary": "Tables from saved results (no recompute); T5 uses describe() not a summary table; Okabe-Ito + 300 DPI."
+    },
+    {
+      "id": "C09",
+      "kind": "code",
+      "path": "code/11_null_precision.py",
+      "pillar": "stats",
+      "scores": {
+        "correctness": 6,
+        "rigor": 6,
+        "reproducibility": 6,
+        "quality": 7,
+        "validation": 5,
+        "documentation": 7
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 1,
+      "summary": "MET replaces TOST; N4 per-drop RI uses unclustered OLS (inconsistent with clustered main)."
+    },
+    {
+      "id": "C10",
+      "kind": "code",
+      "path": "code/12_mechanism_pass_through.py",
+      "pillar": "stats",
+      "scores": {
+        "correctness": 6,
+        "rigor": 5,
+        "reproducibility": 6,
+        "quality": 6,
+        "validation": 5,
+        "documentation": 6
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 2,
+      "summary": "M1 fares (negative pass-through); M3 post dummy 2021+ on 2019-24 G2G; fare sign opposite H4."
+    },
+    {
+      "id": "C11",
+      "kind": "code",
+      "path": "code/14_fuel_crosscheck.py",
+      "pillar": "stats",
+      "scores": {
+        "correctness": 6,
+        "rigor": 5,
+        "reproducibility": 6,
+        "quality": 6,
+        "validation": 5,
+        "documentation": 5
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 1,
+      "summary": "Only AT fuel data available; cross-source corr 0.966; DiD on fuel not significant."
+    },
+    {
+      "id": "C12",
+      "kind": "code",
+      "path": "code/15_dose_response.py",
+      "pillar": "stats",
+      "scores": {
+        "correctness": 6,
+        "rigor": 5,
+        "reproducibility": 6,
+        "quality": 6,
+        "validation": 5,
+        "documentation": 6
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 1,
+      "summary": "eutl_missing now in design matrix; net_cost_log unused; dose fillna(0) with flag."
+    },
+    {
+      "id": "C13",
+      "kind": "code",
+      "path": "code/build_manuscript.py",
+      "pillar": "viz",
+      "scores": {
+        "correctness": 6,
+        "rigor": 5,
+        "reproducibility": 6,
+        "quality": 5,
+        "validation": 4,
+        "documentation": 5
+      },
+      "blockers": 0,
+      "majors": 2,
+      "minors": 3,
+      "summary": "568 lines; hardcoded pre-trend p=0.79 and prose numbers; mostly dynamic from CSVs."
+    },
+    {
+      "id": "C14",
+      "kind": "code",
+      "path": "run_all.py",
+      "pillar": "infra",
+      "scores": {
+        "correctness": 7,
+        "rigor": 6,
+        "reproducibility": 7,
+        "quality": 7,
+        "validation": 5,
+        "documentation": 6
+      },
+      "blockers": 0,
+      "majors": 0,
+      "minors": 1,
+      "summary": "One-command pipeline; skips network stages with shipped data; helpers run."
+    },
+    {
+      "id": "C15",
+      "kind": "code",
+      "path": "scripts/capture_environment.py",
+      "pillar": "infra",
+      "scores": {
+        "correctness": 7,
+        "rigor": 6,
+        "reproducibility": 6,
+        "quality": 6,
+        "validation": 5,
+        "documentation": 5
+      },
+      "blockers": 0,
+      "majors": 0,
+      "minors": 1,
+      "summary": "Pins only 6 packages; git commit recorded; n_jobs=1."
+    },
+    {
+      "id": "C16",
+      "kind": "code",
+      "path": "scripts/freeze_manifest.py",
+      "pillar": "infra",
+      "scores": {
+        "correctness": 6,
+        "rigor": 5,
+        "reproducibility": 6,
+        "quality": 6,
+        "validation": 5,
+        "documentation": 5
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 1,
+      "summary": "Hardcoded COMMIT='65bb6e7' stale vs HEAD; auto-discovers artifacts."
+    },
+    {
+      "id": "C17",
+      "kind": "code",
+      "path": "scripts/postprocess_results.py",
+      "pillar": "infra",
+      "scores": {
+        "correctness": 6,
+        "rigor": 5,
+        "reproducibility": 5,
+        "quality": 6,
+        "validation": 5,
+        "documentation": 5
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 1,
+      "summary": "Mutates shipped CSVs by appending run_id; idempotent check; stamps protocol 1.0."
+    },
+    {
+      "id": "C18",
+      "kind": "code",
+      "path": "scripts/reproduce_and_verify.sh",
+      "pillar": "infra",
+      "scores": {
+        "correctness": 7,
+        "rigor": 6,
+        "reproducibility": 7,
+        "quality": 6,
+        "validation": 5,
+        "documentation": 5
+      },
+      "blockers": 0,
+      "majors": 0,
+      "minors": 1,
+      "summary": "Clean-env driver; uses hardcoded /root venv path."
+    },
+    {
+      "id": "C19",
+      "kind": "code",
+      "path": "scripts/run_each_script.sh",
+      "pillar": "infra",
+      "scores": {
+        "correctness": 5,
+        "rigor": 5,
+        "reproducibility": 6,
+        "quality": 6,
+        "validation": 5,
+        "documentation": 5
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 1,
+      "summary": "References nonexistent code/03_wb_extra.py and code/04_did_models.py."
+    },
+    {
+      "id": "C20",
+      "kind": "code",
+      "path": "scripts/save_model_artifacts.py",
+      "pillar": "ml",
+      "scores": {
+        "correctness": 6,
+        "rigor": 5,
+        "reproducibility": 6,
+        "quality": 6,
+        "validation": 5,
+        "documentation": 5
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 1,
+      "summary": "Fits RF on full data including test split (leakage in saved model)."
+    },
+    {
+      "id": "C21",
+      "kind": "code",
+      "path": "scripts/seeded_selection.py",
+      "pillar": "infra",
+      "scores": {
+        "correctness": 7,
+        "rigor": 6,
+        "reproducibility": 7,
+        "quality": 7,
+        "validation": 6,
+        "documentation": 6
+      },
+      "blockers": 0,
+      "majors": 0,
+      "minors": 0,
+      "summary": "Constrained seeded draw reproducible; asserts match registry."
+    },
+    {
+      "id": "C22",
+      "kind": "code",
+      "path": "scripts/verify_determinism.py",
+      "pillar": "infra",
+      "scores": {
+        "correctness": 6,
+        "rigor": 5,
+        "reproducibility": 6,
+        "quality": 6,
+        "validation": 5,
+        "documentation": 5
+      },
+      "blockers": 0,
+      "majors": 0,
+      "minors": 1,
+      "summary": "Compares two trees by hash; strips nothing volatile; needs two runs."
+    },
+    {
+      "id": "C23",
+      "kind": "code",
+      "path": "src/__init__.py",
+      "pillar": "infra",
+      "scores": {
+        "correctness": 8,
+        "rigor": 7,
+        "reproducibility": 8,
+        "quality": 8,
+        "validation": 7,
+        "documentation": 6
+      },
+      "blockers": 0,
+      "majors": 0,
+      "minors": 0,
+      "summary": "Empty init; fine."
+    },
+    {
+      "id": "C24",
+      "kind": "code",
+      "path": "src/config_loader.py",
+      "pillar": "infra",
+      "scores": {
+        "correctness": 6,
+        "rigor": 5,
+        "reproducibility": 6,
+        "quality": 6,
+        "validation": 5,
+        "documentation": 6
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 1,
+      "summary": "PROTECTED set defined but never enforced; assert_required only checks 2 keys."
+    },
+    {
+      "id": "C25",
+      "kind": "code",
+      "path": "src/preprocessing.py",
+      "pillar": "data",
+      "scores": {
+        "correctness": 6,
+        "rigor": 5,
+        "reproducibility": 6,
+        "quality": 6,
+        "validation": 5,
+        "documentation": 6
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 1,
+      "summary": "verify_no_leakage uses |rho|>0.98 only; CO2_t excluded by name not by check."
+    },
+    {
+      "id": "C26",
+      "kind": "code",
+      "path": "src/split_manager.py",
+      "pillar": "infra",
+      "scores": {
+        "correctness": 6,
+        "rigor": 5,
+        "reproducibility": 6,
+        "quality": 6,
+        "validation": 5,
+        "documentation": 5
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 1,
+      "summary": "GroupKFold on iso but no rare-class protocol E; manifest 410KB (huge)."
+    },
+    {
+      "id": "C27",
+      "kind": "code",
+      "path": "tests/test_smoke.py",
+      "pillar": "infra",
+      "scores": {
+        "correctness": 7,
+        "rigor": 6,
+        "reproducibility": 7,
+        "quality": 7,
+        "validation": 7,
+        "documentation": 6
+      },
+      "blockers": 0,
+      "majors": 0,
+      "minors": 1,
+      "summary": "55 tests; asserts metrics.primary=='mae' (odd for this project)."
+    },
+    {
+      "id": "R01",
+      "kind": "result",
+      "path": "results/models/main_models.csv",
+      "pillar": "stats",
+      "scores": {
+        "validity": 7,
+        "statistics": 7,
+        "strength": 7,
+        "traceability": 8,
+        "presentation": 6,
+        "claims": 6
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 1,
+      "summary": "Headline DiD -0.2075 p=0.012; GDP sign flip on smaller sample; clustered SEs."
+    },
+    {
+      "id": "R02",
+      "kind": "result",
+      "path": "results/models/event_study_fixed.csv",
+      "pillar": "stats",
+      "scores": {
+        "validity": 7,
+        "statistics": 6,
+        "strength": 7,
+        "traceability": 8,
+        "presentation": 7,
+        "claims": 6
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 0,
+      "summary": "Pre-trend p=0.79 (hardcoded in manuscript, not saved); interactions present."
+    },
+    {
+      "id": "R03",
+      "kind": "result",
+      "path": "results/models/n1_respecified.csv",
+      "pillar": "stats",
+      "scores": {
+        "validity": 6,
+        "statistics": 6,
+        "strength": 6,
+        "traceability": 7,
+        "presentation": 6,
+        "claims": 6
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 0,
+      "summary": "N1c -0.195 p=0.018 with pre-determined controls; stable."
+    },
+    {
+      "id": "R04",
+      "kind": "result",
+      "path": "results/models/n2_tost.csv",
+      "pillar": "stats",
+      "scores": {
+        "validity": 6,
+        "statistics": 6,
+        "strength": 6,
+        "traceability": 7,
+        "presentation": 6,
+        "claims": 6
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 0,
+      "summary": "MET p=0.016 exceeds +/-3%; text aligned to MET (fixed)."
+    },
+    {
+      "id": "R05",
+      "kind": "result",
+      "path": "results/models/n3_mde.csv",
+      "pillar": "stats",
+      "scores": {
+        "validity": 6,
+        "statistics": 6,
+        "strength": 5,
+        "traceability": 7,
+        "presentation": 6,
+        "claims": 6
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 0,
+      "summary": "MDE 23.1% > +/-3% margin; power limitation stated."
+    },
+    {
+      "id": "R06",
+      "kind": "result",
+      "path": "results/models/n4_looo.csv",
+      "pillar": "stats",
+      "scores": {
+        "validity": 7,
+        "statistics": 7,
+        "strength": 7,
+        "traceability": 8,
+        "presentation": 6,
+        "claims": 7
+      },
+      "blockers": 0,
+      "majors": 0,
+      "minors": 1,
+      "summary": "All 43 drops significant; no single state drives sign."
+    },
+    {
+      "id": "R07",
+      "kind": "result",
+      "path": "results/ml/ml_cv.csv",
+      "pillar": "ml",
+      "scores": {
+        "validity": 7,
+        "statistics": 6,
+        "strength": 6,
+        "traceability": 8,
+        "presentation": 6,
+        "claims": 6
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 0,
+      "summary": "GroupKFold by iso; R2 0.66-0.72; intensity poorly predicted."
+    },
+    {
+      "id": "R08",
+      "kind": "result",
+      "path": "results/ml/aipw_did.csv",
+      "pillar": "ml",
+      "scores": {
+        "validity": 6,
+        "statistics": 5,
+        "strength": 6,
+        "traceability": 8,
+        "presentation": 6,
+        "claims": 6
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 0,
+      "summary": "AIPW ATT -0.112 SE 0.053; naive -0.218; covariate adjustment halves gap."
+    },
+    {
+      "id": "R09",
+      "kind": "result",
+      "path": "results/scm/scm_aggregate_annual.csv",
+      "pillar": "optimization",
+      "scores": {
+        "validity": 6,
+        "statistics": 5,
+        "strength": 5,
+        "traceability": 7,
+        "presentation": 7,
+        "claims": 5
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 0,
+      "summary": "Aggregate rebuilt via levels (was 1.4e13); placebo p=0.455 weak."
+    },
+    {
+      "id": "R10",
+      "kind": "result",
+      "path": "results/simulation/s1_wild_bootstrap.csv",
+      "pillar": "simulation",
+      "scores": {
+        "validity": 7,
+        "statistics": 7,
+        "strength": 7,
+        "traceability": 8,
+        "presentation": 6,
+        "claims": 7
+      },
+      "blockers": 0,
+      "majors": 0,
+      "minors": 0,
+      "summary": "Wild bootstrap p=0.0392, CI [-0.42,0.00]; B=4999."
+    },
+    {
+      "id": "R11",
+      "kind": "result",
+      "path": "results/simulation/s2_ri_summary.csv",
+      "pillar": "simulation",
+      "scores": {
+        "validity": 7,
+        "statistics": 7,
+        "strength": 7,
+        "traceability": 8,
+        "presentation": 6,
+        "claims": 7
+      },
+      "blockers": 0,
+      "majors": 0,
+      "minors": 0,
+      "summary": "RI p=0.0034 over 5000 permutations."
+    },
+    {
+      "id": "R12",
+      "kind": "result",
+      "path": "results/optimization/o4_allocation.csv",
+      "pillar": "optimization",
+      "scores": {
+        "validity": 5,
+        "statistics": 4,
+        "strength": 4,
+        "traceability": 7,
+        "presentation": 6,
+        "claims": 4
+      },
+      "blockers": 0,
+      "majors": 2,
+      "minors": 0,
+      "summary": "Chebyshev degenerate (largest markets first); O4b Nash fairness presented as main."
+    },
+    {
+      "id": "R13",
+      "kind": "result",
+      "path": "results/mechanisms/m1_fare_pass_through.csv",
+      "pillar": "stats",
+      "scores": {
+        "validity": 6,
+        "statistics": 5,
+        "strength": 5,
+        "traceability": 7,
+        "presentation": 6,
+        "claims": 5
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 0,
+      "summary": "Fare pass-through negative/null; opposite H4 sign; reframed as insulation."
+    },
+    {
+      "id": "R14",
+      "kind": "result",
+      "path": "results/models/dose_response.csv",
+      "pillar": "stats",
+      "scores": {
+        "validity": 6,
+        "statistics": 5,
+        "strength": 5,
+        "traceability": 7,
+        "presentation": 6,
+        "claims": 5
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 0,
+      "summary": "Dose null p=0.79 (H3); eutl_missing controlled; framed as Coasean insulation."
+    },
+    {
+      "id": "R15",
+      "kind": "result",
+      "path": "figures/F1_ets_vs_co2.png",
+      "pillar": "viz",
+      "covers": [
+        "figures/F10_allocation.png",
+        "figures/F1_ets_vs_co2.png",
+        "figures/F2_heatmap.png",
+        "figures/F3_event_study.png",
+        "figures/F4_ml_importance.png",
+        "figures/F5_scm_path.png",
+        "figures/F6_placebo_rmspe.png",
+        "figures/F7_covid_counterfactual.png",
+        "figures/F8_policy_montecarlo.png",
+        "figures/F9_mac_curve.png"
+      ],
+      "scores": {
+        "validity": 7,
+        "statistics": 5,
+        "strength": 6,
+        "traceability": 7,
+        "presentation": 7,
+        "claims": 6
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 1,
+      "summary": "10 figures, 300 DPI, Okabe-Ito, Times New Roman; F7 aggregates monthly treated only."
+    },
+    {
+      "id": "R16",
+      "kind": "result",
+      "path": "tables/T1_descriptives.csv",
+      "pillar": "viz",
+      "covers": [
+        "tables/T1_descriptives.csv",
+        "tables/T2_panel_structure.csv",
+        "tables/T3_main_did.csv",
+        "tables/T4_inference_simulation.csv",
+        "tables/T5_scm_summary.csv",
+        "tables/T5b_optimal_path.csv",
+        "tables/T5c_price_targets.csv"
+      ],
+      "scores": {
+        "validity": 7,
+        "statistics": 5,
+        "strength": 6,
+        "traceability": 8,
+        "presentation": 7,
+        "claims": 6
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 1,
+      "summary": "Tables generated from saved results; T5 uses describe() not a summary; T4 concatenates blocks."
+    },
+    {
+      "id": "R17",
+      "kind": "result",
+      "path": "results/mechanisms/m2_fuel_did.csv",
+      "pillar": "stats",
+      "covers": [
+        "results/mechanisms/m2_fuel_did.csv",
+        "results/mechanisms/m3_segments.csv"
+      ],
+      "scores": {
+        "validity": 6,
+        "statistics": 5,
+        "strength": 5,
+        "traceability": 7,
+        "presentation": 6,
+        "claims": 5
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 0,
+      "summary": "Fuel DiD -0.047 p=0.49 (not sig); segment effects all p>=0.35."
+    },
+    {
+      "id": "R18",
+      "kind": "result",
+      "path": "results/ml/aipw_state_effects.csv",
+      "pillar": "ml",
+      "covers": [
+        "results/ml/aipw_state_effects.csv",
+        "results/ml/cate_by_state.csv",
+        "results/ml/cate_summary.csv",
+        "results/ml/ml_importance.csv"
+      ],
+      "scores": {
+        "validity": 6,
+        "statistics": 5,
+        "strength": 6,
+        "traceability": 8,
+        "presentation": 6,
+        "claims": 6
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 0,
+      "summary": "CATE extremes IS/LI; bootstrap CI on pseudo-outcomes only."
+    },
+    {
+      "id": "R19",
+      "kind": "result",
+      "path": "results/models/heterogeneity.csv",
+      "pillar": "stats",
+      "covers": [
+        "results/models/heterogeneity.csv",
+        "results/models/n4_ri_per_drop.csv",
+        "results/models/specification_log.csv"
+      ],
+      "scores": {
+        "validity": 6,
+        "statistics": 5,
+        "strength": 5,
+        "traceability": 7,
+        "presentation": 6,
+        "claims": 5
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 0,
+      "summary": "Heterogeneity interactions; per-drop RI p-values; spec log records reasons."
+    },
+    {
+      "id": "R20",
+      "kind": "result",
+      "path": "results/optimization/o1_mac_curve.csv",
+      "pillar": "optimization",
+      "covers": [
+        "results/optimization/o1_mac_curve.csv",
+        "results/optimization/o2_price_targets.csv",
+        "results/optimization/o3_optimal_price_path.csv",
+        "results/optimization/o4b_allocation_fair.csv"
+      ],
+      "scores": {
+        "validity": 5,
+        "statistics": 4,
+        "strength": 4,
+        "traceability": 7,
+        "presentation": 6,
+        "claims": 4
+      },
+      "blockers": 0,
+      "majors": 2,
+      "minors": 0,
+      "summary": "MAC curve flat; O2 only -10% reachable; O3 degenerate floor; O4b Nash main."
+    },
+    {
+      "id": "R21",
+      "kind": "result",
+      "path": "results/scm/scm_placebo.csv",
+      "pillar": "optimization",
+      "covers": [
+        "results/scm/scm_placebo.csv",
+        "results/scm/scm_state_effects.csv"
+      ],
+      "scores": {
+        "validity": 6,
+        "statistics": 5,
+        "strength": 5,
+        "traceability": 7,
+        "presentation": 6,
+        "claims": 5
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 0,
+      "summary": "Placebo p=0.455; 29 treated states with weights."
+    },
+    {
+      "id": "R22",
+      "kind": "result",
+      "path": "results/simulation/s2_ri_betas.csv",
+      "pillar": "simulation",
+      "covers": [
+        "results/simulation/s2_ri_betas.csv",
+        "results/simulation/s3_covid_counterfactual_monthly.csv",
+        "results/simulation/s3_did_variants.csv",
+        "results/simulation/s4_policy_montecarlo.csv"
+      ],
+      "scores": {
+        "validity": 6,
+        "statistics": 6,
+        "strength": 6,
+        "traceability": 7,
+        "presentation": 6,
+        "claims": 6
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 0,
+      "summary": "RI betas 5000; COVID monthly counterfactual; S4 MC 2000 draws."
+    },
+    {
+      "id": "R23",
+      "kind": "result",
+      "path": "FINAL_REPORT.html",
+      "pillar": "viz",
+      "covers": [
+        "FINAL_REPORT.html",
+        "MANUSCRIPT.html",
+        "eda_report/report.html"
+      ],
+      "scores": {
+        "validity": 7,
+        "statistics": 5,
+        "strength": 6,
+        "traceability": 7,
+        "presentation": 7,
+        "claims": 6
+      },
+      "blockers": 0,
+      "majors": 1,
+      "minors": 0,
+      "summary": "Self-contained HTML reports; manuscript 1.6MB with base64 figures."
+    },
+    {
+      "id": "R24",
+      "kind": "result",
+      "path": "artifacts/logs/environment.json",
+      "pillar": "infra",
+      "covers": [
+        "artifacts/logs/environment.json",
+        "artifacts/logs/stamp_log.json"
+      ],
+      "scores": {
+        "validity": 7,
+        "statistics": 5,
+        "strength": 6,
+        "traceability": 8,
+        "presentation": 6,
+        "claims": 6
+      },
+      "blockers": 0,
+      "majors": 0,
+      "minors": 1,
+      "summary": "Env captured; stamp log records run_id mapping."
+    }
+  ],
+  "not_assessable": []
+}

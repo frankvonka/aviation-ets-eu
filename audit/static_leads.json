@@ -6,39 +6,15 @@
       "id": "FILLNA-GLOBAL-STAT",
       "severity": "Major",
       "file": "code/02_clean_build.py",
-      "location": "line 175",
+      "location": "line 186",
       "snippet": "g19c = np.log(np.maximum(d.gdp_pc.fillna(d.gdp_pc.mean()).values.astype(float), 1.0))",
-      "note": "Imputation with a statistic of the full column; confirm it is computed on training data only."
-    },
-    {
-      "id": "FILLNA-GLOBAL-STAT",
-      "severity": "Major",
-      "file": "code/06_ml_suite.py",
-      "location": "line 123",
-      "snippet": "X = D[XCOL].fillna(D[XCOL].mean()).values",
-      "note": "Imputation with a statistic of the full column; confirm it is computed on training data only."
-    },
-    {
-      "id": "FILLNA-GLOBAL-STAT",
-      "severity": "Major",
-      "file": "code/06_ml_suite.py",
-      "location": "line 137",
-      "snippet": "Xc = Dc[XCOL].fillna(Dc[XCOL].mean()).values; Xtr_ = Dm[XCOL].fillna(Dm[XCOL].mean()).values",
-      "note": "Imputation with a statistic of the full column; confirm it is computed on training data only."
-    },
-    {
-      "id": "FILLNA-GLOBAL-STAT",
-      "severity": "Major",
-      "file": "code/06_ml_suite.py",
-      "location": "line 44",
-      "snippet": "Xd = Xd.fillna(Xd.mean())",
       "note": "Imputation with a statistic of the full column; confirm it is computed on training data only."
     },
     {
       "id": "TS-KFOLD",
       "severity": "Major",
       "file": "code/06_ml_suite.py",
-      "location": "line 95",
+      "location": "line 106",
       "snippet": "kf = KFold(5, shuffle=True, random_state=42)",
       "note": "KFold in a file with time-related terms; check for temporal or grouped dependence."
     },
@@ -46,7 +22,7 @@
       "id": "FILLNA-GLOBAL-STAT",
       "severity": "Major",
       "file": "code/06_ml_suite.py",
-      "location": "line 96",
+      "location": "line 107",
       "snippet": "Xt_full = Dm[XCOL].fillna(Dm[XCOL].mean()).values   # within-treated-group mean (NOT pooled)",
       "note": "Imputation with a statistic of the full column; confirm it is computed on training data only."
     },
@@ -54,15 +30,31 @@
       "id": "FILLNA-GLOBAL-STAT",
       "severity": "Major",
       "file": "code/06_ml_suite.py",
-      "location": "line 97",
+      "location": "line 108",
       "snippet": "Xc_full = Dc[XCOL].fillna(Dc[XCOL].mean()).values   # within-control-group mean (NOT pooled)",
       "note": "Imputation with a statistic of the full column; confirm it is computed on training data only."
     },
     {
       "id": "FILLNA-GLOBAL-STAT",
       "severity": "Major",
+      "file": "code/06_ml_suite.py",
+      "location": "line 134",
+      "snippet": "X = D[XCOL].fillna(D[XCOL].mean()).values",
+      "note": "Imputation with a statistic of the full column; confirm it is computed on training data only."
+    },
+    {
+      "id": "FILLNA-GLOBAL-STAT",
+      "severity": "Major",
+      "file": "code/06_ml_suite.py",
+      "location": "line 148",
+      "snippet": "Xc = Dc[XCOL].fillna(Dc[XCOL].mean()).values; Xtr_ = Dm[XCOL].fillna(Dm[XCOL].mean()).values",
+      "note": "Imputation with a statistic of the full column; confirm it is computed on training data only."
+    },
+    {
+      "id": "FILLNA-GLOBAL-STAT",
+      "severity": "Major",
       "file": "code/09_optimization_suite.py",
-      "location": "line 224",
+      "location": "line 223",
       "snippet": "eff = eff.reindex(d19.index).fillna(eff.mean())",
       "note": "Imputation with a statistic of the full column; confirm it is computed on training data only."
     },
@@ -111,24 +103,8 @@
       "severity": "Minor",
       "file": "code/06_ml_suite.py",
       "location": "line 11",
-      "snippet": "warnings.simplefilter(\"ignore\", (FutureWarning, ConvergenceWarning))",
+      "snippet": "warnings.simplefilter(\"ignore\", FutureWarning)",
       "note": "Blanket warning suppression can hide convergence, leakage-adjacent, or deprecation problems."
-    },
-    {
-      "id": "NO-RANDOM-STATE",
-      "severity": "Minor",
-      "file": "code/06_ml_suite.py",
-      "location": "line 46",
-      "snippet": "for name, est in [(\"HistGB\", HistGradientBoostingRegressor(max_iter=300, learning_rate=0.06,",
-      "note": "Stochastic estimator or split without random_state."
-    },
-    {
-      "id": "NO-RANDOM-STATE",
-      "severity": "Minor",
-      "file": "code/06_ml_suite.py",
-      "location": "line 48",
-      "snippet": "(\"RF\", RandomForestRegressor(n_estimators=500, max_depth=6,",
-      "note": "Stochastic estimator or split without random_state."
     },
     {
       "id": "NO-DOCSTRINGS",

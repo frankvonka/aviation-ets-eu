@@ -1,25 +1,25 @@
 # Inventory: aviation-fresh
 
-Code files: 27 | Result files: 53 | Data files: 24
+Code files: 27 | Result files: 55 | Data files: 27
 README: True | Env file: True | Tests: True | Git: True
 
 ## Code files (every one must be audited)
 
 | # | Path | Lines | Roles (guess) | Seed? | Read? |
 |---|---|---|---|---|---|
-| 1 | `code/02_clean_build.py` | 185 | data, ablation | NO | [ ] |
-| 2 | `code/05_models_fixed.py` | 141 | data, ml, stats, timeseries_panel | NO | [ ] |
+| 1 | `code/02_clean_build.py` | 196 | data, ablation | NO | [ ] |
+| 2 | `code/05_models_fixed.py` | 160 | data, ml, stats, timeseries_panel | NO | [ ] |
 | 3 | `code/05_reconcile.py` | 67 | data, ml, stats | NO | [ ] |
-| 4 | `code/06_ml_suite.py` | 171 | data, ml | yes | [ ] |
-| 5 | `code/07_scm_suite.py` | 154 | data, optimization | yes | [ ] |
+| 4 | `code/06_ml_suite.py` | 182 | data, ml | yes | [ ] |
+| 5 | `code/07_scm_suite.py` | 172 | data, optimization | yes | [ ] |
 | 6 | `code/08_simulation_suite.py` | 191 | data, ml, simulation, ablation, stats | yes | [ ] |
-| 7 | `code/09_optimization_suite.py` | 312 | data, optimization | yes | [ ] |
+| 7 | `code/09_optimization_suite.py` | 311 | data, optimization | yes | [ ] |
 | 8 | `code/10_tables_figures.py` | 184 | data, simulation, ablation, timeseries_panel, plotting | NO | [ ] |
-| 9 | `code/11_null_precision.py` | 156 | data, ml, simulation, ablation, stats | yes | [ ] |
+| 9 | `code/11_null_precision.py` | 163 | data, ml, simulation, ablation, stats, timeseries_panel | yes | [ ] |
 | 10 | `code/12_mechanism_pass_through.py` | 92 | data, ml, stats | NO | [ ] |
 | 11 | `code/14_fuel_crosscheck.py` | 48 | data, stats | NO | [ ] |
 | 12 | `code/15_dose_response.py` | 59 | data, stats | NO | [ ] |
-| 13 | `code/build_manuscript.py` | 569 | data, simulation, ablation, stats | yes | [ ] |
+| 13 | `code/build_manuscript.py` | 568 | data, simulation, ablation, stats | yes | [ ] |
 | 14 | `run_all.py` | 89 | utility | NO | [ ] |
 | 15 | `scripts/capture_environment.py` | 44 | utility | NO | [ ] |
 | 16 | `scripts/freeze_manifest.py` | 89 | utility | NO | [ ] |
@@ -39,65 +39,70 @@ README: True | Env file: True | Tests: True | Git: True
 
 | # | Path | Size (KB) | Audited? |
 |---|---|---|---|
-| 1 | `artifacts/logs/environment.json` | 0 | [ ] |
-| 2 | `artifacts/logs/stamp_log.json` | 1 | [ ] |
-| 3 | `eda_report/report.html` | 10 | [ ] |
-| 4 | `figures/F10_allocation.png` | 70 | [ ] |
-| 5 | `figures/F1_ets_vs_co2.png` | 110 | [ ] |
-| 6 | `figures/F2_heatmap.png` | 122 | [ ] |
-| 7 | `figures/F3_event_study.png` | 47 | [ ] |
-| 8 | `figures/F4_ml_importance.png` | 63 | [ ] |
-| 9 | `figures/F5_scm_path.png` | 57 | [ ] |
-| 10 | `figures/F6_placebo_rmspe.png` | 73 | [ ] |
-| 11 | `figures/F7_covid_counterfactual.png` | 64 | [ ] |
-| 12 | `figures/F8_policy_montecarlo.png` | 89 | [ ] |
-| 13 | `figures/F9_mac_curve.png` | 59 | [ ] |
-| 14 | `results/mechanisms/m1_fare_pass_through.csv` | 0 | [ ] |
-| 15 | `results/mechanisms/m2_fuel_did.csv` | 0 | [ ] |
-| 16 | `results/mechanisms/m3_segments.csv` | 0 | [ ] |
-| 17 | `results/ml/aipw_did.csv` | 0 | [ ] |
-| 18 | `results/ml/aipw_state_effects.csv` | 2 | [ ] |
-| 19 | `results/ml/cate_by_state.csv` | 0 | [ ] |
-| 20 | `results/ml/cate_summary.csv` | 0 | [ ] |
-| 21 | `results/ml/ml_cv.csv` | 0 | [ ] |
-| 22 | `results/ml/ml_importance.csv` | 0 | [ ] |
-| 23 | `results/models/dose_response.csv` | 0 | [ ] |
-| 24 | `results/models/event_study_fixed.csv` | 4 | [ ] |
-| 25 | `results/models/heterogeneity.csv` | 2 | [ ] |
-| 26 | `results/models/main_models.csv` | 4 | [ ] |
-| 27 | `results/models/n1_respecified.csv` | 0 | [ ] |
-| 28 | `results/models/n2_tost.csv` | 0 | [ ] |
-| 29 | `results/models/n3_mde.csv` | 0 | [ ] |
-| 30 | `results/models/n4_looo.csv` | 4 | [ ] |
-| 31 | `results/models/n4_ri_per_drop.csv` | 0 | [ ] |
-| 32 | `results/models/specification_log.csv` | 3 | [ ] |
-| 33 | `results/optimization/o1_mac_curve.csv` | 17 | [ ] |
-| 34 | `results/optimization/o2_price_targets.csv` | 0 | [ ] |
-| 35 | `results/optimization/o3_optimal_price_path.csv` | 0 | [ ] |
-| 36 | `results/optimization/o4_allocation.csv` | 2 | [ ] |
-| 37 | `results/optimization/o4b_allocation_fair.csv` | 1 | [ ] |
-| 38 | `results/scm/scm_aggregate_annual.csv` | 0 | [ ] |
-| 39 | `results/scm/scm_placebo.csv` | 5 | [ ] |
-| 40 | `results/scm/scm_state_effects.csv` | 4 | [ ] |
-| 41 | `results/simulation/s1_wild_bootstrap.csv` | 0 | [ ] |
-| 42 | `results/simulation/s2_ri_betas.csv` | 271 | [ ] |
-| 43 | `results/simulation/s2_ri_summary.csv` | 0 | [ ] |
-| 44 | `results/simulation/s3_covid_counterfactual_monthly.csv` | 57 | [ ] |
-| 45 | `results/simulation/s3_did_variants.csv` | 0 | [ ] |
-| 46 | `results/simulation/s4_policy_montecarlo.csv` | 2 | [ ] |
-| 47 | `tables/T1_descriptives.csv` | 0 | [ ] |
-| 48 | `tables/T2_panel_structure.csv` | 1 | [ ] |
-| 49 | `tables/T3_main_did.csv` | 4 | [ ] |
-| 50 | `tables/T4_inference_simulation.csv` | 0 | [ ] |
-| 51 | `tables/T5_scm_summary.csv` | 0 | [ ] |
-| 52 | `tables/T5b_optimal_path.csv` | 0 | [ ] |
-| 53 | `tables/T5c_price_targets.csv` | 0 | [ ] |
+| 1 | `FINAL_REPORT.html` | 686 | [ ] |
+| 2 | `MANUSCRIPT.html` | 1615 | [ ] |
+| 3 | `artifacts/logs/environment.json` | 0 | [ ] |
+| 4 | `artifacts/logs/stamp_log.json` | 1 | [ ] |
+| 5 | `eda_report/report.html` | 10 | [ ] |
+| 6 | `figures/F10_allocation.png` | 149 | [ ] |
+| 7 | `figures/F1_ets_vs_co2.png` | 246 | [ ] |
+| 8 | `figures/F2_heatmap.png` | 265 | [ ] |
+| 9 | `figures/F3_event_study.png` | 104 | [ ] |
+| 10 | `figures/F4_ml_importance.png` | 131 | [ ] |
+| 11 | `figures/F5_scm_path.png` | 145 | [ ] |
+| 12 | `figures/F6_placebo_rmspe.png` | 165 | [ ] |
+| 13 | `figures/F7_covid_counterfactual.png` | 138 | [ ] |
+| 14 | `figures/F8_policy_montecarlo.png` | 201 | [ ] |
+| 15 | `figures/F9_mac_curve.png` | 139 | [ ] |
+| 16 | `results/mechanisms/m1_fare_pass_through.csv` | 0 | [ ] |
+| 17 | `results/mechanisms/m2_fuel_did.csv` | 0 | [ ] |
+| 18 | `results/mechanisms/m3_segments.csv` | 0 | [ ] |
+| 19 | `results/ml/aipw_did.csv` | 0 | [ ] |
+| 20 | `results/ml/aipw_state_effects.csv` | 2 | [ ] |
+| 21 | `results/ml/cate_by_state.csv` | 0 | [ ] |
+| 22 | `results/ml/cate_summary.csv` | 0 | [ ] |
+| 23 | `results/ml/ml_cv.csv` | 0 | [ ] |
+| 24 | `results/ml/ml_importance.csv` | 0 | [ ] |
+| 25 | `results/models/dose_response.csv` | 0 | [ ] |
+| 26 | `results/models/event_study_fixed.csv` | 4 | [ ] |
+| 27 | `results/models/heterogeneity.csv` | 2 | [ ] |
+| 28 | `results/models/main_models.csv` | 9 | [ ] |
+| 29 | `results/models/n1_respecified.csv` | 0 | [ ] |
+| 30 | `results/models/n2_tost.csv` | 0 | [ ] |
+| 31 | `results/models/n3_mde.csv` | 0 | [ ] |
+| 32 | `results/models/n4_looo.csv` | 4 | [ ] |
+| 33 | `results/models/n4_ri_per_drop.csv` | 0 | [ ] |
+| 34 | `results/models/specification_log.csv` | 7 | [ ] |
+| 35 | `results/optimization/o1_mac_curve.csv` | 16 | [ ] |
+| 36 | `results/optimization/o2_price_targets.csv` | 0 | [ ] |
+| 37 | `results/optimization/o3_optimal_price_path.csv` | 0 | [ ] |
+| 38 | `results/optimization/o4_allocation.csv` | 1 | [ ] |
+| 39 | `results/optimization/o4b_allocation_fair.csv` | 1 | [ ] |
+| 40 | `results/scm/scm_aggregate_annual.csv` | 0 | [ ] |
+| 41 | `results/scm/scm_placebo.csv` | 5 | [ ] |
+| 42 | `results/scm/scm_state_effects.csv` | 5 | [ ] |
+| 43 | `results/simulation/s1_wild_bootstrap.csv` | 0 | [ ] |
+| 44 | `results/simulation/s2_ri_betas.csv` | 271 | [ ] |
+| 45 | `results/simulation/s2_ri_summary.csv` | 0 | [ ] |
+| 46 | `results/simulation/s3_covid_counterfactual_monthly.csv` | 57 | [ ] |
+| 47 | `results/simulation/s3_did_variants.csv` | 0 | [ ] |
+| 48 | `results/simulation/s4_policy_montecarlo.csv` | 2 | [ ] |
+| 49 | `tables/T1_descriptives.csv` | 0 | [ ] |
+| 50 | `tables/T2_panel_structure.csv` | 1 | [ ] |
+| 51 | `tables/T3_main_did.csv` | 7 | [ ] |
+| 52 | `tables/T4_inference_simulation.csv` | 0 | [ ] |
+| 53 | `tables/T5_scm_summary.csv` | 0 | [ ] |
+| 54 | `tables/T5b_optimal_path.csv` | 0 | [ ] |
+| 55 | `tables/T5c_price_targets.csv` | 0 | [ ] |
 
 ## Data files
 
+- `artifacts/ablation_diffs.json` (1 KB)
 - `artifacts/freeze/freeze_manifest.json` (12 KB)
 - `artifacts/models/model_manifest.json` (0 KB)
 - `artifacts/run/optimization_history.json` (0 KB)
+- `artifacts/run/seeds.json` (0 KB)
+- `artifacts/splits/split_manifest.json` (410 KB)
 - `data/CO2_emissions_by_state.xlsx` (564 KB)
 - `data/CO2_emissions_by_state_DATA.csv` (349 KB)
 - `data/ETS_Database_July_2026.xlsx` (3278 KB)
@@ -118,11 +123,11 @@ README: True | Env file: True | Tests: True | Git: True
 - `data/segment_shares_2019.csv` (5 KB)
 - `data/state_map.json` (0 KB)
 - `data/wb_controls.csv` (20 KB)
-- `data/wb_controls_all.csv` (28 KB)
+- `data/wb_controls_all.csv` (32 KB)
 
 ## Config
 
-- `configs/ablation_variants.yaml` (0 KB)
+- `configs/ablation_variants.yaml` (1 KB)
 - `configs/global.yaml` (2 KB)
 - `configs/hypotheses.yaml` (1 KB)
 - `configs/model_registry.yaml` (1 KB)
@@ -137,6 +142,7 @@ README: True | Env file: True | Tests: True | Git: True
 
 ## Docs
 
+- `FINAL_REPORT.md` (107 KB)
 - `README.md` (5 KB)
 - `data/EUTL_PROVENANCE.md` (6 KB)
 - `data/PROVENANCE.md` (3 KB)
@@ -147,7 +153,7 @@ README: True | Env file: True | Tests: True | Git: True
 - `results/mechanisms_log.txt` (0 KB)
 - `results/mechanisms_log2.txt` (0 KB)
 - `results/ml_log.txt` (0 KB)
-- `results/models_log.txt` (1 KB)
+- `results/models_log.txt` (2 KB)
 - `results/null_precision_log.txt` (1 KB)
 - `results/scm_log.txt` (2 KB)
 - `results/simulation_log.txt` (1 KB)
