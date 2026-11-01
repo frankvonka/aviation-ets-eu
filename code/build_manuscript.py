@@ -87,7 +87,7 @@ imp_lnco2 = ml_imp[(ml_imp.outcome=="ln_co2") & (ml_imp.model=="RandomForest")].
 # CATE extremes
 cate_min = cate.loc[cate.cate.idxmin()]
 cate_max = cate.loc[cate.cate.idxmax()]
-# fare pass-through headline
+# fare response (insulation) headline
 m1b = m1[m1.model.str.contains("ctrend")].iloc[0]
 # fuel
 m2r = m2.iloc[0]
@@ -418,9 +418,9 @@ equalizes residuals — the solution is degenerate and uninformative. We present
 
 mech = f"""
 <p>Three mechanism tests explain <i>why</i> the price channel is muted.</p>
-<h3>Fare pass-through (M1)</h3>
+<h3>Fare response (insulation test) (M1)</h3>
 {df_table(m1.rename(columns={"model":"spec","coef":"treat×lnETS","se":"SE","p":"p","N":"N"}), cls="wide", maxcols=["spec","coef","se","p","N"])}
-<div class="cap"><b>Table 11.</b> HICP airfare pass-through of the ETS price. Treated states'
+<div class="cap"><b>Table 11.</b> HICP airfare response to the ETS price (insulation test). Treated states'
 fares did not rise with ETS prices (coef {m1b.coef:+.3f}, p<0.001) — negative/null pass-through,
 reinforcing the free-allocation insulation story: operators absorbed the carbon cost
 rather than passing it to consumers.</div>

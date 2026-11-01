@@ -18,6 +18,9 @@ import pandas as pd, numpy as np, statsmodels.api as sm
 from pathlib import Path
 
 BASE = Path(__file__).resolve().parents[1]; DATA = BASE/"data"; OUT = BASE/"results"/"simulation"
+import sys
+sys.path.insert(0, str(BASE/"src"))
+from twfe import twfe_fit
 OUT.mkdir(parents=True, exist_ok=True); RES = BASE/"results"
 LOG = []
 def log(s=""):
@@ -32,17 +35,6 @@ panel["ln_gdp_pc"] = np.log(panel.gdp_pc.replace(0, np.nan))
 gb_off = (panel.iso == "GB") & (panel.YEAR >= 2021)
 panel["did_adj"] = (panel.post2012 * panel.ets_covered * (~gb_off)).astype(int)
 panel["tr_x_lnets"] = panel.ets_covered * np.log(panel.ets_eur.replace(0, np.nan))
-
-def twfe_fit(d, y, xcols, year_fe=True):
-    dd = d.dropna(subset=[y]+xcols).copy()
-    parts = [pd.get_dummies(dd.iso, prefix="s", drop_first=True).astype(float)]
-    if year_fe:
-        parts.append(pd.get_dummies(dd.YEAR, prefix="y", drop_first=True).astype(float))
-    X = pd.concat(parts, axis=1)
-    for c in xcols: X[c] = dd[c].values
-    X["const"] = 1.0
-    return sm.OLS(dd[y].values, X.values).fit(cov_type="cluster",
-        cov_kwds={"groups": dd.iso.values}), list(X.columns), dd
 
 # ═══ S1: WILD CLUSTER BOOTSTRAP ═══════════════════════════════════════════
 log("── S1 wild cluster bootstrap ──")

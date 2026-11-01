@@ -18,6 +18,9 @@ from pathlib import Path
 from scipy.optimize import minimize_scalar, brentq, linprog
 
 BASE = Path(__file__).resolve().parents[1]; DATA = BASE/"data"; OUT = BASE/"results"/"optimization"
+import sys
+sys.path.insert(0, str(BASE/"src"))
+from twfe import twfe_fit
 OUT.mkdir(parents=True, exist_ok=True); RES = BASE/"results"
 LOG = []
 def log(s=""):
@@ -33,15 +36,6 @@ gb_off = (panel.iso == "GB") & (panel.YEAR >= 2021)
 panel["did_adj"] = (panel.post2012 * panel.ets_covered * (~gb_off)).astype(int)
 panel["tr_x_lnets"] = panel.ets_covered * np.log(panel.ets_eur.replace(0, np.nan))
 pre = panel[panel.YEAR <= 2019]
-
-def twfe_fit(d, y, xcols):
-    dd = d.dropna(subset=[y]+xcols).copy()
-    X = pd.concat([pd.get_dummies(dd.iso, prefix="s", drop_first=True).astype(float),
-                   pd.get_dummies(dd.YEAR, prefix="y", drop_first=True).astype(float)], axis=1)
-    for c in xcols: X[c] = dd[c].values
-    X["const"] = 1.0
-    m = sm.OLS(dd[y].values, X.values).fit(cov_type="cluster", cov_kwds={"groups": dd.iso.values})
-    return m, list(X.columns), dd
 
 m, cols, dd = twfe_fit(pre, "ln_co2", ["did_adj","tr_x_lnets"])
 b1, b2 = m.params[cols.index("did_adj")], m.params[cols.index("tr_x_lnets")]
@@ -266,6 +260,18 @@ if r.success:
     log("O4b fairness (Nash log) allocation top5:\n" + alloc2.head(5).to_string(index=False))
 else:
     log(f"O4 LP failed: {r.message}")
+# ── O4c: equal-allocation baseline (for comparison) ────────────────────────
+equal_x = np.full(n, B / n)
+equal_residual = co2 - eff.values * equal_x
+equal_max = float(equal_residual.max())
+equal_abate = float((eff.values * equal_x).sum())
+pd.DataFrame({"iso": d19.index, "alloc_eur_bn": np.round(equal_x, 3),
+              "co2_2019_mt": np.round(co2, 2),
+              "pred_residual_mt": np.round(equal_residual, 3)}).to_csv(
+    OUT / "o4_equal_baseline.csv", index=False)
+log(f"O4c equal-allocation baseline: max residual = {equal_max:.2f} Mt, "
+    f"total abate = {equal_abate:.2f} Mt")
+
 # ── Record optimization history (measured, not hand-typed) ──────────────────
 # Every field below is measured during this run; nothing is typed by hand.
 # The only objectives recorded are those the code actually evaluated (the O4 LP

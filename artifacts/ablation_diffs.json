@@ -1,40 +1,60 @@
 {
   "reference": "full_model",
+  "reference_did_coef": -0.2074565550145567,
   "variants": [
     {
       "id": "dose_response",
-      "change": "add dose-response moderator (net-short x post)",
-      "hypothesis": "ETS price response increases with net-short position",
-      "tuning": "fixed",
-      "output": "results/models/dose_response.csv"
+      "metric": "net_short_share_x_post",
+      "coef": 0.0058013032555397775,
+      "p": 0.7871364896919022,
+      "delta_vs_ref": 0.0058013032555397775
     },
     {
       "id": "fare_pass_through",
-      "change": "add fare passthrough mechanism",
-      "hypothesis": "ETS price passes through to fares",
-      "tuning": "fixed",
-      "output": "results/mechanisms/m1_fare_pass_through.csv"
+      "spec": "M1a_fare_response_twxets",
+      "metric": "treat_x_ets",
+      "coef": -0.010708520770135753,
+      "p": 0.020218987396654082,
+      "delta_vs_ref": 0.19674803424442094
+    },
+    {
+      "id": "fare_pass_through",
+      "spec": "M1b_fare_response_twxets_ctrend",
+      "metric": "treat_x_ets",
+      "coef": -0.01610452697453978,
+      "p": 3.9317394858691955e-07,
+      "delta_vs_ref": 0.1913520280400169
     },
     {
       "id": "fuel_crosscheck",
-      "change": "cross-check with jet-fuel data",
-      "hypothesis": "jet-fuel DiD confirms CO2 DiD",
-      "tuning": "fixed",
-      "output": "results/mechanisms/m2_fuel_did.csv"
+      "metric": "ln_jetfuel_ktoe",
+      "coef": -0.23557619004097796,
+      "p": 0.4820469279343743,
+      "delta_vs_ref": -0.028119635026421258
     },
     {
       "id": "null_precision",
-      "change": "respecified controls (trend, scale)",
-      "hypothesis": "DiD effect survives control respecification",
-      "tuning": "fixed",
-      "output": "results/models/n1_respecified.csv"
+      "spec": "N1a_original",
+      "metric": "did_coef",
+      "coef": -0.2074565550145567,
+      "p": 0.011972249108812068,
+      "delta_vs_ref": 0.0
     },
     {
-      "id": "controls_sensitivity",
-      "change": "drop WB controls (gdp_pc, air_psgr, air_freight, tourism)",
-      "hypothesis": "DiD effect survives dropping WB controls",
-      "tuning": "fixed",
-      "output": "results/models/n1_respecified.csv"
+      "id": "null_precision",
+      "spec": "N1b_plus_scale",
+      "metric": "did_coef",
+      "coef": -0.21847118076494493,
+      "p": 0.05313110141496379,
+      "delta_vs_ref": -0.011014625750388224
+    },
+    {
+      "id": "null_precision",
+      "spec": "N1c_scale_trend",
+      "metric": "did_coef",
+      "coef": -0.09181494151230601,
+      "p": 0.38785027897314384,
+      "delta_vs_ref": 0.11564161350225069
     }
   ]
 }

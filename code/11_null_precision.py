@@ -11,6 +11,9 @@ import pandas as pd, numpy as np, statsmodels.api as sm
 from pathlib import Path
 
 BASE = Path(__file__).resolve().parents[1]; DATA = BASE/"data"; OUT = BASE/"results"/"models"
+import sys
+sys.path.insert(0, str(BASE/"src"))
+from twfe import twfe_first as twfe
 OUT.mkdir(parents=True, exist_ok=True)
 (BASE/"results").mkdir(parents=True, exist_ok=True)
 RES = BASE/"results"
@@ -38,19 +41,6 @@ panel["pre_trend_x_post"] = panel["pre_trend"] * panel["post2012"]
 log(f"N1 pre-determined controls: ln_pre_scale (n={panel.ln_pre_scale.notna().sum()}), "
     f"pre_trend (n={panel.pre_trend.notna().sum()})")
 
-def twfe(d, y, xcols, name):
-    dd = d.dropna(subset=[y]+xcols).copy()
-    X = pd.concat([pd.get_dummies(dd.iso, prefix="s", drop_first=True).astype(float),
-                   pd.get_dummies(dd.YEAR, prefix="y", drop_first=True).astype(float)], axis=1)
-    for c in xcols: X[c] = dd[c].values
-    X["const"] = 1.0
-    m = sm.OLS(dd[y].values, X.values).fit(cov_type="cluster", cov_kwds={"groups": dd.iso.values})
-    i = list(X.columns).index(xcols[0])
-    rec = dict(model=name, outcome=y, coef=float(m.params[i]), se=float(m.bse[i]),
-               p=float(m.pvalues[i]), lo=float(m.conf_int()[i][0]), hi=float(m.conf_int()[i][1]),
-               N=int(m.nobs), n_units=int(dd.iso.nunique()))
-    log(f"N1 {name} | {y}: beta={rec['coef']:+.4f} (se={rec['se']:.4f}, p={rec['p']:.3f}, N={rec['N']})")
-    return rec, m, dd
 # N1a: original (no scale control) for reference
 ycol0 = "did_adj" if "did_adj" in panel.columns else "did"
 r0, m0, d0 = twfe(panel, "ln_co2", [ycol0], "N1a_original")

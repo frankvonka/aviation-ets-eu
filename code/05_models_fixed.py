@@ -7,6 +7,9 @@ import pandas as pd, numpy as np, statsmodels.api as sm
 from pathlib import Path
 
 BASE = Path(__file__).resolve().parents[1]; DATA = BASE/"data"; OUT = BASE/"results"/"models"
+import sys
+sys.path.insert(0, str(BASE/"src"))
+from twfe import twfe, twfe_fit
 OUT.mkdir(parents=True, exist_ok=True); RES = BASE/"results"
 LOG = []
 def log(s=""):
@@ -24,26 +27,6 @@ log(f"panel {panel.shape}; did=1 rows: {(panel.did==1).sum()}, did_adj=1 rows: {
 
 seg = pd.read_csv(DATA/"segment_shares_2019.csv")
 panel = panel.merge(seg[["iso","lowcost","mainline","cargo"]], on="iso", how="left")
-
-def twfe(d, y, xcols, name, year_fe=True, note=""):
-    dd = d.dropna(subset=[y]+xcols).copy()
-    parts = [pd.get_dummies(dd.iso, prefix="s", drop_first=True).astype(float)]
-    if year_fe:
-        parts.append(pd.get_dummies(dd.YEAR, prefix="y", drop_first=True).astype(float))
-    X = pd.concat(parts, axis=1)
-    for c in xcols: X[c] = dd[c].values
-    X["const"] = 1.0
-    m = sm.OLS(dd[y].values, X.values).fit(cov_type="cluster", cov_kwds={"groups": dd.iso.values})
-    names = list(X.columns)
-    recs = []
-    for c in xcols:
-        if c not in names: continue
-        i = names.index(c)
-        recs.append(dict(model=name, outcome=y, var=c, coef=float(m.params[i]), se=float(m.bse[i]),
-                         p=float(m.pvalues[i]), lo=float(m.conf_int()[i][0]), hi=float(m.conf_int()[i][1]),
-                         N=int(m.nobs), n_units=int(dd.iso.nunique()), R2=round(float(m.rsquared),4), note=note))
-    log(f"{name} | {y}: " + "; ".join(f"{r['var']}={r['coef']:+.4f}(p={r['p']:.3f})" for r in recs))
-    return recs, m
 
 rows = []
 pre = panel[panel.YEAR <= 2019]          # pre-COVID window (main identification sample)
