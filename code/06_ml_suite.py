@@ -106,12 +106,12 @@ mu1 = np.full(n_t, np.nan); mu0 = np.full(n_t, np.nan)
 Xt_full = Dm[XCOL].fillna(Dm[XCOL].mean()).values   # within-treated-group mean (NOT pooled)
 Xc_full = Dc[XCOL].fillna(Dc[XCOL].mean()).values   # within-control-group mean (NOT pooled)
 # control outcome model (shared, out-of-fold not needed for the OOT control side)
-rf_mu0 = RandomForestRegressor(400, max_depth=5, min_samples_leaf=3, random_state=42, n_jobs=-1)
+rf_mu0 = RandomForestRegressor(400, max_depth=5, min_samples_leaf=3, random_state=42, n_jobs=1)
 rf_mu0.fit(Xc_full, Dc.dY.values)
 mu0 = rf_mu0.predict(Xt_full)             # counterfactual Y(0) for each treated state
 cv_groups = np.arange(len(Xt_full))
 for tr, te in GroupKFold(n_splits=5).split(Xt_full, Dm.dY.values, groups=cv_groups):
-    rf_mu1 = RandomForestRegressor(400, max_depth=5, min_samples_leaf=3, random_state=42, n_jobs=-1)
+    rf_mu1 = RandomForestRegressor(400, max_depth=5, min_samples_leaf=3, random_state=42, n_jobs=1)
     rf_mu1.fit(Xt_full[tr], Dm.dY.values[tr])
     mu1[te] = rf_mu1.predict(Xt_full[te])
 dY = Dm.dY.values
@@ -134,7 +134,7 @@ try:
     X = D[XCOL].fillna(D[XCOL].mean()).values
     W = D.treated.values.astype(int)
     Y = D.dY.values
-    cf = CausalForestDML(n_estimators=800, min_samples_leaf=5, random_state=42, n_jobs=-1)
+    cf = CausalForestDML(n_estimators=800, min_samples_leaf=5, random_state=42, n_jobs=1)
     cf.fit(Y, W, X=X)
     tau = cf.effect(X)
     cate = pd.DataFrame({"iso": D.index, "cate": tau})
@@ -143,15 +143,15 @@ except Exception as e:
     log(f"C econml unavailable ({str(e)[:120]}) -> X-learner")
     # X-learner with sample splitting
     rng = np.random.default_rng(42)
-    m1 = RandomForestRegressor(600, max_depth=6, min_samples_leaf=3, random_state=42, n_jobs=-1)
-    m0 = RandomForestRegressor(600, max_depth=6, min_samples_leaf=3, random_state=42, n_jobs=-1)
+    m1 = RandomForestRegressor(600, max_depth=6, min_samples_leaf=3, random_state=42, n_jobs=1)
+    m0 = RandomForestRegressor(600, max_depth=6, min_samples_leaf=3, random_state=42, n_jobs=1)
     Xc = Dc[XCOL].fillna(Dc[XCOL].mean()).values; Xtr_ = Dm[XCOL].fillna(Dm[XCOL].mean()).values
     m0.fit(Xc, Dc.dY.values)          # control outcome model
     d1_imputed = Dm.dY.values - m0.predict(Xtr_)          # treated imputed effect
     m1.fit(Xtr_, d1_imputed)
     tau_c = m1.predict(Xc)                                 # predicted effect on controls
     d0_imputed = tau_c - Dc.dY.values
-    m0b = RandomForestRegressor(600, max_depth=6, min_samples_leaf=3, random_state=42, n_jobs=-1)
+    m0b = RandomForestRegressor(600, max_depth=6, min_samples_leaf=3, random_state=42, n_jobs=1)
     m0b.fit(Xc, d0_imputed)
     tau_t = m0b.predict(Xtr_)
     e = len(Dm)/(len(Dm)+len(Dc))

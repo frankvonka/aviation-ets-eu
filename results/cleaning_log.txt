@@ -1,5 +1,5 @@
 raw: (8440, 6)
-unmapped states: <ArrowStringArray>
+unmapped states: <StringArray>
 []
 Length: 0, dtype: str
 STATE INCLUSION TABLE: 43 unique ISO codes from 49 raw STATE_NAME values

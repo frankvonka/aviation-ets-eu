@@ -5,9 +5,9 @@ Usage:
     /root/venvs/doall/bin/python scripts/verify_determinism.py <dir1> <dir2>
 Outputs determinism.json with status PASS/DIFF.
 """
-import sys, json, hashlib, pathlib
+import sys, json, hashlib, pathlib, csv, io
 
-VOLATILE = {"run_id", "generated_at", "git_commit", "timestamp", "recomputed", "wall_clock_s"}
+VOLATILE = {"run_id", "generated_at", "git_commit", "timestamp", "recomputed", "wall_clock_s", "protocol_version"}
 
 def file_hash(p):
     if p.suffix == ".json":
@@ -21,6 +21,19 @@ def file_hash(p):
                 return o
             data = strip(data)
             return hashlib.sha256(json.dumps(data, sort_keys=True).encode()).hexdigest()
+        except Exception:
+            pass
+    if p.suffix == ".csv":
+        try:
+            with open(p, newline="") as f:
+                reader = csv.DictReader(f)
+                fields = [c for c in (reader.fieldnames or []) if c not in VOLATILE]
+                rows = [ {k: r.get(k, "") for k in fields} for r in reader ]
+            buf = io.StringIO()
+            w = csv.DictWriter(buf, fieldnames=fields)
+            w.writeheader()
+            w.writerows(rows)
+            return hashlib.sha256(buf.getvalue().encode()).hexdigest()
         except Exception:
             pass
     h = hashlib.sha256()

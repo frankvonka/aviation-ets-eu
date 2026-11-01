@@ -1,7 +1,4 @@
 N1 pre-determined controls: ln_pre_scale (n=406), pre_trend (n=390)
-N1 N1a_original | ln_co2: beta=-0.2075 (se=0.0826, p=0.012, N=415)
-N1 N1b_plus_scale | ln_co2: beta=-0.2185 (se=0.1130, p=0.053, N=406)
-N1 N1c_scale_trend | ln_co2: beta=-0.0918 (se=0.1063, p=0.388, N=390)
 ── N2 minimum effect test (MET) ──
 N2 N1a_original: MET p=0.0158 (MET: effect exceeds +/-3%)
 N2 N1b_plus_scale: MET p=0.0476 (MET: effect exceeds +/-3%)
@@ -23,4 +20,3 @@ N4 RI without RS: p=0.0045
 N4 RI without TR: p=0.0055
 N4 RI without XK: p=0.0100
 ── wild bootstrap on N1c ──
-N1 N1b_wb | ln_co2: beta=-0.2185 (se=0.1130, p=0.053, N=406)

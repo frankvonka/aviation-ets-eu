@@ -14,4 +14,4 @@ B AIPW sample: treated=31, control=10
 B naive diff-in-means: -0.2176
 B AIPW DR-ATT: -0.1102 (SE 0.0527, z=-2.09)
 C econml unavailable (No module named 'econml') -> X-learner
-C CATE (X-learner): mean=-0.2598, sd=+0.1037, min=-0.7470 (LI), max=-0.0816 (IS)
+C CATE (X-learner): mean=-0.2600, sd=+0.1035, min=-0.7474 (LI), max=-0.0821 (IS)
