@@ -24,6 +24,8 @@ hypotheses:
     expected_sign: positive
     alpha: 0.05
     pre_registered: true
+    status: refuted_by_data
+    note: "Estimated +0.006 (p=0.787); null. Reframed as Coasean independence: free allocation did not induce abatement, consistent with H1 only via the intensive margin."
 
   - id: H4_fare
     text: "ETS price passes through to airfares."
@@ -31,6 +33,8 @@ hypotheses:
     expected_sign: positive
     alpha: 0.05
     pre_registered: true
+    status: refuted_by_data
+    note: "Estimated fare response -0.016 (p~0.35); null/negative. Reframed as insulation: free allocation + market power blocked price pass-through."
 
   - id: H5_fuel
     text: "Jet-fuel DiD confirms CO2 DiD (cross-source check)."

@@ -148,7 +148,7 @@ for drop in control_set:
         Xp = pd.concat([pd.get_dummies(dpp.iso, prefix="s", drop_first=True).astype(float),
                         pd.get_dummies(dpp.YEAR, prefix="y", drop_first=True).astype(float)], axis=1)
         Xp["did_perm"] = dpp.did_perm.values; Xp["const"] = 1.0
-        mm = sm.OLS(sub.ln_co2.values, Xp.values).fit()
+        mm = sm.OLS(sub.ln_co2.values, Xp.values).fit(cov_type="cluster", cov_kwds={"groups": sub.iso.values})
         betas[r] = mm.params[list(Xp.columns).index("did_perm")]
     pval = float((np.sum(np.abs(betas) >= np.abs(beta_hat)) + 1)/(RI+1))
     perm_rows.append(dict(dropped=drop, p_ri=pval))

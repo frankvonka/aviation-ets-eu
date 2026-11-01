@@ -89,14 +89,6 @@ def abate_share_state(p, iso):
     if b2i >= 0: return 0.0
     val = 1 - np.exp(b2i*(np.log(p) - np.log(p2019)))
     return float(min(max(val, 0.0), 0.95))
-def _cate_to_eff(cate_val):
-    """Convert CATE (log-point scale) to abatement effectiveness per EUR bn.
-    CATE is in the same units as the DiD coefficient (log CO2). The conversion
-    to per-billion effectiveness requires an external CO2-to-EUR scale factor.
-    Here we use the proportional rescaling: eff ~ |cate| * (C0/10) where
-    C0 is 2019 total CO2 in tonnes and 10 is the budget in EUR bn. This makes
-    eff dimensionless per-EUR-bn, consistent with the LP constraint."""
-    return float(np.clip(abs(cate_val) * (C0 / 10.0), 1e-4, None))
 mac_rows = []
 for p in [10, 20, 30, 50, 75, 100, 150]:
     for iso, co2_19 in d19.CO2_t.items():
@@ -141,7 +133,7 @@ TARGET_REMAINING = 0.71 * C0  # EU 2030 transport -29% target (consistent with O
 # Forward DP: state at each year = (price_prev). We minimize cumulative cost
 # price_t * CO2_abated_t, with ramp ±10%/yr and a HARD terminal constraint that
 # the 2030 remaining <= 71% of 2019 (= -29% abatement, the EU transport target).
-P_GRID = list(np.arange(30, 501, 10))
+P_GRID = list(np.arange(50, 501, 10))
 decay = lambda p: 1.0 - abate_share(p)
 INF = float("inf")
 
@@ -216,11 +208,15 @@ log("── O4 minimax LP (Chebyshev) revenue allocation ──")
 # states: treated 2019. residual_i = co2_i - eff_i * x_i  (x = €bn allocated)
 # minimax: min T s.t. co2_i - eff_i*x_i <= T  =>  -eff_i*x_i - T <= -co2_i
 # (correct algebra: maximize the minimum abatement => equalize residuals)
+# effectiveness: proportional to estimated state-level CATE (log points) times
+# baseline 2019 emissions. No arbitrary scale factor (previous C0/10 removed);
+# allocation is driven by the estimated heterogeneous effect, not a hand-tuned
+# constant.
 cate_path = RES/"ml"/"cate_by_state.csv"
 if cate_path.exists():
     cate = pd.read_csv(RES/"ml"/"cate_by_state.csv").set_index("iso").cate
-    eff = cate.apply(_cate_to_eff)      # convert log-point CATE to per-EUR-bn effectiveness
-    eff = eff.reindex(d19.index).fillna(eff.mean())
+    eff = (cate.abs() * (d19.CO2_t/1e6)).reindex(d19.index)
+    eff = eff.fillna(eff.mean())
 else:
     eff = pd.Series(abs(b2)*np.log(50/p2019+1) + 1e-3, index=d19.index)  # fallback
 n = len(d19)

@@ -3,7 +3,7 @@
   "optimizer": "scipy.optimize.linprog (HiGHS) + scipy.optimize.minimize (SLSQP)",
   "seed": 42,
   "source": "code/09_optimization_suite.py",
-  "generated_at": "2026-11-01T08:57:53",
+  "generated_at": "2026-11-01T10:08:51",
   "solvers": [
     {
       "name": "linprog HiGHS (O4 minimax LP)",
@@ -11,9 +11,9 @@
       "n_constraints": 30,
       "converged": true,
       "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
-      "nit": 6,
+      "nit": 8,
       "status": 0,
-      "objective": 12.8639
+      "objective": 8.9436
     },
     {
       "name": "minimize SLSQP (O4b Nash log)",
@@ -22,8 +22,8 @@
       "nit": 29,
       "nfev": 913,
       "njev": 29,
-      "objective": -0.9874
+      "objective": -0.6446
     }
   ],
-  "wall_clock_s": 0.236
+  "wall_clock_s": 0.195
 }

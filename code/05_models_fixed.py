@@ -90,6 +90,7 @@ rows += r
 
 # ── T2: Event study WITH interactions, 2010-2019 (base 2011) ────────────
 ev_rows_all = []
+pretrend_rows = []
 for y in ["ln_co2","ln_flights","ln_intensity"]:
     ev = pre.copy(); ev["et"] = ev.YEAR - 2012
     common = pd.get_dummies(ev.et, prefix="t").astype(float)
@@ -116,13 +117,16 @@ for y in ["ln_co2","ln_flights","ln_intensity"]:
         wt = m.wald_test(R, scalar=True)
         pretrend_p = float(wt.pvalue)
         log(f"pre-trend joint test ({y}): stat={float(wt.statistic):.3f}, p={pretrend_p:.4f}")
+        pretrend_rows.append(dict(outcome=y, stat=float(wt.statistic), p=pretrend_p))
     else:
         pretrend_p = np.nan
+        pretrend_rows.append(dict(outcome=y, stat=np.nan, p=pretrend_p))
     # attach pre-trend p to each outcome's event-time rows
     for rr in ev_rows_all:
         if rr["outcome"] == y:
             rr["pretrend_p"] = pretrend_p
 pd.DataFrame(ev_rows_all).to_csv(OUT/"event_study_fixed.csv", index=False)
+pd.DataFrame(pretrend_rows).to_csv(OUT/"pretrend_tests.csv", index=False)
 log(f"event study saved ({len(ev_rows_all)} rows)")
 
 # ── T3: Heterogeneity (declared reasons) ─────────────────────────────────
@@ -154,7 +158,8 @@ speclog = res[["model","outcome","var","coef","p","note"]].drop_duplicates(["mod
 speclog.columns = ["Specification","Outcome","Variable","Result_coef","Result_p","Reason"]
 speclog["Final status"] = np.where(speclog.Specification.str.startswith("D3"), "descriptive only",
                             np.where(speclog.Specification.str.startswith(("D1","D2")), "MAIN",
-                                     "robustness/heterogeneity"))
+                                     np.where(speclog.Specification.str.startswith(("D4b","D4c")), "robustness (primary)",
+                                              "robustness/heterogeneity")))
 speclog.to_csv(OUT/"specification_log.csv", index=False)
 (RES/"models_log.txt").write_text("\n".join(LOG))
 log(f"saved main_models ({len(res)}), heterogeneity ({len(het_rows)}), spec log ({len(speclog)})")
