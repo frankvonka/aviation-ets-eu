@@ -24,6 +24,7 @@ def main():
     manifest = {"model": "RandomForestRegressor", "target": "ln_co2",
                 "features": feats, "n_train": len(X), "seed": 42,
                 "n_jobs": 1, "artifact": "rf_ln_co2.joblib"}
+    (OUT).mkdir(parents=True, exist_ok=True)
     (OUT / "model_manifest.json").write_text(json.dumps(manifest, indent=2))
     print("saved model_manifest.json")
 

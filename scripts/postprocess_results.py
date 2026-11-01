@@ -21,6 +21,7 @@ def main():
                 continue
             header = lines[0] + ",run_id,protocol_version,git_commit"
             body = [ln + f",{run_id},1.0,{commit[:12]}" for ln in lines[1:]]
+            f.parent.mkdir(parents=True, exist_ok=True)
             f.write_text("\n".join([header] + body) + "\n")
     print(f"stamped run_id={run_id} protocol=1.0 on result CSVs")
     # Record the stamp mapping for audit: which files got which stamp, when.
@@ -33,6 +34,7 @@ def main():
         "files": [str(f) for sub in ["results/models", "results/mechanisms", "results/optimization",
                 "results/simulation"] for f in (ROOT / sub).glob("*.csv")],
     }
+    (ROOT / "artifacts" / "logs").mkdir(parents=True, exist_ok=True)
     (ROOT / "artifacts/logs/stamp_log.json").write_text(
         __import__("json").dumps(stamp_log, indent=2))
 

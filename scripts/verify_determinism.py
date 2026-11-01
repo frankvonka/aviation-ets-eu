@@ -36,6 +36,7 @@ def main():
     status = "PASS" if not changed else "DIFF"
     out = {"status": status, "files": n, "changed": len(changed), "mismatches": changed[:10]}
     out_path = d1 / "determinism.json"
+    out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(out, indent=2))
     print(json.dumps(out, indent=2))
     return 0 if not changed else 1

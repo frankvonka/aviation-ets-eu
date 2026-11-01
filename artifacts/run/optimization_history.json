@@ -1,0 +1,29 @@
+{
+  "description": "Optimization recording \u2014 eval counts, stopping, runtime (DoAll 7.75-7.88).",
+  "optimizer": "scipy.optimize.linprog (HiGHS) + scipy.optimize.minimize (SLSQP)",
+  "seed": 42,
+  "source": "code/09_optimization_suite.py",
+  "generated_at": "2026-11-01T07:17:35",
+  "solvers": [
+    {
+      "name": "linprog HiGHS (O4 minimax LP)",
+      "n_variables": 33,
+      "n_constraints": 32,
+      "converged": true,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "nit": 6,
+      "status": 0,
+      "objective": 16.2885
+    },
+    {
+      "name": "minimize SLSQP (O4b Nash log)",
+      "converged": true,
+      "message": "Optimization terminated successfully",
+      "nit": 28,
+      "nfev": 939,
+      "njev": 28,
+      "objective": -1.2226
+    }
+  ],
+  "wall_clock_s": 0.274
+}

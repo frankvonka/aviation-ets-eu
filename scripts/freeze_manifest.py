@@ -72,6 +72,8 @@ def main():
     manifest["n_items"] = len(new_items)
     manifest["discovery_dirs"] = [str(d) for d in DISCOVERY_DIRS]
     manifest["changed_since_last"] = len(changed)
+    FREEZE.parent.mkdir(parents=True, exist_ok=True)
+    FREEZE.parent.mkdir(parents=True, exist_ok=True)
     FREEZE.write_text(json.dumps(manifest, indent=2) + "\n")
     if check:
         if changed:

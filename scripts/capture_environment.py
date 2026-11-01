@@ -36,6 +36,7 @@ def main():
     }
     out = ROOT / "artifacts/logs/environment.json"
     out.parent.mkdir(parents=True, exist_ok=True)
+    out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(env, indent=2))
     print(json.dumps(env, indent=2))
 
