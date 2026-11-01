@@ -17,7 +17,7 @@ def main():
             continue
         for f in d.glob("*.csv"):
             lines = f.read_text().splitlines()
-            if not lines or lines[0].startswith("run_id"):
+            if not lines or "run_id" in lines[0].split(","):
                 continue
             header = lines[0] + ",run_id,protocol_version,git_commit"
             body = [ln + f",{run_id},1.0,{commit[:12]}" for ln in lines[1:]]

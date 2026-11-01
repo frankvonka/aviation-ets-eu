@@ -163,9 +163,9 @@ rows4 = []
 for sname, path in scen.items():
     for yy, price in zip(range(2022, 2031), path):
         dlp = np.log(price) - np.log(ets_2021)
-        # treated states only; effect = b1 + b2*ln(price) (relative to ln(ets_2021))
+        # effect relative to 2021 baseline: price elasticity only (b1 already in 2019 level)
         draws = rng.multivariate_normal([b1, b2], cov, size=NS)
-        eff = draws[:,0] + draws[:,1]*np.log(price)
+        eff = draws[:,1] * dlp
         lvl = np.exp(eff)                     # multiplier on CO2 level
         lvl = np.clip(lvl, 0.05, 2.0)         # BOUNDS: multiplier in [0.05, 2]
         base = np.array([base_t.get(i, np.nan) for i in treated_isos])

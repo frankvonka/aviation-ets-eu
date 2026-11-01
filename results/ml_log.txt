@@ -1,17 +1,17 @@
-A RandomForest ln_co2: CV R2=0.589±0.149
+A RandomForest ln_co2: CV R2=0.612±0.136
 A DummyRegressor ln_co2: CV R2=-0.000±0.000
-A Ridge ln_co2: CV R2=0.199±0.080
-A HistGradientBoosting ln_co2: CV R2=0.600±0.139
-A RandomForest ln_flights: CV R2=0.545±0.179
+A Ridge ln_co2: CV R2=0.237±0.077
+A HistGradientBoosting ln_co2: CV R2=0.610±0.118
+A RandomForest ln_flights: CV R2=0.571±0.179
 A DummyRegressor ln_flights: CV R2=-0.000±0.000
-A Ridge ln_flights: CV R2=0.095±0.044
-A HistGradientBoosting ln_flights: CV R2=0.555±0.175
-A RandomForest ln_intensity: CV R2=0.290±0.123
+A Ridge ln_flights: CV R2=0.136±0.060
+A HistGradientBoosting ln_flights: CV R2=0.557±0.161
+A RandomForest ln_intensity: CV R2=0.292±0.165
 A DummyRegressor ln_intensity: CV R2=0.000±0.000
-A Ridge ln_intensity: CV R2=0.249±0.106
-A HistGradientBoosting ln_intensity: CV R2=0.261±0.129
+A Ridge ln_intensity: CV R2=0.252±0.098
+A HistGradientBoosting ln_intensity: CV R2=0.294±0.171
 B AIPW sample: treated=31, control=10
 B naive diff-in-means: -0.2176
-B AIPW DR-ATT: -0.1102 (SE 0.0527, z=-2.09)
+B AIPW DR-ATT: -0.1338 (SE 0.0521, z=-2.57)
 C econml unavailable (No module named 'econml') -> X-learner
-C CATE (X-learner): mean=-0.2600, sd=+0.1035, min=-0.7474 (LI), max=-0.0821 (IS)
+C CATE (X-learner): mean=-0.2778, sd=+0.0969, min=-0.7414 (LI), max=-0.1044 (IS)

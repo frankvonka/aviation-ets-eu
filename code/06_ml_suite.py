@@ -8,7 +8,7 @@ C. CATE by state: econml CausalForestDML if available, else X-learner
 """
 import pandas as pd, numpy as np, warnings
 from sklearn.exceptions import ConvergenceWarning
-warnings.simplefilter("ignore", FutureWarning)
+warnings.filterwarnings("ignore", category=FutureWarning, module="sklearn")
 from pathlib import Path
 from sklearn.ensemble import HistGradientBoostingRegressor, RandomForestRegressor
 from sklearn.linear_model import Ridge, RidgeCV, Lasso

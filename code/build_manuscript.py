@@ -95,7 +95,8 @@ m2r = m2.iloc[0]
 o2rows = o2  # only reachable targets
 
 # pre-trend p from event-study fixed
-pretrend_p = None
+pretrend_df = pd.read_csv(BASE / "results" / "models" / "pretrend_tests.csv")
+pretrend_p = float(pretrend_df.loc[pretrend_df.outcome == "ln_co2", "p"].iloc[0])
 # we have it in the log; recompute joint test quickly via models_log if present
 # (keep it simple: cite the value from EVIDENCE_PACKAGE which we already verified)
 
@@ -173,7 +174,7 @@ is {mde.mde_pct:.1f}%, so the design cannot power a precise ±3% null (MET confi
 the effect exceeds ±3%, p={float(tost.iloc[0].p_equiv):.3f}). All 43 leave-one-out drops keep
 the estimate in [{looo_treated.coef.min():.3f}, {looo_treated.coef.max():.3f}] and
 significant. The paper is deliberately associational: parallel trends are tested
-(pre-trend p=0.79), not assumed.</p>
+(pre-trend p={pretrend_p:.2f}), not assumed.</p>
 """
 
 intro = f"""
@@ -228,7 +229,7 @@ confounding); a GDP-per-capita control is reported but noted to shrink the sampl
 induce collinearity with treatment.</p>
 <p><b>Parallel trends.</b> The event study imposes no prior trend; we run a joint
 pre-trend test (F on all pre-treatment event-time coefficients). We report
-<b>p = 0.79</b> on ln-CO2 — the null of no anticipatory effect is comfortably not
+<b>p = {pretrend_p:.2f}</b> on ln-CO2 — the null of no anticipatory effect is comfortably not
 rejected — and keep the language associational throughout.</p>
 """
 
@@ -272,7 +273,7 @@ The flight-count channel ({fl.coef:.3f}, p={fl.p:.2f}) and the intensity channel
 price pass-through rather than an emissions-intensity improvement.</p>
 {df_table(ev[["event_time","coef","se","p","lo","hi"]].rename(columns={"lo":"CI-lo","hi":"CI-hi","event_time":"t"}), cls="wide")}
 <div class="cap"><b>Table 2.</b> Event study on ln-CO2 (state + year FE, base 2011). Pre-trend joint
-test p=0.79. Post-2012 coefficients turn negative and stay so through the 2019 window.</div>
+test p={pretrend_p:.2f}. Post-2012 coefficients turn negative and stay so through the 2019 window.</div>
 <div class="fig"><img src="{b64('F3_event_study.png')}" alt="event study"><div class="cap"><b>Figure 3.</b> Event-study coefficients and 95% CIs on ln-CO2 (2010–2019, base 2011). No pre-trend; post-2012 gap opens and persists.</div></div>
 """
 
@@ -331,8 +332,8 @@ inverse-probability term using the known constant design propensity — is
 <b>{aipv['aipw_att']:+.3f}</b> (SE {aipv['aipw_se']:.3f}, z={aipv['aipw_att']/aipv['aipw_se']:+.2f})
 against a naive treated-minus-control difference of
 <b>{aipv['naive_diff']:+.3f}</b>. The covariates (pre-treatment levels,
-trends and GDP) absorb <b>about half</b> of the raw gap: the naive difference (−0.218)
-is reduced to an AIPW ATT of −0.112. The DiD headline (−{m_co2_beta:.3f}, p={m_co2_p:.3f})
+trends and GDP) absorb <b>about half</b> of the raw gap: the naive difference ({aipv['naive_diff']:+.3f})
+is reduced to an AIPW ATT of {aipv['aipw_att']:+.3f}. The DiD headline (−{m_co2_beta:.3f}, p={m_co2_p:.3f})
 stays larger because it is identified off the treated×post contrast with only
 state+year FE, while AIPW adjusts for pre-treatment state heterogeneity. Both
 are materially negative; the gap between them is the covariate-adjustment channel,

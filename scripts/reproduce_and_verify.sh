@@ -2,7 +2,7 @@
 # reproduce_and_verify.sh — clean-environment reproduction driver.
 # Usage: PY=/root/venvs/doall/bin/python bash scripts/reproduce_and_verify.sh
 set -euo pipefail
-PY="${PY:-/root/venvs/doall/bin/python}"
+PY="${PY:-python3}"
 BASE="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$BASE"
 export PYTHONPATH="$BASE"

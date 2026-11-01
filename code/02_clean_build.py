@@ -173,7 +173,8 @@ seg19 = (g2g_s[g2g_s.YEAR == 2019].groupby(["iso", "segment"]).co2_t.sum()
 seg19_share = seg19.div(seg19.sum(axis=1), axis=0)
 seg19_share.to_csv(DATA / "segment_shares_2019.csv")
 
-# ── 8. Save analysis datasets ────────────────────────────────────────────\npanel_a.to_csv(DATA/"panel_state_year.csv", index=False)
+# ── 8. Save analysis datasets ────────────────────────────────────────────
+panel_a.to_csv(DATA / "panel_state_year.csv", index=False)
 panel_m.to_csv(DATA/"panel_state_month.csv", index=False)
 g2g_s.to_csv(DATA/"g2g_state_month.csv", index=False)
 (BASE/"results"/"cleaning_log.txt").write_text("\n".join(LOG))

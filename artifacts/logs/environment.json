@@ -3,11 +3,11 @@
   "implementation": "CPython",
   "os": "Linux-7.0.0-28-generic-x86_64-with-glibc2.43",
   "machine": "x86_64",
-  "commit": "0db23bb1b3294d35f5c8c03750da765bf7a26e95",
+  "commit": "4d3512cd7fb7f168b36f88da22eb4a1bbd363f56",
   "n_jobs": 1,
   "deterministic": true,
   "captured_by": "scripts/capture_environment.py",
-  "captured_at": "2026-11-01T15:28:22.500427",
+  "captured_at": "2026-11-01T16:21:22.718662",
   "pinned_packages": {
     "numpy": "2.3.5",
     "pandas": "2.3.3",

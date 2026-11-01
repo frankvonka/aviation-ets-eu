@@ -1,4 +1,4 @@
-panel (672, 19); did=1 rows: 440, did_adj=1 rows: 435
+panel (672, 20); did=1 rows: 440, did_adj=1 rows: 435
 pre-trend joint test (ln_co2): stat=0.070, p=0.7919
 pre-trend joint test (ln_flights): stat=1.030, p=0.3101
 pre-trend joint test (ln_intensity): stat=0.993, p=0.3189

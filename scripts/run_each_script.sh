@@ -2,7 +2,7 @@
 # run_each_script.sh — run every code/ script one at a time; print exit code + duration + last line.
 # Usage: bash scripts/run_each_script.sh
 set -euo pipefail
-PY="/root/venvs/doall/bin/python"
+PY="${PY:-python3}"
 BASE="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$BASE"
 
