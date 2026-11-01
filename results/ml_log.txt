@@ -1,20 +1,17 @@
-A HistGB ln_co2: CV R2=0.684±0.189
-A RF ln_co2: CV R2=0.695±0.166
-A Ridge ln_co2: CV R2=0.086±0.044
-A Lasso ln_co2: CV R2=0.002±0.021
-A Dummy ln_co2: CV R2=-0.000±0.000
-A HistGB ln_flights: CV R2=0.733±0.113
-A RF ln_flights: CV R2=0.744±0.088
-A Ridge ln_flights: CV R2=0.090±0.030
-A Lasso ln_flights: CV R2=0.007±0.024
-A Dummy ln_flights: CV R2=0.000±0.000
-A HistGB ln_intensity: CV R2=0.099±0.205
-A RF ln_intensity: CV R2=0.159±0.261
-A Ridge ln_intensity: CV R2=0.153±0.256
-A Lasso ln_intensity: CV R2=0.153±0.223
-A Dummy ln_intensity: CV R2=-0.000±0.000
+A RandomForest ln_co2: CV R2=0.589±0.149
+A DummyRegressor ln_co2: CV R2=-0.000±0.000
+A Ridge ln_co2: CV R2=0.199±0.080
+A HistGradientBoosting ln_co2: CV R2=0.600±0.139
+A RandomForest ln_flights: CV R2=0.545±0.179
+A DummyRegressor ln_flights: CV R2=-0.000±0.000
+A Ridge ln_flights: CV R2=0.095±0.044
+A HistGradientBoosting ln_flights: CV R2=0.555±0.175
+A RandomForest ln_intensity: CV R2=0.290±0.123
+A DummyRegressor ln_intensity: CV R2=0.000±0.000
+A Ridge ln_intensity: CV R2=0.249±0.106
+A HistGradientBoosting ln_intensity: CV R2=0.261±0.129
 B AIPW sample: treated=31, control=10
 B naive diff-in-means: -0.2176
 B AIPW DR-ATT: -0.1120 (SE 0.0530, z=-2.11)
 C econml unavailable (No module named 'econml') -> X-learner
-C CATE (X-learner): mean=-0.2592, sd=+0.1035, min=-0.7472 (LI), max=-0.0815 (IS)
+C CATE (X-learner): mean=-0.2599, sd=+0.1033, min=-0.7477 (LI), max=-0.0823 (IS)

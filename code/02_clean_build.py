@@ -123,16 +123,27 @@ for p in [panel_a, panel_m]:
     p["post2012"] = (p.YEAR >= 2012).astype(int)
     p["did"] = p.post2012 * p.ets_covered
 
-# ── 6. Merge WB controls + ETS price (annual) ────────────────────────────
-wb = pd.read_csv(DATA / "wb_controls.csv")
-pr = pd.read_csv(DATA / "prices.csv")[["year", "ets_eur"]]
-panel_a = panel_a.merge(wb, left_on=["iso", "YEAR"], right_on=["country", "year"], how="left")
-panel_a = panel_a.merge(pr, left_on="YEAR", right_on="year", how="left", suffixes=("", "_pr"))
-panel_a.drop(columns=[c for c in ["country", "year_pr"] if c in panel_a.columns], inplace=True)
+# ── 6. Merge WB controls (full 40-country set) + ETS price (annual) ──────
+iso3_to_iso2 = {"ALB":"AL","ARM":"AM","AT":"AT","BE":"BE","BG":"BG","BIH":"BA","CY":"CY",
+    "CZ":"CZ","DE":"DE","DK":"DK","EE":"EE","ES":"ES","FI":"FI","FR":"FR","GB":"GB",
+    "GEO":"GE","GR":"EL","HR":"HR","HU":"HU","IE":"IE","IT":"IT","LIE":"LI","LT":"LT",
+    "LU":"LU","LV":"LV","MCO":"MC","MDA":"MD","MKD":"MK","MNE":"ME","MT":"MT","NL":"NL",
+    "PL":"PL","PT":"PT","RO":"RO","SE":"SE","SI":"SI","SK":"SK","SRB":"RS","TUR":"TR","XKX":"XK",
+    "ISL":"IS","NOR":"NO","CHE":"CH"}
+if (DATA / "wb_controls_all.csv").exists():
+    wb = pd.read_csv(DATA / "wb_controls_all.csv")
+    wb["iso"] = wb["country"].map(iso3_to_iso2)
+    wb = wb.rename(columns={"year":"YEAR"})
+    wb = wb[["iso","YEAR","gdp_pc","air_psgr","air_freight","tourism"]]
+    log(f"using wb_controls_all.csv: {wb.iso.nunique()} states")
+else:
+    wb = pd.read_csv(DATA / "wb_controls.csv").rename(columns={"year":"YEAR","country":"iso"})
+pr = pd.read_csv(DATA / "prices.csv")[["year", "ets_eur"]].rename(columns={"year":"YEAR"})
+panel_a = panel_a.merge(wb, on=["iso", "YEAR"], how="left", suffixes=("", "_wb"))
+panel_a = panel_a.merge(pr, on="YEAR", how="left")
 log(f"after WB+ETS merge: {panel_a.shape}; missing gdp_pc={panel_a.gdp_pc.isna().sum()}, "
     f"air_psgr={panel_a.air_psgr.isna().sum()}, ets={panel_a.ets_eur.isna().sum()}")
-log(f"WB countries matched: {panel_a.loc[panel_a.gdp_pc.notna(),'iso'].nunique()} of {panel_a.iso.nunique()} "
-    f"(controls exist only for EU28 list — non-ECAC control states have no WB row is FALSE: WB covers all)")
+log(f"WB countries matched: {panel_a.loc[panel_a.gdp_pc.notna(),'iso'].nunique()} of {panel_a.iso.nunique()}")
 
 # ── 7. G2G aggregate: state-month-segment (2019-2024) ────────────────────
 g2g = pd.read_csv(DATA / "g2g_emissions.csv")

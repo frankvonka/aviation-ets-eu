@@ -59,7 +59,26 @@ for y in ["ln_co2","ln_flights","ln_intensity"]:
     rows += r
 # controls (gdp available EU28 only -> sample shrinks; declared)
 for y in ["ln_co2","ln_flights","ln_intensity"]:
-    r,_ = twfe(pre, y, ["did_adj","ln_gdp_pc"], "D4_did_adj_gdp", note="add ln gdp pc; sample = WB-covered states (27 of 43); sign flip reflects compositional shift (gdp-conditional spec on a 37% smaller sample); NOT the headline")
+    r,_ = twfe(pre, y, ["did_adj","ln_gdp_pc"], "D4_did_adj_gdp", note="add ln gdp pc; sample = WB-covered states; sign flip reflects compositional shift (gdp-conditional spec on smaller sample); NOT the headline")
+    rows += r
+# D4b: unconditioned baseline restricted to the exact GDP-available subsample (decomposition)
+gdp_states = sorted(pre.loc[pre.ln_gdp_pc.notna(),"iso"].unique()) if "ln_gdp_pc" in pre.columns else []
+pre_gdp = pre[pre.iso.isin(gdp_states)].copy()
+for y in ["ln_co2","ln_flights","ln_intensity"]:
+    r,_ = twfe(pre_gdp, y, ["did_adj"], "D4b_did_adj_gdpsub", note="baseline D2 on the GDP-available subsample (N shrinks) — decomposition step 1")
+    rows += r
+# D4c: control for pre-treatment (2010) GDP per capita x linear trend (avoid post-treatment mediator)
+pre["gdp2010"] = pre.groupby("iso").gdp_pc.transform(lambda s: s.iloc[0] if len(s) else np.nan)
+pre["ln_gdp2010"] = np.log(pre.gdp2010.replace(0,np.nan))
+pre["trend_x_gdp2010"] = pre.YEAR * pre.ln_gdp2010
+for y in ["ln_co2","ln_flights","ln_intensity"]:
+    r,_ = twfe(pre, y, ["did_adj","ln_gdp2010","trend_x_gdp2010"], "D4c_did_adj_pretrendgdp", note="pre-treatment GDP x trend control (mediator-safe)")
+    rows += r
+# D4d: exclude Turkey from control group (TR boom confounds)
+for y in ["ln_co2","ln_flights","ln_intensity"]:
+    r,_ = twfe(pre[pre.iso!="TR"], y, ["did_adj"], "D4d_noTR", note="drop TR from control group")
+    rows += r
+    r,_ = twfe(pre[pre.iso!="TR"], y, ["did_adj","ln_gdp_pc"], "D4e_noTR_gdp", note="drop TR + GDP control")
     rows += r
 # no-GB robustness
 for y in ["ln_co2","ln_flights","ln_intensity"]:

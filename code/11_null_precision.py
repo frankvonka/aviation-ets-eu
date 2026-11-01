@@ -59,19 +59,22 @@ r2, m2, d2 = twfe(panel, "ln_co2", [ycol0, "ln_pre_scale", "pre_trend"], "N1c_sc
 recs.append(r2)
 pd.DataFrame(recs).to_csv(OUT/"n1_respecified.csv", index=False)
 
-# ── N2: Equivalence testing (TOST) ───────────────────────────────────────
+# ── N2: Minimum Effect Test (MET) — replaces inverted TOST ──────────────
 from scipy.stats import norm as _norm
-log("── N2 equivalence (TOST) ──")
+log("── N2 minimum effect test (MET) ──")
 DELTA = 0.03   # |effect| below 3% log points = policy-irrelevant for this paper
 for rec in [r0, r1, r2]:
-    beta, se = rec["coef"], rec["se"]
-    z_low  = (beta + DELTA) / se   # H0: beta <= -DELTA
-    z_high = (beta - DELTA) / se   # H0: beta >= +DELTA
-    p_low, p_high = 1 - _norm.cdf(z_low), _norm.cdf(z_high)
-    p_equiv = max(p_low, p_high)
-    rec.update(equiv_margin=DELTA, z_low=z_low, z_high=z_high, p_equiv=p_equiv,
-               verdict="EQUIVALENT-TO-NULL" if p_equiv < 0.05 else "not conclusive")
-    log(f"N2 {rec['model']}: TOST p={p_equiv:.4f} ({rec['verdict']})")
+    beta, se = float(rec["coef"]), float(rec["se"])
+    # MET: H0: |beta| <= DELTA  vs  H1: |beta| > DELTA
+    if beta < 0:
+        z_met = (beta + DELTA) / se
+        p_met = float(_norm.cdf(z_met))
+    else:
+        z_met = (beta - DELTA) / se
+        p_met = float(1 - _norm.cdf(z_met))
+    rec.update(equiv_margin=DELTA, z_met=z_met, p_met=p_met, p_equiv=p_met,
+               verdict="MET: effect exceeds +/-3%" if p_met < 0.05 else "not conclusive")
+    log(f"N2 {rec['model']}: MET p={p_met:.4f} ({rec['verdict']})")
 pd.DataFrame(recs).to_csv(OUT/"n2_tost.csv", index=False)
 
 # ── N3: Minimum detectable effect (design power) ─────────────────────────

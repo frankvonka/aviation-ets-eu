@@ -73,7 +73,7 @@ _stage_t0 = _time.time()
 # Abatement of state i at price p (relative to no-ETS counterfactual):
 #   abatement_share_i(p) = 1 - exp(b1 + b2*ln p)     (bounded [0, 0.95])
 # abatement_tons_i(p) = share * CO2_2019_i
-d19 = panel[(panel.YEAR==2019) & (panel.ets_covered==1)][["iso","CO2_t"]].set_index("iso")
+d19 = panel[(panel.YEAR==2019) & (panel.ets_covered==1) & (~panel.iso.isin(["GB","LI"]))][["iso","CO2_t"]].set_index("iso")
 # State-dependent effectiveness: scale the global price-response b2 by each state's
 # CATE relative to its sample mean. Falls back to b2 (global) if no CATE file.
 cate_map = {}
@@ -142,7 +142,7 @@ TARGET_REMAINING = 0.71 * C0  # EU 2030 transport -29% target (consistent with O
 # Forward DP: state at each year = (price_prev). We minimize cumulative cost
 # price_t * CO2_abated_t, with ramp ±10%/yr and a HARD terminal constraint that
 # the 2030 remaining <= 71% of 2019 (= -29% abatement, the EU transport target).
-P_GRID = list(np.arange(50, 501, 10))
+P_GRID = list(np.arange(30, 501, 10))
 decay = lambda p: 1.0 - abate_share(p)
 INF = float("inf")
 

@@ -1,4 +1,4 @@
 target,target_mt,price_star,feasible,note,run_id,protocol_version,git_commit
--10%,172.8617405292,118.6,True,"root found in [5, 1e6]",861c175df25b,1.0,44fee0bfc126
--20%,153.65488047040003,678.4,True,"root found in [5, 1e6]",861c175df25b,1.0,44fee0bfc126
--29% (EU 2030 transport) ,136.36870641748,3973.6,True,"root found in [5, 1e6]",861c175df25b,1.0,44fee0bfc126
+-10%,139.29251817150003,118.6,True,"root found in [5, 1e6]",fa3c72516d78,1.0,501215ad13fd
+-20%,123.81557170800002,678.4,True,"root found in [5, 1e6]",fa3c72516d78,1.0,501215ad13fd
+-29% (EU 2030 transport) ,109.88631989085,3973.6,True,"root found in [5, 1e6]",fa3c72516d78,1.0,501215ad13fd

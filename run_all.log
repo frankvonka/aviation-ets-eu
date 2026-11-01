@@ -1,0 +1,455 @@
+
+======================================================================
+RUNNING 02_clean_build.py
+======================================================================
+raw: (8440, 6)
+unmapped states: <ArrowStringArray>
+[]
+Length: 0, dtype: str
+STATE INCLUSION TABLE: 43 unique ISO codes from 49 raw STATE_NAME values
+Name variants folded: DENMARK*→DK, PORTUGAL*→PT, GB*→GB, NO*→NO, TÃœRKIYE→TR, Canary ISLANDS→ES
+Final ISO set (43): ['AL', 'AM', 'AT', 'BA', 'BE', 'BG', 'CH', 'CY', 'CZ', 'DE', 'DK', 'EE', 'EL', 'ES', 'FI', 'FR', 'GB', 'GE', 'HR', 'HU', 'IE', 'IS', 'IT', 'LI', 'LT', 'LU', 'LV', 'MC', 'MD', 'ME', 'MK', 'MT', 'NL', 'NO', 'PL', 'PT', 'RO', 'RS', 'SE', 'SI', 'SK', 'TR', 'XK']
+Treated units: 32
+Control units: 11
+Canary Islands (DoAll §3.3): folded into ES via name_map. ES aviation CO2 includes Canary ≈ 3.6% (2019). Effect-direction NOT re-run here (see audit B5).
+Mojibake audit (DoAll §3.6): mapped STATE_NAME→iso; 0 unmapped names (0 => every raw name matched). Non-ASCII in mapped STATE_NAME: 0
+/root/aviation-fresh/code/02_clean_build.py:70: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  nonascii_cols = [c for c in raw.select_dtypes(include=['object']).columns
+Mojibake audit: object columns still containing raw non-ASCII after mapping: ['STATE_NAME']
+after folding name variants + Canary->ES: 8440 -> 8241 rows, 43 iso units
+Split manifest mapping (DoAll §3.5): panel_m contains 8241 state-months across 43 states, years 2010-2026
+Mojibake audit: panel_m iso null count = 0 (0 => clean fold, no state-level mojibake propagated).
+rows that were folded (n_source_states>1): 199
+treated units: 32, control units: 11
+control states: ['AL', 'AM', 'BA', 'GE', 'MC', 'MD', 'ME', 'MK', 'RS', 'TR', 'XK']
+annual panel: (672, 7), years 2010-2025
+units with missing years in span:
+      min   max  count  expected
+iso                             
+LI   2010  2025     12        16
+using wb_controls_all.csv: 43 states
+after WB+ETS merge: (672, 18); missing gdp_pc=31, air_psgr=176, ets=0
+WB countries matched: 43 of 43
+G2G exact duplicate rows: 228003 — inspecting cause
+example duplicate block:
+        LEVEL AREA  FOCUS_TYPE  YEAR  MONTH MARKET_SEGMENT FLIGHT_TYPE FLIGHT_PHASE  NB_FLIGHTS  CO2_TONS  NOX_KG  SOX_KG
+55623   STATE   AL  AREA FOCUS  2019      1       business           A       cruise           9       2.2    2.36    0.51
+283626  STATE   AL  AREA FOCUS  2019      1       business           A       cruise           9       2.2    2.36    0.51
+55624   STATE   AL  AREA FOCUS  2019      1       business           A      descent           9       2.0    3.09    0.50
+283627  STATE   AL  AREA FOCUS  2019      1       business           A      descent           9       2.0    3.09    0.50
+G2G duplicate structure (group-level):
+                                n_rows  unique_co2
+AREA YEAR MONTH MARKET_SEGMENT                    
+AL   2019 1     business            12           6
+                cargo               12           6
+                lowcost             14           7
+G2G: duplicates verified as additive rows (different values per row, same key) - summing is correct
+G2G state-month-segment panel: (19382, 7), states=45
+SAVED: panel_state_year.csv, panel_state_month.csv, g2g_state_month.csv, segment_shares_2019.csv
+Canary/ES-drop sensitivity (B5): full-sample DiD sign=-1, ES-dropped sign=-1; direction UNCHANGED (not asserted without this check; computed inline here).
+
+======================================================================
+RUNNING 05_models_fixed.py
+======================================================================
+panel (672, 19); did=1 rows: 440, did_adj=1 rows: 435
+D1_did_naive_10_19 | ln_co2: did=-0.2075(p=0.012)
+D2_did_adj_10_19 | ln_co2: did_adj=-0.2075(p=0.012)
+D1_did_naive_10_19 | ln_flights: did=-0.1088(p=0.108)
+D2_did_adj_10_19 | ln_flights: did_adj=-0.1088(p=0.108)
+D1_did_naive_10_19 | ln_intensity: did=-0.0986(p=0.152)
+D2_did_adj_10_19 | ln_intensity: did_adj=-0.0986(p=0.152)
+D3_did_adj_full | ln_co2: did_adj=-0.2284(p=0.083)
+D3_did_adj_full | ln_flights: did_adj=-0.1405(p=0.160)
+D3_did_adj_full | ln_intensity: did_adj=-0.0879(p=0.160)
+/root/aviation-fresh/code/05_models_fixed.py:36: SingularMatrixWarning: The design matrix is rank-deficient. The model parameters are not uniquely determined.
+  m = sm.OLS(dd[y].values, X.values).fit(cov_type="cluster", cov_kwds={"groups": dd.iso.values})
+D4_did_adj_gdp | ln_co2: did_adj=+0.0837(p=0.000); ln_gdp_pc=+0.7272(p=0.000)
+/root/aviation-fresh/code/05_models_fixed.py:36: SingularMatrixWarning: The design matrix is rank-deficient. The model parameters are not uniquely determined.
+  m = sm.OLS(dd[y].values, X.values).fit(cov_type="cluster", cov_kwds={"groups": dd.iso.values})
+D4_did_adj_gdp | ln_flights: did_adj=+0.0168(p=0.508); ln_gdp_pc=+0.6316(p=0.001)
+/root/aviation-fresh/code/05_models_fixed.py:36: SingularMatrixWarning: The design matrix is rank-deficient. The model parameters are not uniquely determined.
+  m = sm.OLS(dd[y].values, X.values).fit(cov_type="cluster", cov_kwds={"groups": dd.iso.values})
+D4_did_adj_gdp | ln_intensity: did_adj=+0.0669(p=0.000); ln_gdp_pc=+0.0956(p=0.547)
+/root/aviation-fresh/code/05_models_fixed.py:36: SingularMatrixWarning: The design matrix is rank-deficient. The model parameters are not uniquely determined.
+  m = sm.OLS(dd[y].values, X.values).fit(cov_type="cluster", cov_kwds={"groups": dd.iso.values})
+D4b_did_adj_gdpsub | ln_co2: did_adj=+0.1221(p=0.000)
+/root/aviation-fresh/code/05_models_fixed.py:36: SingularMatrixWarning: The design matrix is rank-deficient. The model parameters are not uniquely determined.
+  m = sm.OLS(dd[y].values, X.values).fit(cov_type="cluster", cov_kwds={"groups": dd.iso.values})
+D4b_did_adj_gdpsub | ln_flights: did_adj=+0.0502(p=0.048)
+/root/aviation-fresh/code/05_models_fixed.py:36: SingularMatrixWarning: The design matrix is rank-deficient. The model parameters are not uniquely determined.
+  m = sm.OLS(dd[y].values, X.values).fit(cov_type="cluster", cov_kwds={"groups": dd.iso.values})
+D4b_did_adj_gdpsub | ln_intensity: did_adj=+0.0719(p=0.000)
+/root/aviation-fresh/code/05_models_fixed.py:36: SingularMatrixWarning: The design matrix is rank-deficient. The model parameters are not uniquely determined.
+  m = sm.OLS(dd[y].values, X.values).fit(cov_type="cluster", cov_kwds={"groups": dd.iso.values})
+D4c_did_adj_pretrendgdp | ln_co2: did_adj=+1.0134(p=0.009); ln_gdp2010=+36.8753(p=0.016); trend_x_gdp2010=-0.0178(p=0.020)
+/root/aviation-fresh/code/05_models_fixed.py:36: SingularMatrixWarning: The design matrix is rank-deficient. The model parameters are not uniquely determined.
+  m = sm.OLS(dd[y].values, X.values).fit(cov_type="cluster", cov_kwds={"groups": dd.iso.values})
+D4c_did_adj_pretrendgdp | ln_flights: did_adj=+0.8013(p=0.016); ln_gdp2010=+31.0626(p=0.020); trend_x_gdp2010=-0.0150(p=0.024)
+/root/aviation-fresh/code/05_models_fixed.py:36: SingularMatrixWarning: The design matrix is rank-deficient. The model parameters are not uniquely determined.
+  m = sm.OLS(dd[y].values, X.values).fit(cov_type="cluster", cov_kwds={"groups": dd.iso.values})
+D4c_did_adj_pretrendgdp | ln_intensity: did_adj=+0.2121(p=0.281); ln_gdp2010=+5.8128(p=0.457); trend_x_gdp2010=-0.0028(p=0.474)
+D4d_noTR | ln_co2: did_adj=-0.2028(p=0.025)
+/root/aviation-fresh/code/05_models_fixed.py:36: SingularMatrixWarning: The design matrix is rank-deficient. The model parameters are not uniquely determined.
+  m = sm.OLS(dd[y].values, X.values).fit(cov_type="cluster", cov_kwds={"groups": dd.iso.values})
+D4e_noTR_gdp | ln_co2: did_adj=+0.0837(p=0.000); ln_gdp_pc=+0.7272(p=0.000)
+D4d_noTR | ln_flights: did_adj=-0.0877(p=0.207)
+/root/aviation-fresh/code/05_models_fixed.py:36: SingularMatrixWarning: The design matrix is rank-deficient. The model parameters are not uniquely determined.
+  m = sm.OLS(dd[y].values, X.values).fit(cov_type="cluster", cov_kwds={"groups": dd.iso.values})
+D4e_noTR_gdp | ln_flights: did_adj=+0.0168(p=0.508); ln_gdp_pc=+0.6316(p=0.001)
+D4d_noTR | ln_intensity: did_adj=-0.1151(p=0.117)
+/root/aviation-fresh/code/05_models_fixed.py:36: SingularMatrixWarning: The design matrix is rank-deficient. The model parameters are not uniquely determined.
+  m = sm.OLS(dd[y].values, X.values).fit(cov_type="cluster", cov_kwds={"groups": dd.iso.values})
+D4e_noTR_gdp | ln_intensity: did_adj=+0.0669(p=0.000); ln_gdp_pc=+0.0956(p=0.547)
+D5_noGB | ln_co2: did_adj=-0.2059(p=0.013)
+D5_noGB | ln_flights: did_adj=-0.1093(p=0.110)
+D5_noGB | ln_intensity: did_adj=-0.0966(p=0.162)
+D6_noTiny | ln_co2: did_adj=-0.1808(p=0.040)
+pre-trend joint test (ln_co2): stat=0.070, p=0.7919
+pre-trend joint test (ln_flights): stat=1.030, p=0.3101
+pre-trend joint test (ln_intensity): stat=0.993, p=0.3189
+event study saved (27 rows)
+heterogeneity: missing tourism rates — 0.00% states-years
+H_lowcost share 2019 | ln_co2: did_adj=-0.0250(p=0.863); x_lowcost=-0.7510(p=0.089)
+H_lowcost share 2019 | ln_flights: did_adj=+0.0186(p=0.851); x_lowcost=-0.5244(p=0.053)
+H_cargo share 2019 | ln_co2: did_adj=-0.1784(p=0.086); x_cargo=-0.4048(p=0.568)
+H_cargo share 2019 | ln_flights: did_adj=-0.1280(p=0.104); x_cargo=+0.2677(p=0.557)
+H_tourism arrivals (norm) | ln_co2: did_adj=-0.1963(p=0.020); x_tourism=-0.0105(p=0.442)
+H_tourism arrivals (norm) | ln_flights: did_adj=-0.0926(p=0.186); x_tourism=-0.0153(p=0.257)
+saved main_models (40), heterogeneity (12), spec log (40)
+
+======================================================================
+RUNNING 05_reconcile.py
+======================================================================
+=== RAW 2x2 (ln_co2 means) ===
+treated : pre=14.174 post=14.145 diff=-0.030
+control : pre=11.329 post=11.741 diff=+0.412
+2x2 DiD (raw): -0.4422
+
+=== UNIT COUNTS BY YEAR ===
+       n  treated
+YEAR             
+2010  40       30
+2011  40       30
+2012  41       31
+2013  41       31
+2014  41       30
+2015  42       31
+2016  42       31
+2017  42       31
+2018  43       32
+2019  43       32
+
+=== DiD restricted 2010-2019 ===
+B3 restricted                          ln_co2       did=-0.2075 (se=0.0826, p=0.0120, N=415)
+B3 restricted                          ln_flights   did=-0.1088 (se=0.0678, p=0.1083, N=415)
+B3 restricted                          ln_intensity did=-0.0986 (se=0.0689, p=0.1521, N=415)
+
+=== Event study 2010-2019 only (base 2011) ===
+  t=-2: -0.0187 (p=0.327)
+  t=+0: -0.0060 (p=0.805)
+  t=+1: +0.0067 (p=0.808)
+  t=+2: +0.0690 (p=0.033)
+  t=+3: +0.1083 (p=0.002)
+  t=+4: +0.1755 (p=0.000)
+  t=+5: +0.2801 (p=0.000)
+  t=+6: +0.3622 (p=0.000)
+  t=+7: +0.4041 (p=0.000)
+event-study post-period average: +0.1750  (vs DiD above — must match)
+
+=== WHO drives it? leave-one-unit-out on DiD 2010-2019 ===
+all units                              ln_co2       did=-0.2075 (se=0.0826, p=0.0120, N=415)
+drop AL                                ln_co2       did=-0.2375 (se=0.0837, p=0.0045, N=405)
+drop AM                                ln_co2       did=-0.2434 (se=0.0806, p=0.0025, N=405)
+drop AT                                ln_co2       did=-0.2059 (se=0.0830, p=0.0132, N=405)
+drop BA                                ln_co2       did=-0.1869 (se=0.0873, p=0.0324, N=405)
+drop BE                                ln_co2       did=-0.2031 (se=0.0829, p=0.0143, N=405)
+drop BG                                ln_co2       did=-0.2075 (se=0.0831, p=0.0125, N=405)
+drop CH                                ln_co2       did=-0.2075 (se=0.0831, p=0.0125, N=405)
+drop CY                                ln_co2       did=-0.2022 (se=0.0828, p=0.0147, N=405)
+drop CZ                                ln_co2       did=-0.2044 (se=0.0830, p=0.0138, N=405)
+drop DE                                ln_co2       did=-0.2037 (se=0.0829, p=0.0141, N=405)
+drop DK                                ln_co2       did=-0.2072 (se=0.0831, p=0.0126, N=405)
+drop EE                                ln_co2       did=-0.2074 (se=0.0825, p=0.0119, N=412)
+drop EL                                ln_co2       did=-0.2065 (se=0.0830, p=0.0129, N=405)
+drop ES                                ln_co2       did=-0.2050 (se=0.0830, p=0.0135, N=405)
+drop FI                                ln_co2       did=-0.2054 (se=0.0830, p=0.0133, N=405)
+drop FR                                ln_co2       did=-0.2046 (se=0.0830, p=0.0137, N=405)
+drop GB                                ln_co2       did=-0.2059 (se=0.0830, p=0.0131, N=405)
+drop GE                                ln_co2       did=-0.2074 (se=0.0825, p=0.0120, N=409)
+drop HR                                ln_co2       did=-0.2135 (se=0.0828, p=0.0099, N=405)
+drop HU                                ln_co2       did=-0.2050 (se=0.0830, p=0.0135, N=405)
+drop IE                                ln_co2       did=-0.2111 (se=0.0830, p=0.0109, N=405)
+drop IS                                ln_co2       did=-0.2285 (se=0.0798, p=0.0042, N=405)
+drop IT                                ln_co2       did=-0.2043 (se=0.0830, p=0.0138, N=405)
+drop LI                                ln_co2       did=-0.1957 (se=0.0818, p=0.0168, N=408)
+drop LT                                ln_co2       did=-0.2178 (se=0.0823, p=0.0082, N=405)
+drop LU                                ln_co2       did=-0.2080 (se=0.0831, p=0.0123, N=405)
+drop LV                                ln_co2       did=-0.2068 (se=0.0828, p=0.0125, N=406)
+drop MC                                ln_co2       did=-0.1926 (se=0.0888, p=0.0301, N=405)
+drop MD                                ln_co2       did=-0.1741 (se=0.0820, p=0.0338, N=405)
+drop ME                                ln_co2       did=-0.2196 (se=0.0894, p=0.0140, N=405)
+drop MK                                ln_co2       did=-0.1775 (se=0.0837, p=0.0340, N=405)
+drop MT                                ln_co2       did=-0.2112 (se=0.0830, p=0.0109, N=405)
+drop NL                                ln_co2       did=-0.2061 (se=0.0830, p=0.0131, N=405)
+drop NO                                ln_co2       did=-0.2076 (se=0.0831, p=0.0124, N=405)
+drop PL                                ln_co2       did=-0.2140 (se=0.0828, p=0.0097, N=405)
+drop PT                                ln_co2       did=-0.2104 (se=0.0830, p=0.0112, N=405)
+drop RO                                ln_co2       did=-0.2100 (se=0.0830, p=0.0114, N=405)
+drop RS                                ln_co2       did=-0.2010 (se=0.0901, p=0.0257, N=405)
+drop SE                                ln_co2       did=-0.2060 (se=0.0830, p=0.0131, N=405)
+drop SI                                ln_co2       did=-0.2017 (se=0.0828, p=0.0148, N=405)
+drop SK                                ln_co2       did=-0.2049 (se=0.0830, p=0.0135, N=405)
+drop TR                                ln_co2       did=-0.2028 (se=0.0903, p=0.0246, N=405)
+drop XK                                ln_co2       did=-0.2393 (se=0.0828, p=0.0039, N=405)
+
+======================================================================
+RUNNING 06_ml_suite.py
+======================================================================
+A RandomForest ln_co2: CV R2=0.589±0.149
+A DummyRegressor ln_co2: CV R2=-0.000±0.000
+A Ridge ln_co2: CV R2=0.199±0.080
+A HistGradientBoosting ln_co2: CV R2=0.600±0.139
+A RandomForest ln_flights: CV R2=0.545±0.179
+A DummyRegressor ln_flights: CV R2=-0.000±0.000
+A Ridge ln_flights: CV R2=0.095±0.044
+A HistGradientBoosting ln_flights: CV R2=0.555±0.175
+A RandomForest ln_intensity: CV R2=0.290±0.123
+A DummyRegressor ln_intensity: CV R2=0.000±0.000
+A Ridge ln_intensity: CV R2=0.249±0.106
+A HistGradientBoosting ln_intensity: CV R2=0.261±0.129
+B AIPW sample: treated=31, control=10
+B naive diff-in-means: -0.2176
+B AIPW DR-ATT: -0.1120 (SE 0.0530, z=-2.11)
+C econml unavailable (No module named 'econml') -> X-learner
+C CATE (X-learner): mean=-0.2599, sd=+0.1033, min=-0.7477 (LI), max=-0.0823 (IS)
+ML SUITE DONE
+
+======================================================================
+RUNNING 07_scm_suite.py
+======================================================================
+donors dropped (<90% pre coverage): ['EE', 'GE', 'LI', 'LV']
+controls=['AL', 'AM', 'BA', 'MC', 'MD', 'ME', 'MK', 'RS', 'TR', 'XK']
+treated candidates: 29
+SCM done for 29 treated states (of 29)
+unit  att_classic   att_aug  rmspe_ratio
+  AT    -0.136011 -0.053231     1.597562
+  BE    -0.191637 -0.075406     1.841284
+  BG    -0.102055 -0.065974     2.336401
+  CH    -0.062872 -0.021339     1.273154
+  CY    -0.440482 -0.296176     5.001098
+  CZ    -0.424755 -0.363442    11.750204
+  DE    -0.180876 -0.075295     2.063831
+  DK    -0.101254 -0.058118     1.842783
+  EL    -0.259584 -0.212766     2.565289
+  ES    -0.387444 -0.166652     5.728823
+  FI    -0.237346 -0.086781     1.865952
+  FR    -0.132347 -0.050729     1.964909
+  GB    -0.205417 -0.094061     2.730106
+  HR    -0.023146 -0.010400     1.882015
+  HU    -0.320136 -0.153476     5.559729
+  IE    -0.146817 -0.087280     2.702713
+  IS     0.265593  0.165935     2.906349
+  IT    -0.331308 -0.145508     5.557566
+  LT     0.191609  0.068917     2.277226
+  LU     0.106653  0.037229     1.458122
+  MT    -0.250696 -0.174856     3.789725
+  NL    -0.106366 -0.040904     1.783689
+  NO    -0.161648 -0.083578     2.276226
+  PL    -0.160936 -0.168770     5.061802
+  PT    -0.229412 -0.130084     5.247374
+  RO    -0.134936 -0.073574     2.418373
+  SE    -0.219614 -0.089698     1.892928
+  SI    -0.394035 -0.322840     6.660876
+  SK    -0.238368 -0.155856     2.753754
+aggregate annual (index, 2010-11=100):
+ year  actual_idx    syn_idx  treated_rel_synth_pct
+ 2010   98.192790  99.803587                  -1.61
+ 2011  102.365229 103.039587                  -0.65
+ 2012   98.760261 102.343814                  -3.50
+ 2013   98.433033 109.042314                  -9.73
+ 2014  101.949822 122.528878                 -16.80
+ 2015  104.246775 126.885053                 -17.84
+ 2016  109.798185 139.222748                 -21.13
+ 2017  114.700362 156.205717                 -26.57
+ 2018  119.693627 169.518634                 -29.39
+ 2019  122.263381 180.208591                 -32.15
+placebo-in-space: median treated RMSPE ratio=2.42, control ratios=[ 1.34  1.83  1.87  2.02  2.06  2.19  5.4   9.99 11.1  11.31], perm p (median-based)=0.455
+SCM SUITE DONE
+
+======================================================================
+RUNNING 08_simulation_suite.py
+======================================================================
+── S1 wild cluster bootstrap ──
+main DiD: -0.2075 (analytic se 0.0826)
+S1 wild bootstrap p=0.0392, 95% CI [-0.4048, -0.0115]
+── S2 randomization inference ──
+S2 RI p=0.0034 over 5000 permutations
+── S3 COVID-free counterfactual ──
+S3 DiD variants (ln_co2):
+  drop_covid     : -0.2075 (p=0.0120, N=415)
+  raw_covid      : -0.2284 (p=0.0834, N=672)
+  adjusted_covid : -0.2151 (p=0.0677, N=672)
+── S4 policy scenario Monte Carlo ──
+S4 params: did=-0.2423, tr x lnETS=-0.06752
+       scenario  year   ets  mc_mean  mc_p05  mc_p95
+Aggressive_8pct  2022  57.9   119.35   74.46  178.65
+Aggressive_8pct  2026  78.8   117.18   68.95  181.17
+Aggressive_8pct  2030 107.1   114.67   65.12  180.41
+ Moderate_plus3  2022  56.6   119.91   73.02  179.28
+ Moderate_plus3  2026  68.6   118.57   71.00  182.59
+ Moderate_plus3  2030  80.6   117.25   71.71  180.97
+      Flat_2021  2022  53.6   119.93   73.36  181.38
+      Flat_2021  2026  53.6   120.21   73.21  180.36
+      Flat_2021  2030  53.6   120.57   72.23  181.86
+SIMULATION SUITE DONE
+
+======================================================================
+RUNNING 09_optimization_suite.py
+======================================================================
+O params: did=-0.2423, tr x lnETS=-0.06752
+O1 EU-aviation abatement (Mt CO2) at each ETS price:
+ ets  total_abate_mt
+  10        0.000000
+  20        0.000000
+  30        1.841990
+  50        6.779343
+  75       10.583757
+ 100       13.223122
+ 150       16.860649
+O2 target -10%: required uniform ETS price = €118.6/t
+O2 target -20%: required uniform ETS price = €678.4/t
+O2 target -29% (EU 2030 transport): required uniform ETS price = €3973.6/t
+── O3 optimal price path ──
+O3 optimal path (min-cost, meets -29% 2030 target): [50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0]
+O3 remaining 2030: 101.3 Mt (65.5% of 2019), cumulative abatement cost = 2,672.4 (Mt*EUR units)
+── O4 minimax LP (Chebyshev) revenue allocation ──
+O4 allocation top5:
+iso  alloc_eur_bn  co2_2019_mt  eff_per_bn  eff_per_mt  pred_residual_mt
+ DE         4.566        31.09      3.9981      0.1286            12.833
+ FR         2.461        22.40      3.8889      0.1736            12.833
+ ES         2.393        22.04      3.8462      0.1745            12.833
+ IT         0.580        15.11      3.9214      0.2596            12.833
+ AT         0.000         3.11      3.7528      1.2048             3.115
+O4 minimized max residual CO2: 12.83 Mt
+O4 sanity: max predicted residual = 12.833 Mt vs T = 12.833
+O4b fairness (Nash log) allocation top5:
+iso  alloc_eur_bn  co2_2019_mt  eff_per_bn  pred_abate_mt
+ DE         2.007        31.09      3.9981          8.024
+ FR         1.449        22.40      3.8889          5.636
+ ES         1.425        22.04      3.8462          5.482
+ IT         0.973        15.11      3.9214          3.816
+ NL         0.721        11.14      3.7344          2.693
+OPTIMIZATION SUITE DONE
+
+======================================================================
+RUNNING 10_tables_figures.py
+======================================================================
+DONE: 7 tables, 10 figures
+
+======================================================================
+RUNNING 11_null_precision.py
+======================================================================
+N1 pre-determined controls: ln_pre_scale (n=406), pre_trend (n=390)
+N1 N1a_original | ln_co2: beta=-0.2075 (se=0.0826, p=0.012, N=415)
+/root/aviation-fresh/code/11_null_precision.py:43: SingularMatrixWarning: The design matrix is rank-deficient. The model parameters are not uniquely determined.
+  m = sm.OLS(dd[y].values, X.values).fit(cov_type="cluster", cov_kwds={"groups": dd.iso.values})
+N1 N1b_plus_scale | ln_co2: beta=-0.2074 (se=0.0826, p=0.012, N=406)
+/root/aviation-fresh/code/11_null_precision.py:43: SingularMatrixWarning: The design matrix is rank-deficient. The model parameters are not uniquely determined.
+  m = sm.OLS(dd[y].values, X.values).fit(cov_type="cluster", cov_kwds={"groups": dd.iso.values})
+N1 N1c_scale_trend | ln_co2: beta=-0.1949 (se=0.0822, p=0.018, N=390)
+── N2 minimum effect test (MET) ──
+N2 N1a_original: MET p=0.0158 (MET: effect exceeds +/-3%)
+N2 N1b_plus_scale: MET p=0.0159 (MET: effect exceeds +/-3%)
+N2 N1c_scale_trend: MET p=0.0225 (MET: effect exceeds +/-3%)
+── N3 MDE ──
+N3 residual sigma=0.1415
+N3 MDE (80% power, 5% level): |beta| >= 0.2313 log points (~23.1%)
+── N4 leave-one-out RI ──
+N4 LOO range: [-0.2434, -0.1741]; max p across drops: 0.0340 (ALL significant)
+N4 RI without AL: p=0.0065
+N4 RI without AM: p=0.0055
+N4 RI without BA: p=0.0045
+N4 RI without GE: p=0.0060
+N4 RI without MC: p=0.0040
+N4 RI without MD: p=0.0020
+N4 RI without ME: p=0.0045
+N4 RI without MK: p=0.0065
+N4 RI without RS: p=0.0045
+N4 RI without TR: p=0.0055
+N4 RI without XK: p=0.0100
+── wild bootstrap on N1c ──
+/root/aviation-fresh/code/11_null_precision.py:43: SingularMatrixWarning: The design matrix is rank-deficient. The model parameters are not uniquely determined.
+  m = sm.OLS(dd[y].values, X.values).fit(cov_type="cluster", cov_kwds={"groups": dd.iso.values})
+N1 N1b_wb | ln_co2: beta=-0.2074 (se=0.0826, p=0.012, N=406)
+NULL-PRECISION SUITE DONE
+
+======================================================================
+RUNNING 12_mechanism_pass_through.py
+======================================================================
+fares: (5531, 5), countries=31, 2010-2024
+M1 fare regression sample: (3720, 9), countries=31
+M1a fares ~ treated x lnETS: -0.010709 (p=0.0202, N=3720)
+M1b + country trends:        -0.016105 (p=0.0000, N=3720)
+M3 business : treated x post-COVID = -0.0602 (p=0.835, N=3240)
+M3 cargo    : treated x post-COVID = +0.1186 (p=0.671, N=3240)
+M3 lowcost  : treated x post-COVID = -0.0784 (p=0.818, N=3223)
+M3 mainline : treated x post-COVID = -0.1646 (p=0.563, N=3240)
+M3 other    : treated x post-COVID = +0.0231 (p=0.929, N=3240)
+M3 regional : treated x post-COVID = -0.3308 (p=0.351, N=3194)
+MECHANISM SUITE (partial - M2 waits for jet fuel data) DONE
+
+======================================================================
+RUNNING 14_fuel_crosscheck.py
+======================================================================
+merged fuel+CO2: (554, 22), countries=38
+cross-source corr(ln CO2, ln fuel) = 0.966
+M2 fuel DiD (2010-19): -0.2356 (se=0.3351, p=0.4820, N=364)
+M2 DONE
+
+======================================================================
+RUNNING 15_dose_response.py
+======================================================================
+EUTL: (295, 5), states=30, years 2012-2021
+EUTL merge: 32 treated states, 30 EUTL states, missing treated states: ['CH', 'EL', 'LI']
+Missing dose values (EUTL gaps): 188 of 415 rows -> filled with 0 and flagged via eutl_missing (0=observed, 1=imputed). Imputed rows are excluded from dose inference via the eutl_missing indicator in the regression.
+dose-response: dose coef=+0.0142 (se=0.0236, p=0.5479, N=415)
+
+======================================================================
+POST: helper scripts
+======================================================================
+
+--- capture_environment ---
+{
+  "python": "3.14.7",
+  "implementation": "CPython",
+  "os": "Linux-7.0.0-28-generic-x86_64-with-glibc2.43",
+  "machine": "x86_64",
+  "commit": "501215ad13fd6e3a20780c28881843a421fb29f2",
+  "n_jobs": 1,
+  "deterministic": true,
+  "captured_by": "scripts/capture_environment.py",
+  "captured_at": "2026-11-01T08:26:45.889298",
+  "pinned_packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "statsmodels": "0.15.0",
+    "matplotlib": "3.11.2"
+  }
+}
+
+--- save_model_artifacts ---
+saved /root/aviation-fresh/artifacts/models/rf_ln_co2.joblib and preprocess artifact
+saved model_manifest.json
+
+--- freeze_manifest ---
+freeze written: 61 artifacts hashed, 32 changed
+
+--- postprocess_results ---
+stamped run_id=fa3c72516d78 protocol=1.0 on result CSVs
+
+--- verify_determinism: skipped (no results_prev/ to compare) ---
+
+PIPELINE COMPLETE — all stages exited 0. Results in results/, tables/, figures/.

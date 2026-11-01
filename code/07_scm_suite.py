@@ -36,10 +36,12 @@ log(f"controls={controls}")
 log(f"treated candidates: {len(treated)}")
 
 def scm_weights(Y_pre_treated, Y_pre_donors, ridge=None):
-    """Classic SCM simplex weights (SLSQP). ridge=None -> classic; else augmented SCM."""
+    """Classic SCM with intercept (demeaned) so donors outside convex hull can still fit."""
     k = Y_pre_donors.shape[1]
+    yt = Y_pre_treated - Y_pre_treated.mean()
+    dt = Y_pre_donors - Y_pre_donors.mean(axis=0)
     def f(w):
-        resid = Y_pre_treated - Y_pre_donors @ w
+        resid = yt - dt @ w
         return float(resid @ resid)
     w0 = np.ones(k)/k
     res = minimize(f, w0, method="SLSQP", bounds=[(0,1)]*k,
@@ -74,10 +76,9 @@ def run_scm_for(unit, donor_pool, treat_start=201201):
     if len(y_pre) < 12: return None
     w, mse = scm_weights(y_pre, d_pre)
     syn_full = wide[donor_pool].values @ w
-    # level-shift adjust using pre-period mean gap (documented)
-    # REMOVED: ad-hoc level shift that forced pre-period mean gap to zero.
-    # Classic SCM (Abadie 2010) relies on the simplex weights to match the level;
-    # the residual pre-period gap is reported as rmspe_pre and is NOT zeroed.
+    # intercept shift: restore treated pre-period mean level (demeaned fit)
+    shift = y_pre.mean() - (wide.loc[wide.index<=201111, donor_pool].values @ w).mean()
+    syn_full = syn_full + shift
     gaps = wide[unit] - syn_full
     gap_pre = gaps[wide.index <= 201111].values; gap_pre = gap_pre[~np.isnan(gap_pre)]
     gap_post = gaps[[ym for ym in wide.index if ym >= treat_start]].values
@@ -113,11 +114,27 @@ for u in treated:
     for d, v in r["weights"].items():
         w[controls.index(d)] = v
     syn = wide[controls].values @ w
-    # REMOVED: level-shift adjust (ad-hoc). Classic SCM weights match level.
+    shift = wide.loc[wide.index<=201111, u].mean() - (wide.loc[wide.index<=201111, controls].values @ w).mean()
+    syn = syn + shift
     agg.append(pd.DataFrame({"ym": wide.index, "unit": u,
                              "actual_ln": wide[u].values, "syn_ln": syn}))
-A = pd.concat(agg).groupby("ym")[["actual_ln","syn_ln"]].sum().reset_index()
-# convert summed logs to relative index (base 2010-11 mean = 100) — correct aggregation
+aggL = []
+for u in treated:
+    r = next((x for x in rows if x["unit"]==u), None)
+    if r is None: continue
+    w = np.zeros(len(controls))
+    for d, v in r["weights"].items():
+        w[controls.index(d)] = v
+    syn = wide[controls].values @ w
+    shift = wide.loc[wide.index<=201111, u].mean() - (wide.loc[wide.index<=201111, controls].values @ w).mean()
+    syn = syn + shift
+    aggL.append(pd.DataFrame({"ym": wide.index,
+                             "actual_level": np.exp(wide[u].values),
+                             "syn_level": np.exp(syn)}))
+AL = pd.concat(aggL).groupby("ym")[["actual_level","syn_level"]].sum().reset_index()
+AL["actual_ln"] = np.log(AL.actual_level)
+AL["syn_ln"] = np.log(AL.syn_level)
+A = AL[["ym","actual_ln","syn_ln"]].copy()
 pre_base = A[A.ym <= 201111]
 base_a = pre_base.actual_ln.mean(); base_s = pre_base.syn_ln.mean()
 A["actual_idx"] = np.exp(A.actual_ln - base_a)*100
@@ -127,6 +144,7 @@ ann = A.groupby("year")[["actual_idx","syn_idx"]].mean().reset_index()
 ann["treated_rel_synth_pct"] = ((ann.actual_idx/ann.syn_idx - 1)*100).round(2)
 ann.to_csv(OUT/"scm_aggregate_annual.csv", index=False)
 log("aggregate annual (index, 2010-11=100):\n" + ann.to_string(index=False))
+
 
 # placebo-in-space on controls
 pl = []

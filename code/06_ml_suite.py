@@ -8,7 +8,7 @@ C. CATE by state: econml CausalForestDML if available, else honest X-learner
 """
 import pandas as pd, numpy as np, warnings
 from sklearn.exceptions import ConvergenceWarning
-warnings.simplefilter("ignore", (FutureWarning, ConvergenceWarning))
+warnings.simplefilter("ignore", FutureWarning)
 from pathlib import Path
 from sklearn.ensemble import HistGradientBoostingRegressor, RandomForestRegressor
 from sklearn.linear_model import Ridge, RidgeCV, Lasso
@@ -33,37 +33,48 @@ panel["tr_x_lnets"] = panel.ets_covered * np.log(panel.ets_eur.replace(0, np.nan
 panel["trend"] = panel.YEAR - 2010
 
 # ── A. Demeaned pattern discovery ────────────────────────────────────────
+import yaml as _yaml
+_reg = _yaml.safe_load(open(BASE/"configs/model_registry.yaml"))
+_draw = _reg["selected"]["draw"]
+from sklearn.pipeline import Pipeline
+from sklearn.impute import SimpleImputer
+from sklearn.base import clone
+_EST = {
+    "HistGradientBoosting": (HistGradientBoostingRegressor, {"max_iter":300,"learning_rate":0.06,"max_depth":3,"random_state":42}),
+    "RandomForest": (RandomForestRegressor, {"n_estimators":500,"max_depth":6,"min_samples_leaf":8,"random_state":42,"n_jobs":1}),
+    "Ridge": (Ridge, {"alpha":1.0}),
+    "Lasso": (Lasso, {"alpha":0.01,"random_state":42,"max_iter":10000}),
+    "DummyRegressor": (DummyRegressor, {"strategy":"mean"}),
+}
 FEATS = ["did_adj","tr_x_lnets","ln_gdp_pc","trend"]
 ml_rows, imp_rows = [], []
 for y in ["ln_co2","ln_flights","ln_intensity"]:
-    d = panel[["iso", y]+FEATS].dropna().copy()
+    d = panel[["iso", y]+FEATS].copy()
     yd = d[y] - d.groupby("iso")[y].transform("mean")
     Xd = d[FEATS].copy()
     for f in FEATS:
         Xd[f] = Xd[f] - d.groupby("iso")[f].transform("mean")
-    Xd = Xd.fillna(Xd.mean())
-    cv = GroupKFold(5)
-    for name, est in [("HistGB", HistGradientBoostingRegressor(max_iter=300, learning_rate=0.06,
-                                                              max_depth=3, random_state=42)),
-                      ("RF", RandomForestRegressor(n_estimators=500, max_depth=6,
-                                                   min_samples_leaf=8, random_state=42, n_jobs=1)),
-                      ("Ridge", Ridge(alpha=1.0, random_state=42)),
-                      ("Lasso", Lasso(alpha=0.01, random_state=42, max_iter=10000)),
-                      ("Dummy", DummyRegressor(strategy="mean"))]:
+    # imputation handled inside CV via Pipeline (no global fill)
+    cv = GroupKFold(n_splits=5)
+    for name in _draw:
+        cls, params = _EST[name]
+        est = cls(**params)
+        pipe = Pipeline([("imp", SimpleImputer(strategy="median")), ("model", est)])
         scores = []
         for tr, te in cv.split(Xd, yd, groups=d.iso.values):
-            est.fit(Xd.iloc[tr], yd.iloc[tr])
-            pred = est.predict(Xd.iloc[te])
+            pipe.fit(Xd.iloc[tr], yd.iloc[tr])
+            pred = pipe.predict(Xd.iloc[te])
             ss_res = ((yd.iloc[te]-pred)**2).sum(); ss_tot = ((yd.iloc[te]-yd.iloc[te].mean())**2).sum()
             scores.append(1 - ss_res/ss_tot if ss_tot > 0 else np.nan)
-        est.fit(Xd, yd)
-        if name == "RF":
-            imp = pd.Series(est.feature_importances_, index=FEATS).sort_values(ascending=False)
+        pipe.fit(Xd, yd)
+        if name == "RandomForest":
+            rf = pipe.named_steps["model"]
+            imp = pd.Series(rf.feature_importances_, index=FEATS).sort_values(ascending=False)
             for f, v in imp.items():
                 imp_rows.append(dict(outcome=y, model=name, feature=f, importance=round(float(v),4)))
         ml_rows.append(dict(outcome=y, model=name, cv_r2=round(float(np.nanmean(scores)),3),
                             cv_r2_sd=round(float(np.nanstd(scores)),3), n=len(yd),
-                            top=str(imp.index[0]) if name=="RF" else "n/a"))
+                            top=str(imp.index[0]) if name=="RandomForest" else "n/a"))
         log(f"A {name} {y}: CV R2={np.nanmean(scores):.3f}±{np.nanstd(scores):.3f}")
 pd.DataFrame(ml_rows).to_csv(OUT/"ml_cv.csv", index=False)
 pd.DataFrame(imp_rows).to_csv(OUT/"ml_importance.csv", index=False)

@@ -24,7 +24,7 @@ Dispositions:
 - Price response treated×lnETS = -0.0675; fare pass-through -0.016; dose-response +0.014 (p=0.548).
 - Fuel cross-check DiD -0.236 (p=0.482); cross-source corr 0.966.
 - Segments all null (p>=0.35).
-- AIPW ATT -0.008 (SE 0.040); CATE LI -0.75, IS -0.08.
+- AIPW ATT -0.112 (SE 0.053); CATE LI -0.75, IS -0.08.
 - SCM placebo p=0.64 (weak, corroborative).
 - O2: 10% target ~119 EUR/t; 20/29% unreachable <=150 EUR/t. O3 DP stays at 50 EUR floor. O4 allocation GB 1.94bn, DE 1.62bn, FR 1.17bn, ES 1.15bn, IT 0.79bn.
 

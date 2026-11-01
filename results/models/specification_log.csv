@@ -1,20 +1,41 @@
 Specification,Outcome,Variable,Result_coef,Result_p,Reason,Final status,run_id,protocol_version,git_commit
-D1_did_naive_10_19,ln_co2,did,-0.2074565550145567,0.011972249108812068,naive GB treated thru 2019 (harmless pre-2021),MAIN,861c175df25b,1.0,44fee0bfc126
-D2_did_adj_10_19,ln_co2,did_adj,-0.2074565550145567,0.011972249108812068,"main: GB cutoff irrelevant pre-2021, same as D1 check",MAIN,861c175df25b,1.0,44fee0bfc126
-D1_did_naive_10_19,ln_flights,did,-0.10884303861904077,0.10825055119387707,naive GB treated thru 2019 (harmless pre-2021),MAIN,861c175df25b,1.0,44fee0bfc126
-D2_did_adj_10_19,ln_flights,did_adj,-0.10884303861904077,0.10825055119387707,"main: GB cutoff irrelevant pre-2021, same as D1 check",MAIN,861c175df25b,1.0,44fee0bfc126
-D1_did_naive_10_19,ln_intensity,did,-0.09861351639551472,0.15208977464597648,naive GB treated thru 2019 (harmless pre-2021),MAIN,861c175df25b,1.0,44fee0bfc126
-D2_did_adj_10_19,ln_intensity,did_adj,-0.09861351639551472,0.15208977464597648,"main: GB cutoff irrelevant pre-2021, same as D1 check",MAIN,861c175df25b,1.0,44fee0bfc126
-D3_did_adj_full,ln_co2,did_adj,-0.22842720031536212,0.08342059550514531,"includes COVID — reported for completeness, not identified",descriptive only,861c175df25b,1.0,44fee0bfc126
-D3_did_adj_full,ln_flights,did_adj,-0.14049891190592306,0.16048845649482768,"includes COVID — reported for completeness, not identified",descriptive only,861c175df25b,1.0,44fee0bfc126
-D3_did_adj_full,ln_intensity,did_adj,-0.08792828840943828,0.1596198035593649,"includes COVID — reported for completeness, not identified",descriptive only,861c175df25b,1.0,44fee0bfc126
-D4_did_adj_gdp,ln_co2,did_adj,0.0837143031005313,1.4118784900743723e-06,add ln gdp pc; sample = WB-covered states (27 of 43); sign flip reflects compositional shift (gdp-conditional spec on a 37% smaller sample); NOT the headline,robustness/heterogeneity,861c175df25b,1.0,44fee0bfc126
-D4_did_adj_gdp,ln_co2,ln_gdp_pc,0.7272092914047237,3.5578526488190474e-10,add ln gdp pc; sample = WB-covered states (27 of 43); sign flip reflects compositional shift (gdp-conditional spec on a 37% smaller sample); NOT the headline,robustness/heterogeneity,861c175df25b,1.0,44fee0bfc126
-D4_did_adj_gdp,ln_flights,did_adj,0.016840419888915936,0.5081474337637247,add ln gdp pc; sample = WB-covered states (27 of 43); sign flip reflects compositional shift (gdp-conditional spec on a 37% smaller sample); NOT the headline,robustness/heterogeneity,861c175df25b,1.0,44fee0bfc126
-D4_did_adj_gdp,ln_flights,ln_gdp_pc,0.6315712670329845,0.0006313824291025332,add ln gdp pc; sample = WB-covered states (27 of 43); sign flip reflects compositional shift (gdp-conditional spec on a 37% smaller sample); NOT the headline,robustness/heterogeneity,861c175df25b,1.0,44fee0bfc126
-D4_did_adj_gdp,ln_intensity,did_adj,0.06687388321161532,0.00014587363277853235,add ln gdp pc; sample = WB-covered states (27 of 43); sign flip reflects compositional shift (gdp-conditional spec on a 37% smaller sample); NOT the headline,robustness/heterogeneity,861c175df25b,1.0,44fee0bfc126
-D4_did_adj_gdp,ln_intensity,ln_gdp_pc,0.09563802437173444,0.5472203250963449,add ln gdp pc; sample = WB-covered states (27 of 43); sign flip reflects compositional shift (gdp-conditional spec on a 37% smaller sample); NOT the headline,robustness/heterogeneity,861c175df25b,1.0,44fee0bfc126
-D5_noGB,ln_co2,did_adj,-0.205892816823276,0.013147746101072123,drop GB entirely,robustness/heterogeneity,861c175df25b,1.0,44fee0bfc126
-D5_noGB,ln_flights,did_adj,-0.10930097988193463,0.10984760630811095,drop GB entirely,robustness/heterogeneity,861c175df25b,1.0,44fee0bfc126
-D5_noGB,ln_intensity,did_adj,-0.0965918369413428,0.16207414009348042,drop GB entirely,robustness/heterogeneity,861c175df25b,1.0,44fee0bfc126
-D6_noTiny,ln_co2,did_adj,-0.18077515087591972,0.0402659576049463,drop states <50k flights/yr,robustness/heterogeneity,861c175df25b,1.0,44fee0bfc126
+D1_did_naive_10_19,ln_co2,did,-0.2074565550145567,0.011972249108812068,naive GB treated thru 2019 (harmless pre-2021),MAIN,fa3c72516d78,1.0,501215ad13fd
+D2_did_adj_10_19,ln_co2,did_adj,-0.2074565550145567,0.011972249108812068,"main: GB cutoff irrelevant pre-2021, same as D1 check",MAIN,fa3c72516d78,1.0,501215ad13fd
+D1_did_naive_10_19,ln_flights,did,-0.10884303861904077,0.10825055119387707,naive GB treated thru 2019 (harmless pre-2021),MAIN,fa3c72516d78,1.0,501215ad13fd
+D2_did_adj_10_19,ln_flights,did_adj,-0.10884303861904077,0.10825055119387707,"main: GB cutoff irrelevant pre-2021, same as D1 check",MAIN,fa3c72516d78,1.0,501215ad13fd
+D1_did_naive_10_19,ln_intensity,did,-0.09861351639551472,0.15208977464597648,naive GB treated thru 2019 (harmless pre-2021),MAIN,fa3c72516d78,1.0,501215ad13fd
+D2_did_adj_10_19,ln_intensity,did_adj,-0.09861351639551472,0.15208977464597648,"main: GB cutoff irrelevant pre-2021, same as D1 check",MAIN,fa3c72516d78,1.0,501215ad13fd
+D3_did_adj_full,ln_co2,did_adj,-0.22842720031536212,0.08342059550514531,"includes COVID — reported for completeness, not identified",descriptive only,fa3c72516d78,1.0,501215ad13fd
+D3_did_adj_full,ln_flights,did_adj,-0.14049891190592306,0.16048845649482768,"includes COVID — reported for completeness, not identified",descriptive only,fa3c72516d78,1.0,501215ad13fd
+D3_did_adj_full,ln_intensity,did_adj,-0.08792828840943828,0.1596198035593649,"includes COVID — reported for completeness, not identified",descriptive only,fa3c72516d78,1.0,501215ad13fd
+D4_did_adj_gdp,ln_co2,did_adj,0.0837143031005313,1.4118784900743723e-06,add ln gdp pc; sample = WB-covered states; sign flip reflects compositional shift (gdp-conditional spec on smaller sample); NOT the headline,robustness/heterogeneity,fa3c72516d78,1.0,501215ad13fd
+D4_did_adj_gdp,ln_co2,ln_gdp_pc,0.7272092914047237,3.5578526488190474e-10,add ln gdp pc; sample = WB-covered states; sign flip reflects compositional shift (gdp-conditional spec on smaller sample); NOT the headline,robustness/heterogeneity,fa3c72516d78,1.0,501215ad13fd
+D4_did_adj_gdp,ln_flights,did_adj,0.016840419888915936,0.5081474337637247,add ln gdp pc; sample = WB-covered states; sign flip reflects compositional shift (gdp-conditional spec on smaller sample); NOT the headline,robustness/heterogeneity,fa3c72516d78,1.0,501215ad13fd
+D4_did_adj_gdp,ln_flights,ln_gdp_pc,0.6315712670329845,0.0006313824291025332,add ln gdp pc; sample = WB-covered states; sign flip reflects compositional shift (gdp-conditional spec on smaller sample); NOT the headline,robustness/heterogeneity,fa3c72516d78,1.0,501215ad13fd
+D4_did_adj_gdp,ln_intensity,did_adj,0.06687388321161532,0.00014587363277853235,add ln gdp pc; sample = WB-covered states; sign flip reflects compositional shift (gdp-conditional spec on smaller sample); NOT the headline,robustness/heterogeneity,fa3c72516d78,1.0,501215ad13fd
+D4_did_adj_gdp,ln_intensity,ln_gdp_pc,0.09563802437173444,0.5472203250963449,add ln gdp pc; sample = WB-covered states; sign flip reflects compositional shift (gdp-conditional spec on smaller sample); NOT the headline,robustness/heterogeneity,fa3c72516d78,1.0,501215ad13fd
+D4b_did_adj_gdpsub,ln_co2,did_adj,0.12213210988061748,1.59996033837964e-08,baseline D2 on the GDP-available subsample (N shrinks) — decomposition step 1,robustness/heterogeneity,fa3c72516d78,1.0,501215ad13fd
+D4b_did_adj_gdpsub,ln_flights,did_adj,0.05020575665167479,0.04783379235916906,baseline D2 on the GDP-available subsample (N shrinks) — decomposition step 1,robustness/heterogeneity,fa3c72516d78,1.0,501215ad13fd
+D4b_did_adj_gdpsub,ln_intensity,did_adj,0.07192635322894278,1.6469683288750024e-05,baseline D2 on the GDP-available subsample (N shrinks) — decomposition step 1,robustness/heterogeneity,fa3c72516d78,1.0,501215ad13fd
+D4c_did_adj_pretrendgdp,ln_co2,did_adj,1.0133915095712958,0.008571359050909324,pre-treatment GDP x trend control (mediator-safe),robustness/heterogeneity,fa3c72516d78,1.0,501215ad13fd
+D4c_did_adj_pretrendgdp,ln_co2,ln_gdp2010,36.87534259668716,0.016026647051804906,pre-treatment GDP x trend control (mediator-safe),robustness/heterogeneity,fa3c72516d78,1.0,501215ad13fd
+D4c_did_adj_pretrendgdp,ln_co2,trend_x_gdp2010,-0.017826240599943068,0.020128059413438135,pre-treatment GDP x trend control (mediator-safe),robustness/heterogeneity,fa3c72516d78,1.0,501215ad13fd
+D4c_did_adj_pretrendgdp,ln_flights,did_adj,0.8012819854134765,0.01624010430342126,pre-treatment GDP x trend control (mediator-safe),robustness/heterogeneity,fa3c72516d78,1.0,501215ad13fd
+D4c_did_adj_pretrendgdp,ln_flights,ln_gdp2010,31.062571955238568,0.01954373160296342,pre-treatment GDP x trend control (mediator-safe),robustness/heterogeneity,fa3c72516d78,1.0,501215ad13fd
+D4c_did_adj_pretrendgdp,ln_flights,trend_x_gdp2010,-0.015022411620509706,0.024186371694780873,pre-treatment GDP x trend control (mediator-safe),robustness/heterogeneity,fa3c72516d78,1.0,501215ad13fd
+D4c_did_adj_pretrendgdp,ln_intensity,did_adj,0.2121095241578148,0.2812823997629207,pre-treatment GDP x trend control (mediator-safe),robustness/heterogeneity,fa3c72516d78,1.0,501215ad13fd
+D4c_did_adj_pretrendgdp,ln_intensity,ln_gdp2010,5.812770641448406,0.45736325978049275,pre-treatment GDP x trend control (mediator-safe),robustness/heterogeneity,fa3c72516d78,1.0,501215ad13fd
+D4c_did_adj_pretrendgdp,ln_intensity,trend_x_gdp2010,-0.0028038289794332424,0.47424326598207034,pre-treatment GDP x trend control (mediator-safe),robustness/heterogeneity,fa3c72516d78,1.0,501215ad13fd
+D4d_noTR,ln_co2,did_adj,-0.20283286712913484,0.024644381273511765,drop TR from control group,robustness/heterogeneity,fa3c72516d78,1.0,501215ad13fd
+D4e_noTR_gdp,ln_co2,did_adj,0.0837143031005313,1.4118784900743723e-06,drop TR + GDP control,robustness/heterogeneity,fa3c72516d78,1.0,501215ad13fd
+D4e_noTR_gdp,ln_co2,ln_gdp_pc,0.7272092914047237,3.5578526488190474e-10,drop TR + GDP control,robustness/heterogeneity,fa3c72516d78,1.0,501215ad13fd
+D4d_noTR,ln_flights,did_adj,-0.08773330837094538,0.20749596073033683,drop TR from control group,robustness/heterogeneity,fa3c72516d78,1.0,501215ad13fd
+D4e_noTR_gdp,ln_flights,did_adj,0.016840419888915936,0.5081474337637247,drop TR + GDP control,robustness/heterogeneity,fa3c72516d78,1.0,501215ad13fd
+D4e_noTR_gdp,ln_flights,ln_gdp_pc,0.6315712670329845,0.0006313824291025332,drop TR + GDP control,robustness/heterogeneity,fa3c72516d78,1.0,501215ad13fd
+D4d_noTR,ln_intensity,did_adj,-0.11509955875818959,0.11748001649134526,drop TR from control group,robustness/heterogeneity,fa3c72516d78,1.0,501215ad13fd
+D4e_noTR_gdp,ln_intensity,did_adj,0.06687388321161532,0.00014587363277853235,drop TR + GDP control,robustness/heterogeneity,fa3c72516d78,1.0,501215ad13fd
+D4e_noTR_gdp,ln_intensity,ln_gdp_pc,0.09563802437173444,0.5472203250963449,drop TR + GDP control,robustness/heterogeneity,fa3c72516d78,1.0,501215ad13fd
+D5_noGB,ln_co2,did_adj,-0.205892816823276,0.013147746101072123,drop GB entirely,robustness/heterogeneity,fa3c72516d78,1.0,501215ad13fd
+D5_noGB,ln_flights,did_adj,-0.10930097988193463,0.10984760630811095,drop GB entirely,robustness/heterogeneity,fa3c72516d78,1.0,501215ad13fd
+D5_noGB,ln_intensity,did_adj,-0.0965918369413428,0.16207414009348042,drop GB entirely,robustness/heterogeneity,fa3c72516d78,1.0,501215ad13fd
+D6_noTiny,ln_co2,did_adj,-0.18077515087591972,0.0402659576049463,drop states <50k flights/yr,robustness/heterogeneity,fa3c72516d78,1.0,501215ad13fd
