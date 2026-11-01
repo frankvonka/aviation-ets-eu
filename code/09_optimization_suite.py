@@ -53,9 +53,8 @@ log(f"O params: did={b1:+.4f}, tr x lnETS={b2:+.5f}")
 #   abate_share(p) is estimated from ETS prices €5-8/t (2012-2019) but applied
 #   to 2030 prices €100-150/t. This is a STRUCTURAL EXTRAPOLATION beyond the
 #   estimation support. Policy projections (O2-O4, S4) inherit this extrapolation.
-#   The dose-response coefficient b2 ≈ -0.0161 (p=0.0000004) is statistically
-#   identified but economically small — the null (b2=0) cannot be rejected at
-#   prices 10x out of sample.
+#   The price-response coefficient b2 (treated x ln ETS) comes from 05_models_fixed.py
+#   (tr_x_lnets); it is small, so policy projections (O2-O4, S4) are extrapolations.
 #   abate_share(p) = 1 - exp(b2 * (ln p - ln p2019)), bounded [0, 0.95] (0 if b2>=0)
 def abate_share(p):
     if b2 >= 0: return 0.0

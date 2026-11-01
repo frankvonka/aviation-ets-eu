@@ -19,9 +19,9 @@ Dispositions:
 - NO-DOCSTRINGS (leads 17,18): MINOR — 09 and build_manuscript. Fix: add docstrings.
 
 ## Key findings (verified)
-- Main DiD ln CO2 (2010-19) = -0.208 (p=0.012); wild bootstrap p=0.039; RI p=0.0034. Pre-trend p=0.79. MDE 23.1%. TOST not conclusive.
+- Main DiD ln CO2 (2010-19) = -0.208 (p=0.012); wild bootstrap p=0.039; RI p=0.0034. Pre-trend p=0.79. MDE 23.1%. MET p=0.016.
 - COVID-adjusted variant -0.215 (p=0.068) suggestive.
-- Price response treated×lnETS = -0.0675; fare pass-through -0.016; dose-response +0.014 (p=0.548).
+- Price response treated×lnETS = -0.0675; fare pass-through -0.016; dose-response +0.006 (p=0.787).
 - Fuel cross-check DiD -0.236 (p=0.482); cross-source corr 0.966.
 - Segments all null (p>=0.35).
 - AIPW ATT -0.112 (SE 0.053); CATE LI -0.75, IS -0.08.

@@ -15,8 +15,8 @@ from scipy.stats import pearsonr
 BASE = Path(__file__).resolve().parents[1]; DATA = BASE/"data"
 RES = BASE/"results"; TAB = BASE/"tables"; FIG = BASE/"figures"
 TAB.mkdir(exist_ok=True); FIG.mkdir(exist_ok=True)
-BLUE, RED, GREEN, GRAY = "#2166ac", "#b2182b", "#1a9850", "#878787"
-plt.rcParams.update({"font.family": "Times New Roman", "font.size": 11, "figure.dpi": 150,
+BLUE, RED, GREEN, GRAY = "#0072B2", "#D55E00", "#009E73", "#7F7F7F"
+plt.rcParams.update({"font.family": "Times New Roman", "font.size": 11, "figure.dpi": 300,
                      "savefig.bbox": "tight", "axes.spines.top": False, "axes.spines.right": False,
                      "axes.grid": True, "grid.alpha": 0.3, "grid.linestyle": "--"})
 panel = pd.read_csv(DATA/"panel_state_year.csv")
@@ -86,7 +86,7 @@ plt.savefig(FIG/"F1_ets_vs_co2.png"); plt.close()
 # F2 heatmap state x year (ln CO2)
 pivot = panel.pivot_table(index="iso", columns="YEAR", values="ln_co2")
 fig, ax = plt.subplots(figsize=(12,9))
-im = ax.imshow(pivot.values, aspect="auto", cmap="YlOrRd")
+im = ax.imshow(pivot.values, aspect="auto", cmap="viridis")
 ax.set_yticks(range(len(pivot))); ax.set_yticklabels(pivot.index, fontsize=7)
 ax.set_xticks(range(len(pivot.columns))); ax.set_xticklabels(pivot.columns, rotation=45, fontsize=8)
 plt.colorbar(im, ax=ax, label="ln CO2 (kt)")

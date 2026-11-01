@@ -222,7 +222,7 @@ B AIPW sample: treated=31, control=10
 B naive diff-in-means: -0.2176
 B AIPW DR-ATT: -0.1120 (SE 0.0530, z=-2.11)
 C econml unavailable (No module named 'econml') -> X-learner
-C CATE (X-learner): mean=-0.2599, sd=+0.1033, min=-0.7477 (LI), max=-0.0823 (IS)
+C CATE (X-learner): mean=-0.2590, sd=+0.1033, min=-0.7472 (LI), max=-0.0815 (IS)
 ML SUITE DONE
 
 ======================================================================
@@ -312,11 +312,11 @@ O1 EU-aviation abatement (Mt CO2) at each ETS price:
  ets  total_abate_mt
   10        0.000000
   20        0.000000
-  30        1.841990
-  50        6.779343
-  75       10.583757
- 100       13.223122
- 150       16.860649
+  30        1.841950
+  50        6.779194
+  75       10.583524
+ 100       13.222830
+ 150       16.860277
 O2 target -10%: required uniform ETS price = €118.6/t
 O2 target -20%: required uniform ETS price = €678.4/t
 O2 target -29% (EU 2030 transport): required uniform ETS price = €3973.6/t
@@ -326,20 +326,20 @@ O3 remaining 2030: 101.3 Mt (65.5% of 2019), cumulative abatement cost = 2,672.4
 ── O4 minimax LP (Chebyshev) revenue allocation ──
 O4 allocation top5:
 iso  alloc_eur_bn  co2_2019_mt  eff_per_bn  eff_per_mt  pred_residual_mt
- DE         4.566        31.09      3.9981      0.1286            12.833
- FR         2.461        22.40      3.8889      0.1736            12.833
- ES         2.393        22.04      3.8462      0.1745            12.833
- IT         0.580        15.11      3.9214      0.2596            12.833
- AT         0.000         3.11      3.7528      1.2048             3.115
-O4 minimized max residual CO2: 12.83 Mt
-O4 sanity: max predicted residual = 12.833 Mt vs T = 12.833
+ DE         4.573        31.09      3.9855      0.1282            12.864
+ FR         2.461        22.40      3.8764      0.1730            12.864
+ ES         2.393        22.04      3.8336      0.1740            12.864
+ IT         0.574        15.11      3.9088      0.2587            12.864
+ AT         0.000         3.11      3.7402      1.2007             3.115
+O4 minimized max residual CO2: 12.86 Mt
+O4 sanity: max predicted residual = 12.864 Mt vs T = 12.864
 O4b fairness (Nash log) allocation top5:
 iso  alloc_eur_bn  co2_2019_mt  eff_per_bn  pred_abate_mt
- DE         2.007        31.09      3.9981          8.024
- FR         1.449        22.40      3.8889          5.636
- ES         1.425        22.04      3.8462          5.482
- IT         0.973        15.11      3.9214          3.816
- NL         0.721        11.14      3.7344          2.693
+ DE         2.007        31.09      3.9855          7.999
+ FR         1.449        22.40      3.8764          5.617
+ ES         1.425        22.04      3.8336          5.464
+ IT         0.973        15.11      3.9088          3.804
+ NL         0.721        11.14      3.7219          2.684
 OPTIMIZATION SUITE DONE
 
 ======================================================================
@@ -352,16 +352,12 @@ RUNNING 11_null_precision.py
 ======================================================================
 N1 pre-determined controls: ln_pre_scale (n=406), pre_trend (n=390)
 N1 N1a_original | ln_co2: beta=-0.2075 (se=0.0826, p=0.012, N=415)
-/root/aviation-fresh/code/11_null_precision.py:43: SingularMatrixWarning: The design matrix is rank-deficient. The model parameters are not uniquely determined.
-  m = sm.OLS(dd[y].values, X.values).fit(cov_type="cluster", cov_kwds={"groups": dd.iso.values})
-N1 N1b_plus_scale | ln_co2: beta=-0.2074 (se=0.0826, p=0.012, N=406)
-/root/aviation-fresh/code/11_null_precision.py:43: SingularMatrixWarning: The design matrix is rank-deficient. The model parameters are not uniquely determined.
-  m = sm.OLS(dd[y].values, X.values).fit(cov_type="cluster", cov_kwds={"groups": dd.iso.values})
-N1 N1c_scale_trend | ln_co2: beta=-0.1949 (se=0.0822, p=0.018, N=390)
+N1 N1b_plus_scale | ln_co2: beta=-0.2185 (se=0.1130, p=0.053, N=406)
+N1 N1c_scale_trend | ln_co2: beta=-0.0918 (se=0.1063, p=0.388, N=390)
 ── N2 minimum effect test (MET) ──
 N2 N1a_original: MET p=0.0158 (MET: effect exceeds +/-3%)
-N2 N1b_plus_scale: MET p=0.0159 (MET: effect exceeds +/-3%)
-N2 N1c_scale_trend: MET p=0.0225 (MET: effect exceeds +/-3%)
+N2 N1b_plus_scale: MET p=0.0476 (MET: effect exceeds +/-3%)
+N2 N1c_scale_trend: MET p=0.2805 (not conclusive)
 ── N3 MDE ──
 N3 residual sigma=0.1415
 N3 MDE (80% power, 5% level): |beta| >= 0.2313 log points (~23.1%)
@@ -379,9 +375,7 @@ N4 RI without RS: p=0.0045
 N4 RI without TR: p=0.0055
 N4 RI without XK: p=0.0100
 ── wild bootstrap on N1c ──
-/root/aviation-fresh/code/11_null_precision.py:43: SingularMatrixWarning: The design matrix is rank-deficient. The model parameters are not uniquely determined.
-  m = sm.OLS(dd[y].values, X.values).fit(cov_type="cluster", cov_kwds={"groups": dd.iso.values})
-N1 N1b_wb | ln_co2: beta=-0.2074 (se=0.0826, p=0.012, N=406)
+N1 N1b_wb | ln_co2: beta=-0.2185 (se=0.1130, p=0.053, N=406)
 NULL-PRECISION SUITE DONE
 
 ======================================================================
@@ -413,7 +407,7 @@ RUNNING 15_dose_response.py
 EUTL: (295, 5), states=30, years 2012-2021
 EUTL merge: 32 treated states, 30 EUTL states, missing treated states: ['CH', 'EL', 'LI']
 Missing dose values (EUTL gaps): 188 of 415 rows -> filled with 0 and flagged via eutl_missing (0=observed, 1=imputed). Imputed rows are excluded from dose inference via the eutl_missing indicator in the regression.
-dose-response: dose coef=+0.0142 (se=0.0236, p=0.5479, N=415)
+dose-response: dose coef=+0.0058 (se=0.0215, p=0.7871, N=415)
 
 ======================================================================
 POST: helper scripts
@@ -425,11 +419,11 @@ POST: helper scripts
   "implementation": "CPython",
   "os": "Linux-7.0.0-28-generic-x86_64-with-glibc2.43",
   "machine": "x86_64",
-  "commit": "501215ad13fd6e3a20780c28881843a421fb29f2",
+  "commit": "d943c1905910e5eb3e68dbd8250f1a2ce522059c",
   "n_jobs": 1,
   "deterministic": true,
   "captured_by": "scripts/capture_environment.py",
-  "captured_at": "2026-11-01T08:26:45.889298",
+  "captured_at": "2026-11-01T09:02:45.570835",
   "pinned_packages": {
     "numpy": "2.5.4",
     "pandas": "3.0.6",
@@ -445,10 +439,10 @@ saved /root/aviation-fresh/artifacts/models/rf_ln_co2.joblib and preprocess arti
 saved model_manifest.json
 
 --- freeze_manifest ---
-freeze written: 61 artifacts hashed, 32 changed
+freeze written: 61 artifacts hashed, 25 changed
 
 --- postprocess_results ---
-stamped run_id=fa3c72516d78 protocol=1.0 on result CSVs
+stamped run_id=1e7e570ae9ac protocol=1.0 on result CSVs
 
 --- verify_determinism: skipped (no results_prev/ to compare) ---
 

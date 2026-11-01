@@ -31,6 +31,10 @@ pre_hist["pre_trend"] = panel[panel.YEAR <= 2011].groupby("iso").apply(
     if g.flights.notna().sum() >= 2 else np.nan, include_groups=False)
 panel = panel.merge(pre_hist, on="iso", how="left")
 panel["ln_pre_scale"] = np.log(panel.pre_scale.replace(0, np.nan))
+# Interact time-invariant pre-treatment scale/trend with post2012 so they are
+# identified in a TWFE model with state fixed effects (no collinearity).
+panel["ln_pre_scale_x_post"] = panel["ln_pre_scale"] * panel["post2012"]
+panel["pre_trend_x_post"] = panel["pre_trend"] * panel["post2012"]
 log(f"N1 pre-determined controls: ln_pre_scale (n={panel.ln_pre_scale.notna().sum()}), "
     f"pre_trend (n={panel.pre_trend.notna().sum()})")
 
@@ -52,10 +56,10 @@ ycol0 = "did_adj" if "did_adj" in panel.columns else "did"
 r0, m0, d0 = twfe(panel, "ln_co2", [ycol0], "N1a_original")
 recs = [r0]
 # N1b: + pre-determined scale
-r1, m1, d1 = twfe(panel, "ln_co2", [ycol0, "ln_pre_scale"], "N1b_plus_scale")
+r1, m1, d1 = twfe(panel, "ln_co2", [ycol0, "ln_pre_scale_x_post"], "N1b_plus_scale")
 recs.append(r1)
 # N1c: + pre-determined trend
-r2, m2, d2 = twfe(panel, "ln_co2", [ycol0, "ln_pre_scale", "pre_trend"], "N1c_scale_trend")
+r2, m2, d2 = twfe(panel, "ln_co2", [ycol0, "ln_pre_scale_x_post", "pre_trend_x_post"], "N1c_scale_trend")
 recs.append(r2)
 pd.DataFrame(recs).to_csv(OUT/"n1_respecified.csv", index=False)
 
@@ -153,7 +157,7 @@ pd.DataFrame(perm_rows).to_csv(OUT/"n4_ri_per_drop.csv", index=False)
 
 # Wild bootstrap on N1c (scale+trend controlled) spec
 log("── wild bootstrap on N1c ──")
-m2, cols2, d2 = twfe(d_sub, "ln_co2", [ycol, "ln_pre_scale"], "N1b_wb")
+m2, cols2, d2 = twfe(d_sub, "ln_co2", [ycol, "ln_pre_scale_x_post"], "N1b_wb")
 # (report analytic)
 (BASE/"results"/"null_precision_log.txt").write_text("\n".join(LOG))
 log("NULL-PRECISION SUITE DONE")

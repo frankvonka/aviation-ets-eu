@@ -1,8 +1,8 @@
 {
-  "run_id": "fa3c72516d78",
-  "commit": "501215ad13fd",
+  "run_id": "1e7e570ae9ac",
+  "commit": "d943c1905910",
   "protocol_version": "1.0",
-  "stamped_at": "2026-11-01T08:26:49.697824",
+  "stamped_at": "2026-11-01T09:02:49.446696",
   "files": [
     "/root/aviation-fresh/results/models/n2_tost.csv",
     "/root/aviation-fresh/results/models/dose_response.csv",

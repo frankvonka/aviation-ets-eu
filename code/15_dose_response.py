@@ -49,7 +49,7 @@ log(f"Missing dose values (EUTL gaps): {panel.net_share.isna().sum()} of {len(pa
 d = panel.dropna(subset=["ln_co2","dose","did"]).copy()
 X = pd.concat([pd.get_dummies(d.iso, prefix="s", drop_first=True).astype(float),
                pd.get_dummies(d.YEAR, prefix="y", drop_first=True).astype(float)], axis=1)
-X["did"] = d.did.values; X["dose"] = d.dose.values; X["const"] = 1.0
+X["did"] = d.did.values; X["dose"] = d.dose.values; X["eutl_missing"] = d.eutl_missing.values; X["const"] = 1.0
 m = sm.OLS(d.ln_co2.values, X.values).fit(cov_type="cluster", cov_kwds={"groups": d.iso.values})
 i_dose = list(X.columns).index("dose")
 log(f"dose-response: dose coef={m.params[i_dose]:+.4f} (se={m.bse[i_dose]:.4f}, p={m.pvalues[i_dose]:.4f}, N={int(m.nobs)})")

@@ -3,73 +3,73 @@
     {
       "id": "freeze_001",
       "path": "artifacts/logs/environment.json",
-      "sha256": "fab571cc350254b90de7e90654bc63fa0943e4cd372e0ddcd2d4fa54e0b66022",
+      "sha256": "d52229691b119b73dad82c6c2c3c6cad5e0c883a598ae93d1584241710a51715",
       "source": "auto-discovered"
     },
     {
       "id": "freeze_002",
       "path": "artifacts/logs/stamp_log.json",
-      "sha256": "5ed8829b0bdf59dd46f93722331e302fe75a566513eadcb6f4f868ee968b56bb",
+      "sha256": "018f34c5abf2f57bf97841fb5d18c7a2f16fd99ea2f7a35d93940625752dcd36",
       "source": "auto-discovered"
     },
     {
       "id": "freeze_002",
       "path": "figures/F10_allocation.png",
-      "sha256": "8ac6a8bc95e96c9874b608b796f847b88c82f5feb6eeeddbc86efb71977d5d35",
+      "sha256": "44dc84a7702c97a1623c880523e9f41f2077d4c0cef4c38a78bec2accbdf9db1",
       "source": "auto-discovered"
     },
     {
       "id": "freeze_003",
       "path": "figures/F1_ets_vs_co2.png",
-      "sha256": "c81e601b7b4b7375e68b5cae5b5ddc409cee77427c0007ddfd711a483dd1bfa0",
+      "sha256": "794bbfbf1b6cfc2ed3fdb6da5bf9f340ed5cea38dd5b10075ea4a2d54a1646c1",
       "source": "auto-discovered"
     },
     {
       "id": "freeze_004",
       "path": "figures/F2_heatmap.png",
-      "sha256": "8628091f04f2c5a9dee29e2ed254930085e8c906f397d87afca604fd7c8ac1d8",
+      "sha256": "59babb77e63365cef9eba495fc3e7fc971b5d49cfcda8bb137b5a2b72a7bf175",
       "source": "auto-discovered"
     },
     {
       "id": "freeze_005",
       "path": "figures/F3_event_study.png",
-      "sha256": "c4d100fdf55680536341f1a1bf08584419e2cd1ce7a270538e5902a9de72eead",
+      "sha256": "25de0a43bbd44461ca8e85ab514891809103c16be0a6e12f3265fd8fbfcdd41b",
       "source": "auto-discovered"
     },
     {
       "id": "freeze_006",
       "path": "figures/F4_ml_importance.png",
-      "sha256": "7b558fced3d02399d4ac2fad598048efba11756e67901bff1038dbae574f362f",
+      "sha256": "8a054b6d7fd473683a8c13ce8247ed8d32f9991778b9a3a0f5c527eba1105b80",
       "source": "auto-discovered"
     },
     {
       "id": "freeze_007",
       "path": "figures/F5_scm_path.png",
-      "sha256": "c8446eb24e82517bcf502142e7561b52271e88c49db40f8eb2543dcf4505761a",
+      "sha256": "d29f97161dfe317445d6f4a12f30be85656abf82b4e3eab560ff309cebac2a5a",
       "source": "auto-discovered"
     },
     {
       "id": "freeze_008",
       "path": "figures/F6_placebo_rmspe.png",
-      "sha256": "a45c1b14630331da1582ac0030a9a2ba95530ada1af3307530f4d37c7771fedf",
+      "sha256": "dc6602ce73b8f24bae7e4eb9eef29facc6a84fd9194601f0d04933ccf08fd578",
       "source": "auto-discovered"
     },
     {
       "id": "freeze_009",
       "path": "figures/F7_covid_counterfactual.png",
-      "sha256": "ea451c87ea9f2fdae6fdd3a0bab6d1cb1483c0eb03ff9faf1e3da367cd59a80c",
+      "sha256": "2988c78405fc92f6e18666f1424cb916b2be1867907ad421d28cdf50f52bfa04",
       "source": "auto-discovered"
     },
     {
       "id": "freeze_010",
       "path": "figures/F8_policy_montecarlo.png",
-      "sha256": "7176bb8655c0dcdafd8a823d32448e1df9a3eff008fa8f6db73740c8f78f05eb",
+      "sha256": "80a7b722db3d6be49af1b89bc7e6e0bc518fa7ea76ae2a14e9930ffe0b28e1f3",
       "source": "auto-discovered"
     },
     {
       "id": "freeze_011",
       "path": "figures/F9_mac_curve.png",
-      "sha256": "2dae81cfbe7bbdd25ac4052fb3df6d3f458e39cf374e87b0db1fbab186c36ad9",
+      "sha256": "01ec8d5d43270d2a6d67e341ee74793b48727b893ba78b28f4482b966f92dde1",
       "source": "auto-discovered"
     },
     {
@@ -81,7 +81,7 @@
     {
       "id": "freeze_013",
       "path": "results/dose_response_log.txt",
-      "sha256": "f818e6d8283891b8beed5e52857b7903c008e9da2461c3b0f1e4e3381db66e16",
+      "sha256": "d89b8ad648c4412d455c10e81a0ef7a49fe6519f286a0d7efa5a4aa3bef7ceb6",
       "source": "auto-discovered"
     },
     {
@@ -117,25 +117,25 @@
     {
       "id": "freeze_019",
       "path": "results/ml/aipw_did.csv",
-      "sha256": "0c68a0697187a4c0734ea6290d98b5e08841ef653fd809a2b251048e08d1183d",
+      "sha256": "ae0da50fe6dfc19c5f9286cdc59dfa0ce4f1a9127acbdda0a41c7fc6b42fd29a",
       "source": "auto-discovered"
     },
     {
       "id": "freeze_020",
       "path": "results/ml/aipw_state_effects.csv",
-      "sha256": "3eb98499ad488ab86372cfd86316da4e3d2e3ea432ac06bc60499fda12b086bd",
+      "sha256": "c7da9b12a59ca55f801a30ddc83bbaedbb2f4296dbff456a47879c8e1a243cda",
       "source": "auto-discovered"
     },
     {
       "id": "freeze_021",
       "path": "results/ml/cate_by_state.csv",
-      "sha256": "dbdcf6e1287b04a938d04692b77ac378716f51f6cbe7ab099a398651b5b56858",
+      "sha256": "c3f80b0820bc00f2931ad63eb226200d4dbd1ed295465a68b82c0f7281241cc5",
       "source": "auto-discovered"
     },
     {
       "id": "freeze_022",
       "path": "results/ml/cate_summary.csv",
-      "sha256": "f76c5f238c3d5fbc6a612b3177dbb99ad8c8d1932750ad4b065e03c04bef6cb0",
+      "sha256": "3c9df5d7630234c0de570d47b13df1b724a0b2f57de30baa0d2460a1ce371c82",
       "source": "auto-discovered"
     },
     {
@@ -153,13 +153,13 @@
     {
       "id": "freeze_025",
       "path": "results/ml_log.txt",
-      "sha256": "b69248b69ab70f04d03ec15d9bdfba7e2070c9a39640803ced7e6ff89f6da5a2",
+      "sha256": "2fd59c3dfd1aa9d1059665c932dba6b9372a74ecd4a3ac5f7bea6dbbcec36c7f",
       "source": "auto-discovered"
     },
     {
       "id": "freeze_026",
       "path": "results/models/dose_response.csv",
-      "sha256": "e99a504d3c94aaa36845e2b4460fa908e78477430462966c7ff73cad3b50df34",
+      "sha256": "6018235e118d2031ecc0057c0fe0eecaca7ab9beb2de4f5b7db996cde2fd1b1a",
       "source": "auto-discovered"
     },
     {
@@ -183,13 +183,13 @@
     {
       "id": "freeze_030",
       "path": "results/models/n1_respecified.csv",
-      "sha256": "23f956ad7bc6a4b9eef5bc98675f33baa08f3d778fec55118d54097c3957a757",
+      "sha256": "489b78edfc932ac2568eae82944e897bb8179ac16f1559237ec7e880c1a2b6a1",
       "source": "auto-discovered"
     },
     {
       "id": "freeze_031",
       "path": "results/models/n2_tost.csv",
-      "sha256": "43bf6dc774509ae0862b19b562e74c05129782b1b1758482d3ed3b95325920cc",
+      "sha256": "3f01524fe42ac2487f2a585ec3ba5a41ef417021874a0bb88472e2bb36c0eab1",
       "source": "auto-discovered"
     },
     {
@@ -225,13 +225,13 @@
     {
       "id": "freeze_037",
       "path": "results/null_precision_log.txt",
-      "sha256": "636479ff95c039adf788c3d611a252a9f679c0b22ace39461a49e25c63bdeb34",
+      "sha256": "b936fd60eb1fe06e3eabfad66aeec651388576a85488cb26ad2ba0dfb3fd012f",
       "source": "auto-discovered"
     },
     {
       "id": "freeze_038",
       "path": "results/optimization/o1_mac_curve.csv",
-      "sha256": "5efa11207d3228bf6732bf54c7f6e3ba8e9f1f44f0e457a9e2a08b7931b9a31c",
+      "sha256": "e3e32ec4044fa853d0e96497c13b5b8cb45c6a92a14e84653b40316d9010d1f3",
       "source": "auto-discovered"
     },
     {
@@ -249,13 +249,13 @@
     {
       "id": "freeze_041",
       "path": "results/optimization/o4_allocation.csv",
-      "sha256": "0980ce3a38b0232ac25a18281fb81b5e20a7267d171cb50c32cf1914e1e4540e",
+      "sha256": "10e005a69ea710ac220fbe5178fc4ff2d36b88858b99f220e112fbc245010364",
       "source": "auto-discovered"
     },
     {
       "id": "freeze_042",
       "path": "results/optimization/o4b_allocation_fair.csv",
-      "sha256": "56e50b96cac0c1419868ddf35a4ac5d692e7efba08a8d77195ec96b830d9f2a3",
+      "sha256": "df121b99569d01b42f7d4001fa69806c1ede0d1ba6459a0050cc3aaee9975b01",
       "source": "auto-discovered"
     },
     {
@@ -368,7 +368,7 @@
     }
   ],
   "generated_at": null,
-  "recomputed": "2026-11-01T08:26:49",
+  "recomputed": "2026-11-01T09:02:49",
   "git_commit": "65bb6e7",
   "n_items": 61,
   "discovery_dirs": [
@@ -377,5 +377,5 @@
     "figures",
     "/root/aviation-fresh/artifacts/logs"
   ],
-  "changed_since_last": 32
+  "changed_since_last": 25
 }

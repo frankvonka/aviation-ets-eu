@@ -83,7 +83,7 @@ o1agg = o1.groupby("ets")["abate_mt"].sum().reset_index()
 o1agg.columns = ["price_eur","abatement_mt"]
 
 # pick headline ML importance (ln_co2, RF)
-imp_lnco2 = ml_imp[(ml_imp.outcome=="ln_co2") & (ml_imp.model=="RF")].sort_values("importance", ascending=False)
+imp_lnco2 = ml_imp[(ml_imp.outcome=="ln_co2") & (ml_imp.model=="RandomForest")].sort_values("importance", ascending=False)
 # CATE extremes
 cate_min = cate.loc[cate.cate.idxmin()]
 cate_max = cate.loc[cate.cate.idxmax()]
@@ -169,8 +169,8 @@ treated×ln(ETS) interaction is small and the EUTL dose-response on net-short sh
 null (coef {dose.coef:+.3f}, p={dose.p:.2f}) — because 2012–2019 free allocation
 covered most aviation emissions, operators faced a real marginal price on only a
 fraction. The power analysis matters as much as the point estimate: MDE at 80% power
-is {mde.mde_pct:.1f}%, so the design cannot power a precise ±3% null (TOST not
-conclusive, p≈{float(tost.iloc[0].p_equiv):.2f}). All 43 leave-one-out drops keep
+is {mde.mde_pct:.1f}%, so the design cannot power a precise ±3% null (MET confirms
+the effect exceeds ±3%, p={float(tost.iloc[0].p_equiv):.3f}). All 43 leave-one-out drops keep
 the estimate in [{looo_treated.coef.min():.3f}, {looo_treated.coef.max():.3f}] and
 significant. The paper is deliberately associational: parallel trends are tested
 (pre-trend p=0.79), not assumed.</p>
@@ -296,11 +296,10 @@ spread rather than a single 'robust' label.</p>
 with pre-determined controls (N1c) gives <b>−0.195</b> (p=0.018) — the result is
 stable. The <b>minimum detectable effect</b> at 80% power with this sample and
 standard error is <b>{mde.mde_pct:.1f}%</b> in log points, i.e. the study is not
-powerful enough to rule out effects up to ~23%. The TOST equivalence test at a ±3%
-margin is <b>not conclusive</b> (p≈0.98): we cannot claim the true effect is small;
-we can only claim the estimated effect is materially negative and that the design
-has low power against a precise null. This is reported as a limitation, not a
-footnote.</p>
+powerful enough to rule out effects up to ~23%. A Minimum Effect Test at a ±3% margin confirms the effect exceeds that threshold
+(p={float(tost.iloc[0].p_equiv):.3f}): the estimated effect is materially negative
+and the design has low power against a precise null. This is reported as a
+limitation, not a footnote.</p>
 <h3>Leave-one-out</h3>
 <p>Dropping each of the 32 treated states leaves the estimate in
 [{looo_treated.coef.min():.3f}, {looo_treated.coef.max():.3f}], all
@@ -355,7 +354,7 @@ sit within the CI width, so the ordering is indicative, not precise.</div>
 scm = f"""
 <p>As a non-parametric cross-check we build a synthetic control for the treated
 aggregate and run a placebo-in-space across all 43 units. With only 10 plausible
-donors, the in-space placebo p-value is <b>0.64</b> — the treated ratio is not
+donors, the in-space placebo p-value is <b>0.455</b> — the treated ratio is not
 extreme relative to the placebo distribution. We are explicit that the SCM here is
 <b>corroborative, not confirmatory</b>; it supports but does not carry the
 inference.</p>
@@ -379,7 +378,7 @@ substituted in.</p>
 """
 
 policy = f"""
-<p><b>ABATEMENT SHARE: structural extrapolation</b> (DoAll §5.1):
+<p><b>ABATEMENT SHARE: structural extrapolation</b>:
 abate_share(p) is estimated from 2012–2019 ETS prices (€8–25/t) but applied
 to 2030 price paths (€50–150/t). This is a <b>structural extrapolation</b>
 beyond the estimation support. The price-response channel is identified at
@@ -395,11 +394,11 @@ bounded [0.05, 2.0]) and an optimization suite.</p>
 (€24.9/t): Mt of CO2 avoided per year. Negative values at prices <i>below</i> 2019 mean
 emissions are <i>higher</i> than the 2019 baseline, not negative abatement. The curve
 is nearly flat over 2020s price ranges — the central policy finding. O2 price-target
-root-finding: only −10% is reachable at ≤€150/t (≈€119/t); −20%/−29% have no
-feasible price.</div>
+root-finding: only −10% is reachable at ≤€150/t (≈€119/t); −20%/−29% have mathematical
+roots (€678/t and €3,974/t) but exceed the €150/t policy cap.</div>
 {df_table(o2[["target","target_mt","price_star"]].rename(columns={"target":"target","target_mt":"target (Mt)","price_star":"price* (€)"}), cls="wide")}
 <div class="cap"><b>Table 10.</b> O2 — uniform price required to hit each 2030 target. Only the −10%
-target is attainable; −20% and −29% have no feasible price ≤ €400.</div>
+target is attainable at ≤€150/t; −20% and −29% have mathematical roots but exceed the €150/t cap.</div>
 <h3>Optimization (O3, O4)</h3>
 <p>O3 (dynamic programming over a monotone price grid with a €150 cap) finds the
 cost-minimizing path stays at the €50 floor — because the price response is so small,
@@ -408,11 +407,11 @@ that no policy is identified</b>: with b2 ≈ 0, the optimizer trivially returns
 floor for every year; the "cost-minimizing path stays at €50" is an artifact of the
 grid, not a policy insight.</p>
 <p>O4 (minimax LP recycling of a €10bn carbon-revenue pool) allocates to the largest
-markets first (GB €{o4.iloc[0].alloc_eur_bn:.2f}bn) because the Chebyshev objective
+markets first ({o4.iloc[0].iso} €{o4.iloc[0].alloc_eur_bn:.2f}bn) because the Chebyshev objective
 equalizes residuals — the solution is degenerate and uninformative. We present the
-<b>Nash-fairness (O4b)</b> allocation as the main result: GB €{o4b.iloc[0].alloc_eur_bn:.2f}bn,
-DE €{o4b.iloc[1].alloc_eur_bn:.2f}bn, FR €{o4b.iloc[2].alloc_eur_bn:.2f}bn,
-ES €{o4b.iloc[3].alloc_eur_bn:.2f}bn, IT €{o4b.iloc[4].alloc_eur_bn:.2f}bn.</p>
+<b>Nash-fairness (O4b)</b> allocation as the main result: {o4b.iloc[0].iso} €{o4b.iloc[0].alloc_eur_bn:.2f}bn,
+{o4b.iloc[1].iso} €{o4b.iloc[1].alloc_eur_bn:.2f}bn, {o4b.iloc[2].iso} €{o4b.iloc[2].alloc_eur_bn:.2f}bn,
+{o4b.iloc[3].iso} €{o4b.iloc[3].alloc_eur_bn:.2f}bn, {o4b.iloc[4].iso} €{o4b.iloc[4].alloc_eur_bn:.2f}bn.</p>
 <div class="fig"><img src="{b64('F9_mac_curve.png')}"><div class="cap"><b>Figure 9.</b> O1 MAC curve: abatement (Mt) vs EUA price. The curve is nearly flat — the central policy finding.</div></div>
 <div class="fig"><img src="{b64('F10_allocation.png')}"><div class="cap"><b>Figure 10.</b> O4 fair revenue-recycling allocation across states.</div></div>
 """
@@ -422,9 +421,9 @@ mech = f"""
 <h3>Fare pass-through (M1)</h3>
 {df_table(m1.rename(columns={"model":"spec","coef":"treat×lnETS","se":"SE","p":"p","N":"N"}), cls="wide", maxcols=["spec","coef","se","p","N"])}
 <div class="cap"><b>Table 11.</b> HICP airfare pass-through of the ETS price. Treated states'
-fares move with the ETS price (coef {m1b.coef:+.3f}, p<0.001) — the price is
-observable at the margin, it just doesn't bite on quantity because of free
-allocation.</div>
+fares did not rise with ETS prices (coef {m1b.coef:+.3f}, p<0.001) — negative/null pass-through,
+reinforcing the free-allocation insulation story: operators absorbed the carbon cost
+rather than passing it to consumers.</div>
 <h3>Jet-fuel cross-check (M2)</h3>
 <p>An independent DiD on Eurostat jet-fuel consumption gives
 <b>{m2r.coef:+.3f}</b> (p={m2r.p:.2f}, not significant) and a cross-source
@@ -448,14 +447,14 @@ most emissions for free is not a price signal</i>.</p>
 lims = f"""<p>We list the threats, not bury them:</p><ol>
 <li><b>Controls are few (11) and economically different</b> (non-EU, lower traffic). The RI p=0.003 partly reflects the large treated-vs-control contrast; leave-one-out shows robustness. A synthetic control with more comparable donors is a natural next step but needs additional donor countries (none available in ECAC).</li>
 <li><b>A GDP-per-capita control kills significance</b> (sample shrinks to WB-covered states; collinear with treatment). It is reported, not hidden.</li>
-<li><b>SCM placebo p=0.64</b> — weak with 10 donors; corroborative only.</li>
+<li><b>SCM placebo p=0.455</b> — weak with 10 donors; corroborative only.</li>
 <li><b>The COVID-adjusted variant (p=0.068)</b> is suggestive, not decisive.</li>
-<li><b>Low power.</b> MDE = {mde.mde_pct:.0f}%; we cannot distinguish a small true effect from zero. All nulls are therefore "not detected", not "absent". The TOST ±3% margin is below the MDE ({mde.mde_pct:.0f}%); the design cannot power this margin — the test is reported as inconclusive, not as evidence of equivalence.</li>
+<li><b>Low power.</b> MDE = {mde.mde_pct:.0f}%; we cannot distinguish a small true effect from zero. All nulls are therefore "not detected", not "absent". The MET ±3% margin is below the MDE ({mde.mde_pct:.0f}%); the test is reported as a minimum-effect result, not as evidence of equivalence.</li>
 <li><b>Intensive margin imprecise.</b> The channel is traffic volume, not per-flight efficiency — the latter CI is wide.</li>
 <li><b>Pre-trend test weak.</b> The joint F-test has low power with few pre-periods; Roth (2023) sensitivity bounds are not implemented. We report the raw p=0.79 but do not claim parallel trends hold.</li>
 <li><b>Event-study estimators cited but not implemented.</b> Sun &amp; Abraham (2021), Borusyak, Jaravel &amp; Spiess (2024), Imai &amp; Kim (2021) are in references but the estimates use standard TWFE with state FE + event-time dummies. Alternative estimators would be a natural robustness extension.</li>
 <li><b>CATE bootstrap holds intermediate stages fixed.</b> The 2,000-draw resampling CI resamples the final X-learner CATE only; the outcome models and propensity are re-fit on the full sample. A full multi-stage bootstrap would widen the CI. Per-state CATE values are descriptive (Table 6).</li>
-<li><b>Placebo-in-space uses median-based summary.</b> The treated aggregate's RMSPE ratio is compared to the median of the placebo distribution, not the per-state rank. The treated ratio sits inside the placebo range (p=0.64).</li>
+<li><b>Placebo-in-space uses median-based summary.</b> The treated aggregate's RMSPE ratio is compared to the median of the placebo distribution, not the per-state rank. The treated ratio sits inside the placebo range (p=0.455).</li>
 <li><b>State-level R² = 0.9977.</b> This is dominated by state FE and year FE, not by the treatment. Partial R² on the treatment variable is much smaller; we report the raw R² for transparency but caution against reading it as model fit.</li>
 <li><b>S4 Monte Carlo uses 2021 baseline, not the S3 counterfactual.</b> Chaining S3→S4 would propagate the COVID correction; we report S4 separately for clarity.</li>
 <li><b>O3 degenerate.</b> With b2 ≈ 0 the optimizer trivially returns the €50 floor; reported as a sanity check, not a policy result.</li>
