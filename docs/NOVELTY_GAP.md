@@ -24,6 +24,18 @@ estimates to drive robust policy optimization.
 
 Timing hook: free allowances fully phased out from 2026; June 2026 CE Delft study (Carbon Market Watch) on extending ETS to all departing flights.
 
+## Side-by-side vs nearest neighbours (major 18)
+
+| Work | They did | We did | Delta |
+|---|---|---|---|
+| Fageda & Teixidó (JEEM 2022) | route-level DiD 2010-2016, 4.7% cut regulated routes | state-level panel 2010-2025, treated vs non-EU ECAC controls | longer panel + control group + optimization |
+| Kang et al. (TR-A 2022) | SCM seat capacity >20% at peak | SCM on 29 treated states, placebo p=0.455 | state-level + policy optimization |
+| Zhang & Wang (TR-D 2024) | similar mitigation (citation only) | full DiD + ML + SCM + COVID + optimization | integrated causal-to-optimization pipeline |
+| Santonja, Teixidó & Zaklan (2023 WP) | windfall profits from free allocation | net-short exposure → emissions + dose-response (null) | tests free-allocation exposure directly |
+| Fageda & Oesingmann (TR-A 2025) | hub carbon leakage, traffic shifting | state-level CO2 + fare pass-through (insulation) | fare channel + allocation |
+| Rausch & Straubinger (ZEW 2025/26) | 2035 package 377 EUR/t, +12% tickets | MAC curve + price targets + optimal path + allocation | optimization from causal estimates |
+| Nesheim (arXiv 2026) | two-stage airline competition, phase-out 2026 | state-level panel through 2025, pre-phase-out baseline | baseline for 2026 phase-out |
+
 ## Caveats
 - ~6 searches, not exhaustive. Check forward citations of Fageda & Teixidó 2022 and Zhang & Wang 2024.
 - Reviewers will ask why state-level when route-level exists -> answer via route-level triple-diff; test feasibility first.
