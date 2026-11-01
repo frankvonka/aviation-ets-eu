@@ -54,7 +54,7 @@ for y, lab in [("ln_fare","ln airfare index")]:
     # raw treated x ln ETS
     m, cols, dd = ols_cluster(f, y, ["treat_x_ets"])
     i = cols.index("treat_x_ets")
-    recs.append(dict(model="M1a_fares_twxets", var="treat_x_ets", coef=float(m.params[i]),
+    recs.append(dict(model="M1a_fare_response_twxets", var="treat_x_ets", coef=float(m.params[i]),
                      se=float(m.bse[i]), p=float(m.pvalues[i]), N=int(m.nobs)))
     log(f"M1a fares ~ treated x lnETS: {m.params[i]:+.6f} (p={m.pvalues[i]:.4f}, N={int(m.nobs)})")
     # with country-specific linear trends
@@ -63,7 +63,7 @@ for y, lab in [("ln_fare","ln airfare index")]:
     f2["treat_x_t"] = f2.treated * f2.t
     m2, cols2, dd2 = ols_cluster(f2, y, ["treat_x_ets","treat_x_t"])
     i2 = cols2.index("treat_x_ets")
-    recs.append(dict(model="M1b_fares_twxets_ctrend", var="treat_x_ets", coef=float(m2.params[i2]),
+    recs.append(dict(model="M1b_fare_response_twxets_ctrend", var="treat_x_ets", coef=float(m2.params[i2]),
                      se=float(m2.bse[i2]), p=float(m2.pvalues[i2]), N=int(m2.nobs)))
     log(f"M1b + country trends:        {m2.params[i2]:+.6f} (p={m2.pvalues[i2]:.4f}, N={int(m2.nobs)})")
 pd.DataFrame(recs).to_csv(OUT/"m1_fare_pass_through.csv", index=False)

@@ -12,6 +12,6 @@ A Ridge ln_intensity: CV R2=0.249±0.106
 A HistGradientBoosting ln_intensity: CV R2=0.261±0.129
 B AIPW sample: treated=31, control=10
 B naive diff-in-means: -0.2176
-B AIPW DR-ATT: -0.1120 (SE 0.0530, z=-2.11)
+B AIPW DR-ATT: -0.1102 (SE 0.0527, z=-2.09)
 C econml unavailable (No module named 'econml') -> X-learner
-C CATE (X-learner): mean=-0.2590, sd=+0.1033, min=-0.7472 (LI), max=-0.0815 (IS)
+C CATE (X-learner): mean=-0.2598, sd=+0.1037, min=-0.7470 (LI), max=-0.0816 (IS)

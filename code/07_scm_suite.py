@@ -92,7 +92,7 @@ def run_scm_for(unit, donor_pool, treat_start=201201):
                 rmspe_pre=rmspe_pre, rmspe_post=rmspe_post,
                 rmspe_ratio=rmspe_post/max(rmspe_pre,1e-9),
                 n_pre=len(y_pre), pre_mse=mse,
-                weights={d: round(float(x),4) for d, x in zip(donor_pool, w) if x > 1e-4})
+                weights={d: float(x) for d, x in zip(donor_pool, w) if x > 1e-4})
 
 rows = []
 for u in treated:
@@ -165,8 +165,10 @@ PL = pd.DataFrame(pl)
 PL.to_csv(OUT/"scm_placebo.csv", index=False)
 t_ratios = PL[PL.is_treated].rmspe_ratio.values
 c_ratios = PL[PL.is_treated==False].rmspe_ratio.values
-pval = (np.sum(c_ratios >= np.median(t_ratios)) + 1)/(len(c_ratios)+1)
+per_treated_p = [(float(np.sum(c_ratios >= tr) + 1) / (len(c_ratios) + 1)) for tr in t_ratios]
+pval = float(np.median(per_treated_p))
 log(f"placebo-in-space: median treated RMSPE ratio={np.median(t_ratios):.2f}, "
-    f"control ratios={np.round(np.sort(c_ratios),2)}, perm p (median-based)={pval:.3f}")
+    f"control ratios={np.round(np.sort(c_ratios),2)}, rank-based (median across treated) p={pval:.3f}, "
+    f"per-treated p range=[{min(per_treated_p):.3f}, {max(per_treated_p):.3f}]")
 (BASE/"results"/"scm_log.txt").write_text("\n".join(LOG))
 log("SCM SUITE DONE")

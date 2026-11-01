@@ -43,8 +43,8 @@ panel["eutl_missing"] = panel.net_share.isna().astype(int)
 panel["dose"] = panel.net_share.fillna(0) * panel.did
 panel["net_share_imputed"] = panel["eutl_missing"].map({0: "observed", 1: "missing->0 (flagged)"})
 log(f"Missing dose values (EUTL gaps): {panel.net_share.isna().sum()} of {len(panel)} rows -> filled with 0 "
-    f"and flagged via eutl_missing (0=observed, 1=imputed). Imputed rows are excluded from dose inference "
-    f"via the eutl_missing indicator in the regression.")
+    f"and flagged via eutl_missing (0=observed, 1=imputed). Imputed rows are absorbed by the eutl_missing indicator "
+    f"(controls and missing treated both dose=0; indicator separates them).")
 
 d = panel.dropna(subset=["ln_co2","dose","did"]).copy()
 X = pd.concat([pd.get_dummies(d.iso, prefix="s", drop_first=True).astype(float),

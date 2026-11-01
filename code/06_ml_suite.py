@@ -3,8 +3,8 @@ A. Demeaned (within-state) pattern discovery: HistGB + RF; does the price channe
    (treated x ln ETS) rank top without being told the DiD design?
 B. Cross-fit AIPW double-robust DiD (one obs per state; post window 2012-2019
    vs pre 2010-11; RF outcome models on pre-period characteristics).
-C. CATE by state: econml CausalForestDML if available, else honest X-learner
-   (sample-split, seeded).
+C. CATE by state: econml CausalForestDML if available, else X-learner
+   (seeded; not sample-split — claim removed).
 """
 import pandas as pd, numpy as np, warnings
 from sklearn.exceptions import ConvergenceWarning
@@ -103,14 +103,14 @@ XCOL = ["pre_lnco2","pre_lnfl","pre_int","ln_gdp_pc"]
 n_t, n_c = len(Dm), len(Dc)
 e = n_t / (n_t + n_c)                      # known propensity
 mu1 = np.full(n_t, np.nan); mu0 = np.full(n_t, np.nan)
-kf = KFold(5, shuffle=True, random_state=42)
 Xt_full = Dm[XCOL].fillna(Dm[XCOL].mean()).values   # within-treated-group mean (NOT pooled)
 Xc_full = Dc[XCOL].fillna(Dc[XCOL].mean()).values   # within-control-group mean (NOT pooled)
 # control outcome model (shared, out-of-fold not needed for the OOT control side)
 rf_mu0 = RandomForestRegressor(400, max_depth=5, min_samples_leaf=3, random_state=42, n_jobs=-1)
 rf_mu0.fit(Xc_full, Dc.dY.values)
 mu0 = rf_mu0.predict(Xt_full)             # counterfactual Y(0) for each treated state
-for tr, te in kf.split(Xt_full):
+cv_groups = np.arange(len(Xt_full))
+for tr, te in GroupKFold(n_splits=5).split(Xt_full, Dm.dY.values, groups=cv_groups):
     rf_mu1 = RandomForestRegressor(400, max_depth=5, min_samples_leaf=3, random_state=42, n_jobs=-1)
     rf_mu1.fit(Xt_full[tr], Dm.dY.values[tr])
     mu1[te] = rf_mu1.predict(Xt_full[te])
