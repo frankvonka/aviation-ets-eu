@@ -6,7 +6,7 @@
     "has_tests": true,
     "has_git": true,
     "n_code_files": 27,
-    "n_result_files": 55,
+    "n_result_files": 57,
     "n_data_files": 27
   },
   "files": [
@@ -28,10 +28,10 @@
       "path": "code/05_models_fixed.py",
       "category": "code",
       "ext": ".py",
-      "size": 9157,
-      "mtime": 1793516642,
-      "loc": 135,
-      "lines": 160,
+      "size": 9542,
+      "mtime": 1793524103,
+      "loc": 140,
+      "lines": 165,
       "roles_guess": [
         "data",
         "ml",
@@ -59,8 +59,8 @@
       "path": "code/06_ml_suite.py",
       "category": "code",
       "ext": ".py",
-      "size": 9985,
-      "mtime": 1793516875,
+      "size": 10043,
+      "mtime": 1793524570,
       "loc": 160,
       "lines": 182,
       "roles_guess": [
@@ -73,10 +73,10 @@
       "path": "code/07_scm_suite.py",
       "category": "code",
       "ext": ".py",
-      "size": 7900,
-      "mtime": 1793516728,
-      "loc": 158,
-      "lines": 172,
+      "size": 8051,
+      "mtime": 1793524732,
+      "loc": 160,
+      "lines": 174,
       "roles_guess": [
         "data",
         "optimization"
@@ -104,10 +104,10 @@
       "path": "code/09_optimization_suite.py",
       "category": "code",
       "ext": ".py",
-      "size": 15715,
-      "mtime": 1793519227,
-      "loc": 257,
-      "lines": 311,
+      "size": 15359,
+      "mtime": 1793524053,
+      "loc": 249,
+      "lines": 307,
       "roles_guess": [
         "data",
         "optimization"
@@ -135,8 +135,8 @@
       "path": "code/11_null_precision.py",
       "category": "code",
       "ext": ".py",
-      "size": 9355,
-      "mtime": 1793519091,
+      "size": 9410,
+      "mtime": 1793524067,
       "loc": 136,
       "lines": 163,
       "roles_guess": [
@@ -153,8 +153,8 @@
       "path": "code/12_mechanism_pass_through.py",
       "category": "code",
       "ext": ".py",
-      "size": 5310,
-      "mtime": 1793117970,
+      "size": 5326,
+      "mtime": 1793524633,
       "loc": 81,
       "lines": 92,
       "roles_guess": [
@@ -182,8 +182,8 @@
       "path": "code/15_dose_response.py",
       "category": "code",
       "ext": ".py",
-      "size": 3618,
-      "mtime": 1793519131,
+      "size": 3648,
+      "mtime": 1793524835,
       "loc": 53,
       "lines": 59,
       "roles_guess": [
@@ -238,10 +238,10 @@
       "path": "scripts/freeze_manifest.py",
       "category": "code",
       "ext": ".py",
-      "size": 3182,
-      "mtime": 1793514226,
-      "loc": 70,
-      "lines": 89,
+      "size": 3321,
+      "mtime": 1793524958,
+      "loc": 74,
+      "lines": 93,
       "roles_guess": [
         "utility"
       ],
@@ -277,8 +277,8 @@
       "path": "scripts/run_each_script.sh",
       "category": "code",
       "ext": ".sh",
-      "size": 1153,
-      "mtime": 1793117970,
+      "size": 1111,
+      "mtime": 1793524935,
       "loc": 26,
       "lines": 30,
       "roles_guess": [
@@ -290,10 +290,10 @@
       "path": "scripts/save_model_artifacts.py",
       "category": "code",
       "ext": ".py",
-      "size": 1369,
-      "mtime": 1793514282,
-      "loc": 27,
-      "lines": 33,
+      "size": 1414,
+      "mtime": 1793525014,
+      "loc": 28,
+      "lines": 34,
       "roles_guess": [
         "data",
         "ml"
@@ -317,10 +317,10 @@
       "path": "scripts/verify_determinism.py",
       "category": "code",
       "ext": ".py",
-      "size": 1579,
-      "mtime": 1793514226,
-      "loc": 40,
-      "lines": 45,
+      "size": 2197,
+      "mtime": 1793525054,
+      "loc": 54,
+      "lines": 60,
       "roles_guess": [
         "utility"
       ],
@@ -343,10 +343,10 @@
       "path": "src/config_loader.py",
       "category": "code",
       "ext": ".py",
-      "size": 2687,
-      "mtime": 1793117970,
-      "loc": 49,
-      "lines": 58,
+      "size": 3339,
+      "mtime": 1793524981,
+      "loc": 61,
+      "lines": 71,
       "roles_guess": [
         "data",
         "simulation",
@@ -412,8 +412,8 @@
       "path": "configs/hypotheses.yaml",
       "category": "config",
       "ext": ".yaml",
-      "size": 1657,
-      "mtime": 1793117970
+      "size": 2036,
+      "mtime": 1793524011
     },
     {
       "path": "configs/model_registry.yaml",
@@ -461,22 +461,22 @@
       "path": "artifacts/freeze/freeze_manifest.json",
       "category": "data",
       "ext": ".json",
-      "size": 12810,
-      "mtime": 1793520169
+      "size": 13051,
+      "mtime": 1793525070
     },
     {
       "path": "artifacts/models/model_manifest.json",
       "category": "data",
       "ext": ".json",
       "size": 224,
-      "mtime": 1793520168
+      "mtime": 1793525073
     },
     {
       "path": "artifacts/run/optimization_history.json",
       "category": "data",
       "ext": ".json",
-      "size": 835,
-      "mtime": 1793519873
+      "size": 834,
+      "mtime": 1793524131
     },
     {
       "path": "artifacts/run/seeds.json",
@@ -671,8 +671,8 @@
       "path": "docs/NOVELTY_GAP.md",
       "category": "doc",
       "ext": ".md",
-      "size": 2090,
-      "mtime": 1793519677
+      "size": 3357,
+      "mtime": 1793539590
     },
     {
       "path": "eda_report/report.md",
@@ -692,15 +692,15 @@
       "path": "results/dose_response_log.txt",
       "category": "doc",
       "ext": ".txt",
-      "size": 410,
-      "mtime": 1793520164
+      "size": 440,
+      "mtime": 1793524850
     },
     {
       "path": "results/mechanisms_log.txt",
       "category": "doc",
       "ext": ".txt",
       "size": 586,
-      "mtime": 1793520156
+      "mtime": 1793524703
     },
     {
       "path": "results/mechanisms_log2.txt",
@@ -714,28 +714,28 @@
       "category": "doc",
       "ext": ".txt",
       "size": 809,
-      "mtime": 1793519781
+      "mtime": 1793524675
     },
     {
       "path": "results/models_log.txt",
       "category": "doc",
       "ext": ".txt",
       "size": 2672,
-      "mtime": 1793519748
+      "mtime": 1793524120
     },
     {
       "path": "results/null_precision_log.txt",
       "category": "doc",
       "ext": ".txt",
       "size": 1104,
-      "mtime": 1793520153
+      "mtime": 1793524440
     },
     {
       "path": "results/scm_log.txt",
       "category": "doc",
       "ext": ".txt",
-      "size": 2190,
-      "mtime": 1793519784
+      "size": 2241,
+      "mtime": 1793524865
     },
     {
       "path": "results/simulation_log.txt",
@@ -763,14 +763,14 @@
       "category": "other",
       "ext": ".joblib",
       "size": 243,
-      "mtime": 1793520168
+      "mtime": 1793525073
     },
     {
       "path": "artifacts/models/rf_ln_co2.joblib",
       "category": "other",
       "ext": ".joblib",
-      "size": 827953,
-      "mtime": 1793520168
+      "size": 679633,
+      "mtime": 1793525073
     },
     {
       "path": "run_all.log",
@@ -885,11 +885,18 @@
       "mtime": 1793519885
     },
     {
+      "path": "results/ablation_summary.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 574,
+      "mtime": 1793539706
+    },
+    {
       "path": "results/mechanisms/m1_fare_pass_through.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 320,
-      "mtime": 1793520169
+      "size": 241,
+      "mtime": 1793524702
     },
     {
       "path": "results/mechanisms/m2_fuel_did.csv",
@@ -902,176 +909,183 @@
       "path": "results/mechanisms/m3_segments.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 662,
-      "mtime": 1793520169
+      "size": 447,
+      "mtime": 1793524703
     },
     {
       "path": "results/ml/aipw_did.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 132,
-      "mtime": 1793519778
+      "size": 133,
+      "mtime": 1793524671
     },
     {
       "path": "results/ml/aipw_state_effects.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 2577,
-      "mtime": 1793519778
+      "size": 2572,
+      "mtime": 1793524671
     },
     {
       "path": "results/ml/cate_by_state.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 894,
-      "mtime": 1793519781
+      "size": 900,
+      "mtime": 1793524675
     },
     {
       "path": "results/ml/cate_summary.csv",
       "category": "result",
       "ext": ".csv",
       "size": 187,
-      "mtime": 1793519781
+      "mtime": 1793524675
     },
     {
       "path": "results/ml/ml_cv.csv",
       "category": "result",
       "ext": ".csv",
       "size": 556,
-      "mtime": 1793519774
+      "mtime": 1793524666
     },
     {
       "path": "results/ml/ml_importance.csv",
       "category": "result",
       "ext": ".csv",
       "size": 501,
-      "mtime": 1793519774
+      "mtime": 1793524666
     },
     {
       "path": "results/models/dose_response.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 170,
-      "mtime": 1793520169
+      "size": 105,
+      "mtime": 1793524850
     },
     {
       "path": "results/models/event_study_fixed.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 4484,
-      "mtime": 1793520169
+      "size": 3639,
+      "mtime": 1793524120
     },
     {
       "path": "results/models/heterogeneity.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 2859,
-      "mtime": 1793520169
+      "size": 2464,
+      "mtime": 1793524120
     },
     {
       "path": "results/models/main_models.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 9650,
-      "mtime": 1793520169
+      "size": 8415,
+      "mtime": 1793524120
     },
     {
       "path": "results/models/n1_respecified.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 556,
-      "mtime": 1793520169
+      "size": 431,
+      "mtime": 1793524143
     },
     {
       "path": "results/models/n2_tost.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 859,
-      "mtime": 1793520169
+      "size": 734,
+      "mtime": 1793524143
     },
     {
       "path": "results/models/n3_mde.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 176,
-      "mtime": 1793520169
+      "size": 111,
+      "mtime": 1793524143
     },
     {
       "path": "results/models/n4_looo.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 4465,
-      "mtime": 1793520169
+      "size": 3140,
+      "mtime": 1793524144
     },
     {
       "path": "results/models/n4_ri_per_drop.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 641,
-      "mtime": 1793520169
+      "size": 276,
+      "mtime": 1793524440
+    },
+    {
+      "path": "results/models/pretrend_tests.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 159,
+      "mtime": 1793524120
     },
     {
       "path": "results/models/specification_log.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 7543,
-      "mtime": 1793520169
+      "size": 6260,
+      "mtime": 1793524120
     },
     {
       "path": "results/optimization/o1_mac_curve.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 17015,
-      "mtime": 1793520169
+      "size": 10680,
+      "mtime": 1793524131
     },
     {
       "path": "results/optimization/o2_price_targets.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 366,
-      "mtime": 1793520169
+      "size": 241,
+      "mtime": 1793524131
     },
     {
       "path": "results/optimization/o3_optimal_price_path.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 487,
-      "mtime": 1793520169
+      "size": 182,
+      "mtime": 1793524131
     },
     {
       "path": "results/optimization/o4_allocation.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 1960,
-      "mtime": 1793520169
+      "size": 1024,
+      "mtime": 1793524131
     },
     {
       "path": "results/optimization/o4b_allocation_fair.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 1792,
-      "mtime": 1793520169
+      "size": 853,
+      "mtime": 1793524131
     },
     {
       "path": "results/scm/scm_aggregate_annual.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 534,
-      "mtime": 1793519784
+      "size": 536,
+      "mtime": 1793524865
     },
     {
       "path": "results/scm/scm_placebo.csv",
       "category": "result",
       "ext": ".csv",
       "size": 5343,
-      "mtime": 1793519784
+      "mtime": 1793524865
     },
     {
       "path": "results/scm/scm_state_effects.csv",
       "category": "result",
       "ext": ".csv",
-      "size": 5641,
-      "mtime": 1793519783
+      "size": 7198,
+      "mtime": 1793524865
     },
     {
       "path": "results/simulation/s1_wild_bootstrap.csv",

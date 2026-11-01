@@ -11,18 +11,10 @@
       "note": "Imputation with a statistic of the full column; confirm it is computed on training data only."
     },
     {
-      "id": "TS-KFOLD",
-      "severity": "Major",
-      "file": "code/06_ml_suite.py",
-      "location": "line 106",
-      "snippet": "kf = KFold(5, shuffle=True, random_state=42)",
-      "note": "KFold in a file with time-related terms; check for temporal or grouped dependence."
-    },
-    {
       "id": "FILLNA-GLOBAL-STAT",
       "severity": "Major",
       "file": "code/06_ml_suite.py",
-      "location": "line 107",
+      "location": "line 106",
       "snippet": "Xt_full = Dm[XCOL].fillna(Dm[XCOL].mean()).values   # within-treated-group mean (NOT pooled)",
       "note": "Imputation with a statistic of the full column; confirm it is computed on training data only."
     },
@@ -30,7 +22,7 @@
       "id": "FILLNA-GLOBAL-STAT",
       "severity": "Major",
       "file": "code/06_ml_suite.py",
-      "location": "line 108",
+      "location": "line 107",
       "snippet": "Xc_full = Dc[XCOL].fillna(Dc[XCOL].mean()).values   # within-control-group mean (NOT pooled)",
       "note": "Imputation with a statistic of the full column; confirm it is computed on training data only."
     },
@@ -54,8 +46,8 @@
       "id": "FILLNA-GLOBAL-STAT",
       "severity": "Major",
       "file": "code/09_optimization_suite.py",
-      "location": "line 223",
-      "snippet": "eff = eff.reindex(d19.index).fillna(eff.mean())",
+      "location": "line 219",
+      "snippet": "eff = eff.fillna(eff.mean())",
       "note": "Imputation with a statistic of the full column; confirm it is computed on training data only."
     },
     {
@@ -78,8 +70,8 @@
       "id": "FILLNA-GLOBAL-STAT",
       "severity": "Major",
       "file": "scripts/save_model_artifacts.py",
-      "location": "line 14",
-      "snippet": "X = panel[feats].fillna(panel[feats].median())",
+      "location": "line 15",
+      "snippet": "X = train[feats].fillna(train[feats].median())",
       "note": "Imputation with a statistic of the full column; confirm it is computed on training data only."
     },
     {
@@ -111,7 +103,7 @@
       "severity": "Minor",
       "file": "code/09_optimization_suite.py",
       "location": "file",
-      "snippet": "7/8 functions lack docstrings",
+      "snippet": "7/7 functions lack docstrings",
       "note": "Most functions undocumented."
     },
     {
@@ -126,9 +118,17 @@
       "id": "NO-RANDOM-STATE",
       "severity": "Minor",
       "file": "scripts/save_model_artifacts.py",
-      "location": "line 16",
+      "location": "line 17",
       "snippet": "m = RandomForestRegressor(n_estimators=200, max_depth=6, min_samples_leaf=8,",
       "note": "Stochastic estimator or split without random_state."
+    },
+    {
+      "id": "NO-DOCSTRINGS",
+      "severity": "Minor",
+      "file": "scripts/verify_determinism.py",
+      "location": "file",
+      "snippet": "3/3 functions lack docstrings",
+      "note": "Most functions undocumented."
     }
   ]
 }

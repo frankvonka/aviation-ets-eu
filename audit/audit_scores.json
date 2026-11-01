@@ -26,15 +26,15 @@
       "path": "code/05_models_fixed.py",
       "pillar": "stats",
       "scores": {
-        "correctness": 6,
+        "correctness": 7,
         "rigor": 6,
         "reproducibility": 6,
         "quality": 7,
-        "validation": 5,
+        "validation": 6,
         "documentation": 7
       },
       "blockers": 0,
-      "majors": 2,
+      "majors": 1,
       "minors": 2,
       "summary": "TWFE + event study with interactions; D4 GDP sign flip on smaller sample; no saved pre-trend p."
     },
@@ -63,14 +63,14 @@
       "pillar": "ml",
       "scores": {
         "correctness": 6,
-        "rigor": 5,
+        "rigor": 6,
         "reproducibility": 6,
         "quality": 7,
         "validation": 5,
         "documentation": 6
       },
       "blockers": 0,
-      "majors": 2,
+      "majors": 1,
       "minors": 2,
       "summary": "GroupKFold by iso in A; AIPW uses KFold(shuffle=True) on 32 treated states; X-learner not actually sample-split."
     },
@@ -80,7 +80,7 @@
       "path": "code/07_scm_suite.py",
       "pillar": "optimization",
       "scores": {
-        "correctness": 5,
+        "correctness": 6,
         "rigor": 5,
         "reproducibility": 6,
         "quality": 6,
@@ -88,7 +88,7 @@
         "documentation": 6
       },
       "blockers": 0,
-      "majors": 2,
+      "majors": 1,
       "minors": 2,
       "summary": "Aggregate rebuilt via levels (bug fixed); weights rounded to 4dp then reconstructed; placebo p=0.455 weak."
     },
@@ -116,15 +116,15 @@
       "path": "code/09_optimization_suite.py",
       "pillar": "optimization",
       "scores": {
-        "correctness": 5,
-        "rigor": 4,
+        "correctness": 6,
+        "rigor": 5,
         "reproducibility": 6,
         "quality": 6,
         "validation": 5,
         "documentation": 7
       },
       "blockers": 0,
-      "majors": 3,
+      "majors": 1,
       "minors": 2,
       "summary": "abate_share extrapolated 8-25 to 50-150 EUR; O3/O4 degenerate; _cate_to_eff arbitrary scale C0/10."
     },
@@ -152,7 +152,7 @@
       "path": "code/11_null_precision.py",
       "pillar": "stats",
       "scores": {
-        "correctness": 6,
+        "correctness": 7,
         "rigor": 6,
         "reproducibility": 6,
         "quality": 7,
@@ -160,7 +160,7 @@
         "documentation": 7
       },
       "blockers": 0,
-      "majors": 1,
+      "majors": 0,
       "minors": 1,
       "summary": "MET replaces TOST; N4 per-drop RI uses unclustered OLS (inconsistent with clustered main)."
     },
@@ -278,15 +278,15 @@
       "path": "scripts/freeze_manifest.py",
       "pillar": "infra",
       "scores": {
-        "correctness": 6,
+        "correctness": 7,
         "rigor": 5,
-        "reproducibility": 6,
+        "reproducibility": 7,
         "quality": 6,
         "validation": 5,
         "documentation": 5
       },
       "blockers": 0,
-      "majors": 1,
+      "majors": 0,
       "minors": 1,
       "summary": "Hardcoded COMMIT='65bb6e7' stale vs HEAD; auto-discovers artifacts."
     },
@@ -332,15 +332,15 @@
       "path": "scripts/run_each_script.sh",
       "pillar": "infra",
       "scores": {
-        "correctness": 5,
+        "correctness": 6,
         "rigor": 5,
-        "reproducibility": 6,
+        "reproducibility": 7,
         "quality": 6,
         "validation": 5,
         "documentation": 5
       },
       "blockers": 0,
-      "majors": 1,
+      "majors": 0,
       "minors": 1,
       "summary": "References nonexistent code/03_wb_extra.py and code/04_did_models.py."
     },
@@ -350,15 +350,15 @@
       "path": "scripts/save_model_artifacts.py",
       "pillar": "ml",
       "scores": {
-        "correctness": 6,
+        "correctness": 7,
         "rigor": 5,
-        "reproducibility": 6,
+        "reproducibility": 7,
         "quality": 6,
         "validation": 5,
         "documentation": 5
       },
       "blockers": 0,
-      "majors": 1,
+      "majors": 0,
       "minors": 1,
       "summary": "Fits RF on full data including test split (leakage in saved model)."
     },
@@ -388,7 +388,7 @@
       "scores": {
         "correctness": 6,
         "rigor": 5,
-        "reproducibility": 6,
+        "reproducibility": 7,
         "quality": 6,
         "validation": 5,
         "documentation": 5
@@ -422,7 +422,7 @@
       "path": "src/config_loader.py",
       "pillar": "infra",
       "scores": {
-        "correctness": 6,
+        "correctness": 7,
         "rigor": 5,
         "reproducibility": 6,
         "quality": 6,
@@ -430,7 +430,7 @@
         "documentation": 6
       },
       "blockers": 0,
-      "majors": 1,
+      "majors": 0,
       "minors": 1,
       "summary": "PROTECTED set defined but never enforced; assert_required only checks 2 keys."
     },
@@ -620,15 +620,15 @@
       "path": "results/ml/aipw_did.csv",
       "pillar": "ml",
       "scores": {
-        "validity": 6,
-        "statistics": 5,
+        "validity": 7,
+        "statistics": 6,
         "strength": 6,
         "traceability": 8,
         "presentation": 6,
         "claims": 6
       },
       "blockers": 0,
-      "majors": 1,
+      "majors": 0,
       "minors": 0,
       "summary": "AIPW ATT -0.112 SE 0.053; naive -0.218; covariate adjustment halves gap."
     },
@@ -692,15 +692,15 @@
       "path": "results/optimization/o4_allocation.csv",
       "pillar": "optimization",
       "scores": {
-        "validity": 5,
-        "statistics": 4,
+        "validity": 6,
+        "statistics": 5,
         "strength": 4,
         "traceability": 7,
         "presentation": 6,
         "claims": 4
       },
       "blockers": 0,
-      "majors": 2,
+      "majors": 1,
       "minors": 0,
       "summary": "Chebyshev degenerate (largest markets first); O4b Nash fairness presented as main."
     },
@@ -831,15 +831,15 @@
         "results/ml/ml_importance.csv"
       ],
       "scores": {
-        "validity": 6,
-        "statistics": 5,
+        "validity": 7,
+        "statistics": 6,
         "strength": 6,
         "traceability": 8,
         "presentation": 6,
         "claims": 6
       },
       "blockers": 0,
-      "majors": 1,
+      "majors": 0,
       "minors": 0,
       "summary": "CATE extremes IS/LI; bootstrap CI on pseudo-outcomes only."
     },
@@ -878,15 +878,15 @@
         "results/optimization/o4b_allocation_fair.csv"
       ],
       "scores": {
-        "validity": 5,
-        "statistics": 4,
+        "validity": 6,
+        "statistics": 5,
         "strength": 4,
         "traceability": 7,
         "presentation": 6,
         "claims": 4
       },
       "blockers": 0,
-      "majors": 2,
+      "majors": 1,
       "minors": 0,
       "summary": "MAC curve flat; O2 only -10% reachable; O3 degenerate floor; O4b Nash main."
     },
@@ -980,6 +980,44 @@
       "majors": 0,
       "minors": 1,
       "summary": "Env captured; stamp log records run_id mapping."
+    },
+    {
+      "id": "R25",
+      "kind": "result",
+      "path": "results/models/pretrend_tests.csv",
+      "pillar": "stats",
+      "covers": [],
+      "scores": {
+        "validity": 7,
+        "statistics": 6,
+        "strength": 6,
+        "traceability": 8,
+        "presentation": 6,
+        "claims": 6
+      },
+      "blockers": 0,
+      "majors": 0,
+      "minors": 0,
+      "summary": "Pre-trend joint test p-values saved (ln_co2 0.792, ln_flights 0.310, ln_intensity 0.319)."
+    },
+    {
+      "id": "R26",
+      "kind": "result",
+      "path": "results/ablation_summary.csv",
+      "pillar": "stats",
+      "covers": [],
+      "scores": {
+        "validity": 7,
+        "statistics": 6,
+        "strength": 6,
+        "traceability": 8,
+        "presentation": 6,
+        "claims": 6
+      },
+      "blockers": 0,
+      "majors": 0,
+      "minors": 1,
+      "summary": "Ablation summary: 8 variants; main effect stable across control specs; dose null."
     }
   ],
   "not_assessable": []
