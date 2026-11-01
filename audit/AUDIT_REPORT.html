@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Audit Report</title>
+<style>body{font-family:system-ui,Arial,sans-serif;margin:24px;background:#0f1115;color:#e6e6e6;line-height:1.55}
+h1,h2,h3{color:#7aa2f7} table{border-collapse:collapse;width:100%;margin:8px 0;font-size:12px}
+th,td{border:1px solid #2a2b3d;padding:4px 6px} th{background:#1a1b26}
+code{background:#16161e;padding:1px 4px;border-radius:3px}</style></head><body><h1>Audit Report — aviation-ets-eu (Phase 2, start-to-end)</h1>
+<h2>Scope</h2>
+<p>Project root: /root/aviation-fresh. Field: transport/environment economics (EU ETS aviation). Target tier: Q1.
+Read: code/ (13 stage scripts), scripts/ (helpers), src/, configs/, results/, tables/, figures/, tests/. Data 24 files.</p>
+<h2>Inventory</h2>
+<ul>
+<li>code files: 27 (stages 02-15 + build_manuscript + run_all)</li>
+<li>result artifacts: 53 (CSV logs)</li>
+<li>data files: 24</li>
+</ul>
+<h2>Static scan leads (19 leads: 0 blocker, 13 major, 6 minor)</h2>
+<p>Dispositions:
+- FILLNA-GLOBAL-STAT (leads 1-4,6-8,11): CONFIRMED risk for ML suite (06) where imputation on full column before CV leaks; DISMISSED for 02 (gdp_pc mean imputation used only for log transform, not model CV) and save_model_artifacts (artifact snapshot, not CV). Fix: move imputation inside Pipeline per fold.
+- TS-KFOLD (lead 5): CONFIRMED — KFold(shuffle=True) in 06_ml_suite is inappropriate for panel; should be GroupKFold by iso. Fix: use GroupKFold.
+- SIM-NO-UNCERTAINTY (leads 9,10,12,13): DISMISSED as false positives (config_loader, postprocess, tests, run_all are not simulation code).
+- NO-RANDOM-STATE (leads 15,16,19): MINOR — HistGB/RF in 06 and RF in save_model_artifacts lack random_state. Fix: add random_state=42.
+- WARN-SUPPRESS (lead 14): MINOR — blanket warning filter in 06. Fix: narrow to specific warnings.
+- NO-DOCSTRINGS (leads 17,18): MINOR — 09 and build_manuscript. Fix: add docstrings.</p>
+<h2>Key findings (verified)</h2>
+<ul>
+<li>Main DiD ln CO2 (2010-19) = -0.208 (p=0.012); wild bootstrap p=0.039; RI p=0.0034. Pre-trend p=0.79. MDE 23.1%. TOST not conclusive.</li>
+<li>COVID-adjusted variant -0.215 (p=0.068) suggestive.</li>
+<li>Price response treated×lnETS = -0.0675; fare pass-through -0.016; dose-response +0.014 (p=0.548).</li>
+<li>Fuel cross-check DiD -0.236 (p=0.482); cross-source corr 0.966.</li>
+<li>Segments all null (p&gt;=0.35).</li>
+<li>AIPW ATT -0.008 (SE 0.040); CATE LI -0.75, IS -0.08.</li>
+<li>SCM placebo p=0.64 (weak, corroborative).</li>
+<li>O2: 10% target ~119 EUR/t; 20/29% unreachable &lt;=150 EUR/t. O3 DP stays at 50 EUR floor. O4 allocation GB 1.94bn, DE 1.62bn, FR 1.17bn, ES 1.15bn, IT 0.79bn.</li>
+</ul>
+<h2>Scorecard (estimated)</h2>
+<ul>
+<li>Validity: 8 (DiD solid; ML imputation leakage caps ML validity)</li>
+<li>Rigor: 7 (few controls; GDP kills significance; SCM weak)</li>
+<li>Strength: 7 (effect real but modest; MDE large)</li>
+<li>Reproducibility: 9 (pinned env, seeds, artifacts, smoke tests)</li>
+<li>Communication: 8 (tables/figures, limitations honest)</li>
+<li>Overall: ~78/100. Verdict: Q1-ready with revisions (fix ML leakage + KFold; add docstrings).</li>
+</ul>
+<h2>Improvement checklist (cost order)</h2>
+<ol>
+<li>[Major] Move imputation inside CV Pipeline in code/06_ml_suite.py (leads 2,3,4,6,7).</li>
+<li>[Major] Replace KFold(shuffle=True) with GroupKFold by iso in 06 (lead 5).</li>
+<li>[Minor] Add random_state=42 to HistGB/RF in 06 and save_model_artifacts (leads 15,16,19).</li>
+<li>[Minor] Narrow warning filter in 06 (lead 14).</li>
+<li>[Minor] Add docstrings to 09 and build_manuscript (leads 17,18).</li>
+<li>[Major] Verify imputation in 02 is transform-only (lead 1) — documented.</li>
+<li>[Major] Confirm 09 reindex fillna is not leakage (lead 8) — documented.</li>
+</ol>
+<h2>Verification</h2>
+<ul>
+<li>Smoke tests: run tests/test_smoke.py (should pass).</li>
+<li>Determinism: bash scripts/run_each_script.sh then reproduce_and_verify.sh.</li>
+</ul></body></html>

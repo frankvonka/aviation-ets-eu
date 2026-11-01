@@ -1,0 +1,158 @@
+{
+  "root": "/root/aviation-fresh",
+  "files_scanned": 25,
+  "leads": [
+    {
+      "id": "FILLNA-GLOBAL-STAT",
+      "severity": "Major",
+      "file": "code/02_clean_build.py",
+      "location": "line 175",
+      "snippet": "g19c = np.log(np.maximum(d.gdp_pc.fillna(d.gdp_pc.mean()).values.astype(float), 1.0))",
+      "note": "Imputation with a statistic of the full column; confirm it is computed on training data only."
+    },
+    {
+      "id": "FILLNA-GLOBAL-STAT",
+      "severity": "Major",
+      "file": "code/06_ml_suite.py",
+      "location": "line 123",
+      "snippet": "X = D[XCOL].fillna(D[XCOL].mean()).values",
+      "note": "Imputation with a statistic of the full column; confirm it is computed on training data only."
+    },
+    {
+      "id": "FILLNA-GLOBAL-STAT",
+      "severity": "Major",
+      "file": "code/06_ml_suite.py",
+      "location": "line 137",
+      "snippet": "Xc = Dc[XCOL].fillna(Dc[XCOL].mean()).values; Xtr_ = Dm[XCOL].fillna(Dm[XCOL].mean()).values",
+      "note": "Imputation with a statistic of the full column; confirm it is computed on training data only."
+    },
+    {
+      "id": "FILLNA-GLOBAL-STAT",
+      "severity": "Major",
+      "file": "code/06_ml_suite.py",
+      "location": "line 44",
+      "snippet": "Xd = Xd.fillna(Xd.mean())",
+      "note": "Imputation with a statistic of the full column; confirm it is computed on training data only."
+    },
+    {
+      "id": "TS-KFOLD",
+      "severity": "Major",
+      "file": "code/06_ml_suite.py",
+      "location": "line 95",
+      "snippet": "kf = KFold(5, shuffle=True, random_state=42)",
+      "note": "KFold in a file with time-related terms; check for temporal or grouped dependence."
+    },
+    {
+      "id": "FILLNA-GLOBAL-STAT",
+      "severity": "Major",
+      "file": "code/06_ml_suite.py",
+      "location": "line 96",
+      "snippet": "Xt_full = Dm[XCOL].fillna(Dm[XCOL].mean()).values   # within-treated-group mean (NOT pooled)",
+      "note": "Imputation with a statistic of the full column; confirm it is computed on training data only."
+    },
+    {
+      "id": "FILLNA-GLOBAL-STAT",
+      "severity": "Major",
+      "file": "code/06_ml_suite.py",
+      "location": "line 97",
+      "snippet": "Xc_full = Dc[XCOL].fillna(Dc[XCOL].mean()).values   # within-control-group mean (NOT pooled)",
+      "note": "Imputation with a statistic of the full column; confirm it is computed on training data only."
+    },
+    {
+      "id": "FILLNA-GLOBAL-STAT",
+      "severity": "Major",
+      "file": "code/09_optimization_suite.py",
+      "location": "line 224",
+      "snippet": "eff = eff.reindex(d19.index).fillna(eff.mean())",
+      "note": "Imputation with a statistic of the full column; confirm it is computed on training data only."
+    },
+    {
+      "id": "SIM-NO-UNCERTAINTY",
+      "severity": "Major",
+      "file": "run_all.py",
+      "location": "file",
+      "snippet": "(no interval/percentile/std terms)",
+      "note": "Simulation code with no visible uncertainty summary (CI, percentiles, std)."
+    },
+    {
+      "id": "SIM-NO-UNCERTAINTY",
+      "severity": "Major",
+      "file": "scripts/postprocess_results.py",
+      "location": "file",
+      "snippet": "(no interval/percentile/std terms)",
+      "note": "Simulation code with no visible uncertainty summary (CI, percentiles, std)."
+    },
+    {
+      "id": "FILLNA-GLOBAL-STAT",
+      "severity": "Major",
+      "file": "scripts/save_model_artifacts.py",
+      "location": "line 14",
+      "snippet": "X = panel[feats].fillna(panel[feats].median())",
+      "note": "Imputation with a statistic of the full column; confirm it is computed on training data only."
+    },
+    {
+      "id": "SIM-NO-UNCERTAINTY",
+      "severity": "Major",
+      "file": "src/config_loader.py",
+      "location": "file",
+      "snippet": "(no interval/percentile/std terms)",
+      "note": "Simulation code with no visible uncertainty summary (CI, percentiles, std)."
+    },
+    {
+      "id": "SIM-NO-UNCERTAINTY",
+      "severity": "Major",
+      "file": "tests/test_smoke.py",
+      "location": "file",
+      "snippet": "(no interval/percentile/std terms)",
+      "note": "Simulation code with no visible uncertainty summary (CI, percentiles, std)."
+    },
+    {
+      "id": "WARN-SUPPRESS",
+      "severity": "Minor",
+      "file": "code/06_ml_suite.py",
+      "location": "line 11",
+      "snippet": "warnings.simplefilter(\"ignore\", (FutureWarning, ConvergenceWarning))",
+      "note": "Blanket warning suppression can hide convergence, leakage-adjacent, or deprecation problems."
+    },
+    {
+      "id": "NO-RANDOM-STATE",
+      "severity": "Minor",
+      "file": "code/06_ml_suite.py",
+      "location": "line 46",
+      "snippet": "for name, est in [(\"HistGB\", HistGradientBoostingRegressor(max_iter=300, learning_rate=0.06,",
+      "note": "Stochastic estimator or split without random_state."
+    },
+    {
+      "id": "NO-RANDOM-STATE",
+      "severity": "Minor",
+      "file": "code/06_ml_suite.py",
+      "location": "line 48",
+      "snippet": "(\"RF\", RandomForestRegressor(n_estimators=500, max_depth=6,",
+      "note": "Stochastic estimator or split without random_state."
+    },
+    {
+      "id": "NO-DOCSTRINGS",
+      "severity": "Minor",
+      "file": "code/09_optimization_suite.py",
+      "location": "file",
+      "snippet": "7/8 functions lack docstrings",
+      "note": "Most functions undocumented."
+    },
+    {
+      "id": "NO-DOCSTRINGS",
+      "severity": "Minor",
+      "file": "code/build_manuscript.py",
+      "location": "file",
+      "snippet": "4/5 functions lack docstrings",
+      "note": "Most functions undocumented."
+    },
+    {
+      "id": "NO-RANDOM-STATE",
+      "severity": "Minor",
+      "file": "scripts/save_model_artifacts.py",
+      "location": "line 16",
+      "snippet": "m = RandomForestRegressor(n_estimators=200, max_depth=6, min_samples_leaf=8,",
+      "note": "Stochastic estimator or split without random_state."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "master_seed": 42,
+  "seeds": [
+    {
+      "name": "master",
+      "seed": 42
+    },
+    {
+      "name": "model",
+      "seed": 42
+    },
+    {
+      "name": "simulation",
+      "seed": 42
+    },
+    {
+      "name": "optimization",
+      "seed": 42
+    }
+  ],
+  "deterministic_algorithms": true,
+  "n_jobs": 1
+}

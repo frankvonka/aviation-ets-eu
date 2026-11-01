@@ -25,3 +25,9 @@ variants:
     hypothesis: "DiD effect survives control respecification"
     tuning: fixed
     output: "results/models/n1_respecified.csv"
+
+  - id: controls_sensitivity
+    change: "drop WB controls (gdp_pc, air_psgr, air_freight, tourism)"
+    hypothesis: "DiD effect survives dropping WB controls"
+    tuning: fixed
+    output: "results/models/n1_respecified.csv"

@@ -1,0 +1,1118 @@
+{
+  "root": "/root/aviation-fresh",
+  "flags": {
+    "has_readme": true,
+    "has_env_file": true,
+    "has_tests": true,
+    "has_git": true,
+    "n_code_files": 27,
+    "n_result_files": 53,
+    "n_data_files": 24
+  },
+  "files": [
+    {
+      "path": "code/02_clean_build.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 12145,
+      "mtime": 1793117970,
+      "loc": 138,
+      "lines": 185,
+      "roles_guess": [
+        "data",
+        "ablation"
+      ],
+      "has_seed": false
+    },
+    {
+      "path": "code/05_models_fixed.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 7848,
+      "mtime": 1793134987,
+      "loc": 119,
+      "lines": 141,
+      "roles_guess": [
+        "data",
+        "ml",
+        "stats",
+        "timeseries_panel"
+      ],
+      "has_seed": false
+    },
+    {
+      "path": "code/05_reconcile.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 3309,
+      "mtime": 1793117970,
+      "loc": 60,
+      "lines": 67,
+      "roles_guess": [
+        "data",
+        "ml",
+        "stats"
+      ],
+      "has_seed": false
+    },
+    {
+      "path": "code/06_ml_suite.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 9657,
+      "mtime": 1793136294,
+      "loc": 150,
+      "lines": 171,
+      "roles_guess": [
+        "data",
+        "ml"
+      ],
+      "has_seed": true
+    },
+    {
+      "path": "code/07_scm_suite.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 7272,
+      "mtime": 1793136288,
+      "loc": 136,
+      "lines": 154,
+      "roles_guess": [
+        "data",
+        "optimization"
+      ],
+      "has_seed": true
+    },
+    {
+      "path": "code/08_simulation_suite.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 10588,
+      "mtime": 1793117970,
+      "loc": 172,
+      "lines": 191,
+      "roles_guess": [
+        "data",
+        "ml",
+        "simulation",
+        "ablation",
+        "stats"
+      ],
+      "has_seed": true
+    },
+    {
+      "path": "code/09_optimization_suite.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 15700,
+      "mtime": 1793136483,
+      "loc": 257,
+      "lines": 312,
+      "roles_guess": [
+        "data",
+        "optimization"
+      ],
+      "has_seed": true
+    },
+    {
+      "path": "code/10_tables_figures.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 11127,
+      "mtime": 1793117970,
+      "loc": 151,
+      "lines": 184,
+      "roles_guess": [
+        "data",
+        "simulation",
+        "ablation",
+        "timeseries_panel",
+        "plotting"
+      ],
+      "has_seed": false
+    },
+    {
+      "path": "code/11_null_precision.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 9033,
+      "mtime": 1793134934,
+      "loc": 132,
+      "lines": 156,
+      "roles_guess": [
+        "data",
+        "ml",
+        "simulation",
+        "ablation",
+        "stats"
+      ],
+      "has_seed": true
+    },
+    {
+      "path": "code/12_mechanism_pass_through.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 5310,
+      "mtime": 1793117970,
+      "loc": 81,
+      "lines": 92,
+      "roles_guess": [
+        "data",
+        "ml",
+        "stats"
+      ],
+      "has_seed": false
+    },
+    {
+      "path": "code/14_fuel_crosscheck.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 2452,
+      "mtime": 1793117970,
+      "loc": 40,
+      "lines": 48,
+      "roles_guess": [
+        "data",
+        "stats"
+      ],
+      "has_seed": false
+    },
+    {
+      "path": "code/15_dose_response.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 3575,
+      "mtime": 1793134950,
+      "loc": 53,
+      "lines": 59,
+      "roles_guess": [
+        "data",
+        "stats"
+      ],
+      "has_seed": false
+    },
+    {
+      "path": "code/build_manuscript.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 39502,
+      "mtime": 1793117970,
+      "loc": 523,
+      "lines": 569,
+      "roles_guess": [
+        "data",
+        "simulation",
+        "ablation",
+        "stats"
+      ],
+      "has_seed": true
+    },
+    {
+      "path": "run_all.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 3365,
+      "mtime": 1793356682,
+      "loc": 73,
+      "lines": 89,
+      "roles_guess": [
+        "utility"
+      ],
+      "has_seed": false
+    },
+    {
+      "path": "scripts/capture_environment.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1666,
+      "mtime": 1793514225,
+      "loc": 38,
+      "lines": 44,
+      "roles_guess": [
+        "utility"
+      ],
+      "has_seed": false
+    },
+    {
+      "path": "scripts/freeze_manifest.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 3182,
+      "mtime": 1793514226,
+      "loc": 70,
+      "lines": 89,
+      "roles_guess": [
+        "utility"
+      ],
+      "has_seed": false
+    },
+    {
+      "path": "scripts/postprocess_results.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1832,
+      "mtime": 1793514281,
+      "loc": 37,
+      "lines": 43,
+      "roles_guess": [
+        "simulation"
+      ],
+      "has_seed": false
+    },
+    {
+      "path": "scripts/reproduce_and_verify.sh",
+      "category": "code",
+      "ext": ".sh",
+      "size": 531,
+      "mtime": 1793118188,
+      "loc": 13,
+      "lines": 16,
+      "roles_guess": [
+        "utility"
+      ],
+      "has_seed": false
+    },
+    {
+      "path": "scripts/run_each_script.sh",
+      "category": "code",
+      "ext": ".sh",
+      "size": 1153,
+      "mtime": 1793117970,
+      "loc": 26,
+      "lines": 30,
+      "roles_guess": [
+        "utility"
+      ],
+      "has_seed": false
+    },
+    {
+      "path": "scripts/save_model_artifacts.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1369,
+      "mtime": 1793514282,
+      "loc": 27,
+      "lines": 33,
+      "roles_guess": [
+        "data",
+        "ml"
+      ],
+      "has_seed": true
+    },
+    {
+      "path": "scripts/seeded_selection.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1577,
+      "mtime": 1793117970,
+      "loc": 40,
+      "lines": 49,
+      "roles_guess": [
+        "utility"
+      ],
+      "has_seed": true
+    },
+    {
+      "path": "scripts/verify_determinism.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1579,
+      "mtime": 1793514226,
+      "loc": 40,
+      "lines": 45,
+      "roles_guess": [
+        "utility"
+      ],
+      "has_seed": false
+    },
+    {
+      "path": "src/__init__.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 0,
+      "mtime": 1793118156,
+      "loc": 0,
+      "lines": 0,
+      "roles_guess": [
+        "utility"
+      ],
+      "has_seed": false
+    },
+    {
+      "path": "src/config_loader.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 2687,
+      "mtime": 1793117970,
+      "loc": 49,
+      "lines": 58,
+      "roles_guess": [
+        "data",
+        "simulation",
+        "ablation"
+      ],
+      "has_seed": true
+    },
+    {
+      "path": "src/preprocessing.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 2105,
+      "mtime": 1793117970,
+      "loc": 42,
+      "lines": 53,
+      "roles_guess": [
+        "data"
+      ],
+      "has_seed": false
+    },
+    {
+      "path": "src/split_manager.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1701,
+      "mtime": 1793117970,
+      "loc": 37,
+      "lines": 47,
+      "roles_guess": [
+        "utility"
+      ],
+      "has_seed": true
+    },
+    {
+      "path": "tests/test_smoke.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 5906,
+      "mtime": 1793135572,
+      "loc": 121,
+      "lines": 149,
+      "roles_guess": [
+        "data",
+        "ablation"
+      ],
+      "has_seed": true
+    },
+    {
+      "path": "configs/ablation_variants.yaml",
+      "category": "config",
+      "ext": ".yaml",
+      "size": 859,
+      "mtime": 1793117970
+    },
+    {
+      "path": "configs/global.yaml",
+      "category": "config",
+      "ext": ".yaml",
+      "size": 2291,
+      "mtime": 1793117970
+    },
+    {
+      "path": "configs/hypotheses.yaml",
+      "category": "config",
+      "ext": ".yaml",
+      "size": 1657,
+      "mtime": 1793117970
+    },
+    {
+      "path": "configs/model_registry.yaml",
+      "category": "config",
+      "ext": ".yaml",
+      "size": 1615,
+      "mtime": 1793117970
+    },
+    {
+      "path": "configs/optimizer_registry.yaml",
+      "category": "config",
+      "ext": ".yaml",
+      "size": 1427,
+      "mtime": 1793117970
+    },
+    {
+      "path": "configs/research_protocol.yaml",
+      "category": "config",
+      "ext": ".yaml",
+      "size": 1046,
+      "mtime": 1793117970
+    },
+    {
+      "path": "configs/simulation_registry.yaml",
+      "category": "config",
+      "ext": ".yaml",
+      "size": 1578,
+      "mtime": 1793117970
+    },
+    {
+      "path": "configs/simulation_scenarios.yaml",
+      "category": "config",
+      "ext": ".yaml",
+      "size": 736,
+      "mtime": 1793117970
+    },
+    {
+      "path": "artifacts/freeze/freeze_manifest.json",
+      "category": "data",
+      "ext": ".json",
+      "size": 12605,
+      "mtime": 1793514322
+    },
+    {
+      "path": "artifacts/models/model_manifest.json",
+      "category": "data",
+      "ext": ".json",
+      "size": 224,
+      "mtime": 1793514321
+    },
+    {
+      "path": "artifacts/run/optimization_history.json",
+      "category": "data",
+      "ext": ".json",
+      "size": 835,
+      "mtime": 1793513855
+    },
+    {
+      "path": "data/CO2_emissions_by_state.xlsx",
+      "category": "data",
+      "ext": ".xlsx",
+      "size": 577597,
+      "mtime": 1793015637
+    },
+    {
+      "path": "data/CO2_emissions_by_state_DATA.csv",
+      "category": "data",
+      "ext": ".csv",
+      "size": 357971,
+      "mtime": 1793015637
+    },
+    {
+      "path": "data/ETS_Database_July_2026.xlsx",
+      "category": "data",
+      "ext": ".xlsx",
+      "size": 3356861,
+      "mtime": 1793015637
+    },
+    {
+      "path": "data/_eea_ets.zip",
+      "category": "data",
+      "ext": ".zip",
+      "size": 7863078,
+      "mtime": 1793015637
+    },
+    {
+      "path": "data/_eea_ets_aviation_raw.csv",
+      "category": "data",
+      "ext": ".csv",
+      "size": 178160,
+      "mtime": 1793015637
+    },
+    {
+      "path": "data/eutl_aviation.csv",
+      "category": "data",
+      "ext": ".csv",
+      "size": 32641,
+      "mtime": 1793015637
+    },
+    {
+      "path": "data/g2g_emissions.csv",
+      "category": "data",
+      "ext": ".csv",
+      "size": 47396878,
+      "mtime": 1793015638
+    },
+    {
+      "path": "data/g2g_emissions.parquet",
+      "category": "data",
+      "ext": ".parquet",
+      "size": 10041930,
+      "mtime": 1793015638
+    },
+    {
+      "path": "data/g2g_state_month.csv",
+      "category": "data",
+      "ext": ".csv",
+      "size": 1148722,
+      "mtime": 1793513736
+    },
+    {
+      "path": "data/hicp_airfares.csv",
+      "category": "data",
+      "ext": ".csv",
+      "size": 423302,
+      "mtime": 1793015638
+    },
+    {
+      "path": "data/jetfuel_consumption.csv",
+      "category": "data",
+      "ext": ".csv",
+      "size": 73668,
+      "mtime": 1793015638
+    },
+    {
+      "path": "data/mom_co2.csv",
+      "category": "data",
+      "ext": ".csv",
+      "size": 1954,
+      "mtime": 1793015638
+    },
+    {
+      "path": "data/our-data-emissions-latest-month.csv",
+      "category": "data",
+      "ext": ".csv",
+      "size": 1352,
+      "mtime": 1793015638
+    },
+    {
+      "path": "data/our-data-emissions.csv",
+      "category": "data",
+      "ext": ".csv",
+      "size": 1458,
+      "mtime": 1793015638
+    },
+    {
+      "path": "data/panel_state_month.csv",
+      "category": "data",
+      "ext": ".csv",
+      "size": 889649,
+      "mtime": 1793513735
+    },
+    {
+      "path": "data/panel_state_year.csv",
+      "category": "data",
+      "ext": ".csv",
+      "size": 98263,
+      "mtime": 1793118249
+    },
+    {
+      "path": "data/prices.csv",
+      "category": "data",
+      "ext": ".csv",
+      "size": 1400,
+      "mtime": 1793015638
+    },
+    {
+      "path": "data/segment_shares_2019.csv",
+      "category": "data",
+      "ext": ".csv",
+      "size": 5623,
+      "mtime": 1793513735
+    },
+    {
+      "path": "data/state_map.json",
+      "category": "data",
+      "ext": ".json",
+      "size": 989,
+      "mtime": 1793015638
+    },
+    {
+      "path": "data/wb_controls.csv",
+      "category": "data",
+      "ext": ".csv",
+      "size": 20756,
+      "mtime": 1793015638
+    },
+    {
+      "path": "data/wb_controls_all.csv",
+      "category": "data",
+      "ext": ".csv",
+      "size": 29579,
+      "mtime": 1793118244
+    },
+    {
+      "path": "README.md",
+      "category": "doc",
+      "ext": ".md",
+      "size": 5273,
+      "mtime": 1793136369
+    },
+    {
+      "path": "data/EUTL_PROVENANCE.md",
+      "category": "doc",
+      "ext": ".md",
+      "size": 6177,
+      "mtime": 1793015637
+    },
+    {
+      "path": "data/PROVENANCE.md",
+      "category": "doc",
+      "ext": ".md",
+      "size": 3763,
+      "mtime": 1793015637
+    },
+    {
+      "path": "docs/NOVELTY_GAP.md",
+      "category": "doc",
+      "ext": ".md",
+      "size": 2090,
+      "mtime": 1793513526
+    },
+    {
+      "path": "eda_report/report.md",
+      "category": "doc",
+      "ext": ".md",
+      "size": 9912,
+      "mtime": 1793512436
+    },
+    {
+      "path": "results/cleaning_log.txt",
+      "category": "doc",
+      "ext": ".txt",
+      "size": 2919,
+      "mtime": 1793513736
+    },
+    {
+      "path": "results/dose_response_log.txt",
+      "category": "doc",
+      "ext": ".txt",
+      "size": 410,
+      "mtime": 1793514105
+    },
+    {
+      "path": "results/mechanisms_log.txt",
+      "category": "doc",
+      "ext": ".txt",
+      "size": 586,
+      "mtime": 1793514099
+    },
+    {
+      "path": "results/mechanisms_log2.txt",
+      "category": "doc",
+      "ext": ".txt",
+      "size": 143,
+      "mtime": 1793514102
+    },
+    {
+      "path": "results/ml_log.txt",
+      "category": "doc",
+      "ext": ".txt",
+      "size": 825,
+      "mtime": 1793513772
+    },
+    {
+      "path": "results/models_log.txt",
+      "category": "doc",
+      "ext": ".txt",
+      "size": 1742,
+      "mtime": 1793513741
+    },
+    {
+      "path": "results/null_precision_log.txt",
+      "category": "doc",
+      "ext": ".txt",
+      "size": 1078,
+      "mtime": 1793514095
+    },
+    {
+      "path": "results/scm_log.txt",
+      "category": "doc",
+      "ext": ".txt",
+      "size": 2213,
+      "mtime": 1793513775
+    },
+    {
+      "path": "results/simulation_log.txt",
+      "category": "doc",
+      "ext": ".txt",
+      "size": 1034,
+      "mtime": 1793513852
+    },
+    {
+      "path": "requirements.txt",
+      "category": "env",
+      "ext": ".txt",
+      "size": 511,
+      "mtime": 1793117993
+    },
+    {
+      "path": ".gitignore",
+      "category": "other",
+      "ext": "",
+      "size": 57,
+      "mtime": 1793104308
+    },
+    {
+      "path": "artifacts/models/preprocess_ln_co2.joblib",
+      "category": "other",
+      "ext": ".joblib",
+      "size": 243,
+      "mtime": 1793514321
+    },
+    {
+      "path": "artifacts/models/rf_ln_co2.joblib",
+      "category": "other",
+      "ext": ".joblib",
+      "size": 827953,
+      "mtime": 1793514321
+    },
+    {
+      "path": "artifacts/logs/environment.json",
+      "category": "result",
+      "ext": ".json",
+      "size": 509,
+      "mtime": 1793514319
+    },
+    {
+      "path": "artifacts/logs/stamp_log.json",
+      "category": "result",
+      "ext": ".json",
+      "size": 1717,
+      "mtime": 1793514322
+    },
+    {
+      "path": "eda_report/report.html",
+      "category": "result",
+      "ext": ".html",
+      "size": 11261,
+      "mtime": 1793512471
+    },
+    {
+      "path": "figures/F10_allocation.png",
+      "category": "result",
+      "ext": ".png",
+      "size": 72030,
+      "mtime": 1793513866
+    },
+    {
+      "path": "figures/F1_ets_vs_co2.png",
+      "category": "result",
+      "ext": ".png",
+      "size": 113425,
+      "mtime": 1793513861
+    },
+    {
+      "path": "figures/F2_heatmap.png",
+      "category": "result",
+      "ext": ".png",
+      "size": 125686,
+      "mtime": 1793513862
+    },
+    {
+      "path": "figures/F3_event_study.png",
+      "category": "result",
+      "ext": ".png",
+      "size": 48496,
+      "mtime": 1793513862
+    },
+    {
+      "path": "figures/F4_ml_importance.png",
+      "category": "result",
+      "ext": ".png",
+      "size": 65419,
+      "mtime": 1793513863
+    },
+    {
+      "path": "figures/F5_scm_path.png",
+      "category": "result",
+      "ext": ".png",
+      "size": 58660,
+      "mtime": 1793513863
+    },
+    {
+      "path": "figures/F6_placebo_rmspe.png",
+      "category": "result",
+      "ext": ".png",
+      "size": 75366,
+      "mtime": 1793513864
+    },
+    {
+      "path": "figures/F7_covid_counterfactual.png",
+      "category": "result",
+      "ext": ".png",
+      "size": 65777,
+      "mtime": 1793513865
+    },
+    {
+      "path": "figures/F8_policy_montecarlo.png",
+      "category": "result",
+      "ext": ".png",
+      "size": 92063,
+      "mtime": 1793513865
+    },
+    {
+      "path": "figures/F9_mac_curve.png",
+      "category": "result",
+      "ext": ".png",
+      "size": 61165,
+      "mtime": 1793513865
+    },
+    {
+      "path": "results/mechanisms/m1_fare_pass_through.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 320,
+      "mtime": 1793514322
+    },
+    {
+      "path": "results/mechanisms/m2_fuel_did.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 188,
+      "mtime": 1793514322
+    },
+    {
+      "path": "results/mechanisms/m3_segments.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 662,
+      "mtime": 1793514322
+    },
+    {
+      "path": "results/ml/aipw_did.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 131,
+      "mtime": 1793513769
+    },
+    {
+      "path": "results/ml/aipw_state_effects.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 2607,
+      "mtime": 1793513769
+    },
+    {
+      "path": "results/ml/cate_by_state.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 893,
+      "mtime": 1793513772
+    },
+    {
+      "path": "results/ml/cate_summary.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 185,
+      "mtime": 1793513772
+    },
+    {
+      "path": "results/ml/ml_cv.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 568,
+      "mtime": 1793513765
+    },
+    {
+      "path": "results/ml/ml_importance.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 382,
+      "mtime": 1793513765
+    },
+    {
+      "path": "results/models/dose_response.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 168,
+      "mtime": 1793514322
+    },
+    {
+      "path": "results/models/event_study_fixed.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 4484,
+      "mtime": 1793514322
+    },
+    {
+      "path": "results/models/heterogeneity.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 2859,
+      "mtime": 1793514322
+    },
+    {
+      "path": "results/models/main_models.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 5002,
+      "mtime": 1793514322
+    },
+    {
+      "path": "results/models/n1_respecified.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 560,
+      "mtime": 1793514322
+    },
+    {
+      "path": "results/models/n2_tost.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 835,
+      "mtime": 1793514322
+    },
+    {
+      "path": "results/models/n3_mde.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 176,
+      "mtime": 1793514322
+    },
+    {
+      "path": "results/models/n4_looo.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 4465,
+      "mtime": 1793514322
+    },
+    {
+      "path": "results/models/n4_ri_per_drop.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 641,
+      "mtime": 1793514322
+    },
+    {
+      "path": "results/models/specification_log.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 3928,
+      "mtime": 1793514322
+    },
+    {
+      "path": "results/optimization/o1_mac_curve.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 18181,
+      "mtime": 1793514322
+    },
+    {
+      "path": "results/optimization/o2_price_targets.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 362,
+      "mtime": 1793514322
+    },
+    {
+      "path": "results/optimization/o3_optimal_price_path.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 486,
+      "mtime": 1793514322
+    },
+    {
+      "path": "results/optimization/o4_allocation.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 2097,
+      "mtime": 1793514322
+    },
+    {
+      "path": "results/optimization/o4b_allocation_fair.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 1901,
+      "mtime": 1793514322
+    },
+    {
+      "path": "results/scm/scm_aggregate_annual.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 532,
+      "mtime": 1793513774
+    },
+    {
+      "path": "results/scm/scm_placebo.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 5356,
+      "mtime": 1793513775
+    },
+    {
+      "path": "results/scm/scm_state_effects.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 5070,
+      "mtime": 1793513774
+    },
+    {
+      "path": "results/simulation/s1_wild_bootstrap.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 217,
+      "mtime": 1793514322
+    },
+    {
+      "path": "results/simulation/s2_ri_betas.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 277636,
+      "mtime": 1793514322
+    },
+    {
+      "path": "results/simulation/s2_ri_summary.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 153,
+      "mtime": 1793514322
+    },
+    {
+      "path": "results/simulation/s3_covid_counterfactual_monthly.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 58828,
+      "mtime": 1793514322
+    },
+    {
+      "path": "results/simulation/s3_did_variants.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 486,
+      "mtime": 1793514322
+    },
+    {
+      "path": "results/simulation/s4_policy_montecarlo.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 2060,
+      "mtime": 1793514322
+    },
+    {
+      "path": "tables/T1_descriptives.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 472,
+      "mtime": 1793513860
+    },
+    {
+      "path": "tables/T2_panel_structure.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 1229,
+      "mtime": 1793513860
+    },
+    {
+      "path": "tables/T3_main_did.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 4226,
+      "mtime": 1793513860
+    },
+    {
+      "path": "tables/T4_inference_simulation.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 767,
+      "mtime": 1793513860
+    },
+    {
+      "path": "tables/T5_scm_summary.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 216,
+      "mtime": 1793513860
+    },
+    {
+      "path": "tables/T5b_optimal_path.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 181,
+      "mtime": 1793513860
+    },
+    {
+      "path": "tables/T5c_price_targets.csv",
+      "category": "result",
+      "ext": ".csv",
+      "size": 237,
+      "mtime": 1793513860
+    }
+  ]
+}
