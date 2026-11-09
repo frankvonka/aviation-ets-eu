@@ -3,7 +3,7 @@
   "optimizer": "scipy.optimize.linprog (HiGHS) + scipy.optimize.minimize (SLSQP)",
   "seed": 42,
   "source": "code/09_optimization_suite.py",
-  "generated_at": "2026-11-01T16:29:37",
+  "generated_at": "2026-11-09T10:22:33",
   "solvers": [
     {
       "name": "linprog HiGHS (O4 minimax LP)",
@@ -25,5 +25,5 @@
       "objective": -0.7323
     }
   ],
-  "wall_clock_s": 0.533
+  "wall_clock_s": 0.761
 }
